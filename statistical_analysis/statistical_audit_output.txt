@@ -1,0 +1,47 @@
+
+DYNAMIC AGGREGATE MEANS (scenario-averaged within seed):
+                PDR  risk_violation_rate  mean_delay  energy_consumed  optimizer_calls  etx_coverage  delay_coverage
+method                                                                                                              
+ACP-EA      0.89215              0.25338    13.62876          3.07660              8.0       0.89788         0.89906
+ACR-MCR     0.89498              0.24875    13.68509          3.07144              9.4       0.89616         0.89820
+ACR-NOCVAR  0.89163              0.25800    13.69041          3.08232              9.4       0.89800         0.89866
+POINT-EA    0.88088              0.28475    13.69695          3.07040              8.0           NaN             NaN
+SCP-EA      0.89390              0.24938    13.66586          3.07429              8.0       0.87314         0.82040
+
+ACR-MCR vs comparators, ALL_DYNAMIC:
+comparator              metric  comparator_mean  acr_mean  paired_delta_acr_minus_comparator  ci95_low  ci95_high  wilcoxon_p  primary_holm_p  exploratory_holm_across_scenarios      cohen_dz
+  POINT-EA                 PDR         0.880884  0.894980                           0.014096  0.002923   0.025268    0.009436        0.018871                           0.056614  5.904770e-01
+  POINT-EA risk_violation_rate         0.284750  0.248750                          -0.036000 -0.069001  -0.002999    0.044187        0.044187                           0.265122 -5.105500e-01
+  POINT-EA          mean_delay        13.696949 13.685090                          -0.011860 -0.326752   0.303033    0.840822             NaN                           1.000000 -1.762700e-02
+  POINT-EA     energy_consumed         3.070397  3.071444                           0.001048 -0.022041   0.024136    0.647655             NaN                           1.000000  2.123600e-02
+  POINT-EA     optimizer_calls         8.000000  9.400000                           1.400000  1.400000   1.400000    0.000008             NaN                           0.000046  3.072696e+15
+    SCP-EA                 PDR         0.893895  0.894980                           0.001084 -0.006451   0.008619    0.674223             NaN                           1.000000  6.733800e-02
+    SCP-EA risk_violation_rate         0.249375  0.248750                          -0.000625 -0.020510   0.019260    0.629162             NaN                           1.000000 -1.471000e-02
+    SCP-EA          mean_delay        13.665856 13.685090                           0.019234 -0.254458   0.292926    0.452375             NaN                           1.000000  3.289000e-02
+    SCP-EA     energy_consumed         3.074286  3.071444                          -0.002841 -0.018127   0.012445    0.956329             NaN                           1.000000 -8.699100e-02
+    SCP-EA     optimizer_calls         8.000000  9.400000                           1.400000  1.400000   1.400000    0.000008             NaN                           0.000046  3.072696e+15
+    ACP-EA                 PDR         0.892151  0.894980                           0.002829 -0.004475   0.010133    0.245487             NaN                           1.000000  1.812710e-01
+    ACP-EA risk_violation_rate         0.253375  0.248750                          -0.004625 -0.024296   0.015046    0.456495             NaN                           1.000000 -1.100370e-01
+    ACP-EA          mean_delay        13.628757 13.685090                           0.056333 -0.206493   0.319159    0.756166             NaN                           1.000000  1.003120e-01
+    ACP-EA     energy_consumed         3.076596  3.071444                          -0.005152 -0.020290   0.009986    0.812355             NaN                           1.000000 -1.592890e-01
+    ACP-EA     optimizer_calls         8.000000  9.400000                           1.400000  1.400000   1.400000    0.000008             NaN                           0.000046  3.072696e+15
+ACR-NOCVAR                 PDR         0.891632  0.894980                           0.003348 -0.003069   0.009764    0.189348             NaN                           1.000000  2.441900e-01
+ACR-NOCVAR risk_violation_rate         0.258000  0.248750                          -0.009250 -0.028128   0.009628    0.177534             NaN                           0.887671 -2.293200e-01
+ACR-NOCVAR          mean_delay        13.690409 13.685090                          -0.005319 -0.285376   0.274737    0.674223             NaN                           1.000000 -8.889000e-03
+ACR-NOCVAR     energy_consumed         3.082321  3.071444                          -0.010877 -0.027889   0.006136    0.202450             NaN                           1.000000 -2.992200e-01
+ACR-NOCVAR     optimizer_calls         9.400000  9.400000                           0.000000  0.000000   0.000000         NaN             NaN                           0.000000           NaN
+
+ACR-MCR vs ACR-NOCVAR by scenario:
+   scenario              metric  comparator_mean  acr_mean  paired_delta_acr_minus_comparator  ci95_low  ci95_high  wilcoxon_p  primary_holm_p  exploratory_holm_across_scenarios  cohen_dz
+         S1                 PDR         0.864530  0.866741                           0.002212 -0.011054   0.015477    0.600871             NaN                           1.000000  0.078030
+         S1 risk_violation_rate         0.295000  0.290625                          -0.004375 -0.041242   0.032492    0.572741             NaN                           1.000000 -0.055539
+         S2                 PDR         0.866120  0.870375                           0.004255 -0.008960   0.017469    0.268393             NaN                           1.000000  0.150682
+         S2 risk_violation_rate         0.296250  0.295000                          -0.001250 -0.035985   0.033485    0.721777             NaN                           1.000000 -0.016842
+         S3                 PDR         0.930096  0.936318                           0.006223 -0.003111   0.015556    0.184181             NaN                           1.000000  0.312035
+         S3 risk_violation_rate         0.191250  0.174375                          -0.016875 -0.045865   0.012115    0.276887             NaN                           1.000000 -0.272434
+         S4                 PDR         0.933409  0.932080                          -0.001329 -0.013428   0.010770    0.881282             NaN                           1.000000 -0.051415
+         S4 risk_violation_rate         0.142500  0.146875                           0.004375 -0.029433   0.038183    0.947890             NaN                           1.000000  0.060564
+         S5                 PDR         0.864005  0.869384                           0.005379 -0.006449   0.017207    0.314389             NaN                           1.000000  0.212836
+         S5 risk_violation_rate         0.365000  0.336875                          -0.028125 -0.054072  -0.002178    0.039612             NaN                           0.237671 -0.507305
+ALL_DYNAMIC                 PDR         0.891632  0.894980                           0.003348 -0.003069   0.009764    0.189348             NaN                           1.000000  0.244190
+ALL_DYNAMIC risk_violation_rate         0.258000  0.248750                          -0.009250 -0.028128   0.009628    0.177534             NaN                           0.887671 -0.229320
