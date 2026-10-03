@@ -1,7 +1,0 @@
-condition,metric,POINT_mean,RISK_mean,paired_difference,ci95_low,ci95_high,effect_dz,sign_test_p,n_pairs
-stochastic_burst,PDR,0.927143,0.981714,0.054571,0.038331,0.070811,1.202,1.86e-09,30
-stochastic_burst,burst_PDR,0.850444,0.963778,0.113333,0.083175,0.143492,1.345,1.86e-09,30
-stochastic_burst,mean_delay_s,0.025792,0.022454,-0.003338,-0.004089,-0.002587,-1.591,5.77e-08,30
-control,PDR,1.0,1.0,0.0,0.0,0.0,,1.0,20
-control,burst_PDR,1.0,1.0,0.0,0.0,0.0,,1.0,20
-control,mean_delay_s,0.021162,0.021156,-0.000006,,, , ,20

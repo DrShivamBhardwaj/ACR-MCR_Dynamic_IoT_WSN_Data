@@ -1,0 +1,66 @@
+[
+  {
+    "number": 1,
+    "file": "Fig1.png",
+    "caption": "Observable information and feedback in ACR-MCR",
+    "explanation": "Figure 1 separates the controller inputs from the evaluation records. Geometry, energy and availability enter the planner with the issued link predictions. Only probe outcomes update learning for the next round; current bounds stay fixed. Evaluation combines those bounds with separate probe and data records. Latent channel probabilities remain inside the simulator.",
+    "dpi": 600,
+    "source": "diagram_figures.py; controller information and round sequence"
+  },
+  {
+    "number": 2,
+    "file": "Fig2.png",
+    "caption": "Round sequence and head-refresh decisions",
+    "explanation": "The branches in Fig. 2 rejoin before member assignment, route construction and forwarding. Initialization and failed-head recovery bypass the 0.5% gain threshold. After data forwarding, the controller executes its fixed probe schedule, scores both observation streams against the frozen bounds and updates learning from probes only.",
+    "dpi": 600,
+    "source": "diagram_figures.py; controller information and round sequence"
+  },
+  {
+    "number": 3,
+    "file": "Fig3.png",
+    "caption": "Timely-delivery and violation effects across dynamic regimes",
+    "dpi": 600,
+    "source": "Python source and archived raw outputs",
+    "explanation": "Figure 3 reports ACR-MCR minus POINT-EA in percentage points across 30 paired seeds. Bars are pointwise 95% Student-t intervals. Positive differences favour ACR-MCR for timely delivery; negative differences favour it for violations. These scenario-level comparisons are exploratory. The co-primary inference instead averages S1\u2013S5 within each seed before testing."
+  },
+  {
+    "number": 4,
+    "file": "Fig4.png",
+    "caption": "Timely-delivery and violation effects of successive controller additions",
+    "dpi": 600,
+    "source": "Python source and archived raw outputs",
+    "explanation": "Each adjacent comparison in Fig. 4 changes the named component while retaining objective weights and search budget. Differences are in percentage points, using 30 seed blocks averaged over S1\u2013S5. The bars show pointwise 95% intervals; the ten-test Holm correction applies to the significance tests, not these intervals."
+  },
+  {
+    "number": 5,
+    "file": "Fig5.png",
+    "caption": "Probe and routed-data coverage: (a,b) transaction cost; (c,d) service time",
+    "dpi": 600,
+    "source": "Python source and archived raw outputs",
+    "explanation": "For Fig. 5, coverage counts are pooled over ten rounds within each seed and then averaged across 30 seeds. Shading gives a pointwise 95% interval for ACR-MCR. The horizontal reference is 0.90 coverage; the vertical reference marks the end of warm-up. The panels distinguish probe and selected-data transactions and do not measure joint coverage of an entire route."
+  },
+  {
+    "number": 6,
+    "file": "Fig6.png",
+    "caption": "Radio expenditure for data, probes, control and aggregation",
+    "dpi": 600,
+    "source": "Python source and archived raw outputs",
+    "explanation": "Figure 6 includes warm-up and averages S1\u2013S5 within each of 30 seeds. Whiskers give 95% intervals for total expenditure. Full-payload probes contain 4000 bits. Stored energy in disabled nodes is excluded from consumption, while the control segment covers the declared ideal local broadcasts. Processor energy and reliable multi-hop telemetry collection are outside this ledger."
+  },
+  {
+    "number": 7,
+    "file": "Fig7.png",
+    "caption": "Scaling in S5: (a) timely delivery; (b) decision time",
+    "dpi": 600,
+    "source": "Python source and archived raw outputs",
+    "explanation": "In Fig. 7a, S5 service estimates use 30 seeds at 40 nodes and ten separate seeds at 80 and 120 nodes. Figure 7b uses five sequential profiling seeds per setting on an AMD EPYC 9V74 host. Bars are 95% intervals. Timing covers head search and route construction averaged over rounds, excluding prediction updates and packet execution."
+  },
+  {
+    "number": 8,
+    "file": "Fig8.png",
+    "caption": "Sensitivity in S5: (a) probe budget; (b) fixed head count",
+    "dpi": 600,
+    "source": "Python source and archived raw outputs",
+    "explanation": "Figure 8 uses ten matched seeds in S5; bars show 95% intervals. Panel (a) varies the probe budget at 40 nodes, with the prior forecaster retained when probing is disabled. Panel (b) varies head count at a fixed 60 nodes. These settings were specified before execution and were not used to tune the primary configuration."
+  }
+]

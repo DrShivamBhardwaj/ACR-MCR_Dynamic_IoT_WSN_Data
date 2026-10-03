@@ -1,0 +1,15 @@
+{
+  "total_runs": 1280,
+  "primary_runs": 1050,
+  "primary_seed_blocks": 30,
+  "main_round_records": 168000,
+  "common_environment_fields_verified": true,
+  "locked_source_hashes_verified": true,
+  "groups": {
+    "heads": 60,
+    "main": 1050,
+    "probes": 60,
+    "scale": 40,
+    "stationary": 70
+  }
+}

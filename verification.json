@@ -1,0 +1,15 @@
+{
+  "external_failure_preserves_energy_ledger": true,
+  "forecast_does_not_read_latent_channel": true,
+  "indexed_fields_and_probe_schedule_are_policy_independent": true,
+  "coverage_trigger_reachable_between_minimum_and_maximum_gap": true,
+  "fractional_empirical_expected_shortfall": true,
+  "coverage_scored_against_pre_update_bounds": true,
+  "frozen_calibrator_remains_frozen": true,
+  "range_applies_to_members_backbone_and_loop_free_paths": true,
+  "unreachable_demand_is_not_removed": true,
+  "complete_radio_ledger_and_range_in_executed_transactions": true,
+  "node_queueing_contributes_to_delivery_timestamp": true,
+  "deterministic_replay_except_wall_time": true,
+  "tail_ablation_matches_before_tail_activation": true
+}
