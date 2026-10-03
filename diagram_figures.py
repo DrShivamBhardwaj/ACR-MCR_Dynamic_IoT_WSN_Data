@@ -1,4 +1,4 @@
-"""Editable vector schematics for Figures 1 and 2 of the manuscript.
+"""Editable vector schematics for Figures 1 and 2.
 
 Run this module to regenerate only the two schematics. The statistical figures
 and all archived simulation results are left untouched.

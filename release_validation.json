@@ -1,0 +1,14 @@
+{
+  "outcome_runs": 1280,
+  "primary_runs": 1050,
+  "primary_seeds": 30,
+  "primary_scenarios": 5,
+  "primary_methods": 7,
+  "timing_runs": 30,
+  "raw_round_files": 1280,
+  "diagnostic_link_files": 35,
+  "verified_mechanisms": 13,
+  "manifest_job_count": 1280,
+  "simulator_hashes_unchanged": true,
+  "tables_match_saved_analyses": true
+}
