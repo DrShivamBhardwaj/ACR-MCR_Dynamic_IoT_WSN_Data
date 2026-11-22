@@ -1,0 +1,10 @@
+2026-11-22T12:10:42.672410+00:00	MAC_START round=1 type=3 src=41 sender=35 to=0 part=0 bytes=89
+2026-11-22T12:10:42.688323+00:00	CTRL_APPLIED round=1 id=35 next=31 probe=41 enabled=1 head=0
+2026-11-22T12:10:42.704095+00:00	MAC_TX round=1 type=3 src=41 sender=35 to=0 part=0 status=0 attempts=1 bytes=89
+2026-11-22T12:10:42.720296+00:00	MAC_START round=1 type=3 src=41 sender=35 to=0 part=1 bytes=89
+2026-11-22T12:10:42.736374+00:00	MAC_TX round=1 type=3 src=41 sender=35 to=0 part=1 status=0 attempts=1 bytes=89
+2026-11-22T12:11:02.686128+00:00	MAC_START round=2 type=3 src=41 sender=35 to=0 part=0 bytes=89
+2026-11-22T12:11:02.846252+00:00	MAC_TX round=2 type=3 src=41 sender=35 to=0 part=0 status=0 attempts=1 bytes=89
+2026-11-22T12:11:02.877967+00:00	CTRL_APPLIED round=2 id=35 next=31 probe=41 enabled=1 head=0
+2026-11-22T12:11:02.878015+00:00	MAC_START round=2 type=3 src=41 sender=35 to=0 part=1 bytes=89
+2026-11-22T12:11:03.006062+00:00	MAC_TX round=2 type=3 src=41 sender=35 to=0 part=1 status=0 attempts=1 bytes=89

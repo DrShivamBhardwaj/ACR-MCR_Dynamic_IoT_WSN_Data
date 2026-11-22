@@ -1,0 +1,28 @@
+{
+  "experiment": 459568,
+  "verdict": "PASS_PHYSICAL_STATIC_ROUTE_PACKET_FORMAT_ONLY",
+  "reviewer_level_claim": "40 real M3 source nodes and one sink ran over-air fixed-head transport in one 3-round block.",
+  "original_strict_all_measurement_audit": "INCOMPLETE",
+  "original_strict_audit_failures": [
+    "Missing/duplicate final ENERGEST record on one or more captured boards"
+  ],
+  "counted_source_nodes": 40,
+  "counted_sink_nodes": 1,
+  "nominal_500byte_sample_opportunities": 120,
+  "control_installed_rounds": 119,
+  "source_data_demands_seen": 117,
+  "verified_500byte_completed_samples": 86,
+  "observed_nominal_delivery_ratio": 0.7166666666666667,
+  "physical_control_radio": true,
+  "physically_reassembled_500bytes": true,
+  "physical_radio_energest_complete": false,
+  "energy_node_records": 40,
+  "energy_records_expected": 41,
+  "omitted_energy_nodes": [
+    35
+  ],
+  "adaptive_conformal_algorithm_executed": false,
+  "complete_embedded_acr_mcr_optimizer_executed": false,
+  "true_end_to_end_500ms_delay_measured": false,
+  "limitations": "Exploratory one-block physical static fixed-head controller; no independent 10-seed adaptive ACR-MCR; no synchronized source/sink clocks or 41-board absolute energy; 40/41 ENERGEST."
+}
