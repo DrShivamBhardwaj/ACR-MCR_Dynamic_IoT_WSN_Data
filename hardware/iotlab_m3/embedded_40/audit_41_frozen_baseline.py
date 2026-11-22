@@ -15,7 +15,7 @@ def audit(method,root):
     if len(captured)!=1:raise ValueError(f"{method}: not one archived original capture")
     eid=int(captured[0].parent.name)
     c=json.loads(captured[0].read_text())
-    layout=json.loads((HERE/"41node_physical_layout_v2.json").read_text())
+    layout=json.loads((HERE/"41node_physical_layout_v3.json").read_text())
     phys={int(k):int(v["board"]) for k,v in layout["nodes"].items()}
     phys[41]=int(layout["sink_physical_board"])
     logs={}

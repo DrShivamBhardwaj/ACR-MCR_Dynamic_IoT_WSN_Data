@@ -15,7 +15,7 @@ PARSER.add_argument("--method",required=True,choices=("POINT-EA","ACR-MCR"))
 ARGS=PARSER.parse_args()
 METHOD=ARGS.method
 LABEL="point_ea" if METHOD=="POINT-EA" else "acr_mcr"
-OUT=ROOT/"logs"/"m3_frozen_decision_real_radio_20261122"/LABEL
+OUT=ROOT/"logs"/"m3_frozen_decision_real_radio_20261122_v3"/LABEL
 OUT.mkdir(parents=True,exist_ok=True)
 FX=HERE/"m3_kernel_fixtures"/("m3fixture_"+LABEL+"_S5_openloop")
 REF=json.loads((FX/"reference.json").read_text())
@@ -47,8 +47,8 @@ def remote_install(remote_path,content):
             if attempt==3:raise
             time.sleep(5)
 try:
-    manifest=json.loads((HERE/"41_firmware_manifest_v2.json").read_text())
-    physical=json.loads((HERE/"41node_physical_layout_v2.json").read_text())
+    manifest=json.loads((HERE/"41_firmware_manifest_v3.json").read_text())
+    physical=json.loads((HERE/"41node_physical_layout_v3.json").read_text())
     firmware=manifest["firmware"]
     assert len(firmware)==41 and len({z["physical_board"] for z in firmware.values()})==41
     if manifest["source_sha256"] != "1bae10cdc8277dfdd235ac9b1165cdf8059701f8c9f79405b763b091454df987":
@@ -69,7 +69,7 @@ try:
                  synthetic_predictor_state=True)
     cmd(SSH+["mkdir -p ~/acr_m3_transport_41"],timeout=30)
     remote_install("~/acr_m3_transport_41/physical_layout.json",
-                   (HERE/"41node_physical_layout_v2.json").read_text())
+                   (HERE/"41node_physical_layout_v3.json").read_text())
     remote_install("~/acr_m3_transport_41/capture_41_frontend_v2.py",
                    (HERE/"capture_41_frontend_v2.py").read_text())
     request=["submit","-d","15","-n","ACR-original-kernel-S5r20-41M3-"+LABEL]
