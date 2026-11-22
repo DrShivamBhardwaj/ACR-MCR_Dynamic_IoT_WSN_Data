@@ -78,6 +78,11 @@
       "recorded_utc": "2026-11-22T15:42:59.130969+00:00",
       "status": "COMPLETE"
     },
+    "m3_v7_risk_physical_pass": {
+      "reason": "ACR V6 459611 failed four source UART connections; V7 hash-pinned capture not yet passed or archived",
+      "recorded_utc": "2026-11-22T15:43:03.720675+00:00",
+      "status": "PENDING"
+    },
     "original_source": {
       "details": {
         "interpretation": "Immutable original reference",
@@ -90,5 +95,5 @@
       "status": "COMPLETE"
     }
   },
-  "updated_utc": "2026-11-22T15:42:59.131127+00:00"
+  "updated_utc": "2026-11-22T15:43:03.720843+00:00"
 }
