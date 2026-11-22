@@ -4,6 +4,23 @@
   "project": "ACR-MCR Original M3 40-source 41-board physical port",
   "schema": 1,
   "stages": {
+    "head_risk_parity_80": {
+      "details": {
+        "fixtures": 80,
+        "max_abs_error": 4.440892098500626e-16,
+        "risk_active_cases": 20,
+        "scope": "fixed original state and frozen NumPy genotype/risk trace only",
+        "seed_blocks": 10
+      },
+      "evidence_sha256": {
+        "acr_mcr_v2.py": "3f134a8826525215f7cf2ff307bab3893c0d64b050f742bdc3c250b1c0302ea4",
+        "hardware/iotlab_m3/embedded_40/acr_optimizer_core.c": "3c78cd09a9eb4bbb38eb15f9ff3eb5bf797ecd3522812a3c244d1f2f0538cfca",
+        "hardware/iotlab_m3/embedded_40/extended_parity/80_fixture_parity.json": "c7b9dee7d5ab6563ad55d44db138e99b338c53533ff76fd6e92b6108e50013c3",
+        "hardware/iotlab_m3/embedded_40/test_optimizer_parity.py": "478e721a3cc4856079ba41a6a875baca8118bf4e6d684e7a779de8c05803d196"
+      },
+      "recorded_utc": "2026-11-22T15:42:51.048294+00:00",
+      "status": "COMPLETE"
+    },
     "original_source": {
       "details": {
         "interpretation": "Immutable original reference",
@@ -16,5 +33,5 @@
       "status": "COMPLETE"
     }
   },
-  "updated_utc": "2026-11-22T15:42:46.688955+00:00"
+  "updated_utc": "2026-11-22T15:42:51.048497+00:00"
 }
