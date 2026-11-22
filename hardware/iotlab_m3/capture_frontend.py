@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Capture actual M3 serial logs on IoT-LAB Saclay frontend for one owned run."""
+"""Capture actual M3 serial logs on IoT-LAB Grenoble frontend for one owned run."""
 import asyncio,json,re,sys,time
 from pathlib import Path
 exp=sys.argv[1]
@@ -12,7 +12,7 @@ finished=False
 start=time.monotonic()
 async def pump(node):
     global complete,finished
-    reader,writer=await asyncio.open_connection(f"m3-{node}.saclay.iot-lab.info",20000)
+    reader,writer=await asyncio.open_connection(f"m3-{node}.grenoble.iot-lab.info",20000)
     with (out/f"m3-{node}.serial.log").open("wb") as f:
         while time.monotonic()-start<190:
             try:line=await asyncio.wait_for(reader.readline(),timeout=3)
@@ -21,9 +21,9 @@ async def pump(node):
             f.write(line);f.flush()
             s=line.decode("utf-8","replace").strip()
             if "ACR_" in s:log[node].append(s)
-            if node==2 and "ACR_REASSEMBLED" in s and "integrity=1" in s:
+            if node==nodeids[1] and "ACR_REASSEMBLED" in s and "integrity=1" in s:
                 complete+=1
-            if node==1 and "ACR_TX_COMPLETE" in s:finished=True
+            if node==nodeids[0] and "ACR_TX_COMPLETE" in s:finished=True
     writer.close()
     await writer.wait_closed()
 async def main():
@@ -50,11 +50,11 @@ async def main():
         (out/f"m3-{n}.parsed.log").write_text("\n".join(log[n])+"\n")
     def lines(n,tag):
         return [s for s in log[n] if tag in s]
-    tx=lines(1,"ACR_TX seq=")
-    callbacks=lines(1,"ACR_MAC seq=")
-    rx=lines(2,"ACR_RX seq=")
-    verified=lines(2,"ACR_REASSEMBLED")
-    source_completed=lines(1,"ACR_TX_COMPLETE")
+    tx=lines(nodeids[0],"ACR_TX seq=")
+    callbacks=lines(nodeids[0],"ACR_MAC seq=")
+    rx=lines(nodeids[1],"ACR_RX seq=")
+    verified=lines(nodeids[1],"ACR_REASSEMBLED")
+    source_completed=lines(nodeids[0],"ACR_TX_COMPLETE")
     summary=dict(
       experiment=exp,physically_measured=True,
       platform="FIT IoT-LAB Grenoble M3 / AT86RF231",
@@ -68,8 +68,8 @@ async def main():
       raw_radio_registers_calibrated_as_dBm=False,
       SNR_established=False,
       packet_loss_inference_allowed=bool(source_completed),
-      source_role_energest_records=len(lines(1,"ACR_ENERGEST")),
-      receiver_role_energest_records=len(lines(2,"ACR_ENERGEST")),
+      source_role_energest_records=len(lines(nodeids[0],"ACR_ENERGEST")),
+      receiver_role_energest_records=len(lines(nodeids[1],"ACR_ENERGEST")),
       error=error,
       elapsed_seconds=time.monotonic()-start)
     (out/"summary.json").write_text(json.dumps(summary,indent=2)+"\n")

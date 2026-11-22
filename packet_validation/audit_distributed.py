@@ -61,8 +61,11 @@ def audit(run_dir,method,seed,scenario,rounds):
         raise ValueError("Delivered 500-byte records mismatch")
     if len({(r[0],r[1]) for r in receipts})!=len(receipts) or any(int(r[2])!=500 for r in receipts):
         raise ValueError("Duplicate or invalid reassembled bytes")
-    if len(re.findall(r'^CONTROL_RECEPTION ',raw,re.M))!=control:
-        raise ValueError("Control receipt traces missing")
+    control_trace=re.findall(r'^CONTROL_RECEPTION CTRL_APPLIED round=(\d+) id=(\d+)',raw,re.M)
+    unique_installs={(int(round_id),int(mote_id)) for round_id,mote_id in control_trace}
+    if len(unique_installs)!=control:
+        raise ValueError("Unique control installation traces do not match per-round audit")
+    duplicate_control_announcements=len(control_trace)-len(unique_installs)
     model=json.loads((p/"controller.summary.json").read_text())
     if not model.get("closed_loop_packet_feedback") or not model.get("distributed_control_packets") or not model.get("original_payload_fragmentation"):
         raise ValueError("Python controller scope flags inconsistent")
@@ -81,7 +84,7 @@ def audit(run_dir,method,seed,scenario,rounds):
        timely_ratio_nominal=sum(x[3] for x in rounds_raw)/(40*rounds),
        controller_plans_through_sink_memory_only=True,
        sensor_routes_received_as_actual_control_packets=True,
-       control_receptions=control,control_reception_opportunities=40*rounds,
+       control_receptions=control,duplicate_control_received_announcements=duplicate_control_announcements,control_reception_opportunities=40*rounds,
        controller_control_radio_packets=ctrlmac,
        data_fragment_radio_callbacks=sum(x[7] for x in rounds_raw),
        total_MAC_callbacks=sum(x[4] for x in rounds_raw),
