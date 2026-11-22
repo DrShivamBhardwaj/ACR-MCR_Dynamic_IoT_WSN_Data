@@ -21,6 +21,11 @@
       "recorded_utc": "2026-11-22T15:42:51.048294+00:00",
       "status": "COMPLETE"
     },
+    "host_m1_electrical_joules": {
+      "reason": "macOS powermetrics requires administrator privilege; connection prohibits privileged execution; no external calibrated meter data",
+      "recorded_utc": "2026-11-22T15:43:07.912947+00:00",
+      "status": "BLOCKED"
+    },
     "m3_frozen_kernel_memory": {
       "details": {
         "fit": [
@@ -95,5 +100,5 @@
       "status": "COMPLETE"
     }
   },
-  "updated_utc": "2026-11-22T15:43:03.720843+00:00"
+  "updated_utc": "2026-11-22T15:43:07.913134+00:00"
 }
