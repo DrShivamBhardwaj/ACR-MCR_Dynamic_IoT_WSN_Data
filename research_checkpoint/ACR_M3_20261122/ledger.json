@@ -56,6 +56,28 @@
       "recorded_utc": "2026-11-22T15:42:55.218982+00:00",
       "status": "COMPLETE"
     },
+    "m3_v6_point_physical_pass": {
+      "details": {
+        "UART": 41,
+        "denominator": 120,
+        "energest": 41,
+        "experiment": 459607,
+        "flash_ok": 41,
+        "full_500B": 47,
+        "scope": "single frozen original seed, packet-only hardware feasibility, not real adaptive closed loop"
+      },
+      "evidence_sha256": {
+        "acr_mcr_v2.py": "3f134a8826525215f7cf2ff307bab3893c0d64b050f742bdc3c250b1c0302ea4",
+        "hardware/iotlab_m3/embedded_40/41_firmware_manifest_v6.json": "da4c5cbcf440db06f35fc2cb30703400763f90f64ebf59b1284d67cdf64686d6",
+        "hardware/iotlab_m3/embedded_40/41node_physical_layout_v6.json": "2ed35598b47951c79af4588cd02004cdd974b609105c11fa7e1d78f3da365687",
+        "hardware/iotlab_m3/embedded_40/evidence/FROZEN_41_BOARD_SEED9402_V6_PARTIAL_20261122/point_ea/capture/459607/m3-219_logical-41.serial.log": "baf978146e0b816bff4a5d2d4daf8ad47352386353b8a180102148c616af1192",
+        "hardware/iotlab_m3/embedded_40/evidence/FROZEN_41_BOARD_SEED9402_V6_PARTIAL_20261122/point_ea/deployment.json": "95012e8ddbe646f18038c146252691d55f3db947fb18fe7f47d06abe349024eb",
+        "hardware/iotlab_m3/embedded_40/evidence/FROZEN_41_BOARD_SEED9402_V6_PARTIAL_20261122/point_ea/frozen_original_fixture.json": "da9018b91810f2a451fb8a79d562deb11a513eb3066e8e03ba21c398cfe9d958",
+        "hardware/iotlab_m3/embedded_40/evidence/FROZEN_41_BOARD_SEED9402_V6_PARTIAL_20261122/point_ea/physical_summary.json": "8b18f324f77303be8460ea52333c727cef0012b611a90216c23829d996657475"
+      },
+      "recorded_utc": "2026-11-22T15:42:59.130969+00:00",
+      "status": "COMPLETE"
+    },
     "original_source": {
       "details": {
         "interpretation": "Immutable original reference",
@@ -68,5 +90,5 @@
       "status": "COMPLETE"
     }
   },
-  "updated_utc": "2026-11-22T15:42:55.219121+00:00"
+  "updated_utc": "2026-11-22T15:42:59.131127+00:00"
 }
