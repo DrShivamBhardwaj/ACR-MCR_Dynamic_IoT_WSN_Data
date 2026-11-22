@@ -1,0 +1,15 @@
+{
+  "status": "PASS_FOR_FIXED_STATE_MATHEMATICAL_KERNEL",
+  "main_10_seed_80_fixtures": 80,
+  "cvaar_risk_fixtures": 20,
+  "deliberate_failed_node_and_disconnected_sink_cases": 40,
+  "total_fixed_state_parity_cases": 120,
+  "worst_abs_score_error": 4.440892098500626e-16,
+  "m3_firmware_compiled_and_physical_single_fixture": true,
+  "frozen_numpy_random_candidate_trace": true,
+  "native_numpy_seedsequence_pcg64_ported": false,
+  "actual_40_node_physical_feedback_updates_to_m3": false,
+  "independent_physical_service_baseline_comparison": false,
+  "measured_M1_host_electrical_joules": false,
+  "comment": "Numerical parity of make_plan, fitness, empirical CVaR and generation survivor selection conditional on exact supplied candidates/stress. This does not establish equality of live adaptive controller execution."
+}

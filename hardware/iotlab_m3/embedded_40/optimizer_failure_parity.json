@@ -1,0 +1,312 @@
+{
+  "status": "PASS_ORIGINAL_C_BOUNDARY_PARITY",
+  "cases": 40,
+  "seed_count": 5,
+  "method_count": 2,
+  "unique_fail_cases": 10,
+  "max_objective_absolute_error": 4.440892098500626e-16,
+  "source_sha256": "3f134a8826525215f7cf2ff307bab3893c0d64b050f742bdc3c250b1c0302ea4",
+  "limitations": "Explicit failed-node and no-sink-path fixed-state objective parity only; no hardware controller integration, no stochastic NumPy RNG port.",
+  "records": [
+    {
+      "seed": 9411,
+      "method": "POINT-EA",
+      "case": "explicit_S5_failed_nodes",
+      "candidate": 0,
+      "dead_nodes": 3,
+      "error": 0.0
+    },
+    {
+      "seed": 9411,
+      "method": "POINT-EA",
+      "case": "explicit_S5_failed_nodes",
+      "candidate": 1,
+      "dead_nodes": 3,
+      "error": 0.0
+    },
+    {
+      "seed": 9411,
+      "method": "POINT-EA",
+      "case": "explicit_S5_failed_nodes",
+      "candidate": 2,
+      "dead_nodes": 3,
+      "error": 0.0
+    },
+    {
+      "seed": 9411,
+      "method": "POINT-EA",
+      "case": "all_sink_edges_removed",
+      "error": 0.0
+    },
+    {
+      "seed": 9411,
+      "method": "ACR-MCR",
+      "case": "explicit_S5_failed_nodes",
+      "candidate": 0,
+      "dead_nodes": 3,
+      "error": 2.220446049250313e-16
+    },
+    {
+      "seed": 9411,
+      "method": "ACR-MCR",
+      "case": "explicit_S5_failed_nodes",
+      "candidate": 1,
+      "dead_nodes": 3,
+      "error": 0.0
+    },
+    {
+      "seed": 9411,
+      "method": "ACR-MCR",
+      "case": "explicit_S5_failed_nodes",
+      "candidate": 2,
+      "dead_nodes": 3,
+      "error": 2.220446049250313e-16
+    },
+    {
+      "seed": 9411,
+      "method": "ACR-MCR",
+      "case": "all_sink_edges_removed",
+      "error": 0.0
+    },
+    {
+      "seed": 9412,
+      "method": "POINT-EA",
+      "case": "explicit_S5_failed_nodes",
+      "candidate": 0,
+      "dead_nodes": 3,
+      "error": 1.1102230246251565e-16
+    },
+    {
+      "seed": 9412,
+      "method": "POINT-EA",
+      "case": "explicit_S5_failed_nodes",
+      "candidate": 1,
+      "dead_nodes": 3,
+      "error": 1.1102230246251565e-16
+    },
+    {
+      "seed": 9412,
+      "method": "POINT-EA",
+      "case": "explicit_S5_failed_nodes",
+      "candidate": 2,
+      "dead_nodes": 3,
+      "error": 0.0
+    },
+    {
+      "seed": 9412,
+      "method": "POINT-EA",
+      "case": "all_sink_edges_removed",
+      "error": 0.0
+    },
+    {
+      "seed": 9412,
+      "method": "ACR-MCR",
+      "case": "explicit_S5_failed_nodes",
+      "candidate": 0,
+      "dead_nodes": 3,
+      "error": 2.220446049250313e-16
+    },
+    {
+      "seed": 9412,
+      "method": "ACR-MCR",
+      "case": "explicit_S5_failed_nodes",
+      "candidate": 1,
+      "dead_nodes": 3,
+      "error": 2.220446049250313e-16
+    },
+    {
+      "seed": 9412,
+      "method": "ACR-MCR",
+      "case": "explicit_S5_failed_nodes",
+      "candidate": 2,
+      "dead_nodes": 3,
+      "error": 2.220446049250313e-16
+    },
+    {
+      "seed": 9412,
+      "method": "ACR-MCR",
+      "case": "all_sink_edges_removed",
+      "error": 0.0
+    },
+    {
+      "seed": 9413,
+      "method": "POINT-EA",
+      "case": "explicit_S5_failed_nodes",
+      "candidate": 0,
+      "dead_nodes": 3,
+      "error": 1.1102230246251565e-16
+    },
+    {
+      "seed": 9413,
+      "method": "POINT-EA",
+      "case": "explicit_S5_failed_nodes",
+      "candidate": 1,
+      "dead_nodes": 3,
+      "error": 1.1102230246251565e-16
+    },
+    {
+      "seed": 9413,
+      "method": "POINT-EA",
+      "case": "explicit_S5_failed_nodes",
+      "candidate": 2,
+      "dead_nodes": 3,
+      "error": 1.1102230246251565e-16
+    },
+    {
+      "seed": 9413,
+      "method": "POINT-EA",
+      "case": "all_sink_edges_removed",
+      "error": 0.0
+    },
+    {
+      "seed": 9413,
+      "method": "ACR-MCR",
+      "case": "explicit_S5_failed_nodes",
+      "candidate": 0,
+      "dead_nodes": 3,
+      "error": 2.220446049250313e-16
+    },
+    {
+      "seed": 9413,
+      "method": "ACR-MCR",
+      "case": "explicit_S5_failed_nodes",
+      "candidate": 1,
+      "dead_nodes": 3,
+      "error": 2.220446049250313e-16
+    },
+    {
+      "seed": 9413,
+      "method": "ACR-MCR",
+      "case": "explicit_S5_failed_nodes",
+      "candidate": 2,
+      "dead_nodes": 3,
+      "error": 4.440892098500626e-16
+    },
+    {
+      "seed": 9413,
+      "method": "ACR-MCR",
+      "case": "all_sink_edges_removed",
+      "error": 0.0
+    },
+    {
+      "seed": 9414,
+      "method": "POINT-EA",
+      "case": "explicit_S5_failed_nodes",
+      "candidate": 0,
+      "dead_nodes": 3,
+      "error": 1.1102230246251565e-16
+    },
+    {
+      "seed": 9414,
+      "method": "POINT-EA",
+      "case": "explicit_S5_failed_nodes",
+      "candidate": 1,
+      "dead_nodes": 3,
+      "error": 1.1102230246251565e-16
+    },
+    {
+      "seed": 9414,
+      "method": "POINT-EA",
+      "case": "explicit_S5_failed_nodes",
+      "candidate": 2,
+      "dead_nodes": 3,
+      "error": 0.0
+    },
+    {
+      "seed": 9414,
+      "method": "POINT-EA",
+      "case": "all_sink_edges_removed",
+      "error": 0.0
+    },
+    {
+      "seed": 9414,
+      "method": "ACR-MCR",
+      "case": "explicit_S5_failed_nodes",
+      "candidate": 0,
+      "dead_nodes": 3,
+      "error": 0.0
+    },
+    {
+      "seed": 9414,
+      "method": "ACR-MCR",
+      "case": "explicit_S5_failed_nodes",
+      "candidate": 1,
+      "dead_nodes": 3,
+      "error": 0.0
+    },
+    {
+      "seed": 9414,
+      "method": "ACR-MCR",
+      "case": "explicit_S5_failed_nodes",
+      "candidate": 2,
+      "dead_nodes": 3,
+      "error": 0.0
+    },
+    {
+      "seed": 9414,
+      "method": "ACR-MCR",
+      "case": "all_sink_edges_removed",
+      "error": 0.0
+    },
+    {
+      "seed": 9415,
+      "method": "POINT-EA",
+      "case": "explicit_S5_failed_nodes",
+      "candidate": 0,
+      "dead_nodes": 3,
+      "error": 1.1102230246251565e-16
+    },
+    {
+      "seed": 9415,
+      "method": "POINT-EA",
+      "case": "explicit_S5_failed_nodes",
+      "candidate": 1,
+      "dead_nodes": 3,
+      "error": 2.220446049250313e-16
+    },
+    {
+      "seed": 9415,
+      "method": "POINT-EA",
+      "case": "explicit_S5_failed_nodes",
+      "candidate": 2,
+      "dead_nodes": 3,
+      "error": 2.220446049250313e-16
+    },
+    {
+      "seed": 9415,
+      "method": "POINT-EA",
+      "case": "all_sink_edges_removed",
+      "error": 0.0
+    },
+    {
+      "seed": 9415,
+      "method": "ACR-MCR",
+      "case": "explicit_S5_failed_nodes",
+      "candidate": 0,
+      "dead_nodes": 3,
+      "error": 0.0
+    },
+    {
+      "seed": 9415,
+      "method": "ACR-MCR",
+      "case": "explicit_S5_failed_nodes",
+      "candidate": 1,
+      "dead_nodes": 3,
+      "error": 2.220446049250313e-16
+    },
+    {
+      "seed": 9415,
+      "method": "ACR-MCR",
+      "case": "explicit_S5_failed_nodes",
+      "candidate": 2,
+      "dead_nodes": 3,
+      "error": 2.220446049250313e-16
+    },
+    {
+      "seed": 9415,
+      "method": "ACR-MCR",
+      "case": "all_sink_edges_removed",
+      "error": 0.0
+    }
+  ]
+}
