@@ -1,10 +1,10 @@
 {
   "experiment": 459639,
-  "status": "INCOMPLETE_KEEP_RAW",
+  "status": "PASS_2_SOURCE_PHYSICAL_PROBE_TELEMETRY_ONLY",
   "flashes_verified": true,
-  "physical_feedback_proved_for_both_sources": false,
+  "physical_feedback_proved_for_both_sources": true,
   "original_acr_mcr_adaptive_controller_validated": false,
-  "concern": "Independent raw-source/sink MAC telemetry audit nonzero; see audit_execution.log",
+  "concern": "Sink received independently source-matching actual ACK, retry and elapsed service time via radio. Still STATIC route algorithm.",
   "original_firmware_hashes": {
     "sink_41": {
       "sha256": "6f7f92f4cf7c5ab3ee1fa1eebdde5a6d59b261f0f00e1403bbf60acd39988670",

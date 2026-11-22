@@ -1,0 +1,87 @@
+{
+  "kind": "REAL_MAC_PROBE_TELEMETRY_NATIVE_M3",
+  "verdict": "PASS_REAL_PHY_REPORT_PATH",
+  "exact_original_link_probe_source_callbacks": 6,
+  "independently_matching_sink_radio_probe_observations": 6,
+  "possible_source_rounds": 6,
+  "matched_physical_source_ids": [
+    1,
+    2
+  ],
+  "source_probe_callback_records": [
+    {
+      "round": 0,
+      "logical_source": 1,
+      "destination": 41,
+      "attempts": 1,
+      "mac_success": 1,
+      "native_source_elapsed_ms": 10,
+      "received_at_sink_radio": true
+    },
+    {
+      "round": 0,
+      "logical_source": 2,
+      "destination": 41,
+      "attempts": 1,
+      "mac_success": 1,
+      "native_source_elapsed_ms": 60,
+      "received_at_sink_radio": true
+    },
+    {
+      "round": 1,
+      "logical_source": 1,
+      "destination": 41,
+      "attempts": 1,
+      "mac_success": 1,
+      "native_source_elapsed_ms": 40,
+      "received_at_sink_radio": true
+    },
+    {
+      "round": 1,
+      "logical_source": 2,
+      "destination": 41,
+      "attempts": 1,
+      "mac_success": 1,
+      "native_source_elapsed_ms": 0,
+      "received_at_sink_radio": true
+    },
+    {
+      "round": 2,
+      "logical_source": 1,
+      "destination": 41,
+      "attempts": 1,
+      "mac_success": 1,
+      "native_source_elapsed_ms": 60,
+      "received_at_sink_radio": true
+    },
+    {
+      "round": 2,
+      "logical_source": 2,
+      "destination": 41,
+      "attempts": 1,
+      "mac_success": 1,
+      "native_source_elapsed_ms": 20,
+      "received_at_sink_radio": true
+    }
+  ],
+  "verified_complete_500byte_app_samples": 6,
+  "actual_source_control_installations": {
+    "15": 3,
+    "16": 3
+  },
+  "per_board_final_energest_records": {
+    "16": 1,
+    "15": 1,
+    "18": 1
+  },
+  "experiment_not_original_adaptive_acr_mcr": true,
+  "paper_service_effect_not_measured": true,
+  "native_source_tick_duration_is_not_cross_node_application_delay": true,
+  "raw_serial_sha256": {
+    "16": "721f20cca3a2b02e9b47d605f6c9b1712e5c8b6129a1711eb9dda3e0ced3406b",
+    "15": "1ae30a428c791de43143e20c397b91565495b78c2de17cd7ebbc9dbce477fb61",
+    "18": "c693e8be78e549c151253d3e240fea23a095c854aa6b4b03f659741ea207e180"
+  },
+  "firmware_manifest_sha256": "1d746e4c90a4dec2259eb5b547b2cabc14a611199405c0fd7ea6ebad38cb60b2",
+  "limitations": "Physical radio telemetry return for source MAC probe ACK/attempt/duration, STATIC head routing and 3 rounds only. No predictor, no original ACI integration, no adaptive search or physically synchronized 500-ms data deadline."
+}
