@@ -1,0 +1,16 @@
+{
+  "phase": 4,
+  "method": "ACR-MCR",
+  "original_sha256": "3f134a8826525215f7cf2ff307bab3893c0d64b050f742bdc3c250b1c0302ea4",
+  "result": "CAPTURED_RAW_APPLE_ESTIMATED_CPU_SUBSYSTEM_POWER_NOT_CALIBRATED",
+  "raw_original_directory": "/Users/shivambhardwaj/research/ACR_MCR_Recovery_20261122/data/host_energy/authorized_m1_power_runs/20261122T161647Z",
+  "raw_files_sha256": {
+    "phase_04_ACR_MCR.powermetrics.txt": "80006df1aeb0c95a9e0d7e1299311d4ae7ffaf2f61e988ea3198526b2f126d3e",
+    "phase_04_ACR_MCR.workload.json": "cc79e182b8e330faeff1a517ef508c6d5cd25433e4c41e00766a96a2cf111d50"
+  },
+  "bytes": {
+    "phase_04_ACR_MCR.powermetrics.txt": 140123,
+    "phase_04_ACR_MCR.workload.json": 524
+  },
+  "collected_at": "2026-11-22T16:20:19.781368+00:00"
+}
