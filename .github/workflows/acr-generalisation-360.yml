@@ -1,0 +1,77 @@
+name: ACR-MCR Independent Generalisation 360 Runs
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+concurrency:
+  group: acr-generalisation-registered
+  cancel-in-progress: false
+
+jobs:
+  simulate:
+    strategy:
+      fail-fast: false
+      max-parallel: 6
+      matrix:
+        scenario: [S0, S1, S2, S3, S4, S5]
+        nodes: [40, 80, 120]
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    env:
+      OPENBLAS_NUM_THREADS: '1'
+      OMP_NUM_THREADS: '1'
+      MKL_NUM_THREADS: '1'
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+      - name: Install frozen scientific environment
+        run: python -m pip install -r requirements.txt
+      - name: Reproduce frozen source and study restrictions
+        run: python tools/recovery_gate.py
+      - name: Perform all 10 independent seed blocks in the registered cell
+        run: |
+          python recovery_generalisation/run_cell.py \
+            --scenario '${{ matrix.scenario }}' --nodes '${{ matrix.nodes }}' \
+            --out 'cell_${{ matrix.scenario }}_${{ matrix.nodes }}.jsonl'
+      - name: Retain bounded outcome rows without changing frozen data
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: generalisation-${{ matrix.scenario }}-N_${{ matrix.nodes }}
+          path: cell_*.jsonl
+          if-no-files-found: warn
+          retention-days: 14
+
+  evidence_audit:
+    needs: simulate
+    if: always() && needs.simulate.result == 'success'
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+      - run: python -m pip install -r requirements.txt
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: generalisation-*
+          path: independent_generalisation
+          merge-multiple: true
+      - name: Reject missing cells and compute preregistered paired effects
+        run: |
+          python recovery_generalisation/analyze_matrix.py \
+            --directory independent_generalisation \
+            --out independent_generalisation_summary.json
+      - uses: actions/upload-artifact@v4
+        with:
+          name: acr-independent-generalisation-results-360
+          path: |
+            independent_generalisation_summary.json
+            independent_generalisation_summary.csv
+          retention-days: 21
