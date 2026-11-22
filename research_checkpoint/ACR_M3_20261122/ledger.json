@@ -21,6 +21,25 @@
       "recorded_utc": "2026-11-22T15:42:51.048294+00:00",
       "status": "COMPLETE"
     },
+    "host_m1_apple_cpu_power_estimate": {
+      "details": {
+        "acr_estimated_cpu_J_per_full_sim_case": 2.27006284707291,
+        "full_cases_per_method": 200,
+        "point_estimated_cpu_J_per_full_sim_case": 1.986014084360168,
+        "raw_power_traces": 6,
+        "root_sampling": "CONFIRMED",
+        "scope": "Apple aggregate CPU subsystem estimate, NOT host optimizer-only calibrated electrical energy"
+      },
+      "evidence_sha256": {
+        "acr_mcr_v2.py": "3f134a8826525215f7cf2ff307bab3893c0d64b050f742bdc3c250b1c0302ea4",
+        "host_energy/authorized_m1_power_runs/20261122T161647Z/independent_file_sha256.json": "c68caffbe3c1c728d650564d4137cebd0913734237c3f7d3c776c963f5d0d3ce",
+        "host_energy/authorized_m1_power_runs/20261122T161647Z/independent_interval_power_verification.json": "c6c751641c22e24667526a045593db799216de935e7f23a43ad2c3f22e50c2d5",
+        "host_energy/authorized_m1_power_runs/20261122T161647Z/registration.json": "4c06c15e9d2872fa1c643ba9ddc161375b989bb7b0acfb8bfba5197675d8ec43",
+        "host_energy/verify_power_independent.py": "5c36ff3a2facc353d0334e6bf9b9a15618e88ce40acca49e8670604d82140084"
+      },
+      "recorded_utc": "2026-11-22T16:29:57.994454+00:00",
+      "status": "COMPLETE"
+    },
     "host_m1_electrical_joules": {
       "reason": "macOS powermetrics requires administrator privilege; connection prohibits privileged execution; no external calibrated meter data",
       "recorded_utc": "2026-11-22T15:43:07.912947+00:00",
@@ -100,5 +119,5 @@
       "status": "COMPLETE"
     }
   },
-  "updated_utc": "2026-11-22T15:43:07.913134+00:00"
+  "updated_utc": "2026-11-22T16:29:57.994592+00:00"
 }
