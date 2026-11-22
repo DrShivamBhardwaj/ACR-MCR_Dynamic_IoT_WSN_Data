@@ -1,0 +1,14 @@
+{
+  "README.md": "8ca94a567fc114d075d902f1f6d1d72b66a2f10a9d933536ccbd94091bedd333",
+  "acr_mcr/capture_summary.json": "8cc921ce77031000e84c9d5c802602833f96a3797e2c69a74c6b6e7f23518e99",
+  "acr_mcr/m3_14.oml": "5b9d4a17c616f8c5f9630428be30b540eaf66d0ce877340c243fc3120011f76a",
+  "acr_mcr/original_m3_uart.log": "1790258c3f6a22318004bb603b2c7d6af3eb3ab7056722dc0c262bc54f23d319",
+  "acr_mcr/reference_extended.json": "db40bbd4661972316e6e1d3ce795d0fc97ef180d4ae5055d59cf8d3d0d22d66f",
+  "acr_mcr/reservation.json": "22704fc37a19bad49d18dd790f4f29143d8427964c74a58426bab31f0000727a",
+  "extended_power_pair_audit.json": "4eda9716c9f23407a0ecc56ecbfcfee86ba695cc6ac32912e7b2617e5452538c",
+  "point_ea/capture_summary.json": "87a3714eb01a87ac4dd062076d4c3130635959f5921bc0f3641d34b3fd8d17ec",
+  "point_ea/m3_14.oml": "4fab7431a9c2cf08721b96fafc46ab44b01735e4993189010e515d09c47b4cdb",
+  "point_ea/original_m3_uart.log": "bce17aebee4dd84356cf4e6f0be57f88135c5dfbed800c70b1ffa7bd4b981ea0",
+  "point_ea/reference_extended.json": "25afd468831c0f200168693babd04c41eb674f857abbf2ace266f50416d9da15",
+  "point_ea/reservation.json": "c91623c9ec6a64da0a8cac7cd8af0bf8726ec9495113655dbf38569da8b739bb"
+}

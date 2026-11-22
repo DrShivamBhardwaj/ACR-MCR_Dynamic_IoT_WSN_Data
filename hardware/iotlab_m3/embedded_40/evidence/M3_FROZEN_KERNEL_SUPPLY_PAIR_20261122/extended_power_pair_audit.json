@@ -1,0 +1,89 @@
+{
+  "verdict": "PASS_TWO_PHYSICAL_M3_KERNEL_SUPPLY_POWER_RECORDS",
+  "real_physical_board": "M3-14",
+  "source_locked_original_seed": 9401,
+  "scenario": "S1",
+  "round": 20,
+  "independent_seed_blocks": 1,
+  "repeated_compute_invocations_per_method": 20,
+  "verified_M3_external_device_supplied_energy_J": true,
+  "verified_M1_host_electrical_energy_J": false,
+  "comparison_scope": "Original C deterministic decision kernel only; the two different original method objectives are not comparable service metrics",
+  "limitations": "Device power integrates all board activity and monitoring intervals, not isolated processor execution energy; no randomized multi-seed physical controller, not calibrated M1 host energy, no 40-node physical adaptive routing parity.",
+  "cases": [
+    {
+      "experiment": 459584,
+      "method": "ACR-MCR",
+      "physical_site": "FIT IoT-LAB Grenoble",
+      "real_board": "M3-14",
+      "fixture_id": "ACR-MCR_9401_S1_r20",
+      "firmware_sha256": "edfb3c72d2d19b8ba5b9a5cfcd22615479cc442f75d30d0f41e843e399795e83",
+      "reference_method": "ACR-MCR",
+      "physical_execution_status": "PASS_20_ITERATIONS_REFERENCE_PARITY",
+      "independent_topology_seeds": 1,
+      "repeated_same_fixture_invocations": 20,
+      "total_decision_kernel_wall_seconds": 58.51,
+      "average_kernel_wall_seconds_per_repeat": 2.9255,
+      "observed_heads": [
+        4,
+        7,
+        9,
+        23
+      ],
+      "objective_error_nanounits": 10,
+      "original_uart_sha256": "1790258c3f6a22318004bb603b2c7d6af3eb3ab7056722dc0c262bc54f23d319",
+      "M3_power_data": {
+        "device": "m3_14",
+        "number_of_physical_samples": 72,
+        "first_timestamp_seconds": 1795356061.676148,
+        "last_timestamp_seconds": 1795356211.557854,
+        "duration_s": 149.8817059993744,
+        "total_supplied_electrical_energy_j": 19.388273775585414,
+        "time_average_total_power_w": 0.12935717302061095,
+        "mean_supply_voltage_v": 3.254635416666667,
+        "mean_supply_current_a": 0.039690875,
+        "max_monitor_gap_s": 2.111052989959717,
+        "raw_file_sha256": "5b9d4a17c616f8c5f9630428be30b540eaf66d0ce877340c243fc3120011f76a"
+      },
+      "measured_Apple_M1_host_optimizer_electrical_J": null,
+      "on_mote_adaptive_real_radio_feedback": false
+    },
+    {
+      "experiment": 459581,
+      "method": "POINT-EA",
+      "physical_site": "FIT IoT-LAB Grenoble",
+      "real_board": "M3-14",
+      "fixture_id": "POINT-EA_9401_S1_r20",
+      "firmware_sha256": "4fc0aeb68940d362980a2f01e09efcd5b6ff1b8247fc73436925271616e560f0",
+      "reference_method": "POINT-EA",
+      "physical_execution_status": "PASS_20_ITERATIONS_REFERENCE_PARITY",
+      "independent_topology_seeds": 1,
+      "repeated_same_fixture_invocations": 20,
+      "total_decision_kernel_wall_seconds": 3.02,
+      "average_kernel_wall_seconds_per_repeat": 0.151,
+      "observed_heads": [
+        4,
+        7,
+        9,
+        23
+      ],
+      "objective_error_nanounits": 18,
+      "original_uart_sha256": "bce17aebee4dd84356cf4e6f0be57f88135c5dfbed800c70b1ffa7bd4b981ea0",
+      "M3_power_data": {
+        "device": "m3_14",
+        "number_of_physical_samples": 72,
+        "first_timestamp_seconds": 1795354377.456703,
+        "last_timestamp_seconds": 1795354527.343261,
+        "duration_s": 149.88655805587769,
+        "total_supplied_electrical_energy_j": 16.03083740183735,
+        "time_average_total_power_w": 0.10695313582330082,
+        "mean_supply_voltage_v": 3.2618750000000003,
+        "mean_supply_current_a": 0.03279943055555556,
+        "max_monitor_gap_s": 2.111114025115967,
+        "raw_file_sha256": "4fab7431a9c2cf08721b96fafc46ab44b01735e4993189010e515d09c47b4cdb"
+      },
+      "measured_Apple_M1_host_optimizer_electrical_J": null,
+      "on_mote_adaptive_real_radio_feedback": false
+    }
+  ]
+}

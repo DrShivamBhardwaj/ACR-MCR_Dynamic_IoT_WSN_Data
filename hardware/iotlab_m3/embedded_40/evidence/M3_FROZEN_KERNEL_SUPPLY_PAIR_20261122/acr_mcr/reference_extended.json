@@ -1,0 +1,32 @@
+{
+  "fixture_id": "ACR-MCR_9401_S1_r20",
+  "original_simulator_sha256": "3f134a8826525215f7cf2ff307bab3893c0d64b050f742bdc3c250b1c0302ea4",
+  "original_method": "ACR-MCR",
+  "seed": 9401,
+  "scenario": "S1",
+  "t": 20,
+  "source": "Synthetic original simulator state (NOT physical observations)",
+  "n_sensors": 40,
+  "n_heads": 4,
+  "stress_samples": 64,
+  "score_window_records": 512,
+  "selected_head_ids": [
+    4,
+    7,
+    9,
+    23
+  ],
+  "selected_objective": 0.4858285552310888,
+  "tail_risk_enabled": true,
+  "frozen_risk_index_tensor_9bit": 104960,
+  "fixture_h_sha256": "b5a032e416dab54937abc174c79798a0aadb071799c19859cb1dd9efc3779680",
+  "interpretation": "Original NumPy candidate and risk-index sequences are frozen in firmware FLASH. This tests M3 deterministic decision kernel only.",
+  "m3_firmware_sha256": "7bd41494f537752ebd8c1f63b66b3932ba5eefa70faad162fc6beb21e052b94d",
+  "m3_firmware_bytes": 877832,
+  "repeated_identical_kernel_calls": 20,
+  "physical_energy_in_Apple_M1_J": null,
+  "physical_board_m3_profile": "acr_m3_active_power_20261122",
+  "extended_elf_sha256": "edfb3c72d2d19b8ba5b9a5cfcd22615479cc442f75d30d0f41e843e399795e83",
+  "extended_elf_size_bytes": 878100,
+  "experiment_type": "descriptive original kernel 20-run same-fixture physical board power"
+}

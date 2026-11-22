@@ -1,0 +1,11 @@
+{
+  "experiment": 459584,
+  "source": "actual Grenoble m3-14 UART",
+  "lines": [
+    "OPT_KERNEL_RESULT fixture=ACR-MCR_9401_S1_r20 rc=0 PASS=1 heads=4,7,9,23 objective_micro=485829 expected_micro=485829 absolute_error_nanounits=10 cpu_wall_ticks=5851 clock_hz=100 tail=1",
+    "OPT_KERNEL_ENERGEST fixture=ACR-MCR_9401_S1_r20 cpu=17871 lpm=491341 tx=0 listen=50439 hz=32768",
+    "OPT_KERNEL_DONE fixture=ACR-MCR_9401_S1_r20 PASS=1"
+  ],
+  "complete": true,
+  "time_elapsed_s": 172.94699736032635
+}
