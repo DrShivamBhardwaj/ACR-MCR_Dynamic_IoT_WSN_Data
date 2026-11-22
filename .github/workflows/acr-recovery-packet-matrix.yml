@@ -68,9 +68,17 @@ jobs:
             (
               cd contiki-ng/tools/cooja
               rm -f COOJA.testlog
-              ./gradlew --no-daemon run --args="--no-gui ../../tests/acr_packet_${MODE}.csc" 2>&1 | tee "$RESULT_DIR/mode${MODE}_build.log"
-              grep -q 'TEST OK' COOJA.testlog
-              cp COOJA.testlog "$RESULT_DIR/mode${MODE}_testlog.txt"
+              if ./gradlew --no-daemon run --args="--no-gui ../../tests/acr_packet_${MODE}.csc" 2>&1 | tee "$RESULT_DIR/mode${MODE}_build.log"; then
+                cooja_status=0
+              else
+                cooja_status=$?
+              fi
+              if test -f COOJA.testlog; then
+                cp COOJA.testlog "$RESULT_DIR/mode${MODE}_testlog.txt"
+                tail -30 COOJA.testlog
+              fi
+              if test "$cooja_status" -ne 0; then exit "$cooja_status"; fi
+              grep -q 'TEST OK' "$RESULT_DIR/mode${MODE}_testlog.txt"
             )
           done
           python3 data/packet_validation/analyze_packet.py \
