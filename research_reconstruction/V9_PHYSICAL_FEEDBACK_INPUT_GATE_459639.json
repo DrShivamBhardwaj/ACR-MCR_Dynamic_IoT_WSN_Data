@@ -1,0 +1,77 @@
+{
+  "status": "PASS_TELEMETRY_INPUT_GATE_ONLY",
+  "source_file": "hardware/iotlab_m3/closed_loop_telemetry_v9/evidence/459639/strict_radio_telemetry_audit.json",
+  "source_sha256": "182f8b3188ee1da002a7d9f1ac8b94a4affb02acdcbadca1979c7525e476179a",
+  "experiment": 459639,
+  "observations": [
+    {
+      "round": 0,
+      "u": 0,
+      "v": 40,
+      "attempts": 1,
+      "success": 1,
+      "native_elapsed_ms": 10,
+      "cost_candidate": 1,
+      "received_at_sink": true
+    },
+    {
+      "round": 0,
+      "u": 1,
+      "v": 40,
+      "attempts": 1,
+      "success": 1,
+      "native_elapsed_ms": 60,
+      "cost_candidate": 1,
+      "received_at_sink": true
+    },
+    {
+      "round": 1,
+      "u": 0,
+      "v": 40,
+      "attempts": 1,
+      "success": 1,
+      "native_elapsed_ms": 40,
+      "cost_candidate": 1,
+      "received_at_sink": true
+    },
+    {
+      "round": 1,
+      "u": 1,
+      "v": 40,
+      "attempts": 1,
+      "success": 1,
+      "native_elapsed_ms": 0,
+      "cost_candidate": 1,
+      "received_at_sink": true
+    },
+    {
+      "round": 2,
+      "u": 0,
+      "v": 40,
+      "attempts": 1,
+      "success": 1,
+      "native_elapsed_ms": 60,
+      "cost_candidate": 1,
+      "received_at_sink": true
+    },
+    {
+      "round": 2,
+      "u": 1,
+      "v": 40,
+      "attempts": 1,
+      "success": 1,
+      "native_elapsed_ms": 20,
+      "cost_candidate": 1,
+      "received_at_sink": true
+    }
+  ],
+  "original_python_edge_index": "logical source 1 -> 0, 2 -> 1; sink 41 -> 40",
+  "blocked_for_original_controller": [
+    "MAC callback native elapsed may differ from original transaction duration",
+    "no source-to-sink time synchronization for full transaction duration",
+    "physical link observations cover only 2 of 40 sources and direct-to-sink edges",
+    "original conformal residual requires frozen pre-observation predictor state, scales and q values",
+    "no post-round C/Python parity or next-head-search physical plan yet"
+  ],
+  "adaptive_closed_loop_pass": false
+}
