@@ -78,6 +78,17 @@ def proof(stage):
               BASE/'41_firmware_manifest_v6.json',BASE/'41node_physical_layout_v6.json']
         result={'experiment':459607,'flash_ok':41,'UART':41,'energest':41,'full_500B':47,
                 'denominator':120,'scope':'single frozen original seed, packet-only hardware feasibility, not real adaptive closed loop'}
+    elif stage=='m3_v7_risk_flash_pass':
+        p=BASE/'evidence/FROZEN_41_BOARD_SEED9402_V7_ACR_ONLY_20261122/acr_mcr'
+        f=p/'deployment.json';g=p/'reservation.json'
+        q=read(f);r=read(g)
+        assert len(q.get('0',[]))==41 and set(q)=={'0'}
+        expected=read(BASE/'41_firmware_manifest_v6.json')
+        assert expected['source_sha256']=='e4d15f7bb5ec35ee7177e7b154851619b7b19b3e9fb8fe4c0d5e4e285947f312'
+        actual={f"m3-{int(v['physical_board'])}.grenoble.iot-lab.info" for v in expected['firmware'].values()}
+        assert set(q['0'])==actual and len(actual)==41
+        e += [f,g,BASE/'41_firmware_manifest_v6.json']
+        result={'experiment':r.get('id'),'flash_ok':41,'scope':'firmware installation only; not packet delivery or adaptive physical validity'}
     elif stage=='m3_v7_risk_physical_pass':
         p=BASE/'evidence/FROZEN_41_BOARD_SEED9402_V7_ACR_ONLY_20261122/acr_mcr'
         f=p/'physical_summary.json';g=p/'deployment.json'
