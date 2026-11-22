@@ -26,7 +26,9 @@ cd "$ROOT/data"
 git add hardware/iotlab_m3/embedded_40/41_firmware_manifest_v5.json \
         hardware/iotlab_m3/embedded_40/firmware_41_v5.tar.gz
 git -c core.whitespace=-trailing-space diff --cached --check
-git commit -m "Preserve all 40 physical source firmware images for preregistered control-timed V5 pair"
+if ! git diff --cached --quiet;then
+  git commit -m "Preserve 40 physical source firmware images for preregistered V5 pair"
+fi
 git push origin main
 # One testbed reservation at a time. The original sink kernel binaries
 # are immutable and method-specific. Study is OPEN-LOOP, one seed.
