@@ -67,6 +67,16 @@ function fields(s) {
 }
 while(true) {
   YIELD();
+  if(id==41 && msg.contains("CLOSED_BOOT")) {
+    var compiled=fields(msg);
+    if(compiled.rounds!==__ROUNDS__ || compiled.seed!==__SEED__ ||
+       compiled.m!==__METHOD_NUM__) {
+       throw new Error("Mote build mismatch rounds="+compiled.rounds+
+                       " seed="+compiled.seed+" method="+compiled.m);
+    }
+    log.log("COMPILED_CONFIG_OK rounds="+compiled.rounds+
+            " seed="+compiled.seed+" method="+compiled.m+"\n");
+  }
   if(id==41 && msg.contains("ROUND_OPEN")) {
     if(started)throw new Error("Double Cooja controller boot");
     applyPlan(rpc({cmd:"init"}));
@@ -165,7 +175,12 @@ def main():
     mt=root.find("./simulation/motetype")
     mt.find("source").text="[CONTIKI_DIR]/examples/acr_mcr_closed/acr_40_closed.c"
     mt.find("description").text="40-node original Python optimizer with Cooja packet-feedback bridge; privileged control"
-    mt.find("commands").text="$(MAKE) TARGET=cooja clean\n$(MAKE) acr_40_closed.cooja TARGET=cooja"
+    mode=1 if a.method=="ACR-MCR" else 0
+    scenario_id=5 if a.scenario=="S5" else 1
+    mt.find("commands").text=(
+        "$(MAKE) TARGET=cooja clean\n"
+        f"$(MAKE) acr_40_closed.cooja TARGET=cooja CL_ROUNDS={a.rounds} "
+        f"CL_SEED={a.seed} CL_SCENARIO={scenario_id} CL_METHOD={mode}")
     cmd=[a.python,a.controller_script,"--seed",str(a.seed),"--scenario",a.scenario,
          "--method",a.method,"--rounds",str(a.rounds),"--out",a.output_log]
     script=JS
@@ -174,7 +189,7 @@ def main():
       "__CMD_ARRAY__":json.dumps(cmd),
       "__DIR__":json.dumps(a.workdir),
       "__ERROR_LOG__":json.dumps(a.stderr_log),
-      "__METHOD__":a.method,"__SEED__":str(a.seed),"__ROUNDS__":str(a.rounds)
+      "__METHOD__":a.method,"__METHOD_NUM__":str(mode),"__SEED__":str(a.seed),"__ROUNDS__":str(a.rounds)
     }.items():script=script.replace(key,value)
     scripts=[p.find("plugin_config/script") for p in root.findall("plugin")
              if "ScriptRunner" in (p.text or "")]
