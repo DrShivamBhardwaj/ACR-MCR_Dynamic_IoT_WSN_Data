@@ -1,0 +1,26 @@
+{
+  "experiment": "459542",
+  "physically_measured": true,
+  "platform": "FIT IoT-LAB Grenoble M3 / AT86RF231",
+  "nodes": [
+    "m3-14",
+    "m3-15"
+  ],
+  "serial_port": 20000,
+  "planned_application_samples": 100,
+  "bytes_per_application_sample": 500,
+  "parts_per_sample": 8,
+  "observed_sender_frames": 736,
+  "observed_sender_callbacks": 736,
+  "observed_receiver_fragments": 736,
+  "observed_full_500byte_samples": 92,
+  "verified_integrity_pass_count": 92,
+  "sender_completed": true,
+  "raw_radio_registers_calibrated_as_dBm": false,
+  "SNR_established": false,
+  "packet_loss_inference_allowed": true,
+  "source_role_energest_records": 1,
+  "receiver_role_energest_records": 3,
+  "error": null,
+  "elapsed_seconds": 70.04023121716455
+}

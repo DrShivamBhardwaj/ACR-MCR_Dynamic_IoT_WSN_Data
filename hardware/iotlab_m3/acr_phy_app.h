@@ -21,6 +21,9 @@
 #define APP_SIZE 500
 #define FRAG_LEN 64
 #define N_SAMPLES 100
+#ifndef ACR_PHY_START_DELAY_S
+#define ACR_PHY_START_DELAY_S 3
+#endif
 typedef struct {
   uint16_t seq;
   uint8_t source;
@@ -131,7 +134,7 @@ PROCESS_THREAD(acr_phy_test,ev,data){
   nullnet_set_input_callback(receive);
   NETSTACK_RADIO.on();
   printf("ACR_HW_READY role=%d n_samples=100 application_bytes=500 parts=8\n",ACR_PHY_ROLE);
-  etimer_set(&timer,CLOCK_SECOND*3);
+  etimer_set(&timer,CLOCK_SECOND*ACR_PHY_START_DELAY_S);
   while(1){
     PROCESS_WAIT_EVENT();
     if(etimer_expired(&timer)){

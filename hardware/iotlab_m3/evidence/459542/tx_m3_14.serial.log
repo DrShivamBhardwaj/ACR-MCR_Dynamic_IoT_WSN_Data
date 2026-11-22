@@ -1,0 +1,1474 @@
+ACR_TX seq=8 part=0 bytes=64
+ACR_MAC seq=8 part=0 status=0 attempts=1
+ACR_TX seq=8 part=1 bytes=64
+ACR_MAC seq=8 part=1 status=0 attempts=1
+ACR_TX seq=8 part=2 bytes=64
+ACR_MAC seq=8 part=2 status=0 attempts=1
+ACR_TX seq=8 part=3 bytes=64
+ACR_MAC seq=8 part=3 status=0 attempts=1
+ACR_TX seq=8 part=4 bytes=64
+ACR_MAC seq=8 part=4 status=0 attempts=1
+ACR_TX seq=8 part=5 bytes=64
+ACR_MAC seq=8 part=5 status=0 attempts=1
+ACR_TX seq=8 part=6 bytes=64
+ACR_MAC seq=8 part=6 status=0 attempts=1
+ACR_TX seq=8 part=7 bytes=52
+ACR_MAC seq=8 part=7 status=0 attempts=1
+ACR_TX seq=9 part=0 bytes=64
+ACR_MAC seq=9 part=0 status=0 attempts=1
+ACR_TX seq=9 part=1 bytes=64
+ACR_MAC seq=9 part=1 status=0 attempts=1
+ACR_TX seq=9 part=2 bytes=64
+ACR_MAC seq=9 part=2 status=0 attempts=1
+ACR_TX seq=9 part=3 bytes=64
+ACR_MAC seq=9 part=3 status=0 attempts=1
+ACR_TX seq=9 part=4 bytes=64
+ACR_MAC seq=9 part=4 status=0 attempts=1
+ACR_TX seq=9 part=5 bytes=64
+ACR_MAC seq=9 part=5 status=0 attempts=1
+ACR_TX seq=9 part=6 bytes=64
+ACR_MAC seq=9 part=6 status=0 attempts=1
+ACR_TX seq=9 part=7 bytes=52
+ACR_MAC seq=9 part=7 status=0 attempts=1
+ACR_TX seq=10 part=0 bytes=64
+ACR_MAC seq=10 part=0 status=0 attempts=1
+ACR_TX seq=10 part=1 bytes=64
+ACR_MAC seq=10 part=1 status=0 attempts=1
+ACR_TX seq=10 part=2 bytes=64
+ACR_MAC seq=10 part=2 status=0 attempts=1
+ACR_TX seq=10 part=3 bytes=64
+ACR_MAC seq=10 part=3 status=0 attempts=1
+ACR_TX seq=10 part=4 bytes=64
+ACR_MAC seq=10 part=4 status=0 attempts=1
+ACR_TX seq=10 part=5 bytes=64
+ACR_MAC seq=10 part=5 status=0 attempts=1
+ACR_TX seq=10 part=6 bytes=64
+ACR_MAC seq=10 part=6 status=0 attempts=1
+ACR_TX seq=10 part=7 bytes=52
+ACR_MAC seq=10 part=7 status=0 attempts=1
+ACR_TX seq=11 part=0 bytes=64
+ACR_MAC seq=11 part=0 status=0 attempts=1
+ACR_TX seq=11 part=1 bytes=64
+ACR_MAC seq=11 part=1 status=0 attempts=1
+ACR_TX seq=11 part=2 bytes=64
+ACR_MAC seq=11 part=2 status=0 attempts=1
+ACR_TX seq=11 part=3 bytes=64
+ACR_MAC seq=11 part=3 status=0 attempts=1
+ACR_TX seq=11 part=4 bytes=64
+ACR_MAC seq=11 part=4 status=0 attempts=1
+ACR_TX seq=11 part=5 bytes=64
+ACR_MAC seq=11 part=5 status=0 attempts=1
+ACR_TX seq=11 part=6 bytes=64
+ACR_MAC seq=11 part=6 status=0 attempts=1
+ACR_TX seq=11 part=7 bytes=52
+ACR_MAC seq=11 part=7 status=0 attempts=1
+ACR_TX seq=12 part=0 bytes=64
+ACR_MAC seq=12 part=0 status=0 attempts=1
+ACR_TX seq=12 part=1 bytes=64
+ACR_MAC seq=12 part=1 status=0 attempts=1
+ACR_TX seq=12 part=2 bytes=64
+ACR_MAC seq=12 part=2 status=0 attempts=1
+ACR_TX seq=12 part=3 bytes=64
+ACR_MAC seq=12 part=3 status=0 attempts=1
+ACR_TX seq=12 part=4 bytes=64
+ACR_MAC seq=12 part=4 status=0 attempts=1
+ACR_TX seq=12 part=5 bytes=64
+ACR_MAC seq=12 part=5 status=0 attempts=1
+ACR_TX seq=12 part=6 bytes=64
+ACR_MAC seq=12 part=6 status=0 attempts=1
+ACR_TX seq=12 part=7 bytes=52
+ACR_MAC seq=12 part=7 status=0 attempts=1
+ACR_TX seq=13 part=0 bytes=64
+ACR_MAC seq=13 part=0 status=0 attempts=1
+ACR_TX seq=13 part=1 bytes=64
+ACR_MAC seq=13 part=1 status=0 attempts=1
+ACR_TX seq=13 part=2 bytes=64
+ACR_MAC seq=13 part=2 status=0 attempts=1
+ACR_TX seq=13 part=3 bytes=64
+ACR_MAC seq=13 part=3 status=0 attempts=1
+ACR_TX seq=13 part=4 bytes=64
+ACR_MAC seq=13 part=4 status=0 attempts=1
+ACR_TX seq=13 part=5 bytes=64
+ACR_MAC seq=13 part=5 status=0 attempts=1
+ACR_TX seq=13 part=6 bytes=64
+ACR_MAC seq=13 part=6 status=0 attempts=1
+ACR_TX seq=13 part=7 bytes=52
+ACR_MAC seq=13 part=7 status=0 attempts=1
+ACR_TX seq=14 part=0 bytes=64
+ACR_MAC seq=14 part=0 status=0 attempts=1
+ACR_TX seq=14 part=1 bytes=64
+ACR_MAC seq=14 part=1 status=0 attempts=1
+ACR_TX seq=14 part=2 bytes=64
+ACR_MAC seq=14 part=2 status=0 attempts=1
+ACR_TX seq=14 part=3 bytes=64
+ACR_MAC seq=14 part=3 status=0 attempts=1
+ACR_TX seq=14 part=4 bytes=64
+ACR_MAC seq=14 part=4 status=0 attempts=1
+ACR_TX seq=14 part=5 bytes=64
+ACR_MAC seq=14 part=5 status=0 attempts=1
+ACR_TX seq=14 part=6 bytes=64
+ACR_MAC seq=14 part=6 status=0 attempts=1
+ACR_TX seq=14 part=7 bytes=52
+ACR_MAC seq=14 part=7 status=0 attempts=1
+ACR_TX seq=15 part=0 bytes=64
+ACR_MAC seq=15 part=0 status=0 attempts=1
+ACR_TX seq=15 part=1 bytes=64
+ACR_MAC seq=15 part=1 status=0 attempts=1
+ACR_TX seq=15 part=2 bytes=64
+ACR_MAC seq=15 part=2 status=0 attempts=1
+ACR_TX seq=15 part=3 bytes=64
+ACR_MAC seq=15 part=3 status=0 attempts=1
+ACR_TX seq=15 part=4 bytes=64
+ACR_MAC seq=15 part=4 status=0 attempts=1
+ACR_TX seq=15 part=5 bytes=64
+ACR_MAC seq=15 part=5 status=0 attempts=1
+ACR_TX seq=15 part=6 bytes=64
+ACR_MAC seq=15 part=6 status=0 attempts=1
+ACR_TX seq=15 part=7 bytes=52
+ACR_MAC seq=15 part=7 status=0 attempts=1
+ACR_TX seq=16 part=0 bytes=64
+ACR_MAC seq=16 part=0 status=0 attempts=1
+ACR_TX seq=16 part=1 bytes=64
+ACR_MAC seq=16 part=1 status=0 attempts=1
+ACR_TX seq=16 part=2 bytes=64
+ACR_MAC seq=16 part=2 status=0 attempts=1
+ACR_TX seq=16 part=3 bytes=64
+ACR_MAC seq=16 part=3 status=0 attempts=1
+ACR_TX seq=16 part=4 bytes=64
+ACR_MAC seq=16 part=4 status=0 attempts=1
+ACR_TX seq=16 part=5 bytes=64
+ACR_MAC seq=16 part=5 status=0 attempts=1
+ACR_TX seq=16 part=6 bytes=64
+ACR_MAC seq=16 part=6 status=0 attempts=1
+ACR_TX seq=16 part=7 bytes=52
+ACR_MAC seq=16 part=7 status=0 attempts=1
+ACR_TX seq=17 part=0 bytes=64
+ACR_MAC seq=17 part=0 status=0 attempts=1
+ACR_TX seq=17 part=1 bytes=64
+ACR_MAC seq=17 part=1 status=0 attempts=1
+ACR_TX seq=17 part=2 bytes=64
+ACR_MAC seq=17 part=2 status=0 attempts=1
+ACR_TX seq=17 part=3 bytes=64
+ACR_MAC seq=17 part=3 status=0 attempts=1
+ACR_TX seq=17 part=4 bytes=64
+ACR_MAC seq=17 part=4 status=0 attempts=1
+ACR_TX seq=17 part=5 bytes=64
+ACR_MAC seq=17 part=5 status=0 attempts=1
+ACR_TX seq=17 part=6 bytes=64
+ACR_MAC seq=17 part=6 status=0 attempts=1
+ACR_TX seq=17 part=7 bytes=52
+ACR_MAC seq=17 part=7 status=0 attempts=1
+ACR_TX seq=18 part=0 bytes=64
+ACR_MAC seq=18 part=0 status=0 attempts=1
+ACR_TX seq=18 part=1 bytes=64
+ACR_MAC seq=18 part=1 status=0 attempts=1
+ACR_TX seq=18 part=2 bytes=64
+ACR_MAC seq=18 part=2 status=0 attempts=1
+ACR_TX seq=18 part=3 bytes=64
+ACR_MAC seq=18 part=3 status=0 attempts=1
+ACR_TX seq=18 part=4 bytes=64
+ACR_MAC seq=18 part=4 status=0 attempts=1
+ACR_TX seq=18 part=5 bytes=64
+ACR_MAC seq=18 part=5 status=0 attempts=1
+ACR_TX seq=18 part=6 bytes=64
+ACR_MAC seq=18 part=6 status=0 attempts=1
+ACR_TX seq=18 part=7 bytes=52
+ACR_MAC seq=18 part=7 status=0 attempts=1
+ACR_TX seq=19 part=0 bytes=64
+ACR_MAC seq=19 part=0 status=0 attempts=1
+ACR_TX seq=19 part=1 bytes=64
+ACR_MAC seq=19 part=1 status=0 attempts=1
+ACR_TX seq=19 part=2 bytes=64
+ACR_MAC seq=19 part=2 status=0 attempts=1
+ACR_TX seq=19 part=3 bytes=64
+ACR_MAC seq=19 part=3 status=0 attempts=1
+ACR_TX seq=19 part=4 bytes=64
+ACR_MAC seq=19 part=4 status=0 attempts=1
+ACR_TX seq=19 part=5 bytes=64
+ACR_MAC seq=19 part=5 status=0 attempts=1
+ACR_TX seq=19 part=6 bytes=64
+ACR_MAC seq=19 part=6 status=0 attempts=1
+ACR_TX seq=19 part=7 bytes=52
+ACR_MAC seq=19 part=7 status=0 attempts=1
+ACR_TX seq=20 part=0 bytes=64
+ACR_MAC seq=20 part=0 status=0 attempts=1
+ACR_TX seq=20 part=1 bytes=64
+ACR_MAC seq=20 part=1 status=0 attempts=1
+ACR_TX seq=20 part=2 bytes=64
+ACR_MAC seq=20 part=2 status=0 attempts=1
+ACR_TX seq=20 part=3 bytes=64
+ACR_MAC seq=20 part=3 status=0 attempts=1
+ACR_TX seq=20 part=4 bytes=64
+ACR_MAC seq=20 part=4 status=0 attempts=1
+ACR_TX seq=20 part=5 bytes=64
+ACR_MAC seq=20 part=5 status=0 attempts=1
+ACR_TX seq=20 part=6 bytes=64
+ACR_MAC seq=20 part=6 status=0 attempts=1
+ACR_TX seq=20 part=7 bytes=52
+ACR_MAC seq=20 part=7 status=0 attempts=1
+ACR_TX seq=21 part=0 bytes=64
+ACR_MAC seq=21 part=0 status=0 attempts=1
+ACR_TX seq=21 part=1 bytes=64
+ACR_MAC seq=21 part=1 status=0 attempts=1
+ACR_TX seq=21 part=2 bytes=64
+ACR_MAC seq=21 part=2 status=0 attempts=1
+ACR_TX seq=21 part=3 bytes=64
+ACR_MAC seq=21 part=3 status=0 attempts=1
+ACR_TX seq=21 part=4 bytes=64
+ACR_MAC seq=21 part=4 status=0 attempts=1
+ACR_TX seq=21 part=5 bytes=64
+ACR_MAC seq=21 part=5 status=0 attempts=1
+ACR_TX seq=21 part=6 bytes=64
+ACR_MAC seq=21 part=6 status=0 attempts=1
+ACR_TX seq=21 part=7 bytes=52
+ACR_MAC seq=21 part=7 status=0 attempts=1
+ACR_TX seq=22 part=0 bytes=64
+ACR_MAC seq=22 part=0 status=0 attempts=1
+ACR_TX seq=22 part=1 bytes=64
+ACR_MAC seq=22 part=1 status=0 attempts=1
+ACR_TX seq=22 part=2 bytes=64
+ACR_MAC seq=22 part=2 status=0 attempts=1
+ACR_TX seq=22 part=3 bytes=64
+ACR_MAC seq=22 part=3 status=0 attempts=1
+ACR_TX seq=22 part=4 bytes=64
+ACR_MAC seq=22 part=4 status=0 attempts=1
+ACR_TX seq=22 part=5 bytes=64
+ACR_MAC seq=22 part=5 status=0 attempts=1
+ACR_TX seq=22 part=6 bytes=64
+ACR_MAC seq=22 part=6 status=0 attempts=1
+ACR_TX seq=22 part=7 bytes=52
+ACR_MAC seq=22 part=7 status=0 attempts=1
+ACR_TX seq=23 part=0 bytes=64
+ACR_MAC seq=23 part=0 status=0 attempts=1
+ACR_TX seq=23 part=1 bytes=64
+ACR_MAC seq=23 part=1 status=0 attempts=1
+ACR_TX seq=23 part=2 bytes=64
+ACR_MAC seq=23 part=2 status=0 attempts=1
+ACR_TX seq=23 part=3 bytes=64
+ACR_MAC seq=23 part=3 status=0 attempts=1
+ACR_TX seq=23 part=4 bytes=64
+ACR_MAC seq=23 part=4 status=0 attempts=1
+ACR_TX seq=23 part=5 bytes=64
+ACR_MAC seq=23 part=5 status=0 attempts=1
+ACR_TX seq=23 part=6 bytes=64
+ACR_MAC seq=23 part=6 status=0 attempts=1
+ACR_TX seq=23 part=7 bytes=52
+ACR_MAC seq=23 part=7 status=0 attempts=1
+ACR_TX seq=24 part=0 bytes=64
+ACR_MAC seq=24 part=0 status=0 attempts=1
+ACR_TX seq=24 part=1 bytes=64
+ACR_MAC seq=24 part=1 status=0 attempts=1
+ACR_TX seq=24 part=2 bytes=64
+ACR_MAC seq=24 part=2 status=0 attempts=1
+ACR_TX seq=24 part=3 bytes=64
+ACR_MAC seq=24 part=3 status=0 attempts=1
+ACR_TX seq=24 part=4 bytes=64
+ACR_MAC seq=24 part=4 status=0 attempts=1
+ACR_TX seq=24 part=5 bytes=64
+ACR_MAC seq=24 part=5 status=0 attempts=1
+ACR_TX seq=24 part=6 bytes=64
+ACR_MAC seq=24 part=6 status=0 attempts=1
+ACR_TX seq=24 part=7 bytes=52
+ACR_MAC seq=24 part=7 status=0 attempts=1
+ACR_TX seq=25 part=0 bytes=64
+ACR_MAC seq=25 part=0 status=0 attempts=1
+ACR_TX seq=25 part=1 bytes=64
+ACR_MAC seq=25 part=1 status=0 attempts=1
+ACR_TX seq=25 part=2 bytes=64
+ACR_MAC seq=25 part=2 status=0 attempts=1
+ACR_TX seq=25 part=3 bytes=64
+ACR_MAC seq=25 part=3 status=0 attempts=1
+ACR_TX seq=25 part=4 bytes=64
+ACR_MAC seq=25 part=4 status=0 attempts=1
+ACR_TX seq=25 part=5 bytes=64
+ACR_MAC seq=25 part=5 status=0 attempts=1
+ACR_TX seq=25 part=6 bytes=64
+ACR_MAC seq=25 part=6 status=0 attempts=1
+ACR_TX seq=25 part=7 bytes=52
+ACR_MAC seq=25 part=7 status=0 attempts=1
+ACR_TX seq=26 part=0 bytes=64
+ACR_MAC seq=26 part=0 status=0 attempts=1
+ACR_TX seq=26 part=1 bytes=64
+ACR_MAC seq=26 part=1 status=0 attempts=1
+ACR_TX seq=26 part=2 bytes=64
+ACR_MAC seq=26 part=2 status=0 attempts=1
+ACR_TX seq=26 part=3 bytes=64
+ACR_MAC seq=26 part=3 status=0 attempts=1
+ACR_TX seq=26 part=4 bytes=64
+ACR_MAC seq=26 part=4 status=0 attempts=1
+ACR_TX seq=26 part=5 bytes=64
+ACR_MAC seq=26 part=5 status=0 attempts=1
+ACR_TX seq=26 part=6 bytes=64
+ACR_MAC seq=26 part=6 status=0 attempts=1
+ACR_TX seq=26 part=7 bytes=52
+ACR_MAC seq=26 part=7 status=0 attempts=1
+ACR_TX seq=27 part=0 bytes=64
+ACR_MAC seq=27 part=0 status=0 attempts=1
+ACR_TX seq=27 part=1 bytes=64
+ACR_MAC seq=27 part=1 status=0 attempts=1
+ACR_TX seq=27 part=2 bytes=64
+ACR_MAC seq=27 part=2 status=0 attempts=1
+ACR_TX seq=27 part=3 bytes=64
+ACR_MAC seq=27 part=3 status=0 attempts=1
+ACR_TX seq=27 part=4 bytes=64
+ACR_MAC seq=27 part=4 status=0 attempts=1
+ACR_TX seq=27 part=5 bytes=64
+ACR_MAC seq=27 part=5 status=0 attempts=1
+ACR_TX seq=27 part=6 bytes=64
+ACR_MAC seq=27 part=6 status=0 attempts=1
+ACR_TX seq=27 part=7 bytes=52
+ACR_MAC seq=27 part=7 status=0 attempts=1
+ACR_TX seq=28 part=0 bytes=64
+ACR_MAC seq=28 part=0 status=0 attempts=1
+ACR_TX seq=28 part=1 bytes=64
+ACR_MAC seq=28 part=1 status=0 attempts=1
+ACR_TX seq=28 part=2 bytes=64
+ACR_MAC seq=28 part=2 status=0 attempts=1
+ACR_TX seq=28 part=3 bytes=64
+ACR_MAC seq=28 part=3 status=0 attempts=1
+ACR_TX seq=28 part=4 bytes=64
+ACR_MAC seq=28 part=4 status=0 attempts=1
+ACR_TX seq=28 part=5 bytes=64
+ACR_MAC seq=28 part=5 status=0 attempts=1
+ACR_TX seq=28 part=6 bytes=64
+ACR_MAC seq=28 part=6 status=0 attempts=1
+ACR_TX seq=28 part=7 bytes=52
+ACR_MAC seq=28 part=7 status=0 attempts=1
+ACR_TX seq=29 part=0 bytes=64
+ACR_MAC seq=29 part=0 status=0 attempts=1
+ACR_TX seq=29 part=1 bytes=64
+ACR_MAC seq=29 part=1 status=0 attempts=1
+ACR_TX seq=29 part=2 bytes=64
+ACR_MAC seq=29 part=2 status=0 attempts=1
+ACR_TX seq=29 part=3 bytes=64
+ACR_MAC seq=29 part=3 status=0 attempts=1
+ACR_TX seq=29 part=4 bytes=64
+ACR_MAC seq=29 part=4 status=0 attempts=1
+ACR_TX seq=29 part=5 bytes=64
+ACR_MAC seq=29 part=5 status=0 attempts=1
+ACR_TX seq=29 part=6 bytes=64
+ACR_MAC seq=29 part=6 status=0 attempts=1
+ACR_TX seq=29 part=7 bytes=52
+ACR_MAC seq=29 part=7 status=0 attempts=1
+ACR_TX seq=30 part=0 bytes=64
+ACR_MAC seq=30 part=0 status=0 attempts=1
+ACR_TX seq=30 part=1 bytes=64
+ACR_MAC seq=30 part=1 status=0 attempts=1
+ACR_TX seq=30 part=2 bytes=64
+ACR_MAC seq=30 part=2 status=0 attempts=1
+ACR_TX seq=30 part=3 bytes=64
+ACR_MAC seq=30 part=3 status=0 attempts=1
+ACR_TX seq=30 part=4 bytes=64
+ACR_MAC seq=30 part=4 status=0 attempts=1
+ACR_TX seq=30 part=5 bytes=64
+ACR_MAC seq=30 part=5 status=0 attempts=1
+ACR_TX seq=30 part=6 bytes=64
+ACR_MAC seq=30 part=6 status=0 attempts=1
+ACR_TX seq=30 part=7 bytes=52
+ACR_MAC seq=30 part=7 status=0 attempts=1
+ACR_TX seq=31 part=0 bytes=64
+ACR_MAC seq=31 part=0 status=0 attempts=1
+ACR_TX seq=31 part=1 bytes=64
+ACR_MAC seq=31 part=1 status=0 attempts=1
+ACR_TX seq=31 part=2 bytes=64
+ACR_MAC seq=31 part=2 status=0 attempts=1
+ACR_TX seq=31 part=3 bytes=64
+ACR_MAC seq=31 part=3 status=0 attempts=1
+ACR_TX seq=31 part=4 bytes=64
+ACR_MAC seq=31 part=4 status=0 attempts=1
+ACR_TX seq=31 part=5 bytes=64
+ACR_MAC seq=31 part=5 status=0 attempts=1
+ACR_TX seq=31 part=6 bytes=64
+ACR_MAC seq=31 part=6 status=0 attempts=1
+ACR_TX seq=31 part=7 bytes=52
+ACR_MAC seq=31 part=7 status=0 attempts=1
+ACR_TX seq=32 part=0 bytes=64
+ACR_MAC seq=32 part=0 status=0 attempts=1
+ACR_TX seq=32 part=1 bytes=64
+ACR_MAC seq=32 part=1 status=0 attempts=1
+ACR_TX seq=32 part=2 bytes=64
+ACR_MAC seq=32 part=2 status=0 attempts=1
+ACR_TX seq=32 part=3 bytes=64
+ACR_MAC seq=32 part=3 status=0 attempts=1
+ACR_TX seq=32 part=4 bytes=64
+ACR_MAC seq=32 part=4 status=0 attempts=1
+ACR_TX seq=32 part=5 bytes=64
+ACR_MAC seq=32 part=5 status=0 attempts=1
+ACR_TX seq=32 part=6 bytes=64
+ACR_MAC seq=32 part=6 status=0 attempts=1
+ACR_TX seq=32 part=7 bytes=52
+ACR_MAC seq=32 part=7 status=0 attempts=1
+ACR_TX seq=33 part=0 bytes=64
+ACR_MAC seq=33 part=0 status=0 attempts=1
+ACR_TX seq=33 part=1 bytes=64
+ACR_MAC seq=33 part=1 status=0 attempts=1
+ACR_TX seq=33 part=2 bytes=64
+ACR_MAC seq=33 part=2 status=0 attempts=1
+ACR_TX seq=33 part=3 bytes=64
+ACR_MAC seq=33 part=3 status=0 attempts=1
+ACR_TX seq=33 part=4 bytes=64
+ACR_MAC seq=33 part=4 status=0 attempts=1
+ACR_TX seq=33 part=5 bytes=64
+ACR_MAC seq=33 part=5 status=0 attempts=1
+ACR_TX seq=33 part=6 bytes=64
+ACR_MAC seq=33 part=6 status=0 attempts=1
+ACR_TX seq=33 part=7 bytes=52
+ACR_MAC seq=33 part=7 status=0 attempts=1
+ACR_TX seq=34 part=0 bytes=64
+ACR_MAC seq=34 part=0 status=0 attempts=1
+ACR_TX seq=34 part=1 bytes=64
+ACR_MAC seq=34 part=1 status=0 attempts=1
+ACR_TX seq=34 part=2 bytes=64
+ACR_MAC seq=34 part=2 status=0 attempts=1
+ACR_TX seq=34 part=3 bytes=64
+ACR_MAC seq=34 part=3 status=0 attempts=1
+ACR_TX seq=34 part=4 bytes=64
+ACR_MAC seq=34 part=4 status=0 attempts=1
+ACR_TX seq=34 part=5 bytes=64
+ACR_MAC seq=34 part=5 status=0 attempts=1
+ACR_TX seq=34 part=6 bytes=64
+ACR_MAC seq=34 part=6 status=0 attempts=1
+ACR_TX seq=34 part=7 bytes=52
+ACR_MAC seq=34 part=7 status=0 attempts=1
+ACR_TX seq=35 part=0 bytes=64
+ACR_MAC seq=35 part=0 status=0 attempts=1
+ACR_TX seq=35 part=1 bytes=64
+ACR_MAC seq=35 part=1 status=0 attempts=1
+ACR_TX seq=35 part=2 bytes=64
+ACR_MAC seq=35 part=2 status=0 attempts=1
+ACR_TX seq=35 part=3 bytes=64
+ACR_MAC seq=35 part=3 status=0 attempts=1
+ACR_TX seq=35 part=4 bytes=64
+ACR_MAC seq=35 part=4 status=0 attempts=1
+ACR_TX seq=35 part=5 bytes=64
+ACR_MAC seq=35 part=5 status=0 attempts=1
+ACR_TX seq=35 part=6 bytes=64
+ACR_MAC seq=35 part=6 status=0 attempts=1
+ACR_TX seq=35 part=7 bytes=52
+ACR_MAC seq=35 part=7 status=0 attempts=1
+ACR_TX seq=36 part=0 bytes=64
+ACR_MAC seq=36 part=0 status=0 attempts=1
+ACR_TX seq=36 part=1 bytes=64
+ACR_MAC seq=36 part=1 status=0 attempts=1
+ACR_TX seq=36 part=2 bytes=64
+ACR_MAC seq=36 part=2 status=0 attempts=1
+ACR_TX seq=36 part=3 bytes=64
+ACR_MAC seq=36 part=3 status=0 attempts=1
+ACR_TX seq=36 part=4 bytes=64
+ACR_MAC seq=36 part=4 status=0 attempts=1
+ACR_TX seq=36 part=5 bytes=64
+ACR_MAC seq=36 part=5 status=0 attempts=1
+ACR_TX seq=36 part=6 bytes=64
+ACR_MAC seq=36 part=6 status=0 attempts=1
+ACR_TX seq=36 part=7 bytes=52
+ACR_MAC seq=36 part=7 status=0 attempts=1
+ACR_TX seq=37 part=0 bytes=64
+ACR_MAC seq=37 part=0 status=0 attempts=1
+ACR_TX seq=37 part=1 bytes=64
+ACR_MAC seq=37 part=1 status=0 attempts=1
+ACR_TX seq=37 part=2 bytes=64
+ACR_MAC seq=37 part=2 status=0 attempts=1
+ACR_TX seq=37 part=3 bytes=64
+ACR_MAC seq=37 part=3 status=0 attempts=1
+ACR_TX seq=37 part=4 bytes=64
+ACR_MAC seq=37 part=4 status=0 attempts=1
+ACR_TX seq=37 part=5 bytes=64
+ACR_MAC seq=37 part=5 status=0 attempts=1
+ACR_TX seq=37 part=6 bytes=64
+ACR_MAC seq=37 part=6 status=0 attempts=1
+ACR_TX seq=37 part=7 bytes=52
+ACR_MAC seq=37 part=7 status=0 attempts=1
+ACR_TX seq=38 part=0 bytes=64
+ACR_MAC seq=38 part=0 status=0 attempts=1
+ACR_TX seq=38 part=1 bytes=64
+ACR_MAC seq=38 part=1 status=0 attempts=1
+ACR_TX seq=38 part=2 bytes=64
+ACR_MAC seq=38 part=2 status=0 attempts=1
+ACR_TX seq=38 part=3 bytes=64
+ACR_MAC seq=38 part=3 status=0 attempts=1
+ACR_TX seq=38 part=4 bytes=64
+ACR_MAC seq=38 part=4 status=0 attempts=1
+ACR_TX seq=38 part=5 bytes=64
+ACR_MAC seq=38 part=5 status=0 attempts=1
+ACR_TX seq=38 part=6 bytes=64
+ACR_MAC seq=38 part=6 status=0 attempts=1
+ACR_TX seq=38 part=7 bytes=52
+ACR_MAC seq=38 part=7 status=0 attempts=1
+ACR_TX seq=39 part=0 bytes=64
+ACR_MAC seq=39 part=0 status=0 attempts=1
+ACR_TX seq=39 part=1 bytes=64
+ACR_MAC seq=39 part=1 status=0 attempts=1
+ACR_TX seq=39 part=2 bytes=64
+ACR_MAC seq=39 part=2 status=0 attempts=1
+ACR_TX seq=39 part=3 bytes=64
+ACR_MAC seq=39 part=3 status=0 attempts=1
+ACR_TX seq=39 part=4 bytes=64
+ACR_MAC seq=39 part=4 status=0 attempts=1
+ACR_TX seq=39 part=5 bytes=64
+ACR_MAC seq=39 part=5 status=0 attempts=1
+ACR_TX seq=39 part=6 bytes=64
+ACR_MAC seq=39 part=6 status=0 attempts=1
+ACR_TX seq=39 part=7 bytes=52
+ACR_MAC seq=39 part=7 status=0 attempts=1
+ACR_TX seq=40 part=0 bytes=64
+ACR_MAC seq=40 part=0 status=0 attempts=1
+ACR_TX seq=40 part=1 bytes=64
+ACR_MAC seq=40 part=1 status=0 attempts=1
+ACR_TX seq=40 part=2 bytes=64
+ACR_MAC seq=40 part=2 status=0 attempts=1
+ACR_TX seq=40 part=3 bytes=64
+ACR_MAC seq=40 part=3 status=0 attempts=1
+ACR_TX seq=40 part=4 bytes=64
+ACR_MAC seq=40 part=4 status=0 attempts=1
+ACR_TX seq=40 part=5 bytes=64
+ACR_MAC seq=40 part=5 status=0 attempts=1
+ACR_TX seq=40 part=6 bytes=64
+ACR_MAC seq=40 part=6 status=0 attempts=1
+ACR_TX seq=40 part=7 bytes=52
+ACR_MAC seq=40 part=7 status=0 attempts=1
+ACR_TX seq=41 part=0 bytes=64
+ACR_MAC seq=41 part=0 status=0 attempts=1
+ACR_TX seq=41 part=1 bytes=64
+ACR_MAC seq=41 part=1 status=0 attempts=1
+ACR_TX seq=41 part=2 bytes=64
+ACR_MAC seq=41 part=2 status=0 attempts=1
+ACR_TX seq=41 part=3 bytes=64
+ACR_MAC seq=41 part=3 status=0 attempts=1
+ACR_TX seq=41 part=4 bytes=64
+ACR_MAC seq=41 part=4 status=0 attempts=1
+ACR_TX seq=41 part=5 bytes=64
+ACR_MAC seq=41 part=5 status=0 attempts=1
+ACR_TX seq=41 part=6 bytes=64
+ACR_MAC seq=41 part=6 status=0 attempts=1
+ACR_TX seq=41 part=7 bytes=52
+ACR_MAC seq=41 part=7 status=0 attempts=1
+ACR_TX seq=42 part=0 bytes=64
+ACR_MAC seq=42 part=0 status=0 attempts=1
+ACR_TX seq=42 part=1 bytes=64
+ACR_MAC seq=42 part=1 status=0 attempts=1
+ACR_TX seq=42 part=2 bytes=64
+ACR_MAC seq=42 part=2 status=0 attempts=1
+ACR_TX seq=42 part=3 bytes=64
+ACR_MAC seq=42 part=3 status=0 attempts=1
+ACR_TX seq=42 part=4 bytes=64
+ACR_MAC seq=42 part=4 status=0 attempts=1
+ACR_TX seq=42 part=5 bytes=64
+ACR_MAC seq=42 part=5 status=0 attempts=1
+ACR_TX seq=42 part=6 bytes=64
+ACR_MAC seq=42 part=6 status=0 attempts=1
+ACR_TX seq=42 part=7 bytes=52
+ACR_MAC seq=42 part=7 status=0 attempts=1
+ACR_TX seq=43 part=0 bytes=64
+ACR_MAC seq=43 part=0 status=0 attempts=1
+ACR_TX seq=43 part=1 bytes=64
+ACR_MAC seq=43 part=1 status=0 attempts=1
+ACR_TX seq=43 part=2 bytes=64
+ACR_MAC seq=43 part=2 status=0 attempts=1
+ACR_TX seq=43 part=3 bytes=64
+ACR_MAC seq=43 part=3 status=0 attempts=1
+ACR_TX seq=43 part=4 bytes=64
+ACR_MAC seq=43 part=4 status=0 attempts=1
+ACR_TX seq=43 part=5 bytes=64
+ACR_MAC seq=43 part=5 status=0 attempts=1
+ACR_TX seq=43 part=6 bytes=64
+ACR_MAC seq=43 part=6 status=0 attempts=1
+ACR_TX seq=43 part=7 bytes=52
+ACR_MAC seq=43 part=7 status=0 attempts=1
+ACR_TX seq=44 part=0 bytes=64
+ACR_MAC seq=44 part=0 status=0 attempts=1
+ACR_TX seq=44 part=1 bytes=64
+ACR_MAC seq=44 part=1 status=0 attempts=1
+ACR_TX seq=44 part=2 bytes=64
+ACR_MAC seq=44 part=2 status=0 attempts=1
+ACR_TX seq=44 part=3 bytes=64
+ACR_MAC seq=44 part=3 status=0 attempts=1
+ACR_TX seq=44 part=4 bytes=64
+ACR_MAC seq=44 part=4 status=0 attempts=1
+ACR_TX seq=44 part=5 bytes=64
+ACR_MAC seq=44 part=5 status=0 attempts=1
+ACR_TX seq=44 part=6 bytes=64
+ACR_MAC seq=44 part=6 status=0 attempts=1
+ACR_TX seq=44 part=7 bytes=52
+ACR_MAC seq=44 part=7 status=0 attempts=1
+ACR_TX seq=45 part=0 bytes=64
+ACR_MAC seq=45 part=0 status=0 attempts=1
+ACR_TX seq=45 part=1 bytes=64
+ACR_MAC seq=45 part=1 status=0 attempts=1
+ACR_TX seq=45 part=2 bytes=64
+ACR_MAC seq=45 part=2 status=0 attempts=1
+ACR_TX seq=45 part=3 bytes=64
+ACR_MAC seq=45 part=3 status=0 attempts=1
+ACR_TX seq=45 part=4 bytes=64
+ACR_MAC seq=45 part=4 status=0 attempts=1
+ACR_TX seq=45 part=5 bytes=64
+ACR_MAC seq=45 part=5 status=0 attempts=1
+ACR_TX seq=45 part=6 bytes=64
+ACR_MAC seq=45 part=6 status=0 attempts=1
+ACR_TX seq=45 part=7 bytes=52
+ACR_MAC seq=45 part=7 status=0 attempts=1
+ACR_TX seq=46 part=0 bytes=64
+ACR_MAC seq=46 part=0 status=0 attempts=1
+ACR_TX seq=46 part=1 bytes=64
+ACR_MAC seq=46 part=1 status=0 attempts=1
+ACR_TX seq=46 part=2 bytes=64
+ACR_MAC seq=46 part=2 status=0 attempts=1
+ACR_TX seq=46 part=3 bytes=64
+ACR_MAC seq=46 part=3 status=0 attempts=1
+ACR_TX seq=46 part=4 bytes=64
+ACR_MAC seq=46 part=4 status=0 attempts=1
+ACR_TX seq=46 part=5 bytes=64
+ACR_MAC seq=46 part=5 status=0 attempts=1
+ACR_TX seq=46 part=6 bytes=64
+ACR_MAC seq=46 part=6 status=0 attempts=1
+ACR_TX seq=46 part=7 bytes=52
+ACR_MAC seq=46 part=7 status=0 attempts=1
+ACR_TX seq=47 part=0 bytes=64
+ACR_MAC seq=47 part=0 status=0 attempts=1
+ACR_TX seq=47 part=1 bytes=64
+ACR_MAC seq=47 part=1 status=0 attempts=1
+ACR_TX seq=47 part=2 bytes=64
+ACR_MAC seq=47 part=2 status=0 attempts=1
+ACR_TX seq=47 part=3 bytes=64
+ACR_MAC seq=47 part=3 status=0 attempts=1
+ACR_TX seq=47 part=4 bytes=64
+ACR_MAC seq=47 part=4 status=0 attempts=1
+ACR_TX seq=47 part=5 bytes=64
+ACR_MAC seq=47 part=5 status=0 attempts=1
+ACR_TX seq=47 part=6 bytes=64
+ACR_MAC seq=47 part=6 status=0 attempts=1
+ACR_TX seq=47 part=7 bytes=52
+ACR_MAC seq=47 part=7 status=0 attempts=1
+ACR_TX seq=48 part=0 bytes=64
+ACR_MAC seq=48 part=0 status=0 attempts=1
+ACR_TX seq=48 part=1 bytes=64
+ACR_MAC seq=48 part=1 status=0 attempts=1
+ACR_TX seq=48 part=2 bytes=64
+ACR_MAC seq=48 part=2 status=0 attempts=1
+ACR_TX seq=48 part=3 bytes=64
+ACR_MAC seq=48 part=3 status=0 attempts=1
+ACR_TX seq=48 part=4 bytes=64
+ACR_MAC seq=48 part=4 status=0 attempts=1
+ACR_TX seq=48 part=5 bytes=64
+ACR_MAC seq=48 part=5 status=0 attempts=1
+ACR_TX seq=48 part=6 bytes=64
+ACR_MAC seq=48 part=6 status=0 attempts=1
+ACR_TX seq=48 part=7 bytes=52
+ACR_MAC seq=48 part=7 status=0 attempts=1
+ACR_TX seq=49 part=0 bytes=64
+ACR_MAC seq=49 part=0 status=0 attempts=1
+ACR_TX seq=49 part=1 bytes=64
+ACR_MAC seq=49 part=1 status=0 attempts=1
+ACR_TX seq=49 part=2 bytes=64
+ACR_MAC seq=49 part=2 status=0 attempts=1
+ACR_TX seq=49 part=3 bytes=64
+ACR_MAC seq=49 part=3 status=0 attempts=1
+ACR_TX seq=49 part=4 bytes=64
+ACR_MAC seq=49 part=4 status=0 attempts=1
+ACR_TX seq=49 part=5 bytes=64
+ACR_MAC seq=49 part=5 status=0 attempts=1
+ACR_TX seq=49 part=6 bytes=64
+ACR_MAC seq=49 part=6 status=0 attempts=1
+ACR_TX seq=49 part=7 bytes=52
+ACR_MAC seq=49 part=7 status=0 attempts=1
+ACR_TX seq=50 part=0 bytes=64
+ACR_MAC seq=50 part=0 status=0 attempts=1
+ACR_TX seq=50 part=1 bytes=64
+ACR_MAC seq=50 part=1 status=0 attempts=1
+ACR_TX seq=50 part=2 bytes=64
+ACR_MAC seq=50 part=2 status=0 attempts=1
+ACR_TX seq=50 part=3 bytes=64
+ACR_MAC seq=50 part=3 status=0 attempts=1
+ACR_TX seq=50 part=4 bytes=64
+ACR_MAC seq=50 part=4 status=0 attempts=1
+ACR_TX seq=50 part=5 bytes=64
+ACR_MAC seq=50 part=5 status=0 attempts=1
+ACR_TX seq=50 part=6 bytes=64
+ACR_MAC seq=50 part=6 status=0 attempts=1
+ACR_TX seq=50 part=7 bytes=52
+ACR_MAC seq=50 part=7 status=0 attempts=1
+ACR_TX seq=51 part=0 bytes=64
+ACR_MAC seq=51 part=0 status=0 attempts=1
+ACR_TX seq=51 part=1 bytes=64
+ACR_MAC seq=51 part=1 status=0 attempts=1
+ACR_TX seq=51 part=2 bytes=64
+ACR_MAC seq=51 part=2 status=0 attempts=1
+ACR_TX seq=51 part=3 bytes=64
+ACR_MAC seq=51 part=3 status=0 attempts=1
+ACR_TX seq=51 part=4 bytes=64
+ACR_MAC seq=51 part=4 status=0 attempts=1
+ACR_TX seq=51 part=5 bytes=64
+ACR_MAC seq=51 part=5 status=0 attempts=1
+ACR_TX seq=51 part=6 bytes=64
+ACR_MAC seq=51 part=6 status=0 attempts=1
+ACR_TX seq=51 part=7 bytes=52
+ACR_MAC seq=51 part=7 status=0 attempts=1
+ACR_TX seq=52 part=0 bytes=64
+ACR_MAC seq=52 part=0 status=0 attempts=1
+ACR_TX seq=52 part=1 bytes=64
+ACR_MAC seq=52 part=1 status=0 attempts=1
+ACR_TX seq=52 part=2 bytes=64
+ACR_MAC seq=52 part=2 status=0 attempts=1
+ACR_TX seq=52 part=3 bytes=64
+ACR_MAC seq=52 part=3 status=0 attempts=1
+ACR_TX seq=52 part=4 bytes=64
+ACR_MAC seq=52 part=4 status=0 attempts=1
+ACR_TX seq=52 part=5 bytes=64
+ACR_MAC seq=52 part=5 status=0 attempts=1
+ACR_TX seq=52 part=6 bytes=64
+ACR_MAC seq=52 part=6 status=0 attempts=1
+ACR_TX seq=52 part=7 bytes=52
+ACR_MAC seq=52 part=7 status=0 attempts=1
+ACR_TX seq=53 part=0 bytes=64
+ACR_MAC seq=53 part=0 status=0 attempts=1
+ACR_TX seq=53 part=1 bytes=64
+ACR_MAC seq=53 part=1 status=0 attempts=1
+ACR_TX seq=53 part=2 bytes=64
+ACR_MAC seq=53 part=2 status=0 attempts=1
+ACR_TX seq=53 part=3 bytes=64
+ACR_MAC seq=53 part=3 status=0 attempts=1
+ACR_TX seq=53 part=4 bytes=64
+ACR_MAC seq=53 part=4 status=0 attempts=1
+ACR_TX seq=53 part=5 bytes=64
+ACR_MAC seq=53 part=5 status=0 attempts=1
+ACR_TX seq=53 part=6 bytes=64
+ACR_MAC seq=53 part=6 status=0 attempts=1
+ACR_TX seq=53 part=7 bytes=52
+ACR_MAC seq=53 part=7 status=0 attempts=1
+ACR_TX seq=54 part=0 bytes=64
+ACR_MAC seq=54 part=0 status=0 attempts=1
+ACR_TX seq=54 part=1 bytes=64
+ACR_MAC seq=54 part=1 status=0 attempts=1
+ACR_TX seq=54 part=2 bytes=64
+ACR_MAC seq=54 part=2 status=0 attempts=1
+ACR_TX seq=54 part=3 bytes=64
+ACR_MAC seq=54 part=3 status=0 attempts=1
+ACR_TX seq=54 part=4 bytes=64
+ACR_MAC seq=54 part=4 status=0 attempts=1
+ACR_TX seq=54 part=5 bytes=64
+ACR_MAC seq=54 part=5 status=0 attempts=1
+ACR_TX seq=54 part=6 bytes=64
+ACR_MAC seq=54 part=6 status=0 attempts=1
+ACR_TX seq=54 part=7 bytes=52
+ACR_MAC seq=54 part=7 status=0 attempts=1
+ACR_TX seq=55 part=0 bytes=64
+ACR_MAC seq=55 part=0 status=0 attempts=1
+ACR_TX seq=55 part=1 bytes=64
+ACR_MAC seq=55 part=1 status=0 attempts=1
+ACR_TX seq=55 part=2 bytes=64
+ACR_MAC seq=55 part=2 status=0 attempts=1
+ACR_TX seq=55 part=3 bytes=64
+ACR_MAC seq=55 part=3 status=0 attempts=1
+ACR_TX seq=55 part=4 bytes=64
+ACR_MAC seq=55 part=4 status=0 attempts=1
+ACR_TX seq=55 part=5 bytes=64
+ACR_MAC seq=55 part=5 status=0 attempts=1
+ACR_TX seq=55 part=6 bytes=64
+ACR_MAC seq=55 part=6 status=0 attempts=1
+ACR_TX seq=55 part=7 bytes=52
+ACR_MAC seq=55 part=7 status=0 attempts=1
+ACR_TX seq=56 part=0 bytes=64
+ACR_MAC seq=56 part=0 status=0 attempts=1
+ACR_TX seq=56 part=1 bytes=64
+ACR_MAC seq=56 part=1 status=0 attempts=1
+ACR_TX seq=56 part=2 bytes=64
+ACR_MAC seq=56 part=2 status=0 attempts=1
+ACR_TX seq=56 part=3 bytes=64
+ACR_MAC seq=56 part=3 status=0 attempts=1
+ACR_TX seq=56 part=4 bytes=64
+ACR_MAC seq=56 part=4 status=0 attempts=1
+ACR_TX seq=56 part=5 bytes=64
+ACR_MAC seq=56 part=5 status=0 attempts=1
+ACR_TX seq=56 part=6 bytes=64
+ACR_MAC seq=56 part=6 status=0 attempts=1
+ACR_TX seq=56 part=7 bytes=52
+ACR_MAC seq=56 part=7 status=0 attempts=1
+ACR_TX seq=57 part=0 bytes=64
+ACR_MAC seq=57 part=0 status=0 attempts=1
+ACR_TX seq=57 part=1 bytes=64
+ACR_MAC seq=57 part=1 status=0 attempts=1
+ACR_TX seq=57 part=2 bytes=64
+ACR_MAC seq=57 part=2 status=0 attempts=1
+ACR_TX seq=57 part=3 bytes=64
+ACR_MAC seq=57 part=3 status=0 attempts=1
+ACR_TX seq=57 part=4 bytes=64
+ACR_MAC seq=57 part=4 status=0 attempts=1
+ACR_TX seq=57 part=5 bytes=64
+ACR_MAC seq=57 part=5 status=0 attempts=1
+ACR_TX seq=57 part=6 bytes=64
+ACR_MAC seq=57 part=6 status=0 attempts=1
+ACR_TX seq=57 part=7 bytes=52
+ACR_MAC seq=57 part=7 status=0 attempts=1
+ACR_TX seq=58 part=0 bytes=64
+ACR_MAC seq=58 part=0 status=0 attempts=1
+ACR_TX seq=58 part=1 bytes=64
+ACR_MAC seq=58 part=1 status=0 attempts=1
+ACR_TX seq=58 part=2 bytes=64
+ACR_MAC seq=58 part=2 status=0 attempts=1
+ACR_TX seq=58 part=3 bytes=64
+ACR_MAC seq=58 part=3 status=0 attempts=1
+ACR_TX seq=58 part=4 bytes=64
+ACR_MAC seq=58 part=4 status=0 attempts=1
+ACR_TX seq=58 part=5 bytes=64
+ACR_MAC seq=58 part=5 status=0 attempts=1
+ACR_TX seq=58 part=6 bytes=64
+ACR_MAC seq=58 part=6 status=0 attempts=1
+ACR_TX seq=58 part=7 bytes=52
+ACR_MAC seq=58 part=7 status=0 attempts=1
+ACR_TX seq=59 part=0 bytes=64
+ACR_MAC seq=59 part=0 status=0 attempts=1
+ACR_TX seq=59 part=1 bytes=64
+ACR_MAC seq=59 part=1 status=0 attempts=1
+ACR_TX seq=59 part=2 bytes=64
+ACR_MAC seq=59 part=2 status=0 attempts=1
+ACR_TX seq=59 part=3 bytes=64
+ACR_MAC seq=59 part=3 status=0 attempts=1
+ACR_TX seq=59 part=4 bytes=64
+ACR_MAC seq=59 part=4 status=0 attempts=1
+ACR_TX seq=59 part=5 bytes=64
+ACR_MAC seq=59 part=5 status=0 attempts=1
+ACR_TX seq=59 part=6 bytes=64
+ACR_MAC seq=59 part=6 status=0 attempts=1
+ACR_TX seq=59 part=7 bytes=52
+ACR_MAC seq=59 part=7 status=0 attempts=1
+ACR_TX seq=60 part=0 bytes=64
+ACR_MAC seq=60 part=0 status=0 attempts=1
+ACR_TX seq=60 part=1 bytes=64
+ACR_MAC seq=60 part=1 status=0 attempts=1
+ACR_TX seq=60 part=2 bytes=64
+ACR_MAC seq=60 part=2 status=0 attempts=1
+ACR_TX seq=60 part=3 bytes=64
+ACR_MAC seq=60 part=3 status=0 attempts=1
+ACR_TX seq=60 part=4 bytes=64
+ACR_MAC seq=60 part=4 status=0 attempts=1
+ACR_TX seq=60 part=5 bytes=64
+ACR_MAC seq=60 part=5 status=0 attempts=1
+ACR_TX seq=60 part=6 bytes=64
+ACR_MAC seq=60 part=6 status=0 attempts=1
+ACR_TX seq=60 part=7 bytes=52
+ACR_MAC seq=60 part=7 status=0 attempts=1
+ACR_TX seq=61 part=0 bytes=64
+ACR_MAC seq=61 part=0 status=0 attempts=1
+ACR_TX seq=61 part=1 bytes=64
+ACR_MAC seq=61 part=1 status=0 attempts=1
+ACR_TX seq=61 part=2 bytes=64
+ACR_MAC seq=61 part=2 status=0 attempts=1
+ACR_TX seq=61 part=3 bytes=64
+ACR_MAC seq=61 part=3 status=0 attempts=1
+ACR_TX seq=61 part=4 bytes=64
+ACR_MAC seq=61 part=4 status=0 attempts=1
+ACR_TX seq=61 part=5 bytes=64
+ACR_MAC seq=61 part=5 status=0 attempts=1
+ACR_TX seq=61 part=6 bytes=64
+ACR_MAC seq=61 part=6 status=0 attempts=1
+ACR_TX seq=61 part=7 bytes=52
+ACR_MAC seq=61 part=7 status=0 attempts=1
+ACR_TX seq=62 part=0 bytes=64
+ACR_MAC seq=62 part=0 status=0 attempts=1
+ACR_TX seq=62 part=1 bytes=64
+ACR_MAC seq=62 part=1 status=0 attempts=1
+ACR_TX seq=62 part=2 bytes=64
+ACR_MAC seq=62 part=2 status=0 attempts=1
+ACR_TX seq=62 part=3 bytes=64
+ACR_MAC seq=62 part=3 status=0 attempts=1
+ACR_TX seq=62 part=4 bytes=64
+ACR_MAC seq=62 part=4 status=0 attempts=1
+ACR_TX seq=62 part=5 bytes=64
+ACR_MAC seq=62 part=5 status=0 attempts=1
+ACR_TX seq=62 part=6 bytes=64
+ACR_MAC seq=62 part=6 status=0 attempts=1
+ACR_TX seq=62 part=7 bytes=52
+ACR_MAC seq=62 part=7 status=0 attempts=1
+ACR_TX seq=63 part=0 bytes=64
+ACR_MAC seq=63 part=0 status=0 attempts=1
+ACR_TX seq=63 part=1 bytes=64
+ACR_MAC seq=63 part=1 status=0 attempts=1
+ACR_TX seq=63 part=2 bytes=64
+ACR_MAC seq=63 part=2 status=0 attempts=1
+ACR_TX seq=63 part=3 bytes=64
+ACR_MAC seq=63 part=3 status=0 attempts=1
+ACR_TX seq=63 part=4 bytes=64
+ACR_MAC seq=63 part=4 status=0 attempts=1
+ACR_TX seq=63 part=5 bytes=64
+ACR_MAC seq=63 part=5 status=0 attempts=1
+ACR_TX seq=63 part=6 bytes=64
+ACR_MAC seq=63 part=6 status=0 attempts=1
+ACR_TX seq=63 part=7 bytes=52
+ACR_MAC seq=63 part=7 status=0 attempts=1
+ACR_TX seq=64 part=0 bytes=64
+ACR_MAC seq=64 part=0 status=0 attempts=1
+ACR_TX seq=64 part=1 bytes=64
+ACR_MAC seq=64 part=1 status=0 attempts=1
+ACR_TX seq=64 part=2 bytes=64
+ACR_MAC seq=64 part=2 status=0 attempts=1
+ACR_TX seq=64 part=3 bytes=64
+ACR_MAC seq=64 part=3 status=0 attempts=1
+ACR_TX seq=64 part=4 bytes=64
+ACR_MAC seq=64 part=4 status=0 attempts=1
+ACR_TX seq=64 part=5 bytes=64
+ACR_MAC seq=64 part=5 status=0 attempts=1
+ACR_TX seq=64 part=6 bytes=64
+ACR_MAC seq=64 part=6 status=0 attempts=1
+ACR_TX seq=64 part=7 bytes=52
+ACR_MAC seq=64 part=7 status=0 attempts=1
+ACR_TX seq=65 part=0 bytes=64
+ACR_MAC seq=65 part=0 status=0 attempts=1
+ACR_TX seq=65 part=1 bytes=64
+ACR_MAC seq=65 part=1 status=0 attempts=1
+ACR_TX seq=65 part=2 bytes=64
+ACR_MAC seq=65 part=2 status=0 attempts=1
+ACR_TX seq=65 part=3 bytes=64
+ACR_MAC seq=65 part=3 status=0 attempts=1
+ACR_TX seq=65 part=4 bytes=64
+ACR_MAC seq=65 part=4 status=0 attempts=1
+ACR_TX seq=65 part=5 bytes=64
+ACR_MAC seq=65 part=5 status=0 attempts=1
+ACR_TX seq=65 part=6 bytes=64
+ACR_MAC seq=65 part=6 status=0 attempts=1
+ACR_TX seq=65 part=7 bytes=52
+ACR_MAC seq=65 part=7 status=0 attempts=1
+ACR_TX seq=66 part=0 bytes=64
+ACR_MAC seq=66 part=0 status=0 attempts=1
+ACR_TX seq=66 part=1 bytes=64
+ACR_MAC seq=66 part=1 status=0 attempts=1
+ACR_TX seq=66 part=2 bytes=64
+ACR_MAC seq=66 part=2 status=0 attempts=1
+ACR_TX seq=66 part=3 bytes=64
+ACR_MAC seq=66 part=3 status=0 attempts=1
+ACR_TX seq=66 part=4 bytes=64
+ACR_MAC seq=66 part=4 status=0 attempts=1
+ACR_TX seq=66 part=5 bytes=64
+ACR_MAC seq=66 part=5 status=0 attempts=1
+ACR_TX seq=66 part=6 bytes=64
+ACR_MAC seq=66 part=6 status=0 attempts=1
+ACR_TX seq=66 part=7 bytes=52
+ACR_MAC seq=66 part=7 status=0 attempts=1
+ACR_TX seq=67 part=0 bytes=64
+ACR_MAC seq=67 part=0 status=0 attempts=1
+ACR_TX seq=67 part=1 bytes=64
+ACR_MAC seq=67 part=1 status=0 attempts=1
+ACR_TX seq=67 part=2 bytes=64
+ACR_MAC seq=67 part=2 status=0 attempts=1
+ACR_TX seq=67 part=3 bytes=64
+ACR_MAC seq=67 part=3 status=0 attempts=1
+ACR_TX seq=67 part=4 bytes=64
+ACR_MAC seq=67 part=4 status=0 attempts=1
+ACR_TX seq=67 part=5 bytes=64
+ACR_MAC seq=67 part=5 status=0 attempts=1
+ACR_TX seq=67 part=6 bytes=64
+ACR_MAC seq=67 part=6 status=0 attempts=1
+ACR_TX seq=67 part=7 bytes=52
+ACR_MAC seq=67 part=7 status=0 attempts=1
+ACR_TX seq=68 part=0 bytes=64
+ACR_MAC seq=68 part=0 status=0 attempts=1
+ACR_TX seq=68 part=1 bytes=64
+ACR_MAC seq=68 part=1 status=0 attempts=1
+ACR_TX seq=68 part=2 bytes=64
+ACR_MAC seq=68 part=2 status=0 attempts=1
+ACR_TX seq=68 part=3 bytes=64
+ACR_MAC seq=68 part=3 status=0 attempts=1
+ACR_TX seq=68 part=4 bytes=64
+ACR_MAC seq=68 part=4 status=0 attempts=1
+ACR_TX seq=68 part=5 bytes=64
+ACR_MAC seq=68 part=5 status=0 attempts=1
+ACR_TX seq=68 part=6 bytes=64
+ACR_MAC seq=68 part=6 status=0 attempts=1
+ACR_TX seq=68 part=7 bytes=52
+ACR_MAC seq=68 part=7 status=0 attempts=1
+ACR_TX seq=69 part=0 bytes=64
+ACR_MAC seq=69 part=0 status=0 attempts=1
+ACR_TX seq=69 part=1 bytes=64
+ACR_MAC seq=69 part=1 status=0 attempts=1
+ACR_TX seq=69 part=2 bytes=64
+ACR_MAC seq=69 part=2 status=0 attempts=1
+ACR_TX seq=69 part=3 bytes=64
+ACR_MAC seq=69 part=3 status=0 attempts=1
+ACR_TX seq=69 part=4 bytes=64
+ACR_MAC seq=69 part=4 status=0 attempts=1
+ACR_TX seq=69 part=5 bytes=64
+ACR_MAC seq=69 part=5 status=0 attempts=1
+ACR_TX seq=69 part=6 bytes=64
+ACR_MAC seq=69 part=6 status=0 attempts=1
+ACR_TX seq=69 part=7 bytes=52
+ACR_MAC seq=69 part=7 status=0 attempts=1
+ACR_TX seq=70 part=0 bytes=64
+ACR_MAC seq=70 part=0 status=0 attempts=1
+ACR_TX seq=70 part=1 bytes=64
+ACR_MAC seq=70 part=1 status=0 attempts=1
+ACR_TX seq=70 part=2 bytes=64
+ACR_MAC seq=70 part=2 status=0 attempts=1
+ACR_TX seq=70 part=3 bytes=64
+ACR_MAC seq=70 part=3 status=0 attempts=1
+ACR_TX seq=70 part=4 bytes=64
+ACR_MAC seq=70 part=4 status=0 attempts=1
+ACR_TX seq=70 part=5 bytes=64
+ACR_MAC seq=70 part=5 status=0 attempts=1
+ACR_TX seq=70 part=6 bytes=64
+ACR_MAC seq=70 part=6 status=0 attempts=1
+ACR_TX seq=70 part=7 bytes=52
+ACR_MAC seq=70 part=7 status=0 attempts=1
+ACR_TX seq=71 part=0 bytes=64
+ACR_MAC seq=71 part=0 status=0 attempts=1
+ACR_TX seq=71 part=1 bytes=64
+ACR_MAC seq=71 part=1 status=0 attempts=1
+ACR_TX seq=71 part=2 bytes=64
+ACR_MAC seq=71 part=2 status=0 attempts=1
+ACR_TX seq=71 part=3 bytes=64
+ACR_MAC seq=71 part=3 status=0 attempts=1
+ACR_TX seq=71 part=4 bytes=64
+ACR_MAC seq=71 part=4 status=0 attempts=1
+ACR_TX seq=71 part=5 bytes=64
+ACR_MAC seq=71 part=5 status=0 attempts=1
+ACR_TX seq=71 part=6 bytes=64
+ACR_MAC seq=71 part=6 status=0 attempts=1
+ACR_TX seq=71 part=7 bytes=52
+ACR_MAC seq=71 part=7 status=0 attempts=1
+ACR_TX seq=72 part=0 bytes=64
+ACR_MAC seq=72 part=0 status=0 attempts=1
+ACR_TX seq=72 part=1 bytes=64
+ACR_MAC seq=72 part=1 status=0 attempts=1
+ACR_TX seq=72 part=2 bytes=64
+ACR_MAC seq=72 part=2 status=0 attempts=1
+ACR_TX seq=72 part=3 bytes=64
+ACR_MAC seq=72 part=3 status=0 attempts=1
+ACR_TX seq=72 part=4 bytes=64
+ACR_MAC seq=72 part=4 status=0 attempts=1
+ACR_TX seq=72 part=5 bytes=64
+ACR_MAC seq=72 part=5 status=0 attempts=1
+ACR_TX seq=72 part=6 bytes=64
+ACR_MAC seq=72 part=6 status=0 attempts=1
+ACR_TX seq=72 part=7 bytes=52
+ACR_MAC seq=72 part=7 status=0 attempts=1
+ACR_TX seq=73 part=0 bytes=64
+ACR_MAC seq=73 part=0 status=0 attempts=1
+ACR_TX seq=73 part=1 bytes=64
+ACR_MAC seq=73 part=1 status=0 attempts=1
+ACR_TX seq=73 part=2 bytes=64
+ACR_MAC seq=73 part=2 status=0 attempts=1
+ACR_TX seq=73 part=3 bytes=64
+ACR_MAC seq=73 part=3 status=0 attempts=1
+ACR_TX seq=73 part=4 bytes=64
+ACR_MAC seq=73 part=4 status=0 attempts=1
+ACR_TX seq=73 part=5 bytes=64
+ACR_MAC seq=73 part=5 status=0 attempts=1
+ACR_TX seq=73 part=6 bytes=64
+ACR_MAC seq=73 part=6 status=0 attempts=1
+ACR_TX seq=73 part=7 bytes=52
+ACR_MAC seq=73 part=7 status=0 attempts=1
+ACR_TX seq=74 part=0 bytes=64
+ACR_MAC seq=74 part=0 status=0 attempts=1
+ACR_TX seq=74 part=1 bytes=64
+ACR_MAC seq=74 part=1 status=0 attempts=1
+ACR_TX seq=74 part=2 bytes=64
+ACR_MAC seq=74 part=2 status=0 attempts=1
+ACR_TX seq=74 part=3 bytes=64
+ACR_MAC seq=74 part=3 status=0 attempts=1
+ACR_TX seq=74 part=4 bytes=64
+ACR_MAC seq=74 part=4 status=0 attempts=1
+ACR_TX seq=74 part=5 bytes=64
+ACR_MAC seq=74 part=5 status=0 attempts=1
+ACR_TX seq=74 part=6 bytes=64
+ACR_MAC seq=74 part=6 status=0 attempts=1
+ACR_TX seq=74 part=7 bytes=52
+ACR_MAC seq=74 part=7 status=0 attempts=1
+ACR_TX seq=75 part=0 bytes=64
+ACR_MAC seq=75 part=0 status=0 attempts=1
+ACR_TX seq=75 part=1 bytes=64
+ACR_MAC seq=75 part=1 status=0 attempts=1
+ACR_TX seq=75 part=2 bytes=64
+ACR_MAC seq=75 part=2 status=0 attempts=1
+ACR_TX seq=75 part=3 bytes=64
+ACR_MAC seq=75 part=3 status=0 attempts=1
+ACR_TX seq=75 part=4 bytes=64
+ACR_MAC seq=75 part=4 status=0 attempts=1
+ACR_TX seq=75 part=5 bytes=64
+ACR_MAC seq=75 part=5 status=0 attempts=1
+ACR_TX seq=75 part=6 bytes=64
+ACR_MAC seq=75 part=6 status=0 attempts=1
+ACR_TX seq=75 part=7 bytes=52
+ACR_MAC seq=75 part=7 status=0 attempts=1
+ACR_TX seq=76 part=0 bytes=64
+ACR_MAC seq=76 part=0 status=0 attempts=1
+ACR_TX seq=76 part=1 bytes=64
+ACR_MAC seq=76 part=1 status=0 attempts=1
+ACR_TX seq=76 part=2 bytes=64
+ACR_MAC seq=76 part=2 status=0 attempts=1
+ACR_TX seq=76 part=3 bytes=64
+ACR_MAC seq=76 part=3 status=0 attempts=1
+ACR_TX seq=76 part=4 bytes=64
+ACR_MAC seq=76 part=4 status=0 attempts=1
+ACR_TX seq=76 part=5 bytes=64
+ACR_MAC seq=76 part=5 status=0 attempts=1
+ACR_TX seq=76 part=6 bytes=64
+ACR_MAC seq=76 part=6 status=0 attempts=1
+ACR_TX seq=76 part=7 bytes=52
+ACR_MAC seq=76 part=7 status=0 attempts=1
+ACR_TX seq=77 part=0 bytes=64
+ACR_MAC seq=77 part=0 status=0 attempts=1
+ACR_TX seq=77 part=1 bytes=64
+ACR_MAC seq=77 part=1 status=0 attempts=1
+ACR_TX seq=77 part=2 bytes=64
+ACR_MAC seq=77 part=2 status=0 attempts=1
+ACR_TX seq=77 part=3 bytes=64
+ACR_MAC seq=77 part=3 status=0 attempts=1
+ACR_TX seq=77 part=4 bytes=64
+ACR_MAC seq=77 part=4 status=0 attempts=1
+ACR_TX seq=77 part=5 bytes=64
+ACR_MAC seq=77 part=5 status=0 attempts=1
+ACR_TX seq=77 part=6 bytes=64
+ACR_MAC seq=77 part=6 status=0 attempts=1
+ACR_TX seq=77 part=7 bytes=52
+ACR_MAC seq=77 part=7 status=0 attempts=1
+ACR_TX seq=78 part=0 bytes=64
+ACR_MAC seq=78 part=0 status=0 attempts=1
+ACR_TX seq=78 part=1 bytes=64
+ACR_MAC seq=78 part=1 status=0 attempts=1
+ACR_TX seq=78 part=2 bytes=64
+ACR_MAC seq=78 part=2 status=0 attempts=1
+ACR_TX seq=78 part=3 bytes=64
+ACR_MAC seq=78 part=3 status=0 attempts=1
+ACR_TX seq=78 part=4 bytes=64
+ACR_MAC seq=78 part=4 status=0 attempts=1
+ACR_TX seq=78 part=5 bytes=64
+ACR_MAC seq=78 part=5 status=0 attempts=1
+ACR_TX seq=78 part=6 bytes=64
+ACR_MAC seq=78 part=6 status=0 attempts=1
+ACR_TX seq=78 part=7 bytes=52
+ACR_MAC seq=78 part=7 status=0 attempts=1
+ACR_TX seq=79 part=0 bytes=64
+ACR_MAC seq=79 part=0 status=0 attempts=1
+ACR_TX seq=79 part=1 bytes=64
+ACR_MAC seq=79 part=1 status=0 attempts=1
+ACR_TX seq=79 part=2 bytes=64
+ACR_MAC seq=79 part=2 status=0 attempts=1
+ACR_TX seq=79 part=3 bytes=64
+ACR_MAC seq=79 part=3 status=0 attempts=1
+ACR_TX seq=79 part=4 bytes=64
+ACR_MAC seq=79 part=4 status=0 attempts=1
+ACR_TX seq=79 part=5 bytes=64
+ACR_MAC seq=79 part=5 status=0 attempts=1
+ACR_TX seq=79 part=6 bytes=64
+ACR_MAC seq=79 part=6 status=0 attempts=1
+ACR_TX seq=79 part=7 bytes=52
+ACR_MAC seq=79 part=7 status=0 attempts=1
+ACR_TX seq=80 part=0 bytes=64
+ACR_MAC seq=80 part=0 status=0 attempts=1
+ACR_TX seq=80 part=1 bytes=64
+ACR_MAC seq=80 part=1 status=0 attempts=1
+ACR_TX seq=80 part=2 bytes=64
+ACR_MAC seq=80 part=2 status=0 attempts=1
+ACR_TX seq=80 part=3 bytes=64
+ACR_MAC seq=80 part=3 status=0 attempts=1
+ACR_TX seq=80 part=4 bytes=64
+ACR_MAC seq=80 part=4 status=0 attempts=1
+ACR_TX seq=80 part=5 bytes=64
+ACR_MAC seq=80 part=5 status=0 attempts=1
+ACR_TX seq=80 part=6 bytes=64
+ACR_MAC seq=80 part=6 status=0 attempts=1
+ACR_TX seq=80 part=7 bytes=52
+ACR_MAC seq=80 part=7 status=0 attempts=1
+ACR_TX seq=81 part=0 bytes=64
+ACR_MAC seq=81 part=0 status=0 attempts=1
+ACR_TX seq=81 part=1 bytes=64
+ACR_MAC seq=81 part=1 status=0 attempts=1
+ACR_TX seq=81 part=2 bytes=64
+ACR_MAC seq=81 part=2 status=0 attempts=1
+ACR_TX seq=81 part=3 bytes=64
+ACR_MAC seq=81 part=3 status=0 attempts=1
+ACR_TX seq=81 part=4 bytes=64
+ACR_MAC seq=81 part=4 status=0 attempts=1
+ACR_TX seq=81 part=5 bytes=64
+ACR_MAC seq=81 part=5 status=0 attempts=1
+ACR_TX seq=81 part=6 bytes=64
+ACR_MAC seq=81 part=6 status=0 attempts=1
+ACR_TX seq=81 part=7 bytes=52
+ACR_MAC seq=81 part=7 status=0 attempts=1
+ACR_TX seq=82 part=0 bytes=64
+ACR_MAC seq=82 part=0 status=0 attempts=1
+ACR_TX seq=82 part=1 bytes=64
+ACR_MAC seq=82 part=1 status=0 attempts=1
+ACR_TX seq=82 part=2 bytes=64
+ACR_MAC seq=82 part=2 status=0 attempts=1
+ACR_TX seq=82 part=3 bytes=64
+ACR_MAC seq=82 part=3 status=0 attempts=1
+ACR_TX seq=82 part=4 bytes=64
+ACR_MAC seq=82 part=4 status=0 attempts=1
+ACR_TX seq=82 part=5 bytes=64
+ACR_MAC seq=82 part=5 status=0 attempts=1
+ACR_TX seq=82 part=6 bytes=64
+ACR_MAC seq=82 part=6 status=0 attempts=1
+ACR_TX seq=82 part=7 bytes=52
+ACR_MAC seq=82 part=7 status=0 attempts=1
+ACR_TX seq=83 part=0 bytes=64
+ACR_MAC seq=83 part=0 status=0 attempts=1
+ACR_TX seq=83 part=1 bytes=64
+ACR_MAC seq=83 part=1 status=0 attempts=1
+ACR_TX seq=83 part=2 bytes=64
+ACR_MAC seq=83 part=2 status=0 attempts=1
+ACR_TX seq=83 part=3 bytes=64
+ACR_MAC seq=83 part=3 status=0 attempts=1
+ACR_TX seq=83 part=4 bytes=64
+ACR_MAC seq=83 part=4 status=0 attempts=1
+ACR_TX seq=83 part=5 bytes=64
+ACR_MAC seq=83 part=5 status=0 attempts=1
+ACR_TX seq=83 part=6 bytes=64
+ACR_MAC seq=83 part=6 status=0 attempts=1
+ACR_TX seq=83 part=7 bytes=52
+ACR_MAC seq=83 part=7 status=0 attempts=1
+ACR_TX seq=84 part=0 bytes=64
+ACR_MAC seq=84 part=0 status=0 attempts=1
+ACR_TX seq=84 part=1 bytes=64
+ACR_MAC seq=84 part=1 status=0 attempts=1
+ACR_TX seq=84 part=2 bytes=64
+ACR_MAC seq=84 part=2 status=0 attempts=1
+ACR_TX seq=84 part=3 bytes=64
+ACR_MAC seq=84 part=3 status=0 attempts=1
+ACR_TX seq=84 part=4 bytes=64
+ACR_MAC seq=84 part=4 status=0 attempts=1
+ACR_TX seq=84 part=5 bytes=64
+ACR_MAC seq=84 part=5 status=0 attempts=1
+ACR_TX seq=84 part=6 bytes=64
+ACR_MAC seq=84 part=6 status=0 attempts=1
+ACR_TX seq=84 part=7 bytes=52
+ACR_MAC seq=84 part=7 status=0 attempts=1
+ACR_TX seq=85 part=0 bytes=64
+ACR_MAC seq=85 part=0 status=0 attempts=1
+ACR_TX seq=85 part=1 bytes=64
+ACR_MAC seq=85 part=1 status=0 attempts=1
+ACR_TX seq=85 part=2 bytes=64
+ACR_MAC seq=85 part=2 status=0 attempts=1
+ACR_TX seq=85 part=3 bytes=64
+ACR_MAC seq=85 part=3 status=0 attempts=1
+ACR_TX seq=85 part=4 bytes=64
+ACR_MAC seq=85 part=4 status=0 attempts=1
+ACR_TX seq=85 part=5 bytes=64
+ACR_MAC seq=85 part=5 status=0 attempts=1
+ACR_TX seq=85 part=6 bytes=64
+ACR_MAC seq=85 part=6 status=0 attempts=1
+ACR_TX seq=85 part=7 bytes=52
+ACR_MAC seq=85 part=7 status=0 attempts=1
+ACR_TX seq=86 part=0 bytes=64
+ACR_MAC seq=86 part=0 status=0 attempts=1
+ACR_TX seq=86 part=1 bytes=64
+ACR_MAC seq=86 part=1 status=0 attempts=1
+ACR_TX seq=86 part=2 bytes=64
+ACR_MAC seq=86 part=2 status=0 attempts=1
+ACR_TX seq=86 part=3 bytes=64
+ACR_MAC seq=86 part=3 status=0 attempts=1
+ACR_TX seq=86 part=4 bytes=64
+ACR_MAC seq=86 part=4 status=0 attempts=1
+ACR_TX seq=86 part=5 bytes=64
+ACR_MAC seq=86 part=5 status=0 attempts=1
+ACR_TX seq=86 part=6 bytes=64
+ACR_MAC seq=86 part=6 status=0 attempts=1
+ACR_TX seq=86 part=7 bytes=52
+ACR_MAC seq=86 part=7 status=0 attempts=1
+ACR_TX seq=87 part=0 bytes=64
+ACR_MAC seq=87 part=0 status=0 attempts=1
+ACR_TX seq=87 part=1 bytes=64
+ACR_MAC seq=87 part=1 status=0 attempts=1
+ACR_TX seq=87 part=2 bytes=64
+ACR_MAC seq=87 part=2 status=0 attempts=1
+ACR_TX seq=87 part=3 bytes=64
+ACR_MAC seq=87 part=3 status=0 attempts=1
+ACR_TX seq=87 part=4 bytes=64
+ACR_MAC seq=87 part=4 status=0 attempts=1
+ACR_TX seq=87 part=5 bytes=64
+ACR_MAC seq=87 part=5 status=0 attempts=1
+ACR_TX seq=87 part=6 bytes=64
+ACR_MAC seq=87 part=6 status=0 attempts=1
+ACR_TX seq=87 part=7 bytes=52
+ACR_MAC seq=87 part=7 status=0 attempts=1
+ACR_TX seq=88 part=0 bytes=64
+ACR_MAC seq=88 part=0 status=0 attempts=1
+ACR_TX seq=88 part=1 bytes=64
+ACR_MAC seq=88 part=1 status=0 attempts=1
+ACR_TX seq=88 part=2 bytes=64
+ACR_MAC seq=88 part=2 status=0 attempts=1
+ACR_TX seq=88 part=3 bytes=64
+ACR_MAC seq=88 part=3 status=0 attempts=1
+ACR_TX seq=88 part=4 bytes=64
+ACR_MAC seq=88 part=4 status=0 attempts=1
+ACR_TX seq=88 part=5 bytes=64
+ACR_MAC seq=88 part=5 status=0 attempts=1
+ACR_TX seq=88 part=6 bytes=64
+ACR_MAC seq=88 part=6 status=0 attempts=1
+ACR_TX seq=88 part=7 bytes=52
+ACR_MAC seq=88 part=7 status=0 attempts=1
+ACR_TX seq=89 part=0 bytes=64
+ACR_MAC seq=89 part=0 status=0 attempts=1
+ACR_TX seq=89 part=1 bytes=64
+ACR_MAC seq=89 part=1 status=0 attempts=1
+ACR_TX seq=89 part=2 bytes=64
+ACR_MAC seq=89 part=2 status=0 attempts=1
+ACR_TX seq=89 part=3 bytes=64
+ACR_MAC seq=89 part=3 status=0 attempts=1
+ACR_TX seq=89 part=4 bytes=64
+ACR_MAC seq=89 part=4 status=0 attempts=1
+ACR_TX seq=89 part=5 bytes=64
+ACR_MAC seq=89 part=5 status=0 attempts=1
+ACR_TX seq=89 part=6 bytes=64
+ACR_MAC seq=89 part=6 status=0 attempts=1
+ACR_TX seq=89 part=7 bytes=52
+ACR_MAC seq=89 part=7 status=0 attempts=1
+ACR_TX seq=90 part=0 bytes=64
+ACR_MAC seq=90 part=0 status=0 attempts=1
+ACR_TX seq=90 part=1 bytes=64
+ACR_MAC seq=90 part=1 status=0 attempts=1
+ACR_TX seq=90 part=2 bytes=64
+ACR_MAC seq=90 part=2 status=0 attempts=1
+ACR_TX seq=90 part=3 bytes=64
+ACR_MAC seq=90 part=3 status=0 attempts=1
+ACR_TX seq=90 part=4 bytes=64
+ACR_MAC seq=90 part=4 status=0 attempts=1
+ACR_TX seq=90 part=5 bytes=64
+ACR_MAC seq=90 part=5 status=0 attempts=1
+ACR_TX seq=90 part=6 bytes=64
+ACR_MAC seq=90 part=6 status=0 attempts=1
+ACR_TX seq=90 part=7 bytes=52
+ACR_MAC seq=90 part=7 status=0 attempts=1
+ACR_TX seq=91 part=0 bytes=64
+ACR_MAC seq=91 part=0 status=0 attempts=1
+ACR_TX seq=91 part=1 bytes=64
+ACR_MAC seq=91 part=1 status=0 attempts=1
+ACR_TX seq=91 part=2 bytes=64
+ACR_MAC seq=91 part=2 status=0 attempts=1
+ACR_TX seq=91 part=3 bytes=64
+ACR_MAC seq=91 part=3 status=0 attempts=1
+ACR_TX seq=91 part=4 bytes=64
+ACR_MAC seq=91 part=4 status=0 attempts=1
+ACR_TX seq=91 part=5 bytes=64
+ACR_MAC seq=91 part=5 status=0 attempts=1
+ACR_TX seq=91 part=6 bytes=64
+ACR_MAC seq=91 part=6 status=0 attempts=1
+ACR_TX seq=91 part=7 bytes=52
+ACR_MAC seq=91 part=7 status=0 attempts=1
+ACR_TX seq=92 part=0 bytes=64
+ACR_MAC seq=92 part=0 status=0 attempts=1
+ACR_TX seq=92 part=1 bytes=64
+ACR_MAC seq=92 part=1 status=0 attempts=1
+ACR_TX seq=92 part=2 bytes=64
+ACR_MAC seq=92 part=2 status=0 attempts=1
+ACR_TX seq=92 part=3 bytes=64
+ACR_MAC seq=92 part=3 status=0 attempts=1
+ACR_TX seq=92 part=4 bytes=64
+ACR_MAC seq=92 part=4 status=0 attempts=1
+ACR_TX seq=92 part=5 bytes=64
+ACR_MAC seq=92 part=5 status=0 attempts=1
+ACR_TX seq=92 part=6 bytes=64
+ACR_MAC seq=92 part=6 status=0 attempts=1
+ACR_TX seq=92 part=7 bytes=52
+ACR_MAC seq=92 part=7 status=0 attempts=1
+ACR_TX seq=93 part=0 bytes=64
+ACR_MAC seq=93 part=0 status=0 attempts=1
+ACR_TX seq=93 part=1 bytes=64
+ACR_MAC seq=93 part=1 status=0 attempts=1
+ACR_TX seq=93 part=2 bytes=64
+ACR_MAC seq=93 part=2 status=0 attempts=1
+ACR_TX seq=93 part=3 bytes=64
+ACR_MAC seq=93 part=3 status=0 attempts=1
+ACR_TX seq=93 part=4 bytes=64
+ACR_MAC seq=93 part=4 status=0 attempts=1
+ACR_TX seq=93 part=5 bytes=64
+ACR_MAC seq=93 part=5 status=0 attempts=1
+ACR_TX seq=93 part=6 bytes=64
+ACR_MAC seq=93 part=6 status=0 attempts=1
+ACR_TX seq=93 part=7 bytes=52
+ACR_MAC seq=93 part=7 status=0 attempts=1
+ACR_TX seq=94 part=0 bytes=64
+ACR_MAC seq=94 part=0 status=0 attempts=1
+ACR_TX seq=94 part=1 bytes=64
+ACR_MAC seq=94 part=1 status=0 attempts=1
+ACR_TX seq=94 part=2 bytes=64
+ACR_MAC seq=94 part=2 status=0 attempts=1
+ACR_TX seq=94 part=3 bytes=64
+ACR_MAC seq=94 part=3 status=0 attempts=1
+ACR_TX seq=94 part=4 bytes=64
+ACR_MAC seq=94 part=4 status=0 attempts=1
+ACR_TX seq=94 part=5 bytes=64
+ACR_MAC seq=94 part=5 status=0 attempts=1
+ACR_TX seq=94 part=6 bytes=64
+ACR_MAC seq=94 part=6 status=0 attempts=1
+ACR_TX seq=94 part=7 bytes=52
+ACR_MAC seq=94 part=7 status=0 attempts=1
+ACR_TX seq=95 part=0 bytes=64
+ACR_MAC seq=95 part=0 status=0 attempts=1
+ACR_TX seq=95 part=1 bytes=64
+ACR_MAC seq=95 part=1 status=0 attempts=1
+ACR_TX seq=95 part=2 bytes=64
+ACR_MAC seq=95 part=2 status=0 attempts=1
+ACR_TX seq=95 part=3 bytes=64
+ACR_MAC seq=95 part=3 status=0 attempts=1
+ACR_TX seq=95 part=4 bytes=64
+ACR_MAC seq=95 part=4 status=0 attempts=1
+ACR_TX seq=95 part=5 bytes=64
+ACR_MAC seq=95 part=5 status=0 attempts=1
+ACR_TX seq=95 part=6 bytes=64
+ACR_MAC seq=95 part=6 status=0 attempts=1
+ACR_TX seq=95 part=7 bytes=52
+ACR_MAC seq=95 part=7 status=0 attempts=1
+ACR_TX seq=96 part=0 bytes=64
+ACR_MAC seq=96 part=0 status=0 attempts=1
+ACR_TX seq=96 part=1 bytes=64
+ACR_MAC seq=96 part=1 status=0 attempts=1
+ACR_TX seq=96 part=2 bytes=64
+ACR_MAC seq=96 part=2 status=0 attempts=1
+ACR_TX seq=96 part=3 bytes=64
+ACR_MAC seq=96 part=3 status=0 attempts=1
+ACR_TX seq=96 part=4 bytes=64
+ACR_MAC seq=96 part=4 status=0 attempts=1
+ACR_TX seq=96 part=5 bytes=64
+ACR_MAC seq=96 part=5 status=0 attempts=1
+ACR_TX seq=96 part=6 bytes=64
+ACR_MAC seq=96 part=6 status=0 attempts=1
+ACR_TX seq=96 part=7 bytes=52
+ACR_MAC seq=96 part=7 status=0 attempts=1
+ACR_TX seq=97 part=0 bytes=64
+ACR_MAC seq=97 part=0 status=0 attempts=1
+ACR_TX seq=97 part=1 bytes=64
+ACR_MAC seq=97 part=1 status=0 attempts=1
+ACR_TX seq=97 part=2 bytes=64
+ACR_MAC seq=97 part=2 status=0 attempts=1
+ACR_TX seq=97 part=3 bytes=64
+ACR_MAC seq=97 part=3 status=0 attempts=1
+ACR_TX seq=97 part=4 bytes=64
+ACR_MAC seq=97 part=4 status=0 attempts=1
+ACR_TX seq=97 part=5 bytes=64
+ACR_MAC seq=97 part=5 status=0 attempts=1
+ACR_TX seq=97 part=6 bytes=64
+ACR_MAC seq=97 part=6 status=0 attempts=1
+ACR_TX seq=97 part=7 bytes=52
+ACR_MAC seq=97 part=7 status=0 attempts=1
+ACR_TX seq=98 part=0 bytes=64
+ACR_MAC seq=98 part=0 status=0 attempts=1
+ACR_TX seq=98 part=1 bytes=64
+ACR_MAC seq=98 part=1 status=0 attempts=1
+ACR_TX seq=98 part=2 bytes=64
+ACR_MAC seq=98 part=2 status=0 attempts=1
+ACR_TX seq=98 part=3 bytes=64
+ACR_MAC seq=98 part=3 status=0 attempts=1
+ACR_TX seq=98 part=4 bytes=64
+ACR_MAC seq=98 part=4 status=0 attempts=1
+ACR_TX seq=98 part=5 bytes=64
+ACR_MAC seq=98 part=5 status=0 attempts=1
+ACR_TX seq=98 part=6 bytes=64
+ACR_MAC seq=98 part=6 status=0 attempts=1
+ACR_TX seq=98 part=7 bytes=52
+ACR_MAC seq=98 part=7 status=0 attempts=1
+ACR_TX seq=99 part=0 bytes=64
+ACR_MAC seq=99 part=0 status=0 attempts=1
+ACR_TX seq=99 part=1 bytes=64
+ACR_MAC seq=99 part=1 status=0 attempts=1
+ACR_TX seq=99 part=2 bytes=64
+ACR_MAC seq=99 part=2 status=0 attempts=1
+ACR_TX seq=99 part=3 bytes=64
+ACR_MAC seq=99 part=3 status=0 attempts=1
+ACR_TX seq=99 part=4 bytes=64
+ACR_MAC seq=99 part=4 status=0 attempts=1
+ACR_TX seq=99 part=5 bytes=64
+ACR_MAC seq=99 part=5 status=0 attempts=1
+ACR_TX seq=99 part=6 bytes=64
+ACR_MAC seq=99 part=6 status=0 attempts=1
+ACR_TX seq=99 part=7 bytes=52
+ACR_MAC seq=99 part=7 status=0 attempts=1
+ACR_TX_COMPLETE samples=100 callbacks=800 ack_ok=800 ack_fail=0
+ACR_ENERGEST role=1 cpu=163099 lpm=2033001 tx=81682 listen=2046447 hz=32768

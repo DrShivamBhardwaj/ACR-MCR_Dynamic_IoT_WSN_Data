@@ -1,0 +1,834 @@
+ACR_RX seq=8 part=0 len=69 phy_rssi_reg=192 phy_ed_reg=48
+ACR_RX seq=8 part=1 len=69 phy_rssi_reg=224 phy_ed_reg=48
+ACR_RX seq=8 part=2 len=69 phy_rssi_reg=224 phy_ed_reg=48
+ACR_RX seq=8 part=3 len=69 phy_rssi_reg=160 phy_ed_reg=48
+ACR_RX seq=8 part=4 len=69 phy_rssi_reg=128 phy_ed_reg=48
+ACR_RX seq=8 part=5 len=69 phy_rssi_reg=192 phy_ed_reg=48
+ACR_RX seq=8 part=6 len=69 phy_rssi_reg=224 phy_ed_reg=48
+ACR_RX seq=8 part=7 len=57 phy_rssi_reg=160 phy_ed_reg=48
+ACR_REASSEMBLED seq=8 bytes=500 integrity=1
+ACR_RX seq=9 part=0 len=69 phy_rssi_reg=224 phy_ed_reg=48
+ACR_RX seq=9 part=1 len=69 phy_rssi_reg=192 phy_ed_reg=48
+ACR_RX seq=9 part=2 len=69 phy_rssi_reg=192 phy_ed_reg=48
+ACR_RX seq=9 part=3 len=69 phy_rssi_reg=128 phy_ed_reg=48
+ACR_RX seq=9 part=4 len=69 phy_rssi_reg=192 phy_ed_reg=48
+ACR_RX seq=9 part=5 len=69 phy_rssi_reg=224 phy_ed_reg=48
+ACR_RX seq=9 part=6 len=69 phy_rssi_reg=128 phy_ed_reg=48
+ACR_RX seq=9 part=7 len=57 phy_rssi_reg=128 phy_ed_reg=48
+ACR_REASSEMBLED seq=9 bytes=500 integrity=1
+ACR_RX seq=10 part=0 len=69 phy_rssi_reg=192 phy_ed_reg=48
+ACR_RX seq=10 part=1 len=69 phy_rssi_reg=160 phy_ed_reg=48
+ACR_RX seq=10 part=2 len=69 phy_rssi_reg=224 phy_ed_reg=48
+ACR_RX seq=10 part=3 len=69 phy_rssi_reg=128 phy_ed_reg=48
+ACR_RX seq=10 part=4 len=69 phy_rssi_reg=192 phy_ed_reg=48
+ACR_RX seq=10 part=5 len=69 phy_rssi_reg=160 phy_ed_reg=48
+ACR_RX seq=10 part=6 len=69 phy_rssi_reg=224 phy_ed_reg=48
+ACR_RX seq=10 part=7 len=57 phy_rssi_reg=224 phy_ed_reg=48
+ACR_REASSEMBLED seq=10 bytes=500 integrity=1
+ACR_RX seq=11 part=0 len=69 phy_rssi_reg=224 phy_ed_reg=48
+ACR_RX seq=11 part=1 len=69 phy_rssi_reg=192 phy_ed_reg=48
+ACR_RX seq=11 part=2 len=69 phy_rssi_reg=224 phy_ed_reg=48
+ACR_RX seq=11 part=3 len=69 phy_rssi_reg=128 phy_ed_reg=48
+ACR_RX seq=11 part=4 len=69 phy_rssi_reg=128 phy_ed_reg=48
+ACR_RX seq=11 part=5 len=69 phy_rssi_reg=128 phy_ed_reg=48
+ACR_RX seq=11 part=6 len=69 phy_rssi_reg=224 phy_ed_reg=48
+ACR_RX seq=11 part=7 len=57 phy_rssi_reg=160 phy_ed_reg=48
+ACR_REASSEMBLED seq=11 bytes=500 integrity=1
+ACR_RX seq=12 part=0 len=69 phy_rssi_reg=160 phy_ed_reg=48
+ACR_RX seq=12 part=1 len=69 phy_rssi_reg=224 phy_ed_reg=48
+ACR_RX seq=12 part=2 len=69 phy_rssi_reg=128 phy_ed_reg=48
+ACR_RX seq=12 part=3 len=69 phy_rssi_reg=160 phy_ed_reg=48
+ACR_RX seq=12 part=4 len=69 phy_rssi_reg=192 phy_ed_reg=48
+ACR_RX seq=12 part=5 len=69 phy_rssi_reg=128 phy_ed_reg=48
+ACR_RX seq=12 part=6 len=69 phy_rssi_reg=128 phy_ed_reg=48
+ACR_RX seq=12 part=7 len=57 phy_rssi_reg=128 phy_ed_reg=48
+ACR_REASSEMBLED seq=12 bytes=500 integrity=1
+ACR_RX seq=13 part=0 len=69 phy_rssi_reg=192 phy_ed_reg=48
+ACR_RX seq=13 part=1 len=69 phy_rssi_reg=160 phy_ed_reg=48
+ACR_RX seq=13 part=2 len=69 phy_rssi_reg=160 phy_ed_reg=48
+ACR_RX seq=13 part=3 len=69 phy_rssi_reg=160 phy_ed_reg=48
+ACR_RX seq=13 part=4 len=69 phy_rssi_reg=160 phy_ed_reg=48
+ACR_RX seq=13 part=5 len=69 phy_rssi_reg=224 phy_ed_reg=48
+ACR_RX seq=13 part=6 len=69 phy_rssi_reg=224 phy_ed_reg=48
+ACR_RX seq=13 part=7 len=57 phy_rssi_reg=224 phy_ed_reg=48
+ACR_REASSEMBLED seq=13 bytes=500 integrity=1
+ACR_RX seq=14 part=0 len=69 phy_rssi_reg=224 phy_ed_reg=48
+ACR_RX seq=14 part=1 len=69 phy_rssi_reg=160 phy_ed_reg=48
+ACR_RX seq=14 part=2 len=69 phy_rssi_reg=224 phy_ed_reg=48
+ACR_RX seq=14 part=3 len=69 phy_rssi_reg=224 phy_ed_reg=48
+ACR_RX seq=14 part=4 len=69 phy_rssi_reg=224 phy_ed_reg=48
+ACR_RX seq=14 part=5 len=69 phy_rssi_reg=224 phy_ed_reg=48
+ACR_RX seq=14 part=6 len=69 phy_rssi_reg=224 phy_ed_reg=48
+ACR_RX seq=14 part=7 len=57 phy_rssi_reg=224 phy_ed_reg=48
+ACR_REASSEMBLED seq=14 bytes=500 integrity=1
+ACR_RX seq=15 part=0 len=69 phy_rssi_reg=224 phy_ed_reg=48
+ACR_RX seq=15 part=1 len=69 phy_rssi_reg=128 phy_ed_reg=48
+ACR_RX seq=15 part=2 len=69 phy_rssi_reg=128 phy_ed_reg=48
+ACR_RX seq=15 part=3 len=69 phy_rssi_reg=128 phy_ed_reg=48
+ACR_RX seq=15 part=4 len=69 phy_rssi_reg=160 phy_ed_reg=48
+ACR_RX seq=15 part=5 len=69 phy_rssi_reg=128 phy_ed_reg=48
+ACR_RX seq=15 part=6 len=69 phy_rssi_reg=128 phy_ed_reg=48
+ACR_RX seq=15 part=7 len=57 phy_rssi_reg=128 phy_ed_reg=48
+ACR_REASSEMBLED seq=15 bytes=500 integrity=1
+ACR_RX seq=16 part=0 len=69 phy_rssi_reg=160 phy_ed_reg=48
+ACR_RX seq=16 part=1 len=69 phy_rssi_reg=160 phy_ed_reg=48
+ACR_RX seq=16 part=2 len=69 phy_rssi_reg=128 phy_ed_reg=48
+ACR_RX seq=16 part=3 len=69 phy_rssi_reg=224 phy_ed_reg=48
+ACR_RX seq=16 part=4 len=69 phy_rssi_reg=224 phy_ed_reg=48
+ACR_RX seq=16 part=5 len=69 phy_rssi_reg=192 phy_ed_reg=48
+ACR_RX seq=16 part=6 len=69 phy_rssi_reg=192 phy_ed_reg=48
+ACR_RX seq=16 part=7 len=57 phy_rssi_reg=192 phy_ed_reg=48
+ACR_REASSEMBLED seq=16 bytes=500 integrity=1
+ACR_RX seq=17 part=0 len=69 phy_rssi_reg=224 phy_ed_reg=48
+ACR_RX seq=17 part=1 len=69 phy_rssi_reg=224 phy_ed_reg=48
+ACR_RX seq=17 part=2 len=69 phy_rssi_reg=160 phy_ed_reg=48
+ACR_RX seq=17 part=3 len=69 phy_rssi_reg=224 phy_ed_reg=48
+ACR_RX seq=17 part=4 len=69 phy_rssi_reg=192 phy_ed_reg=48
+ACR_RX seq=17 part=5 len=69 phy_rssi_reg=160 phy_ed_reg=48
+ACR_RX seq=17 part=6 len=69 phy_rssi_reg=192 phy_ed_reg=48
+ACR_RX seq=17 part=7 len=57 phy_rssi_reg=128 phy_ed_reg=48
+ACR_REASSEMBLED seq=17 bytes=500 integrity=1
+ACR_RX seq=18 part=0 len=69 phy_rssi_reg=160 phy_ed_reg=48
+ACR_RX seq=18 part=1 len=69 phy_rssi_reg=160 phy_ed_reg=48
+ACR_RX seq=18 part=2 len=69 phy_rssi_reg=192 phy_ed_reg=48
+ACR_RX seq=18 part=3 len=69 phy_rssi_reg=128 phy_ed_reg=48
+ACR_RX seq=18 part=4 len=69 phy_rssi_reg=224 phy_ed_reg=48
+ACR_RX seq=18 part=5 len=69 phy_rssi_reg=224 phy_ed_reg=48
+ACR_RX seq=18 part=6 len=69 phy_rssi_reg=224 phy_ed_reg=48
+ACR_RX seq=18 part=7 len=57 phy_rssi_reg=160 phy_ed_reg=48
+ACR_REASSEMBLED seq=18 bytes=500 integrity=1
+ACR_RX seq=19 part=0 len=69 phy_rssi_reg=192 phy_ed_reg=48
+ACR_RX seq=19 part=1 len=69 phy_rssi_reg=224 phy_ed_reg=48
+ACR_RX seq=19 part=2 len=69 phy_rssi_reg=128 phy_ed_reg=48
+ACR_RX seq=19 part=3 len=69 phy_rssi_reg=160 phy_ed_reg=48
+ACR_RX seq=19 part=4 len=69 phy_rssi_reg=160 phy_ed_reg=48
+ACR_RX seq=19 part=5 len=69 phy_rssi_reg=224 phy_ed_reg=48
+ACR_RX seq=19 part=6 len=69 phy_rssi_reg=192 phy_ed_reg=48
+ACR_RX seq=19 part=7 len=57 phy_rssi_reg=224 phy_ed_reg=48
+ACR_REASSEMBLED seq=19 bytes=500 integrity=1
+ACR_RX seq=20 part=0 len=69 phy_rssi_reg=160 phy_ed_reg=48
+ACR_RX seq=20 part=1 len=69 phy_rssi_reg=192 phy_ed_reg=48
+ACR_RX seq=20 part=2 len=69 phy_rssi_reg=224 phy_ed_reg=48
+ACR_RX seq=20 part=3 len=69 phy_rssi_reg=128 phy_ed_reg=48
+ACR_RX seq=20 part=4 len=69 phy_rssi_reg=160 phy_ed_reg=48
+ACR_RX seq=20 part=5 len=69 phy_rssi_reg=128 phy_ed_reg=48
+ACR_RX seq=20 part=6 len=69 phy_rssi_reg=224 phy_ed_reg=48
+ACR_RX seq=20 part=7 len=57 phy_rssi_reg=128 phy_ed_reg=48
+ACR_REASSEMBLED seq=20 bytes=500 integrity=1
+ACR_RX seq=21 part=0 len=69 phy_rssi_reg=192 phy_ed_reg=48
+ACR_RX seq=21 part=1 len=69 phy_rssi_reg=192 phy_ed_reg=48
+ACR_RX seq=21 part=2 len=69 phy_rssi_reg=160 phy_ed_reg=48
+ACR_RX seq=21 part=3 len=69 phy_rssi_reg=128 phy_ed_reg=48
+ACR_RX seq=21 part=4 len=69 phy_rssi_reg=160 phy_ed_reg=48
+ACR_RX seq=21 part=5 len=69 phy_rssi_reg=128 phy_ed_reg=48
+ACR_RX seq=21 part=6 len=69 phy_rssi_reg=128 phy_ed_reg=48
+ACR_RX seq=21 part=7 len=57 phy_rssi_reg=128 phy_ed_reg=48
+ACR_REASSEMBLED seq=21 bytes=500 integrity=1
+ACR_RX seq=22 part=0 len=69 phy_rssi_reg=128 phy_ed_reg=48
+ACR_RX seq=22 part=1 len=69 phy_rssi_reg=192 phy_ed_reg=48
+ACR_RX seq=22 part=2 len=69 phy_rssi_reg=128 phy_ed_reg=48
+ACR_RX seq=22 part=3 len=69 phy_rssi_reg=128 phy_ed_reg=48
+ACR_RX seq=22 part=4 len=69 phy_rssi_reg=128 phy_ed_reg=48
+ACR_RX seq=22 part=5 len=69 phy_rssi_reg=128 phy_ed_reg=48
+ACR_RX seq=22 part=6 len=69 phy_rssi_reg=192 phy_ed_reg=48
+ACR_RX seq=22 part=7 len=57 phy_rssi_reg=192 phy_ed_reg=48
+ACR_REASSEMBLED seq=22 bytes=500 integrity=1
+ACR_RX seq=23 part=0 len=69 phy_rssi_reg=224 phy_ed_reg=48
+ACR_RX seq=23 part=1 len=69 phy_rssi_reg=192 phy_ed_reg=48
+ACR_RX seq=23 part=2 len=69 phy_rssi_reg=128 phy_ed_reg=48
+ACR_RX seq=23 part=3 len=69 phy_rssi_reg=224 phy_ed_reg=48
+ACR_RX seq=23 part=4 len=69 phy_rssi_reg=128 phy_ed_reg=48
+ACR_RX seq=23 part=5 len=69 phy_rssi_reg=160 phy_ed_reg=48
+ACR_RX seq=23 part=6 len=69 phy_rssi_reg=128 phy_ed_reg=48
+ACR_RX seq=23 part=7 len=57 phy_rssi_reg=128 phy_ed_reg=48
+ACR_REASSEMBLED seq=23 bytes=500 integrity=1
+ACR_RX seq=24 part=0 len=69 phy_rssi_reg=160 phy_ed_reg=48
+ACR_RX seq=24 part=1 len=69 phy_rssi_reg=160 phy_ed_reg=48
+ACR_RX seq=24 part=2 len=69 phy_rssi_reg=192 phy_ed_reg=48
+ACR_RX seq=24 part=3 len=69 phy_rssi_reg=160 phy_ed_reg=48
+ACR_RX seq=24 part=4 len=69 phy_rssi_reg=192 phy_ed_reg=48
+ACR_RX seq=24 part=5 len=69 phy_rssi_reg=160 phy_ed_reg=48
+ACR_RX seq=24 part=6 len=69 phy_rssi_reg=160 phy_ed_reg=48
+ACR_RX seq=24 part=7 len=57 phy_rssi_reg=224 phy_ed_reg=48
+ACR_REASSEMBLED seq=24 bytes=500 integrity=1
+ACR_RX seq=25 part=0 len=69 phy_rssi_reg=192 phy_ed_reg=48
+ACR_RX seq=25 part=1 len=69 phy_rssi_reg=192 phy_ed_reg=48
+ACR_RX seq=25 part=2 len=69 phy_rssi_reg=224 phy_ed_reg=48
+ACR_RX seq=25 part=3 len=69 phy_rssi_reg=224 phy_ed_reg=48
+ACR_RX seq=25 part=4 len=69 phy_rssi_reg=224 phy_ed_reg=48
+ACR_RX seq=25 part=5 len=69 phy_rssi_reg=160 phy_ed_reg=48
+ACR_RX seq=25 part=6 len=69 phy_rssi_reg=128 phy_ed_reg=48
+ACR_RX seq=25 part=7 len=57 phy_rssi_reg=224 phy_ed_reg=48
+ACR_REASSEMBLED seq=25 bytes=500 integrity=1
+ACR_RX seq=26 part=0 len=69 phy_rssi_reg=160 phy_ed_reg=48
+ACR_RX seq=26 part=1 len=69 phy_rssi_reg=128 phy_ed_reg=48
+ACR_RX seq=26 part=2 len=69 phy_rssi_reg=192 phy_ed_reg=48
+ACR_RX seq=26 part=3 len=69 phy_rssi_reg=192 phy_ed_reg=48
+ACR_RX seq=26 part=4 len=69 phy_rssi_reg=160 phy_ed_reg=48
+ACR_RX seq=26 part=5 len=69 phy_rssi_reg=224 phy_ed_reg=48
+ACR_RX seq=26 part=6 len=69 phy_rssi_reg=128 phy_ed_reg=48
+ACR_RX seq=26 part=7 len=57 phy_rssi_reg=224 phy_ed_reg=48
+ACR_REASSEMBLED seq=26 bytes=500 integrity=1
+ACR_RX seq=27 part=0 len=69 phy_rssi_reg=192 phy_ed_reg=48
+ACR_RX seq=27 part=1 len=69 phy_rssi_reg=160 phy_ed_reg=48
+ACR_RX seq=27 part=2 len=69 phy_rssi_reg=192 phy_ed_reg=48
+ACR_RX seq=27 part=3 len=69 phy_rssi_reg=224 phy_ed_reg=48
+ACR_RX seq=27 part=4 len=69 phy_rssi_reg=160 phy_ed_reg=48
+ACR_RX seq=27 part=5 len=69 phy_rssi_reg=160 phy_ed_reg=48
+ACR_RX seq=27 part=6 len=69 phy_rssi_reg=128 phy_ed_reg=48
+ACR_RX seq=27 part=7 len=57 phy_rssi_reg=160 phy_ed_reg=48
+ACR_REASSEMBLED seq=27 bytes=500 integrity=1
+ACR_RX seq=28 part=0 len=69 phy_rssi_reg=128 phy_ed_reg=48
+ACR_RX seq=28 part=1 len=69 phy_rssi_reg=192 phy_ed_reg=48
+ACR_RX seq=28 part=2 len=69 phy_rssi_reg=224 phy_ed_reg=48
+ACR_RX seq=28 part=3 len=69 phy_rssi_reg=192 phy_ed_reg=48
+ACR_RX seq=28 part=4 len=69 phy_rssi_reg=224 phy_ed_reg=48
+ACR_RX seq=28 part=5 len=69 phy_rssi_reg=224 phy_ed_reg=48
+ACR_RX seq=28 part=6 len=69 phy_rssi_reg=192 phy_ed_reg=48
+ACR_RX seq=28 part=7 len=57 phy_rssi_reg=224 phy_ed_reg=48
+ACR_REASSEMBLED seq=28 bytes=500 integrity=1
+ACR_RX seq=29 part=0 len=69 phy_rssi_reg=192 phy_ed_reg=48
+ACR_RX seq=29 part=1 len=69 phy_rssi_reg=224 phy_ed_reg=48
+ACR_RX seq=29 part=2 len=69 phy_rssi_reg=192 phy_ed_reg=48
+ACR_RX seq=29 part=3 len=69 phy_rssi_reg=160 phy_ed_reg=48
+ACR_RX seq=29 part=4 len=69 phy_rssi_reg=160 phy_ed_reg=48
+ACR_RX seq=29 part=5 len=69 phy_rssi_reg=128 phy_ed_reg=48
+ACR_RX seq=29 part=6 len=69 phy_rssi_reg=192 phy_ed_reg=48
+ACR_RX seq=29 part=7 len=57 phy_rssi_reg=192 phy_ed_reg=48
+ACR_REASSEMBLED seq=29 bytes=500 integrity=1
+ACR_RX seq=30 part=0 len=69 phy_rssi_reg=128 phy_ed_reg=48
+ACR_RX seq=30 part=1 len=69 phy_rssi_reg=160 phy_ed_reg=48
+ACR_RX seq=30 part=2 len=69 phy_rssi_reg=160 phy_ed_reg=48
+ACR_RX seq=30 part=3 len=69 phy_rssi_reg=192 phy_ed_reg=48
+ACR_RX seq=30 part=4 len=69 phy_rssi_reg=160 phy_ed_reg=48
+ACR_RX seq=30 part=5 len=69 phy_rssi_reg=192 phy_ed_reg=48
+ACR_RX seq=30 part=6 len=69 phy_rssi_reg=128 phy_ed_reg=48
+ACR_RX seq=30 part=7 len=57 phy_rssi_reg=224 phy_ed_reg=48
+ACR_REASSEMBLED seq=30 bytes=500 integrity=1
+ACR_RX seq=31 part=0 len=69 phy_rssi_reg=160 phy_ed_reg=48
+ACR_RX seq=31 part=1 len=69 phy_rssi_reg=128 phy_ed_reg=48
+ACR_RX seq=31 part=2 len=69 phy_rssi_reg=224 phy_ed_reg=48
+ACR_RX_PROGRESS complete=31 fragments=251 bad=0
+ACR_ENERGEST role=2 cpu=22353 lpm=731768 tx=3119 listen=684695 hz=32768
+ACR_RX seq=31 part=3 len=69 phy_rssi_reg=192 phy_ed_reg=48
+ACR_RX seq=31 part=4 len=69 phy_rssi_reg=224 phy_ed_reg=48
+ACR_RX seq=31 part=5 len=69 phy_rssi_reg=192 phy_ed_reg=48
+ACR_RX seq=31 part=6 len=69 phy_rssi_reg=224 phy_ed_reg=48
+ACR_RX seq=31 part=7 len=57 phy_rssi_reg=128 phy_ed_reg=48
+ACR_REASSEMBLED seq=31 bytes=500 integrity=1
+ACR_RX seq=32 part=0 len=69 phy_rssi_reg=192 phy_ed_reg=48
+ACR_RX seq=32 part=1 len=69 phy_rssi_reg=160 phy_ed_reg=48
+ACR_RX seq=32 part=2 len=69 phy_rssi_reg=160 phy_ed_reg=48
+ACR_RX seq=32 part=3 len=69 phy_rssi_reg=160 phy_ed_reg=48
+ACR_RX seq=32 part=4 len=69 phy_rssi_reg=192 phy_ed_reg=48
+ACR_RX seq=32 part=5 len=69 phy_rssi_reg=192 phy_ed_reg=48
+ACR_RX seq=32 part=6 len=69 phy_rssi_reg=128 phy_ed_reg=48
+ACR_RX seq=32 part=7 len=57 phy_rssi_reg=128 phy_ed_reg=48
+ACR_REASSEMBLED seq=32 bytes=500 integrity=1
+ACR_RX seq=33 part=0 len=69 phy_rssi_reg=224 phy_ed_reg=48
+ACR_RX seq=33 part=1 len=69 phy_rssi_reg=160 phy_ed_reg=48
+ACR_RX seq=33 part=2 len=69 phy_rssi_reg=160 phy_ed_reg=48
+ACR_RX seq=33 part=3 len=69 phy_rssi_reg=192 phy_ed_reg=48
+ACR_RX seq=33 part=4 len=69 phy_rssi_reg=192 phy_ed_reg=48
+ACR_RX seq=33 part=5 len=69 phy_rssi_reg=160 phy_ed_reg=48
+ACR_RX seq=33 part=6 len=69 phy_rssi_reg=160 phy_ed_reg=48
+ACR_RX seq=33 part=7 len=57 phy_rssi_reg=128 phy_ed_reg=48
+ACR_REASSEMBLED seq=33 bytes=500 integrity=1
+ACR_RX seq=34 part=0 len=69 phy_rssi_reg=224 phy_ed_reg=48
+ACR_RX seq=34 part=1 len=69 phy_rssi_reg=160 phy_ed_reg=48
+ACR_RX seq=34 part=2 len=69 phy_rssi_reg=128 phy_ed_reg=48
+ACR_RX seq=34 part=3 len=69 phy_rssi_reg=224 phy_ed_reg=48
+ACR_RX seq=34 part=4 len=69 phy_rssi_reg=160 phy_ed_reg=48
+ACR_RX seq=34 part=5 len=69 phy_rssi_reg=192 phy_ed_reg=48
+ACR_RX seq=34 part=6 len=69 phy_rssi_reg=128 phy_ed_reg=48
+ACR_RX seq=34 part=7 len=57 phy_rssi_reg=224 phy_ed_reg=48
+ACR_REASSEMBLED seq=34 bytes=500 integrity=1
+ACR_RX seq=35 part=0 len=69 phy_rssi_reg=160 phy_ed_reg=48
+ACR_RX seq=35 part=1 len=69 phy_rssi_reg=192 phy_ed_reg=48
+ACR_RX seq=35 part=2 len=69 phy_rssi_reg=160 phy_ed_reg=48
+ACR_RX seq=35 part=3 len=69 phy_rssi_reg=128 phy_ed_reg=48
+ACR_RX seq=35 part=4 len=69 phy_rssi_reg=192 phy_ed_reg=48
+ACR_RX seq=35 part=5 len=69 phy_rssi_reg=128 phy_ed_reg=48
+ACR_RX seq=35 part=6 len=69 phy_rssi_reg=128 phy_ed_reg=48
+ACR_RX seq=35 part=7 len=57 phy_rssi_reg=128 phy_ed_reg=48
+ACR_REASSEMBLED seq=35 bytes=500 integrity=1
+ACR_RX seq=36 part=0 len=69 phy_rssi_reg=128 phy_ed_reg=48
+ACR_RX seq=36 part=1 len=69 phy_rssi_reg=160 phy_ed_reg=48
+ACR_RX seq=36 part=2 len=69 phy_rssi_reg=224 phy_ed_reg=48
+ACR_RX seq=36 part=3 len=69 phy_rssi_reg=192 phy_ed_reg=48
+ACR_RX seq=36 part=4 len=69 phy_rssi_reg=128 phy_ed_reg=48
+ACR_RX seq=36 part=5 len=69 phy_rssi_reg=160 phy_ed_reg=48
+ACR_RX seq=36 part=6 len=69 phy_rssi_reg=224 phy_ed_reg=48
+ACR_RX seq=36 part=7 len=57 phy_rssi_reg=192 phy_ed_reg=48
+ACR_REASSEMBLED seq=36 bytes=500 integrity=1
+ACR_RX seq=37 part=0 len=69 phy_rssi_reg=128 phy_ed_reg=48
+ACR_RX seq=37 part=1 len=69 phy_rssi_reg=160 phy_ed_reg=48
+ACR_RX seq=37 part=2 len=69 phy_rssi_reg=192 phy_ed_reg=48
+ACR_RX seq=37 part=3 len=69 phy_rssi_reg=192 phy_ed_reg=48
+ACR_RX seq=37 part=4 len=69 phy_rssi_reg=128 phy_ed_reg=48
+ACR_RX seq=37 part=5 len=69 phy_rssi_reg=128 phy_ed_reg=48
+ACR_RX seq=37 part=6 len=69 phy_rssi_reg=192 phy_ed_reg=48
+ACR_RX seq=37 part=7 len=57 phy_rssi_reg=128 phy_ed_reg=48
+ACR_REASSEMBLED seq=37 bytes=500 integrity=1
+ACR_RX seq=38 part=0 len=69 phy_rssi_reg=128 phy_ed_reg=48
+ACR_RX seq=38 part=1 len=69 phy_rssi_reg=192 phy_ed_reg=48
+ACR_RX seq=38 part=2 len=69 phy_rssi_reg=128 phy_ed_reg=48
+ACR_RX seq=38 part=3 len=69 phy_rssi_reg=224 phy_ed_reg=48
+ACR_RX seq=38 part=4 len=69 phy_rssi_reg=128 phy_ed_reg=48
+ACR_RX seq=38 part=5 len=69 phy_rssi_reg=192 phy_ed_reg=48
+ACR_RX seq=38 part=6 len=69 phy_rssi_reg=160 phy_ed_reg=48
+ACR_RX seq=38 part=7 len=57 phy_rssi_reg=224 phy_ed_reg=48
+ACR_REASSEMBLED seq=38 bytes=500 integrity=1
+ACR_RX seq=39 part=0 len=69 phy_rssi_reg=128 phy_ed_reg=48
+ACR_RX seq=39 part=1 len=69 phy_rssi_reg=128 phy_ed_reg=48
+ACR_RX seq=39 part=2 len=69 phy_rssi_reg=224 phy_ed_reg=48
+ACR_RX seq=39 part=3 len=69 phy_rssi_reg=128 phy_ed_reg=48
+ACR_RX seq=39 part=4 len=69 phy_rssi_reg=192 phy_ed_reg=48
+ACR_RX seq=39 part=5 len=69 phy_rssi_reg=192 phy_ed_reg=48
+ACR_RX seq=39 part=6 len=69 phy_rssi_reg=128 phy_ed_reg=48
+ACR_RX seq=39 part=7 len=57 phy_rssi_reg=128 phy_ed_reg=48
+ACR_REASSEMBLED seq=39 bytes=500 integrity=1
+ACR_RX seq=40 part=0 len=69 phy_rssi_reg=224 phy_ed_reg=48
+ACR_RX seq=40 part=1 len=69 phy_rssi_reg=224 phy_ed_reg=48
+ACR_RX seq=40 part=2 len=69 phy_rssi_reg=192 phy_ed_reg=48
+ACR_RX seq=40 part=3 len=69 phy_rssi_reg=128 phy_ed_reg=48
+ACR_RX seq=40 part=4 len=69 phy_rssi_reg=160 phy_ed_reg=48
+ACR_RX seq=40 part=5 len=69 phy_rssi_reg=224 phy_ed_reg=48
+ACR_RX seq=40 part=6 len=69 phy_rssi_reg=128 phy_ed_reg=48
+ACR_RX seq=40 part=7 len=57 phy_rssi_reg=224 phy_ed_reg=48
+ACR_REASSEMBLED seq=40 bytes=500 integrity=1
+ACR_RX seq=41 part=0 len=69 phy_rssi_reg=224 phy_ed_reg=48
+ACR_RX seq=41 part=1 len=69 phy_rssi_reg=128 phy_ed_reg=48
+ACR_RX seq=41 part=2 len=69 phy_rssi_reg=128 phy_ed_reg=48
+ACR_RX seq=41 part=3 len=69 phy_rssi_reg=192 phy_ed_reg=48
+ACR_RX seq=41 part=4 len=69 phy_rssi_reg=192 phy_ed_reg=48
+ACR_RX seq=41 part=5 len=69 phy_rssi_reg=128 phy_ed_reg=48
+ACR_RX seq=41 part=6 len=69 phy_rssi_reg=224 phy_ed_reg=48
+ACR_RX seq=41 part=7 len=57 phy_rssi_reg=192 phy_ed_reg=48
+ACR_REASSEMBLED seq=41 bytes=500 integrity=1
+ACR_RX seq=42 part=0 len=69 phy_rssi_reg=160 phy_ed_reg=48
+ACR_RX seq=42 part=1 len=69 phy_rssi_reg=192 phy_ed_reg=48
+ACR_RX seq=42 part=2 len=69 phy_rssi_reg=160 phy_ed_reg=48
+ACR_RX seq=42 part=3 len=69 phy_rssi_reg=160 phy_ed_reg=48
+ACR_RX seq=42 part=4 len=69 phy_rssi_reg=128 phy_ed_reg=48
+ACR_RX seq=42 part=5 len=69 phy_rssi_reg=160 phy_ed_reg=48
+ACR_RX seq=42 part=6 len=69 phy_rssi_reg=128 phy_ed_reg=48
+ACR_RX seq=42 part=7 len=57 phy_rssi_reg=128 phy_ed_reg=48
+ACR_REASSEMBLED seq=42 bytes=500 integrity=1
+ACR_RX seq=43 part=0 len=69 phy_rssi_reg=224 phy_ed_reg=48
+ACR_RX seq=43 part=1 len=69 phy_rssi_reg=192 phy_ed_reg=48
+ACR_RX seq=43 part=2 len=69 phy_rssi_reg=192 phy_ed_reg=48
+ACR_RX seq=43 part=3 len=69 phy_rssi_reg=160 phy_ed_reg=48
+ACR_RX seq=43 part=4 len=69 phy_rssi_reg=128 phy_ed_reg=48
+ACR_RX seq=43 part=5 len=69 phy_rssi_reg=192 phy_ed_reg=48
+ACR_RX seq=43 part=6 len=69 phy_rssi_reg=192 phy_ed_reg=48
+ACR_RX seq=43 part=7 len=57 phy_rssi_reg=192 phy_ed_reg=48
+ACR_REASSEMBLED seq=43 bytes=500 integrity=1
+ACR_RX seq=44 part=0 len=69 phy_rssi_reg=224 phy_ed_reg=48
+ACR_RX seq=44 part=1 len=69 phy_rssi_reg=128 phy_ed_reg=48
+ACR_RX seq=44 part=2 len=69 phy_rssi_reg=160 phy_ed_reg=48
+ACR_RX seq=44 part=3 len=69 phy_rssi_reg=160 phy_ed_reg=48
+ACR_RX seq=44 part=4 len=69 phy_rssi_reg=192 phy_ed_reg=48
+ACR_RX seq=44 part=5 len=69 phy_rssi_reg=192 phy_ed_reg=48
+ACR_RX seq=44 part=6 len=69 phy_rssi_reg=224 phy_ed_reg=48
+ACR_RX seq=44 part=7 len=57 phy_rssi_reg=128 phy_ed_reg=48
+ACR_REASSEMBLED seq=44 bytes=500 integrity=1
+ACR_RX seq=45 part=0 len=69 phy_rssi_reg=192 phy_ed_reg=48
+ACR_RX seq=45 part=1 len=69 phy_rssi_reg=160 phy_ed_reg=48
+ACR_RX seq=45 part=2 len=69 phy_rssi_reg=224 phy_ed_reg=48
+ACR_RX seq=45 part=3 len=69 phy_rssi_reg=160 phy_ed_reg=48
+ACR_RX seq=45 part=4 len=69 phy_rssi_reg=192 phy_ed_reg=48
+ACR_RX seq=45 part=5 len=69 phy_rssi_reg=128 phy_ed_reg=48
+ACR_RX seq=45 part=6 len=69 phy_rssi_reg=128 phy_ed_reg=48
+ACR_RX seq=45 part=7 len=57 phy_rssi_reg=224 phy_ed_reg=48
+ACR_REASSEMBLED seq=45 bytes=500 integrity=1
+ACR_RX seq=46 part=0 len=69 phy_rssi_reg=224 phy_ed_reg=48
+ACR_RX seq=46 part=1 len=69 phy_rssi_reg=224 phy_ed_reg=48
+ACR_RX seq=46 part=2 len=69 phy_rssi_reg=224 phy_ed_reg=48
+ACR_RX seq=46 part=3 len=69 phy_rssi_reg=224 phy_ed_reg=48
+ACR_RX seq=46 part=4 len=69 phy_rssi_reg=224 phy_ed_reg=48
+ACR_RX seq=46 part=5 len=69 phy_rssi_reg=128 phy_ed_reg=48
+ACR_RX seq=46 part=6 len=69 phy_rssi_reg=224 phy_ed_reg=48
+ACR_RX seq=46 part=7 len=57 phy_rssi_reg=224 phy_ed_reg=48
+ACR_REASSEMBLED seq=46 bytes=500 integrity=1
+ACR_RX seq=47 part=0 len=69 phy_rssi_reg=192 phy_ed_reg=48
+ACR_RX seq=47 part=1 len=69 phy_rssi_reg=224 phy_ed_reg=48
+ACR_RX seq=47 part=2 len=69 phy_rssi_reg=160 phy_ed_reg=48
+ACR_RX seq=47 part=3 len=69 phy_rssi_reg=128 phy_ed_reg=48
+ACR_RX seq=47 part=4 len=69 phy_rssi_reg=128 phy_ed_reg=48
+ACR_RX seq=47 part=5 len=69 phy_rssi_reg=160 phy_ed_reg=48
+ACR_RX seq=47 part=6 len=69 phy_rssi_reg=128 phy_ed_reg=48
+ACR_RX seq=47 part=7 len=57 phy_rssi_reg=128 phy_ed_reg=48
+ACR_REASSEMBLED seq=47 bytes=500 integrity=1
+ACR_RX seq=48 part=0 len=69 phy_rssi_reg=192 phy_ed_reg=48
+ACR_RX seq=48 part=1 len=69 phy_rssi_reg=160 phy_ed_reg=48
+ACR_RX seq=48 part=2 len=69 phy_rssi_reg=160 phy_ed_reg=48
+ACR_RX seq=48 part=3 len=69 phy_rssi_reg=224 phy_ed_reg=48
+ACR_RX seq=48 part=4 len=69 phy_rssi_reg=192 phy_ed_reg=48
+ACR_RX seq=48 part=5 len=69 phy_rssi_reg=160 phy_ed_reg=48
+ACR_RX seq=48 part=6 len=69 phy_rssi_reg=192 phy_ed_reg=48
+ACR_RX seq=48 part=7 len=57 phy_rssi_reg=160 phy_ed_reg=48
+ACR_REASSEMBLED seq=48 bytes=500 integrity=1
+ACR_RX seq=49 part=0 len=69 phy_rssi_reg=128 phy_ed_reg=48
+ACR_RX seq=49 part=1 len=69 phy_rssi_reg=160 phy_ed_reg=48
+ACR_RX seq=49 part=2 len=69 phy_rssi_reg=160 phy_ed_reg=48
+ACR_RX seq=49 part=3 len=69 phy_rssi_reg=224 phy_ed_reg=48
+ACR_RX seq=49 part=4 len=69 phy_rssi_reg=192 phy_ed_reg=48
+ACR_RX seq=49 part=5 len=69 phy_rssi_reg=128 phy_ed_reg=48
+ACR_RX seq=49 part=6 len=69 phy_rssi_reg=128 phy_ed_reg=48
+ACR_RX seq=49 part=7 len=57 phy_rssi_reg=128 phy_ed_reg=48
+ACR_REASSEMBLED seq=49 bytes=500 integrity=1
+ACR_RX seq=50 part=0 len=69 phy_rssi_reg=192 phy_ed_reg=48
+ACR_RX seq=50 part=1 len=69 phy_rssi_reg=128 phy_ed_reg=48
+ACR_RX seq=50 part=2 len=69 phy_rssi_reg=224 phy_ed_reg=48
+ACR_RX seq=50 part=3 len=69 phy_rssi_reg=192 phy_ed_reg=48
+ACR_RX seq=50 part=4 len=69 phy_rssi_reg=160 phy_ed_reg=48
+ACR_RX seq=50 part=5 len=69 phy_rssi_reg=128 phy_ed_reg=48
+ACR_RX seq=50 part=6 len=69 phy_rssi_reg=224 phy_ed_reg=48
+ACR_RX seq=50 part=7 len=57 phy_rssi_reg=128 phy_ed_reg=48
+ACR_REASSEMBLED seq=50 bytes=500 integrity=1
+ACR_RX seq=51 part=0 len=69 phy_rssi_reg=128 phy_ed_reg=48
+ACR_RX seq=51 part=1 len=69 phy_rssi_reg=224 phy_ed_reg=48
+ACR_RX seq=51 part=2 len=69 phy_rssi_reg=128 phy_ed_reg=48
+ACR_RX seq=51 part=3 len=69 phy_rssi_reg=160 phy_ed_reg=48
+ACR_RX seq=51 part=4 len=69 phy_rssi_reg=128 phy_ed_reg=48
+ACR_RX seq=51 part=5 len=69 phy_rssi_reg=192 phy_ed_reg=48
+ACR_RX seq=51 part=6 len=69 phy_rssi_reg=224 phy_ed_reg=48
+ACR_RX seq=51 part=7 len=57 phy_rssi_reg=224 phy_ed_reg=48
+ACR_REASSEMBLED seq=51 bytes=500 integrity=1
+ACR_RX seq=52 part=0 len=69 phy_rssi_reg=192 phy_ed_reg=48
+ACR_RX seq=52 part=1 len=69 phy_rssi_reg=128 phy_ed_reg=48
+ACR_RX seq=52 part=2 len=69 phy_rssi_reg=128 phy_ed_reg=48
+ACR_RX seq=52 part=3 len=69 phy_rssi_reg=128 phy_ed_reg=48
+ACR_RX seq=52 part=4 len=69 phy_rssi_reg=128 phy_ed_reg=48
+ACR_RX seq=52 part=5 len=69 phy_rssi_reg=192 phy_ed_reg=48
+ACR_RX seq=52 part=6 len=69 phy_rssi_reg=160 phy_ed_reg=48
+ACR_RX seq=52 part=7 len=57 phy_rssi_reg=192 phy_ed_reg=48
+ACR_REASSEMBLED seq=52 bytes=500 integrity=1
+ACR_RX seq=53 part=0 len=69 phy_rssi_reg=128 phy_ed_reg=48
+ACR_RX seq=53 part=1 len=69 phy_rssi_reg=192 phy_ed_reg=48
+ACR_RX seq=53 part=2 len=69 phy_rssi_reg=160 phy_ed_reg=48
+ACR_RX seq=53 part=3 len=69 phy_rssi_reg=160 phy_ed_reg=48
+ACR_RX seq=53 part=4 len=69 phy_rssi_reg=128 phy_ed_reg=48
+ACR_RX seq=53 part=5 len=69 phy_rssi_reg=160 phy_ed_reg=48
+ACR_RX seq=53 part=6 len=69 phy_rssi_reg=192 phy_ed_reg=48
+ACR_RX seq=53 part=7 len=57 phy_rssi_reg=160 phy_ed_reg=48
+ACR_REASSEMBLED seq=53 bytes=500 integrity=1
+ACR_RX seq=54 part=0 len=69 phy_rssi_reg=128 phy_ed_reg=48
+ACR_RX seq=54 part=1 len=69 phy_rssi_reg=160 phy_ed_reg=48
+ACR_RX seq=54 part=2 len=69 phy_rssi_reg=128 phy_ed_reg=48
+ACR_RX seq=54 part=3 len=69 phy_rssi_reg=192 phy_ed_reg=48
+ACR_RX seq=54 part=4 len=69 phy_rssi_reg=128 phy_ed_reg=48
+ACR_RX seq=54 part=5 len=69 phy_rssi_reg=128 phy_ed_reg=48
+ACR_RX seq=54 part=6 len=69 phy_rssi_reg=128 phy_ed_reg=48
+ACR_RX seq=54 part=7 len=57 phy_rssi_reg=192 phy_ed_reg=48
+ACR_REASSEMBLED seq=54 bytes=500 integrity=1
+ACR_RX seq=55 part=0 len=69 phy_rssi_reg=192 phy_ed_reg=48
+ACR_RX seq=55 part=1 len=69 phy_rssi_reg=224 phy_ed_reg=48
+ACR_RX seq=55 part=2 len=69 phy_rssi_reg=160 phy_ed_reg=48
+ACR_RX seq=55 part=3 len=69 phy_rssi_reg=192 phy_ed_reg=48
+ACR_RX seq=55 part=4 len=69 phy_rssi_reg=192 phy_ed_reg=48
+ACR_RX seq=55 part=5 len=69 phy_rssi_reg=192 phy_ed_reg=48
+ACR_RX seq=55 part=6 len=69 phy_rssi_reg=160 phy_ed_reg=48
+ACR_RX seq=55 part=7 len=57 phy_rssi_reg=128 phy_ed_reg=48
+ACR_REASSEMBLED seq=55 bytes=500 integrity=1
+ACR_RX seq=56 part=0 len=69 phy_rssi_reg=224 phy_ed_reg=48
+ACR_RX seq=56 part=1 len=69 phy_rssi_reg=192 phy_ed_reg=48
+ACR_RX seq=56 part=2 len=69 phy_rssi_reg=128 phy_ed_reg=48
+ACR_RX seq=56 part=3 len=69 phy_rssi_reg=224 phy_ed_reg=48
+ACR_RX seq=56 part=4 len=69 phy_rssi_reg=192 phy_ed_reg=48
+ACR_RX seq=56 part=5 len=69 phy_rssi_reg=192 phy_ed_reg=48
+ACR_RX seq=56 part=6 len=69 phy_rssi_reg=224 phy_ed_reg=48
+ACR_RX seq=56 part=7 len=57 phy_rssi_reg=160 phy_ed_reg=48
+ACR_REASSEMBLED seq=56 bytes=500 integrity=1
+ACR_RX seq=57 part=0 len=69 phy_rssi_reg=128 phy_ed_reg=48
+ACR_RX seq=57 part=1 len=69 phy_rssi_reg=128 phy_ed_reg=48
+ACR_RX seq=57 part=2 len=69 phy_rssi_reg=192 phy_ed_reg=48
+ACR_RX seq=57 part=3 len=69 phy_rssi_reg=128 phy_ed_reg=48
+ACR_RX seq=57 part=4 len=69 phy_rssi_reg=160 phy_ed_reg=48
+ACR_RX seq=57 part=5 len=69 phy_rssi_reg=128 phy_ed_reg=48
+ACR_RX seq=57 part=6 len=69 phy_rssi_reg=160 phy_ed_reg=48
+ACR_RX seq=57 part=7 len=57 phy_rssi_reg=160 phy_ed_reg=48
+ACR_REASSEMBLED seq=57 bytes=500 integrity=1
+ACR_RX seq=58 part=0 len=69 phy_rssi_reg=128 phy_ed_reg=48
+ACR_RX seq=58 part=1 len=69 phy_rssi_reg=128 phy_ed_reg=48
+ACR_RX seq=58 part=2 len=69 phy_rssi_reg=192 phy_ed_reg=48
+ACR_RX seq=58 part=3 len=69 phy_rssi_reg=192 phy_ed_reg=48
+ACR_RX seq=58 part=4 len=69 phy_rssi_reg=224 phy_ed_reg=48
+ACR_RX seq=58 part=5 len=69 phy_rssi_reg=224 phy_ed_reg=48
+ACR_RX seq=58 part=6 len=69 phy_rssi_reg=160 phy_ed_reg=48
+ACR_RX seq=58 part=7 len=57 phy_rssi_reg=224 phy_ed_reg=48
+ACR_REASSEMBLED seq=58 bytes=500 integrity=1
+ACR_RX seq=59 part=0 len=69 phy_rssi_reg=192 phy_ed_reg=48
+ACR_RX seq=59 part=1 len=69 phy_rssi_reg=128 phy_ed_reg=48
+ACR_RX seq=59 part=2 len=69 phy_rssi_reg=160 phy_ed_reg=48
+ACR_RX seq=59 part=3 len=69 phy_rssi_reg=192 phy_ed_reg=48
+ACR_RX seq=59 part=4 len=69 phy_rssi_reg=160 phy_ed_reg=48
+ACR_RX seq=59 part=5 len=69 phy_rssi_reg=128 phy_ed_reg=48
+ACR_RX seq=59 part=6 len=69 phy_rssi_reg=192 phy_ed_reg=48
+ACR_RX seq=59 part=7 len=57 phy_rssi_reg=192 phy_ed_reg=48
+ACR_REASSEMBLED seq=59 bytes=500 integrity=1
+ACR_RX seq=60 part=0 len=69 phy_rssi_reg=192 phy_ed_reg=48
+ACR_RX seq=60 part=1 len=69 phy_rssi_reg=192 phy_ed_reg=48
+ACR_RX seq=60 part=2 len=69 phy_rssi_reg=192 phy_ed_reg=48
+ACR_RX seq=60 part=3 len=69 phy_rssi_reg=160 phy_ed_reg=48
+ACR_RX seq=60 part=4 len=69 phy_rssi_reg=128 phy_ed_reg=48
+ACR_RX seq=60 part=5 len=69 phy_rssi_reg=224 phy_ed_reg=48
+ACR_RX seq=60 part=6 len=69 phy_rssi_reg=160 phy_ed_reg=48
+ACR_RX seq=60 part=7 len=57 phy_rssi_reg=192 phy_ed_reg=48
+ACR_REASSEMBLED seq=60 bytes=500 integrity=1
+ACR_RX seq=61 part=0 len=69 phy_rssi_reg=192 phy_ed_reg=48
+ACR_RX seq=61 part=1 len=69 phy_rssi_reg=192 phy_ed_reg=48
+ACR_RX seq=61 part=2 len=69 phy_rssi_reg=192 phy_ed_reg=48
+ACR_RX seq=61 part=3 len=69 phy_rssi_reg=128 phy_ed_reg=48
+ACR_RX seq=61 part=4 len=69 phy_rssi_reg=160 phy_ed_reg=48
+ACR_RX seq=61 part=5 len=69 phy_rssi_reg=128 phy_ed_reg=48
+ACR_RX seq=61 part=6 len=69 phy_rssi_reg=192 phy_ed_reg=48
+ACR_RX seq=61 part=7 len=57 phy_rssi_reg=128 phy_ed_reg=48
+ACR_REASSEMBLED seq=61 bytes=500 integrity=1
+ACR_RX seq=62 part=0 len=69 phy_rssi_reg=224 phy_ed_reg=48
+ACR_RX seq=62 part=1 len=69 phy_rssi_reg=224 phy_ed_reg=48
+ACR_RX seq=62 part=2 len=69 phy_rssi_reg=224 phy_ed_reg=48
+ACR_RX seq=62 part=3 len=69 phy_rssi_reg=192 phy_ed_reg=48
+ACR_RX_PROGRESS complete=62 fragments=500 bad=0
+ACR_ENERGEST role=2 cpu=44120 lpm=1365441 tx=6212 listen=1336304 hz=32768
+ACR_RX seq=62 part=4 len=69 phy_rssi_reg=128 phy_ed_reg=48
+ACR_RX seq=62 part=5 len=69 phy_rssi_reg=224 phy_ed_reg=48
+ACR_RX seq=62 part=6 len=69 phy_rssi_reg=192 phy_ed_reg=48
+ACR_RX seq=62 part=7 len=57 phy_rssi_reg=128 phy_ed_reg=48
+ACR_REASSEMBLED seq=62 bytes=500 integrity=1
+ACR_RX seq=63 part=0 len=69 phy_rssi_reg=192 phy_ed_reg=48
+ACR_RX seq=63 part=1 len=69 phy_rssi_reg=128 phy_ed_reg=48
+ACR_RX seq=63 part=2 len=69 phy_rssi_reg=128 phy_ed_reg=48
+ACR_RX seq=63 part=3 len=69 phy_rssi_reg=160 phy_ed_reg=48
+ACR_RX seq=63 part=4 len=69 phy_rssi_reg=224 phy_ed_reg=48
+ACR_RX seq=63 part=5 len=69 phy_rssi_reg=160 phy_ed_reg=48
+ACR_RX seq=63 part=6 len=69 phy_rssi_reg=224 phy_ed_reg=48
+ACR_RX seq=63 part=7 len=57 phy_rssi_reg=128 phy_ed_reg=48
+ACR_REASSEMBLED seq=63 bytes=500 integrity=1
+ACR_RX seq=64 part=0 len=69 phy_rssi_reg=192 phy_ed_reg=48
+ACR_RX seq=64 part=1 len=69 phy_rssi_reg=224 phy_ed_reg=48
+ACR_RX seq=64 part=2 len=69 phy_rssi_reg=192 phy_ed_reg=48
+ACR_RX seq=64 part=3 len=69 phy_rssi_reg=192 phy_ed_reg=48
+ACR_RX seq=64 part=4 len=69 phy_rssi_reg=128 phy_ed_reg=48
+ACR_RX seq=64 part=5 len=69 phy_rssi_reg=224 phy_ed_reg=48
+ACR_RX seq=64 part=6 len=69 phy_rssi_reg=128 phy_ed_reg=48
+ACR_RX seq=64 part=7 len=57 phy_rssi_reg=128 phy_ed_reg=48
+ACR_REASSEMBLED seq=64 bytes=500 integrity=1
+ACR_RX seq=65 part=0 len=69 phy_rssi_reg=224 phy_ed_reg=48
+ACR_RX seq=65 part=1 len=69 phy_rssi_reg=192 phy_ed_reg=48
+ACR_RX seq=65 part=2 len=69 phy_rssi_reg=192 phy_ed_reg=48
+ACR_RX seq=65 part=3 len=69 phy_rssi_reg=224 phy_ed_reg=48
+ACR_RX seq=65 part=4 len=69 phy_rssi_reg=128 phy_ed_reg=48
+ACR_RX seq=65 part=5 len=69 phy_rssi_reg=192 phy_ed_reg=48
+ACR_RX seq=65 part=6 len=69 phy_rssi_reg=224 phy_ed_reg=48
+ACR_RX seq=65 part=7 len=57 phy_rssi_reg=192 phy_ed_reg=48
+ACR_REASSEMBLED seq=65 bytes=500 integrity=1
+ACR_RX seq=66 part=0 len=69 phy_rssi_reg=224 phy_ed_reg=48
+ACR_RX seq=66 part=1 len=69 phy_rssi_reg=192 phy_ed_reg=48
+ACR_RX seq=66 part=2 len=69 phy_rssi_reg=224 phy_ed_reg=48
+ACR_RX seq=66 part=3 len=69 phy_rssi_reg=192 phy_ed_reg=48
+ACR_RX seq=66 part=4 len=69 phy_rssi_reg=192 phy_ed_reg=48
+ACR_RX seq=66 part=5 len=69 phy_rssi_reg=192 phy_ed_reg=48
+ACR_RX seq=66 part=6 len=69 phy_rssi_reg=160 phy_ed_reg=48
+ACR_RX seq=66 part=7 len=57 phy_rssi_reg=192 phy_ed_reg=48
+ACR_REASSEMBLED seq=66 bytes=500 integrity=1
+ACR_RX seq=67 part=0 len=69 phy_rssi_reg=128 phy_ed_reg=48
+ACR_RX seq=67 part=1 len=69 phy_rssi_reg=128 phy_ed_reg=48
+ACR_RX seq=67 part=2 len=69 phy_rssi_reg=224 phy_ed_reg=48
+ACR_RX seq=67 part=3 len=69 phy_rssi_reg=128 phy_ed_reg=48
+ACR_RX seq=67 part=4 len=69 phy_rssi_reg=192 phy_ed_reg=48
+ACR_RX seq=67 part=5 len=69 phy_rssi_reg=128 phy_ed_reg=48
+ACR_RX seq=67 part=6 len=69 phy_rssi_reg=160 phy_ed_reg=48
+ACR_RX seq=67 part=7 len=57 phy_rssi_reg=224 phy_ed_reg=48
+ACR_REASSEMBLED seq=67 bytes=500 integrity=1
+ACR_RX seq=68 part=0 len=69 phy_rssi_reg=128 phy_ed_reg=48
+ACR_RX seq=68 part=1 len=69 phy_rssi_reg=160 phy_ed_reg=48
+ACR_RX seq=68 part=2 len=69 phy_rssi_reg=192 phy_ed_reg=48
+ACR_RX seq=68 part=3 len=69 phy_rssi_reg=128 phy_ed_reg=48
+ACR_RX seq=68 part=4 len=69 phy_rssi_reg=192 phy_ed_reg=48
+ACR_RX seq=68 part=5 len=69 phy_rssi_reg=160 phy_ed_reg=48
+ACR_RX seq=68 part=6 len=69 phy_rssi_reg=192 phy_ed_reg=48
+ACR_RX seq=68 part=7 len=57 phy_rssi_reg=224 phy_ed_reg=48
+ACR_REASSEMBLED seq=68 bytes=500 integrity=1
+ACR_RX seq=69 part=0 len=69 phy_rssi_reg=160 phy_ed_reg=48
+ACR_RX seq=69 part=1 len=69 phy_rssi_reg=128 phy_ed_reg=48
+ACR_RX seq=69 part=2 len=69 phy_rssi_reg=192 phy_ed_reg=48
+ACR_RX seq=69 part=3 len=69 phy_rssi_reg=128 phy_ed_reg=48
+ACR_RX seq=69 part=4 len=69 phy_rssi_reg=128 phy_ed_reg=48
+ACR_RX seq=69 part=5 len=69 phy_rssi_reg=192 phy_ed_reg=48
+ACR_RX seq=69 part=6 len=69 phy_rssi_reg=192 phy_ed_reg=48
+ACR_RX seq=69 part=7 len=57 phy_rssi_reg=192 phy_ed_reg=48
+ACR_REASSEMBLED seq=69 bytes=500 integrity=1
+ACR_RX seq=70 part=0 len=69 phy_rssi_reg=192 phy_ed_reg=48
+ACR_RX seq=70 part=1 len=69 phy_rssi_reg=128 phy_ed_reg=48
+ACR_RX seq=70 part=2 len=69 phy_rssi_reg=160 phy_ed_reg=48
+ACR_RX seq=70 part=3 len=69 phy_rssi_reg=160 phy_ed_reg=48
+ACR_RX seq=70 part=4 len=69 phy_rssi_reg=192 phy_ed_reg=48
+ACR_RX seq=70 part=5 len=69 phy_rssi_reg=160 phy_ed_reg=48
+ACR_RX seq=70 part=6 len=69 phy_rssi_reg=128 phy_ed_reg=48
+ACR_RX seq=70 part=7 len=57 phy_rssi_reg=192 phy_ed_reg=48
+ACR_REASSEMBLED seq=70 bytes=500 integrity=1
+ACR_RX seq=71 part=0 len=69 phy_rssi_reg=160 phy_ed_reg=48
+ACR_RX seq=71 part=1 len=69 phy_rssi_reg=128 phy_ed_reg=48
+ACR_RX seq=71 part=2 len=69 phy_rssi_reg=128 phy_ed_reg=48
+ACR_RX seq=71 part=3 len=69 phy_rssi_reg=224 phy_ed_reg=48
+ACR_RX seq=71 part=4 len=69 phy_rssi_reg=128 phy_ed_reg=48
+ACR_RX seq=71 part=5 len=69 phy_rssi_reg=128 phy_ed_reg=48
+ACR_RX seq=71 part=6 len=69 phy_rssi_reg=160 phy_ed_reg=48
+ACR_RX seq=71 part=7 len=57 phy_rssi_reg=192 phy_ed_reg=48
+ACR_REASSEMBLED seq=71 bytes=500 integrity=1
+ACR_RX seq=72 part=0 len=69 phy_rssi_reg=224 phy_ed_reg=48
+ACR_RX seq=72 part=1 len=69 phy_rssi_reg=128 phy_ed_reg=48
+ACR_RX seq=72 part=2 len=69 phy_rssi_reg=128 phy_ed_reg=48
+ACR_RX seq=72 part=3 len=69 phy_rssi_reg=160 phy_ed_reg=48
+ACR_RX seq=72 part=4 len=69 phy_rssi_reg=160 phy_ed_reg=48
+ACR_RX seq=72 part=5 len=69 phy_rssi_reg=128 phy_ed_reg=48
+ACR_RX seq=72 part=6 len=69 phy_rssi_reg=160 phy_ed_reg=48
+ACR_RX seq=72 part=7 len=57 phy_rssi_reg=224 phy_ed_reg=48
+ACR_REASSEMBLED seq=72 bytes=500 integrity=1
+ACR_RX seq=73 part=0 len=69 phy_rssi_reg=128 phy_ed_reg=48
+ACR_RX seq=73 part=1 len=69 phy_rssi_reg=128 phy_ed_reg=48
+ACR_RX seq=73 part=2 len=69 phy_rssi_reg=160 phy_ed_reg=48
+ACR_RX seq=73 part=3 len=69 phy_rssi_reg=128 phy_ed_reg=48
+ACR_RX seq=73 part=4 len=69 phy_rssi_reg=128 phy_ed_reg=48
+ACR_RX seq=73 part=5 len=69 phy_rssi_reg=128 phy_ed_reg=48
+ACR_RX seq=73 part=6 len=69 phy_rssi_reg=192 phy_ed_reg=48
+ACR_RX seq=73 part=7 len=57 phy_rssi_reg=224 phy_ed_reg=48
+ACR_REASSEMBLED seq=73 bytes=500 integrity=1
+ACR_RX seq=74 part=0 len=69 phy_rssi_reg=224 phy_ed_reg=48
+ACR_RX seq=74 part=1 len=69 phy_rssi_reg=224 phy_ed_reg=48
+ACR_RX seq=74 part=2 len=69 phy_rssi_reg=128 phy_ed_reg=48
+ACR_RX seq=74 part=3 len=69 phy_rssi_reg=224 phy_ed_reg=48
+ACR_RX seq=74 part=4 len=69 phy_rssi_reg=160 phy_ed_reg=48
+ACR_RX seq=74 part=5 len=69 phy_rssi_reg=160 phy_ed_reg=48
+ACR_RX seq=74 part=6 len=69 phy_rssi_reg=128 phy_ed_reg=48
+ACR_RX seq=74 part=7 len=57 phy_rssi_reg=128 phy_ed_reg=48
+ACR_REASSEMBLED seq=74 bytes=500 integrity=1
+ACR_RX seq=75 part=0 len=69 phy_rssi_reg=160 phy_ed_reg=48
+ACR_RX seq=75 part=1 len=69 phy_rssi_reg=192 phy_ed_reg=48
+ACR_RX seq=75 part=2 len=69 phy_rssi_reg=192 phy_ed_reg=48
+ACR_RX seq=75 part=3 len=69 phy_rssi_reg=128 phy_ed_reg=48
+ACR_RX seq=75 part=4 len=69 phy_rssi_reg=128 phy_ed_reg=48
+ACR_RX seq=75 part=5 len=69 phy_rssi_reg=160 phy_ed_reg=48
+ACR_RX seq=75 part=6 len=69 phy_rssi_reg=128 phy_ed_reg=48
+ACR_RX seq=75 part=7 len=57 phy_rssi_reg=128 phy_ed_reg=48
+ACR_REASSEMBLED seq=75 bytes=500 integrity=1
+ACR_RX seq=76 part=0 len=69 phy_rssi_reg=224 phy_ed_reg=48
+ACR_RX seq=76 part=1 len=69 phy_rssi_reg=224 phy_ed_reg=48
+ACR_RX seq=76 part=2 len=69 phy_rssi_reg=128 phy_ed_reg=48
+ACR_RX seq=76 part=3 len=69 phy_rssi_reg=128 phy_ed_reg=48
+ACR_RX seq=76 part=4 len=69 phy_rssi_reg=128 phy_ed_reg=48
+ACR_RX seq=76 part=5 len=69 phy_rssi_reg=160 phy_ed_reg=48
+ACR_RX seq=76 part=6 len=69 phy_rssi_reg=192 phy_ed_reg=48
+ACR_RX seq=76 part=7 len=57 phy_rssi_reg=128 phy_ed_reg=48
+ACR_REASSEMBLED seq=76 bytes=500 integrity=1
+ACR_RX seq=77 part=0 len=69 phy_rssi_reg=128 phy_ed_reg=48
+ACR_RX seq=77 part=1 len=69 phy_rssi_reg=192 phy_ed_reg=48
+ACR_RX seq=77 part=2 len=69 phy_rssi_reg=224 phy_ed_reg=48
+ACR_RX seq=77 part=3 len=69 phy_rssi_reg=192 phy_ed_reg=48
+ACR_RX seq=77 part=4 len=69 phy_rssi_reg=128 phy_ed_reg=48
+ACR_RX seq=77 part=5 len=69 phy_rssi_reg=224 phy_ed_reg=48
+ACR_RX seq=77 part=6 len=69 phy_rssi_reg=192 phy_ed_reg=48
+ACR_RX seq=77 part=7 len=57 phy_rssi_reg=128 phy_ed_reg=48
+ACR_REASSEMBLED seq=77 bytes=500 integrity=1
+ACR_RX seq=78 part=0 len=69 phy_rssi_reg=224 phy_ed_reg=48
+ACR_RX seq=78 part=1 len=69 phy_rssi_reg=160 phy_ed_reg=48
+ACR_RX seq=78 part=2 len=69 phy_rssi_reg=128 phy_ed_reg=48
+ACR_RX seq=78 part=3 len=69 phy_rssi_reg=192 phy_ed_reg=48
+ACR_RX seq=78 part=4 len=69 phy_rssi_reg=160 phy_ed_reg=48
+ACR_RX seq=78 part=5 len=69 phy_rssi_reg=192 phy_ed_reg=48
+ACR_RX seq=78 part=6 len=69 phy_rssi_reg=224 phy_ed_reg=48
+ACR_RX seq=78 part=7 len=57 phy_rssi_reg=224 phy_ed_reg=48
+ACR_REASSEMBLED seq=78 bytes=500 integrity=1
+ACR_RX seq=79 part=0 len=69 phy_rssi_reg=160 phy_ed_reg=48
+ACR_RX seq=79 part=1 len=69 phy_rssi_reg=160 phy_ed_reg=48
+ACR_RX seq=79 part=2 len=69 phy_rssi_reg=192 phy_ed_reg=48
+ACR_RX seq=79 part=3 len=69 phy_rssi_reg=160 phy_ed_reg=48
+ACR_RX seq=79 part=4 len=69 phy_rssi_reg=128 phy_ed_reg=48
+ACR_RX seq=79 part=5 len=69 phy_rssi_reg=128 phy_ed_reg=48
+ACR_RX seq=79 part=6 len=69 phy_rssi_reg=128 phy_ed_reg=48
+ACR_RX seq=79 part=7 len=57 phy_rssi_reg=128 phy_ed_reg=48
+ACR_REASSEMBLED seq=79 bytes=500 integrity=1
+ACR_RX seq=80 part=0 len=69 phy_rssi_reg=224 phy_ed_reg=48
+ACR_RX seq=80 part=1 len=69 phy_rssi_reg=224 phy_ed_reg=48
+ACR_RX seq=80 part=2 len=69 phy_rssi_reg=224 phy_ed_reg=48
+ACR_RX seq=80 part=3 len=69 phy_rssi_reg=192 phy_ed_reg=48
+ACR_RX seq=80 part=4 len=69 phy_rssi_reg=224 phy_ed_reg=48
+ACR_RX seq=80 part=5 len=69 phy_rssi_reg=224 phy_ed_reg=48
+ACR_RX seq=80 part=6 len=69 phy_rssi_reg=160 phy_ed_reg=48
+ACR_RX seq=80 part=7 len=57 phy_rssi_reg=128 phy_ed_reg=48
+ACR_REASSEMBLED seq=80 bytes=500 integrity=1
+ACR_RX seq=81 part=0 len=69 phy_rssi_reg=224 phy_ed_reg=48
+ACR_RX seq=81 part=1 len=69 phy_rssi_reg=224 phy_ed_reg=48
+ACR_RX seq=81 part=2 len=69 phy_rssi_reg=224 phy_ed_reg=48
+ACR_RX seq=81 part=3 len=69 phy_rssi_reg=224 phy_ed_reg=48
+ACR_RX seq=81 part=4 len=69 phy_rssi_reg=224 phy_ed_reg=48
+ACR_RX seq=81 part=5 len=69 phy_rssi_reg=160 phy_ed_reg=48
+ACR_RX seq=81 part=6 len=69 phy_rssi_reg=224 phy_ed_reg=48
+ACR_RX seq=81 part=7 len=57 phy_rssi_reg=192 phy_ed_reg=48
+ACR_REASSEMBLED seq=81 bytes=500 integrity=1
+ACR_RX seq=82 part=0 len=69 phy_rssi_reg=128 phy_ed_reg=48
+ACR_RX seq=82 part=1 len=69 phy_rssi_reg=192 phy_ed_reg=48
+ACR_RX seq=82 part=2 len=69 phy_rssi_reg=160 phy_ed_reg=48
+ACR_RX seq=82 part=3 len=69 phy_rssi_reg=224 phy_ed_reg=48
+ACR_RX seq=82 part=4 len=69 phy_rssi_reg=160 phy_ed_reg=48
+ACR_RX seq=82 part=5 len=69 phy_rssi_reg=128 phy_ed_reg=48
+ACR_RX seq=82 part=6 len=69 phy_rssi_reg=160 phy_ed_reg=48
+ACR_RX seq=82 part=7 len=57 phy_rssi_reg=192 phy_ed_reg=48
+ACR_REASSEMBLED seq=82 bytes=500 integrity=1
+ACR_RX seq=83 part=0 len=69 phy_rssi_reg=224 phy_ed_reg=48
+ACR_RX seq=83 part=1 len=69 phy_rssi_reg=128 phy_ed_reg=48
+ACR_RX seq=83 part=2 len=69 phy_rssi_reg=128 phy_ed_reg=48
+ACR_RX seq=83 part=3 len=69 phy_rssi_reg=192 phy_ed_reg=48
+ACR_RX seq=83 part=4 len=69 phy_rssi_reg=160 phy_ed_reg=48
+ACR_RX seq=83 part=5 len=69 phy_rssi_reg=128 phy_ed_reg=48
+ACR_RX seq=83 part=6 len=69 phy_rssi_reg=192 phy_ed_reg=48
+ACR_RX seq=83 part=7 len=57 phy_rssi_reg=128 phy_ed_reg=48
+ACR_REASSEMBLED seq=83 bytes=500 integrity=1
+ACR_RX seq=84 part=0 len=69 phy_rssi_reg=128 phy_ed_reg=48
+ACR_RX seq=84 part=1 len=69 phy_rssi_reg=128 phy_ed_reg=48
+ACR_RX seq=84 part=2 len=69 phy_rssi_reg=224 phy_ed_reg=48
+ACR_RX seq=84 part=3 len=69 phy_rssi_reg=224 phy_ed_reg=48
+ACR_RX seq=84 part=4 len=69 phy_rssi_reg=192 phy_ed_reg=48
+ACR_RX seq=84 part=5 len=69 phy_rssi_reg=224 phy_ed_reg=48
+ACR_RX seq=84 part=6 len=69 phy_rssi_reg=128 phy_ed_reg=48
+ACR_RX seq=84 part=7 len=57 phy_rssi_reg=128 phy_ed_reg=48
+ACR_REASSEMBLED seq=84 bytes=500 integrity=1
+ACR_RX seq=85 part=0 len=69 phy_rssi_reg=128 phy_ed_reg=48
+ACR_RX seq=85 part=1 len=69 phy_rssi_reg=128 phy_ed_reg=48
+ACR_RX seq=85 part=2 len=69 phy_rssi_reg=128 phy_ed_reg=48
+ACR_RX seq=85 part=3 len=69 phy_rssi_reg=224 phy_ed_reg=48
+ACR_RX seq=85 part=4 len=69 phy_rssi_reg=224 phy_ed_reg=48
+ACR_RX seq=85 part=5 len=69 phy_rssi_reg=192 phy_ed_reg=48
+ACR_RX seq=85 part=6 len=69 phy_rssi_reg=128 phy_ed_reg=48
+ACR_RX seq=85 part=7 len=57 phy_rssi_reg=224 phy_ed_reg=48
+ACR_REASSEMBLED seq=85 bytes=500 integrity=1
+ACR_RX seq=86 part=0 len=69 phy_rssi_reg=224 phy_ed_reg=48
+ACR_RX seq=86 part=1 len=69 phy_rssi_reg=192 phy_ed_reg=48
+ACR_RX seq=86 part=2 len=69 phy_rssi_reg=128 phy_ed_reg=48
+ACR_RX seq=86 part=3 len=69 phy_rssi_reg=192 phy_ed_reg=48
+ACR_RX seq=86 part=4 len=69 phy_rssi_reg=128 phy_ed_reg=48
+ACR_RX seq=86 part=5 len=69 phy_rssi_reg=160 phy_ed_reg=48
+ACR_RX seq=86 part=6 len=69 phy_rssi_reg=128 phy_ed_reg=48
+ACR_RX seq=86 part=7 len=57 phy_rssi_reg=224 phy_ed_reg=48
+ACR_REASSEMBLED seq=86 bytes=500 integrity=1
+ACR_RX seq=87 part=0 len=69 phy_rssi_reg=192 phy_ed_reg=48
+ACR_RX seq=87 part=1 len=69 phy_rssi_reg=160 phy_ed_reg=48
+ACR_RX seq=87 part=2 len=69 phy_rssi_reg=224 phy_ed_reg=48
+ACR_RX seq=87 part=3 len=69 phy_rssi_reg=192 phy_ed_reg=48
+ACR_RX seq=87 part=4 len=69 phy_rssi_reg=224 phy_ed_reg=48
+ACR_RX seq=87 part=5 len=69 phy_rssi_reg=224 phy_ed_reg=48
+ACR_RX seq=87 part=6 len=69 phy_rssi_reg=192 phy_ed_reg=48
+ACR_RX seq=87 part=7 len=57 phy_rssi_reg=128 phy_ed_reg=48
+ACR_REASSEMBLED seq=87 bytes=500 integrity=1
+ACR_RX seq=88 part=0 len=69 phy_rssi_reg=160 phy_ed_reg=48
+ACR_RX seq=88 part=1 len=69 phy_rssi_reg=224 phy_ed_reg=48
+ACR_RX seq=88 part=2 len=69 phy_rssi_reg=128 phy_ed_reg=48
+ACR_RX seq=88 part=3 len=69 phy_rssi_reg=160 phy_ed_reg=48
+ACR_RX seq=88 part=4 len=69 phy_rssi_reg=192 phy_ed_reg=48
+ACR_RX seq=88 part=5 len=69 phy_rssi_reg=160 phy_ed_reg=48
+ACR_RX seq=88 part=6 len=69 phy_rssi_reg=224 phy_ed_reg=48
+ACR_RX seq=88 part=7 len=57 phy_rssi_reg=224 phy_ed_reg=48
+ACR_REASSEMBLED seq=88 bytes=500 integrity=1
+ACR_RX seq=89 part=0 len=69 phy_rssi_reg=128 phy_ed_reg=48
+ACR_RX seq=89 part=1 len=69 phy_rssi_reg=128 phy_ed_reg=48
+ACR_RX seq=89 part=2 len=69 phy_rssi_reg=160 phy_ed_reg=48
+ACR_RX seq=89 part=3 len=69 phy_rssi_reg=192 phy_ed_reg=48
+ACR_RX seq=89 part=4 len=69 phy_rssi_reg=160 phy_ed_reg=48
+ACR_RX seq=89 part=5 len=69 phy_rssi_reg=224 phy_ed_reg=48
+ACR_RX seq=89 part=6 len=69 phy_rssi_reg=160 phy_ed_reg=48
+ACR_RX seq=89 part=7 len=57 phy_rssi_reg=160 phy_ed_reg=48
+ACR_REASSEMBLED seq=89 bytes=500 integrity=1
+ACR_RX seq=90 part=0 len=69 phy_rssi_reg=224 phy_ed_reg=48
+ACR_RX seq=90 part=1 len=69 phy_rssi_reg=192 phy_ed_reg=48
+ACR_RX seq=90 part=2 len=69 phy_rssi_reg=224 phy_ed_reg=48
+ACR_RX seq=90 part=3 len=69 phy_rssi_reg=192 phy_ed_reg=48
+ACR_RX seq=90 part=4 len=69 phy_rssi_reg=192 phy_ed_reg=48
+ACR_RX seq=90 part=5 len=69 phy_rssi_reg=224 phy_ed_reg=48
+ACR_RX seq=90 part=6 len=69 phy_rssi_reg=160 phy_ed_reg=48
+ACR_RX seq=90 part=7 len=57 phy_rssi_reg=160 phy_ed_reg=48
+ACR_REASSEMBLED seq=90 bytes=500 integrity=1
+ACR_RX seq=91 part=0 len=69 phy_rssi_reg=128 phy_ed_reg=48
+ACR_RX seq=91 part=1 len=69 phy_rssi_reg=160 phy_ed_reg=48
+ACR_RX seq=91 part=2 len=69 phy_rssi_reg=128 phy_ed_reg=48
+ACR_RX seq=91 part=3 len=69 phy_rssi_reg=192 phy_ed_reg=48
+ACR_RX seq=91 part=4 len=69 phy_rssi_reg=192 phy_ed_reg=48
+ACR_RX seq=91 part=5 len=69 phy_rssi_reg=128 phy_ed_reg=48
+ACR_RX seq=91 part=6 len=69 phy_rssi_reg=128 phy_ed_reg=48
+ACR_RX seq=91 part=7 len=57 phy_rssi_reg=224 phy_ed_reg=48
+ACR_REASSEMBLED seq=91 bytes=500 integrity=1
+ACR_RX seq=92 part=0 len=69 phy_rssi_reg=128 phy_ed_reg=48
+ACR_RX seq=92 part=1 len=69 phy_rssi_reg=160 phy_ed_reg=48
+ACR_RX seq=92 part=2 len=69 phy_rssi_reg=192 phy_ed_reg=48
+ACR_RX seq=92 part=3 len=69 phy_rssi_reg=128 phy_ed_reg=48
+ACR_RX seq=92 part=4 len=69 phy_rssi_reg=224 phy_ed_reg=48
+ACR_RX seq=92 part=5 len=69 phy_rssi_reg=192 phy_ed_reg=48
+ACR_RX seq=92 part=6 len=69 phy_rssi_reg=128 phy_ed_reg=48
+ACR_RX seq=92 part=7 len=57 phy_rssi_reg=160 phy_ed_reg=48
+ACR_REASSEMBLED seq=92 bytes=500 integrity=1
+ACR_RX seq=93 part=0 len=69 phy_rssi_reg=128 phy_ed_reg=48
+ACR_RX seq=93 part=1 len=69 phy_rssi_reg=160 phy_ed_reg=48
+ACR_RX seq=93 part=2 len=69 phy_rssi_reg=224 phy_ed_reg=48
+ACR_RX seq=93 part=3 len=69 phy_rssi_reg=160 phy_ed_reg=48
+ACR_RX seq=93 part=4 len=69 phy_rssi_reg=160 phy_ed_reg=48
+ACR_RX seq=93 part=5 len=69 phy_rssi_reg=192 phy_ed_reg=48
+ACR_RX seq=93 part=6 len=69 phy_rssi_reg=192 phy_ed_reg=48
+ACR_RX_PROGRESS complete=93 fragments=751 bad=0
+ACR_ENERGEST role=2 cpu=66081 lpm=1998919 tx=9337 listen=1987887 hz=32768
+ACR_RX seq=93 part=7 len=57 phy_rssi_reg=192 phy_ed_reg=48
+ACR_REASSEMBLED seq=93 bytes=500 integrity=1
+ACR_RX seq=94 part=0 len=69 phy_rssi_reg=224 phy_ed_reg=48
+ACR_RX seq=94 part=1 len=69 phy_rssi_reg=192 phy_ed_reg=48
+ACR_RX seq=94 part=2 len=69 phy_rssi_reg=128 phy_ed_reg=48
+ACR_RX seq=94 part=3 len=69 phy_rssi_reg=224 phy_ed_reg=48
+ACR_RX seq=94 part=4 len=69 phy_rssi_reg=160 phy_ed_reg=48
+ACR_RX seq=94 part=5 len=69 phy_rssi_reg=224 phy_ed_reg=48
+ACR_RX seq=94 part=6 len=69 phy_rssi_reg=192 phy_ed_reg=48
+ACR_RX seq=94 part=7 len=57 phy_rssi_reg=192 phy_ed_reg=48
+ACR_REASSEMBLED seq=94 bytes=500 integrity=1
+ACR_RX seq=95 part=0 len=69 phy_rssi_reg=192 phy_ed_reg=48
+ACR_RX seq=95 part=1 len=69 phy_rssi_reg=192 phy_ed_reg=48
+ACR_RX seq=95 part=2 len=69 phy_rssi_reg=192 phy_ed_reg=48
+ACR_RX seq=95 part=3 len=69 phy_rssi_reg=160 phy_ed_reg=48
+ACR_RX seq=95 part=4 len=69 phy_rssi_reg=128 phy_ed_reg=48
+ACR_RX seq=95 part=5 len=69 phy_rssi_reg=192 phy_ed_reg=48
+ACR_RX seq=95 part=6 len=69 phy_rssi_reg=192 phy_ed_reg=48
+ACR_RX seq=95 part=7 len=57 phy_rssi_reg=128 phy_ed_reg=48
+ACR_REASSEMBLED seq=95 bytes=500 integrity=1
+ACR_RX seq=96 part=0 len=69 phy_rssi_reg=224 phy_ed_reg=48
+ACR_RX seq=96 part=1 len=69 phy_rssi_reg=160 phy_ed_reg=48
+ACR_RX seq=96 part=2 len=69 phy_rssi_reg=224 phy_ed_reg=48
+ACR_RX seq=96 part=3 len=69 phy_rssi_reg=128 phy_ed_reg=48
+ACR_RX seq=96 part=4 len=69 phy_rssi_reg=128 phy_ed_reg=48
+ACR_RX seq=96 part=5 len=69 phy_rssi_reg=160 phy_ed_reg=48
+ACR_RX seq=96 part=6 len=69 phy_rssi_reg=128 phy_ed_reg=48
+ACR_RX seq=96 part=7 len=57 phy_rssi_reg=128 phy_ed_reg=48
+ACR_REASSEMBLED seq=96 bytes=500 integrity=1
+ACR_RX seq=97 part=0 len=69 phy_rssi_reg=128 phy_ed_reg=48
+ACR_RX seq=97 part=1 len=69 phy_rssi_reg=224 phy_ed_reg=48
+ACR_RX seq=97 part=2 len=69 phy_rssi_reg=160 phy_ed_reg=48
+ACR_RX seq=97 part=3 len=69 phy_rssi_reg=192 phy_ed_reg=48
+ACR_RX seq=97 part=4 len=69 phy_rssi_reg=192 phy_ed_reg=48
+ACR_RX seq=97 part=5 len=69 phy_rssi_reg=128 phy_ed_reg=48
+ACR_RX seq=97 part=6 len=69 phy_rssi_reg=160 phy_ed_reg=48
+ACR_RX seq=97 part=7 len=57 phy_rssi_reg=128 phy_ed_reg=48
+ACR_REASSEMBLED seq=97 bytes=500 integrity=1
+ACR_RX seq=98 part=0 len=69 phy_rssi_reg=192 phy_ed_reg=48
+ACR_RX seq=98 part=1 len=69 phy_rssi_reg=224 phy_ed_reg=48
+ACR_RX seq=98 part=2 len=69 phy_rssi_reg=160 phy_ed_reg=48
+ACR_RX seq=98 part=3 len=69 phy_rssi_reg=128 phy_ed_reg=48
+ACR_RX seq=98 part=4 len=69 phy_rssi_reg=128 phy_ed_reg=48
+ACR_RX seq=98 part=5 len=69 phy_rssi_reg=192 phy_ed_reg=48
+ACR_RX seq=98 part=6 len=69 phy_rssi_reg=160 phy_ed_reg=48
+ACR_RX seq=98 part=7 len=57 phy_rssi_reg=192 phy_ed_reg=48
+ACR_REASSEMBLED seq=98 bytes=500 integrity=1
+ACR_RX seq=99 part=0 len=69 phy_rssi_reg=160 phy_ed_reg=48
+ACR_RX seq=99 part=1 len=69 phy_rssi_reg=192 phy_ed_reg=48
+ACR_RX seq=99 part=2 len=69 phy_rssi_reg=160 phy_ed_reg=48
+ACR_RX seq=99 part=3 len=69 phy_rssi_reg=224 phy_ed_reg=48
+ACR_RX seq=99 part=4 len=69 phy_rssi_reg=192 phy_ed_reg=48
+ACR_RX seq=99 part=5 len=69 phy_rssi_reg=160 phy_ed_reg=48
+ACR_RX seq=99 part=6 len=69 phy_rssi_reg=128 phy_ed_reg=48
+ACR_RX seq=99 part=7 len=57 phy_rssi_reg=160 phy_ed_reg=48
+ACR_REASSEMBLED seq=99 bytes=500 integrity=1

@@ -3,5 +3,6 @@ all: $(CONTIKI_PROJECT)
 CONTIKI = ../..
 MAKE_NET = MAKE_NET_NULLNET
 MAKE_MAC = MAKE_MAC_CSMA
-CFLAGS += -DENERGEST_CONF_ON=1 -I../../../arch/platform/iotlab/openlab
+ACR_PHY_START_DELAY_S ?= 3
+CFLAGS += -DENERGEST_CONF_ON=1 -DACR_PHY_START_DELAY_S=$(ACR_PHY_START_DELAY_S) -I../../../arch/platform/iotlab/openlab
 include $(CONTIKI)/Makefile.include
