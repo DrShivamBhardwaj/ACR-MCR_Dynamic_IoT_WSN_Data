@@ -1,0 +1,14 @@
+{
+  "verdict": "PASS",
+  "checked_modes": [
+    "point",
+    "adaptive",
+    "frozen"
+  ],
+  "total_matched_mode_rounds": 135,
+  "max_alpha_error": 0.0,
+  "max_quantile_error": 0.0,
+  "original_source_sha256": "3f134a8826525215f7cf2ff307bab3893c0d64b050f742bdc3c250b1c0302ea4",
+  "port_source_sha256": "b186666c62e4cb79aed62bf6fdc9023ad6d1d7c7293e38664c8bfa77eaefcbc8",
+  "scientific_boundary": "Only calibrator's score-window, quantile, alpha and alert; this is NOT the ACR-MCR head-selection optimizer on real M3 hardware."
+}
