@@ -17,7 +17,7 @@ from pathlib import Path
 d=Path(sys.argv[1]);manifest=json.loads((d/'41_firmware_manifest_v5.json').read_text())
 assert len(manifest['firmware'])==41
 for i in range(1,41):
- f=d/'firmware_41_v4'/manifest['firmware'][str(i)]['filename']
+ f=d/'firmware_41_v5'/manifest['firmware'][str(i)]['filename']
  assert hashlib.sha256(f.read_bytes()).hexdigest()==manifest['firmware'][str(i)]['sha256']
 assert manifest['source_sha256']==hashlib.sha256((d/'acr_m3_transport_control_triggered_v5.c').read_bytes()).hexdigest()
 print('ALL_V5_NATIVE_M3_IMAGES_SOURCE_HASHES_PASSED')
@@ -26,7 +26,7 @@ cd "$ROOT/data"
 git add hardware/iotlab_m3/embedded_40/41_firmware_manifest_v5.json \
         hardware/iotlab_m3/embedded_40/firmware_41_v5.tar.gz
 git -c core.whitespace=-trailing-space diff --cached --check
-git commit -m "Preserve all 40 physical source firmware images for preregistered control-timed V4 pair"
+git commit -m "Preserve all 40 physical source firmware images for preregistered control-timed V5 pair"
 git push origin main
 # One testbed reservation at a time. The original sink kernel binaries
 # are immutable and method-specific. Study is OPEN-LOOP, one seed.
