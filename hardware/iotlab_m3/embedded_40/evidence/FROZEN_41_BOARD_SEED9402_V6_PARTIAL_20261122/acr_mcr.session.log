@@ -1,0 +1,14 @@
+{"timestamp_utc": "2026-11-22T15:23:41.494542+00:00", "status": "source_firmware_and_41_board_map_verified", "experiment_id": null, "source_sha256": "e4d15f7bb5ec35ee7177e7b154851619b7b19b3e9fb8fe4c0d5e4e285947f312", "method": "ACR-MCR", "onboard_original_kernel": true, "frozen_controller": true, "synthetic_predictor_state": true}
+{"timestamp_utc": "2026-11-22T15:24:10.136003+00:00", "status": "scheduler_preflight_accepted", "experiment_id": null}
+{"timestamp_utc": "2026-11-22T15:24:23.757400+00:00", "status": "reserved", "experiment_id": 459611}
+{"timestamp_utc": "2026-11-22T15:24:23.759886+00:00", "status": "early_uart_collection_started", "experiment_id": 459611, "capture_pid": 3535}
+{"timestamp_utc": "2026-11-22T15:25:07.792276+00:00", "status": "all_41_physical_firmware_installations_verified", "experiment_id": 459611, "successful_flash": 41}
+{"timestamp_utc": "2026-11-22T15:25:07.792507+00:00", "status": "physical_41_serial_capture", "experiment_id": 459611}
+{"timestamp_utc": "2026-11-22T15:26:59.947992+00:00", "status": "serial_capture_finished", "experiment_id": 459611, "capture_exit": 2}
+{"timestamp_utc": "2026-11-22T15:27:03.793967+00:00", "status": "raw_data_archived", "experiment_id": 459611, "scientific_scope": "original frozen deterministic on-M3 kernel, NOT closed-loop adaptive ACR", "captured_serial_nodes": 37, "reassembled_500B": 50, "site_complete": true}
+{"timestamp_utc": "2026-11-22T15:27:03.794326+00:00", "status": "failed", "experiment_id": 459611, "error": "FAIL_CLOSED_UART_STARTUP_AUDIT: ['UART_CONNECTION_ERRORS', 'MISSING_NODE_UART']"}
+{"timestamp_utc": "2026-11-22T15:27:05.073042+00:00", "status": "own_experiment_stopped", "experiment_id": 459611, "stop_result": {"id": 459611, "status": "Delete request registered"}}
+Traceback (most recent call last):
+  File "/Users/shivambhardwaj/research/ACR_MCR_Recovery_20261122/data/hardware/iotlab_m3/embedded_40/run_41_frozen_seed9402_V6.py", line 145, in <module>
+    raise RuntimeError("FAIL_CLOSED_UART_STARTUP_AUDIT: "+repr(summary.get("failures",[])))
+RuntimeError: FAIL_CLOSED_UART_STARTUP_AUDIT: ['UART_CONNECTION_ERRORS', 'MISSING_NODE_UART']

@@ -1,0 +1,9 @@
+{"timestamp_utc": "2026-11-22T15:20:08.596258+00:00", "status": "source_firmware_and_41_board_map_verified", "experiment_id": null, "source_sha256": "e4d15f7bb5ec35ee7177e7b154851619b7b19b3e9fb8fe4c0d5e4e285947f312", "method": "POINT-EA", "onboard_original_kernel": true, "frozen_controller": true, "synthetic_predictor_state": true}
+{"timestamp_utc": "2026-11-22T15:20:35.739289+00:00", "status": "scheduler_preflight_accepted", "experiment_id": null}
+{"timestamp_utc": "2026-11-22T15:20:52.387710+00:00", "status": "reserved", "experiment_id": 459607}
+{"timestamp_utc": "2026-11-22T15:20:52.391611+00:00", "status": "early_uart_collection_started", "experiment_id": 459607, "capture_pid": 2571}
+{"timestamp_utc": "2026-11-22T15:21:37.758191+00:00", "status": "all_41_physical_firmware_installations_verified", "experiment_id": 459607, "successful_flash": 41}
+{"timestamp_utc": "2026-11-22T15:21:37.758527+00:00", "status": "physical_41_serial_capture", "experiment_id": 459607}
+{"timestamp_utc": "2026-11-22T15:23:28.399472+00:00", "status": "serial_capture_finished", "experiment_id": 459607, "capture_exit": 0}
+{"timestamp_utc": "2026-11-22T15:23:32.162377+00:00", "status": "raw_data_archived", "experiment_id": 459607, "scientific_scope": "original frozen deterministic on-M3 kernel, NOT closed-loop adaptive ACR", "captured_serial_nodes": 41, "reassembled_500B": 47, "site_complete": true}
+{"timestamp_utc": "2026-11-22T15:23:33.443961+00:00", "status": "own_experiment_stopped", "experiment_id": 459607, "stop_result": {"id": 459607, "status": "Delete request registered"}}
