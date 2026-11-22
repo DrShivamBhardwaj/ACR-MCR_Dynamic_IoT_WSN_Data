@@ -1,0 +1,16 @@
+{
+  "phase": 2,
+  "method": "POINT-EA",
+  "original_sha256": "3f134a8826525215f7cf2ff307bab3893c0d64b050f742bdc3c250b1c0302ea4",
+  "result": "CAPTURED_RAW_APPLE_ESTIMATED_CPU_SUBSYSTEM_POWER_NOT_CALIBRATED",
+  "raw_original_directory": "/Users/shivambhardwaj/research/ACR_MCR_Recovery_20261122/data/host_energy/authorized_m1_power_runs/20261122T161647Z",
+  "raw_files_sha256": {
+    "phase_02_POINT_EA.powermetrics.txt": "cad9204955e3bbc57e676cb1d5adff28ee4ef583e975dd4a6d23fb69120e4c38",
+    "phase_02_POINT_EA.workload.json": "f652457a295717b6ba5388c2485fd59567364bd8523859ed584239dedabe4ba9"
+  },
+  "bytes": {
+    "phase_02_POINT_EA.powermetrics.txt": 126858,
+    "phase_02_POINT_EA.workload.json": 524
+  },
+  "collected_at": "2026-11-22T16:18:26.314840+00:00"
+}
