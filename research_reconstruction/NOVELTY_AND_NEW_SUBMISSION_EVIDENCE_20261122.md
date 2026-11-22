@@ -178,3 +178,28 @@ Keep original, Cooja and physical studies separate in Methods
 and Results. Avoid false universal superiority claims and
 unsupported transfer of statistical guarantees. Manuscript
 acceptance and full physical validation remain unresolved.
+
+
+## 7. New physically verified observation-return mechanism, experiment 459639
+
+A separately registered and actually executed Grenoble three-board
+source-to-sink probe telemetry test has now passed a source-hashed
+independent auditor. M3-16 source1, M3-15 source2 and M3-18 sink
+each had a successful new firmware installation, raw UART stream
+and final ENERGEST record. All six actual source MAC probe reports
+(ACK outcome, retry count and source-local service ticks) were
+observed at the sink after routing over physical M3 radio; all six
+matched their original source UART fields. Sink also verified
+six of six complete 500-byte physical application samples.
+Exact original raw records and initial hardcoded-node auditor
+false negative remain archived under
+hardware/iotlab_m3/closed_loop_telemetry_v9/evidence/459639.
+
+This resolves a previously untested physical **telemetry-transport
+mechanism**. It does NOT yet implement original ACR-MCR online
+Bayesian predictor updating, residual calibration, conformal risk,
+head-search based on these observations, or next-round dynamic
+control. The experiment has two actual sources and one sink, not
+40 physical adaptive source nodes. No service superiority
+claim follows from this pilot. Full original physical
+closed-loop remains [NEED EXPERIMENT].

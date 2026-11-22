@@ -98,6 +98,36 @@ def proof(stage):
             'point_estimated_cpu_J_per_full_sim_case':x['by_method']['POINT-EA']['mean_estimated_cpu_J_per_simulator_case'],
             'acr_estimated_cpu_J_per_full_sim_case':x['by_method']['ACR-MCR']['mean_estimated_cpu_J_per_simulator_case'],
             'scope':'Apple aggregate CPU subsystem estimate, NOT host optimizer-only calibrated electrical energy'}
+    elif stage=='m3_v9_real_probe_radio_feedback':
+        folder=REPO/'hardware/iotlab_m3/closed_loop_telemetry_v9/evidence/459639'
+        audit=folder/'strict_radio_telemetry_audit.json'
+        status=folder/'final_status.json'
+        report=read(audit);result=read(status)
+        assert result['experiment']==459639
+        assert result['status']=='PASS_2_SOURCE_PHYSICAL_PROBE_TELEMETRY_ONLY'
+        assert result['flashes_verified'] and result['physical_feedback_proved_for_both_sources']
+        assert result['original_acr_mcr_adaptive_controller_validated'] is False
+        assert report['verdict']=='PASS_REAL_PHY_REPORT_PATH'
+        assert report['exact_original_link_probe_source_callbacks']==6
+        assert report['independently_matching_sink_radio_probe_observations']==6
+        assert report['verified_complete_500byte_app_samples']==6
+        assert sorted(report['matched_physical_source_ids'])==[1,2]
+        assert set(report['per_board_final_energest_records'].values())=={1}
+        deployment=read(folder/'deployment.json')
+        expected={'m3-16.grenoble.iot-lab.info',
+                  'm3-15.grenoble.iot-lab.info',
+                  'm3-18.grenoble.iot-lab.info'}
+        assert set(deployment)=={'0'} and set(deployment['0'])==expected
+        trace_manifest=read(folder/'manifest_sha256.json')
+        for name,checksum in trace_manifest.items():
+            assert digest(folder/name)==checksum,('MISSING_OR_MODIFIED_REAL_PHY_TRACE',name)
+        e += [audit,status,folder/'deployment.json',folder/'manifest_sha256.json',
+              REPO/'hardware/iotlab_m3/closed_loop_telemetry_v9/audit_physical_telemetry.py',
+              REPO/'hardware/iotlab_m3/closed_loop_telemetry_v9/MANIFEST_FIRMWARE_SMOKE_second.json']
+        result={'experiment':459639,'physical_flashes':3,'UART':3,
+          'source_mac_observations':6,'radio_received_matched_probe_observations':6,
+          'fully_verified_500B_samples':6,'ENRGEST':3,
+          'scope':'STATIC physical radio MAC observation return; original conformal/optimizer NOT physically closed loop'}
     elif stage=='m3_v7_risk_flash_pass':
         p=BASE/'evidence/FROZEN_41_BOARD_SEED9402_V7_ACR_ONLY_20261122/acr_mcr'
         f=p/'deployment.json';g=p/'reservation.json'
