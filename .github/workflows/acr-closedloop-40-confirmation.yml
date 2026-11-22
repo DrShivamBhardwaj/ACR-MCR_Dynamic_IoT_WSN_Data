@@ -1,0 +1,163 @@
+name: ACR-MCR Independent 40-Node Packet-Feedback Closed Loop
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+concurrency:
+  group: acr-40-closedloop-confirmation
+  cancel-in-progress: false
+
+jobs:
+  closed-loop:
+    strategy:
+      fail-fast: false
+      max-parallel: 3
+      matrix:
+        seed: [8901, 8902, 8903, 8904, 8905, 8906, 8907, 8908, 8909, 8910]
+        scenario: [S1, S5]
+        method: [POINT-EA, ACR-MCR]
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    env:
+      OPENBLAS_NUM_THREADS: '1'
+      OMP_NUM_THREADS: '1'
+      MKL_NUM_THREADS: '1'
+      CL_ROUNDS: '160'
+      CL_SEED: '${{ matrix.seed }}'
+      CL_SCENARIO: '${{ matrix.scenario == 'S5' && '5' || '1' }}'
+      CL_METHOD: '${{ matrix.method == 'ACR-MCR' && '1' || '0' }}'
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          path: data
+      - uses: actions/checkout@v4
+        with:
+          repository: contiki-ng/contiki-ng
+          ref: 4ccd1a3b9e767f168d12ec3df187fe6b7dc736b5
+          submodules: recursive
+          path: contiki-ng
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+          cache-dependency-path: data/requirements.txt
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '25'
+      - uses: gradle/actions/setup-gradle@v4
+      - name: Install pinned scientific and Contiki dependencies
+        run: |
+          python -m pip install -r data/requirements.txt
+          sudo apt-get update -qq
+          sudo apt-get install -y --no-install-recommends make gcc g++
+      - name: Retain exact original source and patch upstream GCC compatibility only
+        shell: bash
+        run: |
+          python data/tools/recovery_gate.py
+          python - <<'PY'
+          from pathlib import Path
+          p=Path('contiki-ng/os/services/shell/shell.c')
+          s=p.read_text()
+          old="    args = strchr(cmd, ' ');"
+          assert s.count(old)==1
+          p.write_text(s.replace(old,"    args = (char *)strchr(cmd, ' ');"))
+          PY
+          git -C contiki-ng diff --check
+          git -C contiki-ng diff -- os/services/shell/shell.c > compatibility.patch
+      - name: Install packet-driven C controller with NO precomputed route decisions
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p contiki-ng/examples/acr_mcr_closed generated
+          cp data/packet_validation/acr_40_closed.c contiki-ng/examples/acr_mcr_closed/
+          cp data/packet_validation/Makefile.closedloop contiki-ng/examples/acr_mcr_closed/Makefile
+          python data/packet_validation/generate_positions.py \
+            --seed '${{ matrix.seed }}' --scenario '${{ matrix.scenario }}' \
+            --out generated/positions.json
+          RADIO=0.94
+          if [ '${{ matrix.scenario }}' = 'S5' ];then RADIO=0.82;fi
+          python data/packet_validation/generate_closedloop_csc.py \
+            --template contiki-ng/tests/07-simulation-base/05-nullnet-unicast.csc \
+            --positions generated/positions.json \
+            --seed '${{ matrix.seed }}' --scenario '${{ matrix.scenario }}' \
+            --method '${{ matrix.method }}' --rounds 160 \
+            --python "$(command -v python)" \
+            --controller-script "$GITHUB_WORKSPACE/data/packet_validation/closedloop_controller.py" \
+            --workdir "$GITHUB_WORKSPACE/data" \
+            --output-log "$GITHUB_WORKSPACE/generated/controller.jsonl" \
+            --stderr-log "$GITHUB_WORKSPACE/generated/controller_stderr.log" \
+            --rx-success "$RADIO" \
+            --out contiki-ng/tests/closed_40.csc
+          cp contiki-ng/tests/closed_40.csc generated/closed_40.csc
+      - name: Packet-driven multi-round Cooja controller execution
+        shell: bash
+        run: |
+          set -euo pipefail
+          cd contiki-ng/tools/cooja
+          RESULT=1
+          for ATTEMPT in 1 2 3; do
+            rm -f COOJA.testlog
+            rm -f "$GITHUB_WORKSPACE/generated/controller.jsonl" "$GITHUB_WORKSPACE/generated/controller.summary.json"
+            set +e
+            ./gradlew --no-daemon run --args='--no-gui ../../tests/closed_40.csc' \
+              2>&1 | tee "$GITHUB_WORKSPACE/generated/build_attempt_${ATTEMPT}.log"
+            RESULT=${PIPESTATUS[0]}
+            set -e
+            if [ "$RESULT" -eq 0 ];then break;fi
+            if [ "$ATTEMPT" -lt 3 ] && grep -Eiq 'status code 429|Too Many Requests|HTTP 429' "$GITHUB_WORKSPACE/generated/build_attempt_${ATTEMPT}.log";then
+              sleep $((ATTEMPT*35))
+            else
+              exit "$RESULT"
+            fi
+          done
+          cp COOJA.testlog "$GITHUB_WORKSPACE/generated/COOJA.testlog"
+          grep -q '^CLOSED_LOOP_COMPLETE ' "$GITHUB_WORKSPACE/generated/COOJA.testlog"
+          grep -q '^TEST OK$' "$GITHUB_WORKSPACE/generated/COOJA.testlog"
+      - name: Reject unpaired, impossible or synthetic-observation-substituted traces
+        run: |
+          python data/packet_validation/audit_closedloop.py \
+            --run-dir generated --seed '${{ matrix.seed }}' \
+            --method '${{ matrix.method }}' --scenario '${{ matrix.scenario }}' \
+            --rounds 160 --out generated/closedloop_audit.json
+      - name: Archive complete packet, controller and provenance evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: closed-${{ matrix.scenario }}-seed${{ matrix.seed }}-${{ matrix.method }}
+          path: |
+            generated/
+            compatibility.patch
+          retention-days: 21
+          if-no-files-found: warn
+
+  final-paired-audit:
+    needs: closed-loop
+    if: always() && needs.closed-loop.result == 'success'
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+      - run: python -m pip install -r requirements.txt
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: closed-*
+          path: closedloop_collected
+          merge-multiple: false
+      - name: Registered 10-seed CI Holm-corrected packet-feedback test
+        run: |
+          python packet_validation/analyze_closedloop_matrix.py \
+            --directory closedloop_collected \
+            --out closedloop_registered_results.json
+      - uses: actions/upload-artifact@v4
+        with:
+          name: acr-closedloop-40node-confirmed-packet-results
+          path: |
+            closedloop_registered_results.json
+            closedloop_registered_results.csv
+          retention-days: 21
