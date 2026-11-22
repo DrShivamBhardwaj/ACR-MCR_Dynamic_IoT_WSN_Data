@@ -1,0 +1,18 @@
+{
+  "verdict": "BLOCKED_NO_VALIDATED_RESIDUAL_UPDATE",
+  "experiment": 459639,
+  "physical_probe_records": 6,
+  "physical_edges_observed": 2,
+  "source_input_sha256": "6841273798f2fd71c6286a543bdbe30f36eda87edcf218050d156de7df412713",
+  "required_gates": {
+    "pre_observation_predictor_snapshot": "MISSING",
+    "per_edge_original_scale": "MISSING",
+    "pre_observation_conformal_quantile": "MISSING",
+    "native_to_original_duration_semantics": "UNVALIDATED",
+    "C_Python_post_round_state_parity": "NOT_RUN",
+    "physical_next_plan_actuation": "NOT_RUN"
+  },
+  "controller_state_changed": false,
+  "physical_closed_loop_pass": false,
+  "note": "Preserves successful physical probe stage; no inferred residual, calibrated duration or physical deadline."
+}
