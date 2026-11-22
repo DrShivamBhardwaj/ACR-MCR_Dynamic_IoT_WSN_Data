@@ -1,0 +1,59 @@
+name: ACR-MCR Cooja Packet Stack Smoke
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '37 1 * * 3'
+
+permissions:
+  contents: read
+concurrency:
+  group: acr-mcr-cooja-smoke
+  cancel-in-progress: false
+
+jobs:
+  clean-upstream-rpl-tsch-smoke:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - name: Checkout unchanged public Contiki-NG source and Cooja submodules
+        uses: actions/checkout@v4
+        with:
+          repository: contiki-ng/contiki-ng
+          ref: 4ccd1a3b9e767f168d12ec3df187fe6b7dc736b5
+          submodules: recursive
+          path: contiki-ng
+      - name: Set up supported Java
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '25'
+      - name: Install open-source C toolchain
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y --no-install-recommends make gcc g++
+          make --version | head -1
+      - name: Run packet-level RPL TSCH base test in headless Cooja
+        shell: bash
+        working-directory: contiki-ng/tools/cooja
+        run: |
+          set -o pipefail
+          ./gradlew --no-daemon run --args='--no-gui ../../tests/07-simulation-base/19-cooja-rpl-tsch.csc' 2>&1 | tee "${{ github.workspace }}/cooja_base_test.log"
+          grep -E 'TEST OK' "${{ github.workspace }}/cooja_base_test.log"
+      - name: Label scope and track exact environment
+        if: always()
+        shell: bash
+        run: |
+          printf 'Contiki-NG source: 4ccd1a3b9e767f168d12ec3df187fe6b7dc736b5\n' > cooja_provenance.txt
+          printf 'Cooja test: 19-cooja-rpl-tsch.csc\n' >> cooja_provenance.txt
+          printf 'Scope: network-stack Cooja smoke test ONLY, not ACR-MCR controller validation.\n' >> cooja_provenance.txt
+          printf 'GitHub run: %s\n' "$GITHUB_RUN_ID" >> cooja_provenance.txt
+      - name: Archive bounded Cooja log
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: acr-mcr-cooja-stack-smoke
+          path: |
+            cooja_base_test.log
+            cooja_provenance.txt
+          if-no-files-found: warn
+          retention-days: 7
