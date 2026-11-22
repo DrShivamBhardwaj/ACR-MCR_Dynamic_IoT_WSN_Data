@@ -1,0 +1,422 @@
+{
+  "experiment": 459567,
+  "site": "FIT IoT-LAB Grenoble",
+  "status": "INCOMPLETE_TRACE_NOT_SCIENTIFIC_CONFIRMATION",
+  "failures": [
+    "Missing serial logs: m3-291_logical-5.serial.log",
+    "Missing/duplicate final ENERGEST record on one or more captured boards",
+    "SINK completion without a matching actual source demand"
+  ],
+  "expected_real_sensor_nodes": 40,
+  "expected_sink_nodes": 1,
+  "observed_board_count": 40,
+  "nominal_source_round_demands": 120,
+  "observed_data_demand_records": 76,
+  "sink_unique_500B_reassemblies": 57,
+  "physical_500B_success_over_nominal": 0.475,
+  "physically_radio_delivered_control_installs": 78,
+  "possible_control_installations": 120,
+  "per_node_control_installs": {
+    "1": 2,
+    "2": 2,
+    "3": 2,
+    "4": 2,
+    "6": 2,
+    "7": 2,
+    "8": 2,
+    "9": 2,
+    "10": 2,
+    "11": 2,
+    "12": 2,
+    "13": 2,
+    "14": 2,
+    "15": 2,
+    "16": 2,
+    "17": 2,
+    "18": 2,
+    "19": 2,
+    "20": 2,
+    "21": 2,
+    "22": 2,
+    "23": 2,
+    "24": 2,
+    "25": 2,
+    "26": 2,
+    "27": 2,
+    "28": 2,
+    "29": 2,
+    "30": 2,
+    "31": 2,
+    "32": 2,
+    "33": 2,
+    "34": 2,
+    "35": 2,
+    "36": 2,
+    "37": 2,
+    "38": 2,
+    "39": 2,
+    "40": 2,
+    "41": 0
+  },
+  "per_node_mac_callback_counts": {
+    "1": 127,
+    "2": 23,
+    "3": 23,
+    "4": 23,
+    "6": 23,
+    "7": 23,
+    "8": 23,
+    "9": 23,
+    "10": 23,
+    "11": 134,
+    "12": 23,
+    "13": 23,
+    "14": 23,
+    "15": 23,
+    "16": 23,
+    "17": 23,
+    "18": 23,
+    "19": 22,
+    "20": 21,
+    "21": 178,
+    "22": 23,
+    "23": 23,
+    "24": 23,
+    "25": 23,
+    "26": 23,
+    "27": 23,
+    "28": 23,
+    "29": 23,
+    "30": 23,
+    "31": 142,
+    "32": 23,
+    "33": 23,
+    "34": 23,
+    "35": 4,
+    "36": 23,
+    "37": 23,
+    "38": 23,
+    "39": 23,
+    "40": 23,
+    "41": 4
+  },
+  "per_node_energest_records": {
+    "1": 1,
+    "2": 1,
+    "3": 1,
+    "4": 1,
+    "6": 1,
+    "7": 1,
+    "8": 1,
+    "9": 1,
+    "10": 1,
+    "11": 1,
+    "12": 1,
+    "13": 1,
+    "14": 1,
+    "15": 1,
+    "16": 1,
+    "17": 1,
+    "18": 1,
+    "19": 1,
+    "20": 1,
+    "21": 1,
+    "22": 1,
+    "23": 1,
+    "24": 1,
+    "25": 1,
+    "26": 1,
+    "27": 1,
+    "28": 1,
+    "29": 1,
+    "30": 1,
+    "31": 1,
+    "32": 1,
+    "33": 1,
+    "34": 1,
+    "35": 0,
+    "36": 1,
+    "37": 1,
+    "38": 1,
+    "39": 1,
+    "40": 1,
+    "41": 1
+  },
+  "physical_head_to_sink_fragment_mac_callbacks": 553,
+  "source_sample_round_keys": [
+    {
+      "round": 0,
+      "logical_source": 24
+    },
+    {
+      "round": 0,
+      "logical_source": 26
+    },
+    {
+      "round": 1,
+      "logical_source": 1
+    },
+    {
+      "round": 1,
+      "logical_source": 2
+    },
+    {
+      "round": 1,
+      "logical_source": 3
+    },
+    {
+      "round": 1,
+      "logical_source": 4
+    },
+    {
+      "round": 1,
+      "logical_source": 6
+    },
+    {
+      "round": 1,
+      "logical_source": 8
+    },
+    {
+      "round": 1,
+      "logical_source": 9
+    },
+    {
+      "round": 1,
+      "logical_source": 11
+    },
+    {
+      "round": 1,
+      "logical_source": 12
+    },
+    {
+      "round": 1,
+      "logical_source": 13
+    },
+    {
+      "round": 1,
+      "logical_source": 14
+    },
+    {
+      "round": 1,
+      "logical_source": 15
+    },
+    {
+      "round": 1,
+      "logical_source": 16
+    },
+    {
+      "round": 1,
+      "logical_source": 17
+    },
+    {
+      "round": 1,
+      "logical_source": 21
+    },
+    {
+      "round": 1,
+      "logical_source": 22
+    },
+    {
+      "round": 1,
+      "logical_source": 25
+    },
+    {
+      "round": 1,
+      "logical_source": 26
+    },
+    {
+      "round": 1,
+      "logical_source": 31
+    },
+    {
+      "round": 1,
+      "logical_source": 32
+    },
+    {
+      "round": 1,
+      "logical_source": 33
+    },
+    {
+      "round": 1,
+      "logical_source": 34
+    },
+    {
+      "round": 1,
+      "logical_source": 37
+    },
+    {
+      "round": 1,
+      "logical_source": 39
+    },
+    {
+      "round": 1,
+      "logical_source": 40
+    },
+    {
+      "round": 2,
+      "logical_source": 1
+    },
+    {
+      "round": 2,
+      "logical_source": 3
+    },
+    {
+      "round": 2,
+      "logical_source": 4
+    },
+    {
+      "round": 2,
+      "logical_source": 6
+    },
+    {
+      "round": 2,
+      "logical_source": 8
+    },
+    {
+      "round": 2,
+      "logical_source": 9
+    },
+    {
+      "round": 2,
+      "logical_source": 11
+    },
+    {
+      "round": 2,
+      "logical_source": 12
+    },
+    {
+      "round": 2,
+      "logical_source": 13
+    },
+    {
+      "round": 2,
+      "logical_source": 14
+    },
+    {
+      "round": 2,
+      "logical_source": 15
+    },
+    {
+      "round": 2,
+      "logical_source": 16
+    },
+    {
+      "round": 2,
+      "logical_source": 17
+    },
+    {
+      "round": 2,
+      "logical_source": 18
+    },
+    {
+      "round": 2,
+      "logical_source": 21
+    },
+    {
+      "round": 2,
+      "logical_source": 22
+    },
+    {
+      "round": 2,
+      "logical_source": 23
+    },
+    {
+      "round": 2,
+      "logical_source": 24
+    },
+    {
+      "round": 2,
+      "logical_source": 25
+    },
+    {
+      "round": 2,
+      "logical_source": 26
+    },
+    {
+      "round": 2,
+      "logical_source": 27
+    },
+    {
+      "round": 2,
+      "logical_source": 28
+    },
+    {
+      "round": 2,
+      "logical_source": 29
+    },
+    {
+      "round": 2,
+      "logical_source": 31
+    },
+    {
+      "round": 2,
+      "logical_source": 32
+    },
+    {
+      "round": 2,
+      "logical_source": 33
+    },
+    {
+      "round": 2,
+      "logical_source": 34
+    },
+    {
+      "round": 2,
+      "logical_source": 36
+    },
+    {
+      "round": 2,
+      "logical_source": 39
+    },
+    {
+      "round": 2,
+      "logical_source": 40
+    }
+  ],
+  "physical_host_instrumented_joules": null,
+  "embedded_acr_mcr_optimizer_executed": false,
+  "on_air_control_packets_verified": true,
+  "raw_logs_sha256": {
+    "1": "ece650eafdd1efbadfe5346ccfda2a293ce6eef79277b9dd7acfa0174faec9b6",
+    "2": "1b2d019c23c2cec24e4154c61396d2fa73d79dc7a2e4e65571391334106c4372",
+    "3": "9eee39c03ce2b8f57397259608db6bb02871509dfc67337564d9a59f5cb4a06f",
+    "4": "1501e59e96413952202f2f7c1a96973ca10859a9ccaf48dadd52d2bbb728488e",
+    "6": "f2abbefd344deba4bd10ab40ae282480965475cc1d79b44f534b86a702506574",
+    "7": "8f742a4ce0196143dcaa64811a26557f6000ad37f429f80532e1c0d402969945",
+    "8": "90e4ea7e0c825cefed38f8933f8d67d4b4409dd73d6813497670294612eaa2f8",
+    "9": "935fd2b5ce41106612c765320b41aa58001e85cde6e58c2751395a9271922678",
+    "10": "93f259a49db3eda571eb22eb17be10f98e0cbf2f9103f31335ec5a6750cd6f10",
+    "11": "0260bea6dc24003828e153f866f46854ce175081dca7d5dc279c712f5d40abe6",
+    "12": "b5ef02a6e42d5f403686a7a62eb577d0b642c3398dbfb86ac15c61a1c06e435a",
+    "13": "43a1ef4037f1282b23c248718999b905216a6d230258ad1757d07d9920fca51d",
+    "14": "f6a2a79df75dbc011d60e31778bd26b9a3421818e987344ab51443d6a5c29bf2",
+    "15": "ae34179aa7207e419a83707589e55165ed4e2f29ee4dfcecf8c152c166a87710",
+    "16": "dbed88e2ae82bbdbd2805a27cc5f8e0e9eb269da97dd35e6446424ec7c0f4b69",
+    "17": "fc8ca6fcea13b2a9a31fbc8178e6001d76ab5872d47bcd9f30b92b8f48ba7a5b",
+    "18": "c22445a90b8ecf44fc93fd5efa838c9e70e48c337761f26265079375e5c92c25",
+    "19": "d304a2077973c211feb5f96cea9d26e9303ccfa14798ec65ea2520d9f19cefd5",
+    "20": "aa9bea90b3ad8eb4f401606098c3e7b8bcccb15a0ae23c3eb6a4378916ee63d0",
+    "21": "41a7e11ae04321641d4d1be19f64cb085b7f104960ec436f5ae643769fc8b061",
+    "22": "bf93137a7d05ceb0683d7885ed3aba952dacf0be0aaf5bc165c8903f18e52544",
+    "23": "839608a7a0167671243260d109e9993e1c2eff77a7426f10d32252d4f0aeb0a6",
+    "24": "3e98343ba0e6c43b694ffecb253d56a4fec8eb5bdf3febc9094a680d3b82a182",
+    "25": "afcd5abdf69683c3c4d304926636d6e0dae2a1d17e656831e05a49c03ad8d6fd",
+    "26": "64f1e559329a69bbfe15e57510526226947c281be3fdee314e666d377c5a6123",
+    "27": "8b2b452e7f71cc6f5fbccae1e61ea9c4ad59f958b9489844408f4c2e0e7ac0a4",
+    "28": "e2a4ec52b67a656d228aa5fb8a8d2bbae7a85250b511ca4bb4bcc2d1ff69d979",
+    "29": "0cd8898712664cb63f94f71f401757d7cdb765a85eb8d0faba37184127b0bd53",
+    "30": "64e16f1f4778ed99d4b38d957d07789e19d1a14580f69a478a00bfa5173bd967",
+    "31": "ffa74fe3a6186678179e6c1bc6776336fa4368de9820931c284a5c6ce5ab54ce",
+    "32": "2b6b07d0a02a7d50ef293d5d216cfc17ed6d7a2487f20655798175193bcaa589",
+    "33": "4d697796486dc7bad068d10837fb8cd0c3c9aec22c1b85b34b13bafb5ee5a5a6",
+    "34": "d6a6d7e7d34ff7b65e813dcd4ebfe5af4015cb4e44c84e76dffa1305745539ba",
+    "35": "fdf3a6c7dd3a519880fc7969ec969efb95f1da6a0f7c05aabd78f13b17671841",
+    "36": "efeceb0ca91b2ee73a9f10467b13c592facccd576c1a6e4f05015738d6a89a2f",
+    "37": "333ec9e348af192607f2cabb18212f7f78dda48c4aa586430fc63c39dfa2c238",
+    "38": "05cb882e7ff7389ce622699bbb09df83f8f8376f86fa3dace5587416a616b0f9",
+    "39": "59085096cc10d7a24195f0bd997e026a90ccd0f2b24babce746881df45ac714a",
+    "40": "77dffd266676b06ae2d48105a99e6f36a1988361155c9f97b0c7a18046c6ce14",
+    "41": "ad94cb8c7f4d010eec10684aa4732e2615e8f390d88993c633e768252ce24939"
+  },
+  "limitations": "Fixed 4-head controller, 3 rounds, no synchronized 500ms service timestamps; no original adaptive conformal/CVaR policy; this is a deployment and packet-format check, not scientific adaptive-controller validation."
+}

@@ -1,0 +1,74 @@
+2026-11-22T12:03:50.169531+00:00	SINK_REASSEMBLED round=0 src=24 app_bytes=500 parts=8 checksum=PASS
+2026-11-22T12:03:50.249393+00:00	SINK_REASSEMBLED round=0 src=26 app_bytes=500 parts=8 checksum=PASS
+2026-11-22T12:03:59.592424+00:00	ROUND_BARRIER round=0 node=41
+2026-11-22T12:03:59.992243+00:00	CONTROL_ENQUEUED round=1 chunk=0 id=41 entries=20 payload_bytes=80
+2026-11-22T12:03:59.992378+00:00	CONTROL_ENQUEUED round=1 chunk=1 id=41 entries=20 payload_bytes=80
+2026-11-22T12:03:59.992438+00:00	MAC_START round=1 type=3 src=41 sender=41 to=0 part=0 bytes=89
+2026-11-22T12:04:00.007738+00:00	MAC_TX round=1 type=3 src=41 sender=41 to=0 part=0 status=0 attempts=1 bytes=89
+2026-11-22T12:04:00.007800+00:00	MAC_START round=1 type=3 src=41 sender=41 to=0 part=1 bytes=89
+2026-11-22T12:04:00.103884+00:00	MAC_TX round=1 type=3 src=41 sender=41 to=0 part=1 status=0 attempts=1 bytes=89
+2026-11-22T12:04:03.911943+00:00	SINK_REASSEMBLED round=1 src=1 app_bytes=500 parts=8 checksum=PASS
+2026-11-22T12:04:04.263895+00:00	SINK_REASSEMBLED round=1 src=11 app_bytes=500 parts=8 checksum=PASS
+2026-11-22T12:04:05.351726+00:00	SINK_REASSEMBLED round=1 src=3 app_bytes=500 parts=8 checksum=PASS
+2026-11-22T12:04:05.879616+00:00	SINK_REASSEMBLED round=1 src=21 app_bytes=500 parts=8 checksum=PASS
+2026-11-22T12:04:06.279624+00:00	SINK_REASSEMBLED round=1 src=31 app_bytes=500 parts=8 checksum=PASS
+2026-11-22T12:04:07.463558+00:00	SINK_REASSEMBLED round=1 src=15 app_bytes=500 parts=8 checksum=PASS
+2026-11-22T12:04:07.463685+00:00	SINK_REASSEMBLED round=1 src=2 app_bytes=500 parts=8 checksum=PASS
+2026-11-22T12:04:07.671581+00:00	SINK_REASSEMBLED round=1 src=14 app_bytes=500 parts=8 checksum=PASS
+2026-11-22T12:04:07.687380+00:00	SINK_REASSEMBLED round=1 src=4 app_bytes=500 parts=8 checksum=PASS
+2026-11-22T12:04:07.735377+00:00	SINK_REASSEMBLED round=1 src=16 app_bytes=500 parts=8 checksum=PASS
+2026-11-22T12:04:07.767360+00:00	SINK_REASSEMBLED round=1 src=6 app_bytes=500 parts=8 checksum=PASS
+2026-11-22T12:04:07.911379+00:00	SINK_REASSEMBLED round=1 src=12 app_bytes=500 parts=8 checksum=PASS
+2026-11-22T12:04:07.943493+00:00	SINK_REASSEMBLED round=1 src=37 app_bytes=500 parts=8 checksum=PASS
+2026-11-22T12:04:08.151503+00:00	SINK_REASSEMBLED round=1 src=17 app_bytes=500 parts=8 checksum=PASS
+2026-11-22T12:04:08.455296+00:00	SINK_REASSEMBLED round=1 src=13 app_bytes=500 parts=8 checksum=PASS
+2026-11-22T12:04:08.487291+00:00	SINK_REASSEMBLED round=1 src=9 app_bytes=500 parts=8 checksum=PASS
+2026-11-22T12:04:08.551212+00:00	SINK_REASSEMBLED round=1 src=8 app_bytes=500 parts=8 checksum=PASS
+2026-11-22T12:04:09.079585+00:00	SINK_REASSEMBLED round=1 src=32 app_bytes=500 parts=8 checksum=PASS
+2026-11-22T12:04:09.207223+00:00	SINK_REASSEMBLED round=1 src=25 app_bytes=500 parts=8 checksum=PASS
+2026-11-22T12:04:09.399416+00:00	SINK_REASSEMBLED round=1 src=22 app_bytes=500 parts=8 checksum=PASS
+2026-11-22T12:04:09.431304+00:00	SINK_REASSEMBLED round=1 src=34 app_bytes=500 parts=8 checksum=PASS
+2026-11-22T12:04:09.623337+00:00	SINK_REASSEMBLED round=1 src=33 app_bytes=500 parts=8 checksum=PASS
+2026-11-22T12:04:09.639354+00:00	SINK_REASSEMBLED round=1 src=40 app_bytes=500 parts=8 checksum=PASS
+2026-11-22T12:04:09.655495+00:00	SINK_REASSEMBLED round=1 src=39 app_bytes=500 parts=8 checksum=PASS
+2026-11-22T12:04:09.943108+00:00	SINK_REASSEMBLED round=1 src=26 app_bytes=500 parts=8 checksum=PASS
+2026-11-22T12:04:19.590195+00:00	ROUND_BARRIER round=1 node=41
+2026-11-22T12:04:19.990068+00:00	CONTROL_ENQUEUED round=2 chunk=0 id=41 entries=20 payload_bytes=80
+2026-11-22T12:04:19.990194+00:00	CONTROL_ENQUEUED round=2 chunk=1 id=41 entries=20 payload_bytes=80
+2026-11-22T12:04:19.990253+00:00	MAC_START round=2 type=3 src=41 sender=41 to=0 part=0 bytes=89
+2026-11-22T12:04:20.005674+00:00	MAC_TX round=2 type=3 src=41 sender=41 to=0 part=0 status=0 attempts=1 bytes=89
+2026-11-22T12:04:20.021514+00:00	MAC_START round=2 type=3 src=41 sender=41 to=0 part=1 bytes=89
+2026-11-22T12:04:20.245724+00:00	MAC_TX round=2 type=3 src=41 sender=41 to=0 part=1 status=0 attempts=1 bytes=89
+2026-11-22T12:04:24.037662+00:00	SINK_REASSEMBLED round=2 src=11 app_bytes=500 parts=8 checksum=PASS
+2026-11-22T12:04:24.181515+00:00	SINK_REASSEMBLED round=2 src=1 app_bytes=500 parts=8 checksum=PASS
+2026-11-22T12:04:25.157675+00:00	SINK_REASSEMBLED round=2 src=14 app_bytes=500 parts=8 checksum=PASS
+2026-11-22T12:04:25.509428+00:00	SINK_REASSEMBLED round=2 src=21 app_bytes=500 parts=8 checksum=PASS
+2026-11-22T12:04:26.117633+00:00	SINK_REASSEMBLED round=2 src=31 app_bytes=500 parts=8 checksum=PASS
+2026-11-22T12:04:27.653266+00:00	SINK_REASSEMBLED round=2 src=22 app_bytes=500 parts=8 checksum=PASS
+2026-11-22T12:04:27.733232+00:00	SINK_REASSEMBLED round=2 src=15 app_bytes=500 parts=8 checksum=PASS
+2026-11-22T12:04:28.085205+00:00	SINK_REASSEMBLED round=2 src=33 app_bytes=500 parts=8 checksum=PASS
+2026-11-22T12:04:28.245241+00:00	SINK_REASSEMBLED round=2 src=6 app_bytes=500 parts=8 checksum=PASS
+2026-11-22T12:04:28.325165+00:00	SINK_REASSEMBLED round=2 src=4 app_bytes=500 parts=8 checksum=PASS
+2026-11-22T12:04:28.421108+00:00	SINK_REASSEMBLED round=2 src=3 app_bytes=500 parts=8 checksum=PASS
+2026-11-22T12:04:28.917143+00:00	SINK_REASSEMBLED round=2 src=36 app_bytes=500 parts=8 checksum=PASS
+2026-11-22T12:04:28.917206+00:00	SINK_REASSEMBLED round=2 src=9 app_bytes=500 parts=8 checksum=PASS
+2026-11-22T12:04:29.109239+00:00	SINK_REASSEMBLED round=2 src=34 app_bytes=500 parts=8 checksum=PASS
+2026-11-22T12:04:29.124980+00:00	SINK_REASSEMBLED round=2 src=32 app_bytes=500 parts=8 checksum=PASS
+2026-11-22T12:04:29.316845+00:00	SINK_REASSEMBLED round=2 src=28 app_bytes=500 parts=8 checksum=PASS
+2026-11-22T12:04:29.380816+00:00	SINK_REASSEMBLED round=2 src=8 app_bytes=500 parts=8 checksum=PASS
+2026-11-22T12:04:29.444845+00:00	SINK_REASSEMBLED round=2 src=13 app_bytes=500 parts=8 checksum=PASS
+2026-11-22T12:04:29.572914+00:00	SINK_REASSEMBLED round=2 src=18 app_bytes=500 parts=8 checksum=PASS
+2026-11-22T12:04:29.716982+00:00	SINK_REASSEMBLED round=2 src=39 app_bytes=500 parts=8 checksum=PASS
+2026-11-22T12:04:29.732942+00:00	SINK_REASSEMBLED round=2 src=40 app_bytes=500 parts=8 checksum=PASS
+2026-11-22T12:04:29.732996+00:00	SINK_REASSEMBLED round=2 src=26 app_bytes=500 parts=8 checksum=PASS
+2026-11-22T12:04:29.748842+00:00	SINK_REASSEMBLED round=2 src=25 app_bytes=500 parts=8 checksum=PASS
+2026-11-22T12:04:29.764710+00:00	SINK_REASSEMBLED round=2 src=12 app_bytes=500 parts=8 checksum=PASS
+2026-11-22T12:04:29.892862+00:00	SINK_REASSEMBLED round=2 src=17 app_bytes=500 parts=8 checksum=PASS
+2026-11-22T12:04:29.924852+00:00	SINK_REASSEMBLED round=2 src=16 app_bytes=500 parts=8 checksum=PASS
+2026-11-22T12:04:29.988848+00:00	SINK_REASSEMBLED round=2 src=24 app_bytes=500 parts=8 checksum=PASS
+2026-11-22T12:04:30.036845+00:00	SINK_REASSEMBLED round=2 src=27 app_bytes=500 parts=8 checksum=PASS
+2026-11-22T12:04:30.052737+00:00	SINK_REASSEMBLED round=2 src=23 app_bytes=500 parts=8 checksum=PASS
+2026-11-22T12:04:30.116901+00:00	SINK_REASSEMBLED round=2 src=29 app_bytes=500 parts=8 checksum=PASS
+2026-11-22T12:04:39.588042+00:00	ROUND_BARRIER round=2 node=41
+2026-11-22T12:04:39.588181+00:00	ENERGEST_RAW id=41 round=3 cpu=55580 lpm=2730388 deep=0 tx=12179 listen=1196818 ticks_per_second=32768
+2026-11-22T12:04:40.595756+00:00	DIST_DONE seed=8701 method=0 rounds=3 packets=6 control_packets=6 reassembled=82
