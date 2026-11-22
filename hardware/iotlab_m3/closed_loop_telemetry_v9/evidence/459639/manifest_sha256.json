@@ -1,0 +1,19 @@
+{
+  "reservation_preflight.json": "58f9ca91cc659aa405aaf61b14db9c29ac337269f1370c5d8fedcc47a1ad312d",
+  "capture_stdout.log": "4683824d63168f03e15428477274607508ab67d4a45ece409ceffc5d22c943ef",
+  "deployment.json": "dd129b6e6bdad3ca3dd48f34cd7a62035a48b169cd0222f2dcc2423526e1a0fe",
+  "final_status.json": "9f24ff709a510b86cb57ab569d0838d6a6984d2ceadb920098fbbde23c656cfb",
+  "audit_execution.log": "4bd2a9e29eb911ce6f247328daa8c6669693f61fe88c0828e53185a4175a43fb",
+  "physical_smoke_summary.json": "4683824d63168f03e15428477274607508ab67d4a45ece409ceffc5d22c943ef",
+  "README.md": "c26857544539bf56fe27f5f6f6f15f7e557f307b141fd766d8485b02c4e06092",
+  "capture_stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "status_from_iotlab.json": "617309742ae2611d880b139cd339a8d5f9f0ef8cc0eeebb35a7f2f69587110ba",
+  "reservation.json": "d89e7be1f159e0687cdcd92d467d7f6c1aaaa344588d20d2f74800daabc6075f",
+  "firmware_sha256.json": "bfd283f4bb295d560418e7be5629601193e801a06df6efd62cc8221c8a1ab946",
+  "original_runner.log": "13d68c11b9e302150fdf42c45382b30391a6700754d06827a3f651e33a75375f",
+  "capture_summary.json": "4683824d63168f03e15428477274607508ab67d4a45ece409ceffc5d22c943ef",
+  "status.json": "f91fd247ea6c342b49e8a882a71834086a790a156ef7b7c2064e493c99e01cba",
+  "original_uart/m3-15.log": "1ae30a428c791de43143e20c397b91565495b78c2de17cd7ebbc9dbce477fb61",
+  "original_uart/m3-16.log": "721f20cca3a2b02e9b47d605f6c9b1712e5c8b6129a1711eb9dda3e0ced3406b",
+  "original_uart/m3-18.log": "c693e8be78e549c151253d3e240fea23a095c854aa6b4b03f659741ea207e180"
+}

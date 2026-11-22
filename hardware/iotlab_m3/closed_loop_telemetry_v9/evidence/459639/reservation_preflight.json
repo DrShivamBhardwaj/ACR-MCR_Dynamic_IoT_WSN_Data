@@ -1,0 +1,36 @@
+{
+  "associations": null,
+  "duration": 10,
+  "firmwareassociations": [
+    {
+      "firmwarename": "sensor_01.iotlab",
+      "nodes": [
+        "m3-16.grenoble.iot-lab.info"
+      ]
+    },
+    {
+      "firmwarename": "sensor_02.iotlab",
+      "nodes": [
+        "m3-15.grenoble.iot-lab.info"
+      ]
+    },
+    {
+      "firmwarename": "sink_41.iotlab",
+      "nodes": [
+        "m3-18.grenoble.iot-lab.info"
+      ]
+    }
+  ],
+  "mobilities": null,
+  "name": "ACR-3-M3-physical-probe-ACK-telemetry-v9-second",
+  "nodes": [
+    "m3-15.grenoble.iot-lab.info",
+    "m3-16.grenoble.iot-lab.info",
+    "m3-18.grenoble.iot-lab.info"
+  ],
+  "profileassociations": null,
+  "profiles": null,
+  "reservation": null,
+  "siteassociations": null,
+  "type": "physical"
+}

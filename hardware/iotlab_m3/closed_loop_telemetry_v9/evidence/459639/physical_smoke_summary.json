@@ -1,0 +1,50 @@
+{
+  "experiment": 459639,
+  "site": "Grenoble",
+  "physical_boards": [
+    16,
+    15,
+    18
+  ],
+  "logical_roles": {
+    "16": 1,
+    "15": 2,
+    "18": 41
+  },
+  "source_code": "actual per-probe MAC callback telemetry over native radio to sink; original adaptive optimizer NOT implemented",
+  "sink_reported_done": true,
+  "per_board": {
+    "16": {
+      "lines": 136,
+      "boot": 0,
+      "control_applied": 3,
+      "reassembled": 0,
+      "mac": 63,
+      "energest": 1,
+      "probe_tx": 3,
+      "sink_probe_observed": 0
+    },
+    "15": {
+      "lines": 82,
+      "boot": 0,
+      "control_applied": 3,
+      "reassembled": 0,
+      "mac": 36,
+      "energest": 1,
+      "probe_tx": 3,
+      "sink_probe_observed": 0
+    },
+    "18": {
+      "lines": 37,
+      "boot": 0,
+      "control_applied": 0,
+      "reassembled": 6,
+      "mac": 6,
+      "energest": 1,
+      "probe_tx": 0,
+      "sink_probe_observed": 6
+    }
+  },
+  "errors": [],
+  "capture_duration_s": 83.467
+}
