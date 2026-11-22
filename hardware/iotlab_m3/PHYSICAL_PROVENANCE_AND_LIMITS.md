@@ -49,3 +49,31 @@ from unverified current values.
 [NEED SOURCE] Multi-node physical deployment of actual closed-loop
 ACR-MCR controller, including distributed control and telemetry costs.
 The two-board run provides transport evidence only.
+
+
+## Independently completed new physical evidence, 22 November 2026
+
+- Initial Grenoble reservation 459541 was stopped when the serial
+  frontend capture code referenced the wrong site/node IDs. It
+  produced no scientific measurement; do not reuse it.
+- Fresh Grenoble experiment 459542 captured TX/RX logs only for source
+  sample IDs 8-99. Strict audit PASS for 92 matched, byte-verified
+  500-byte samples and 736 captured MAC fragments. Source firmware
+  reported 100 samples/800 ACKs overall, but missing first eight
+  UART samples prohibit calculating complete-cohort PER.
+- Fresh Grenoble experiment **459543** used a 25s firmware start delay
+  and captured all 100 x 500B application samples, all 800 MAC
+  fragment receptions and callbacks, with 100 payload-integrity
+  checks successful. Strict audit PASS. One link/time block only.
+- This third reservation used actual IoT-LAB monitoring profile
+  acr_m3_active_power_20261122 for physical voltage/current/power.
+  Monitor OML time integration PASS: M3-14 TX delivered 11.7283 J
+  over 107.661 s; M3-15 RX 11.1273 J over 109.162 s. Those are
+  externally supplied full-device energies, not per-packet power.
+- All original serial and OML traces, SHA256 manifests, independent
+  audit outputs and firmware source are retained under
+  hardware/iotlab_m3/evidence/459542 and evidence/459543.
+- Calibrated physical SNR–PER, multi-condition interference,
+  embedded optimizer CPU power and 40-node physical algorithm
+  validation remain **unperformed**. Do not use the new two-board
+  data as proof of those claims.

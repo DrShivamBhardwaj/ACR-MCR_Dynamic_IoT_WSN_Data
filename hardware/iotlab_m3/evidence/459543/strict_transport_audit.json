@@ -1,0 +1,46 @@
+{
+  "verification": "PASS",
+  "experiment": "459543",
+  "site": "Grenoble",
+  "boards": [
+    "M3-14",
+    "M3-15"
+  ],
+  "transmitter_uart_sha256": "d2d6e7c4a876322327e9433e3bb56fea680dae143209778dc316643e69b15ab3",
+  "receiver_uart_sha256": "196e9fe578306d944650c4899c5b8e764c2f65c22907e47bc5f1119b734262de",
+  "original_source_offers_reported": 100,
+  "original_source_callback_count_reported": 800,
+  "original_source_ACK_success_reported": 800,
+  "capture_starts_at_sample": 0,
+  "capture_ends_at_sample": 99,
+  "excluded_uncaptured_source_samples": [],
+  "capture_complete_for_original_100_samples": true,
+  "captured_matched_source_samples": 100,
+  "captured_matched_fragment_pairs": 800,
+  "captured_valid_500byte_reassemblies": 100,
+  "captured_phy_register_count": 800,
+  "recorded_payload_integrity_failures": 0,
+  "captured_window_fragment_delivery_ratio": 1.0,
+  "captured_window_full_sample_delivery_ratio": 1.0,
+  "full_100_sample_PER_estimate_allowed": true,
+  "received_register_values_unverified_rssi_or_snr": true,
+  "sender_radio_energest_last": {
+    "role": 1,
+    "cpu_ticks": 163436,
+    "lpm_ticks": 2753647,
+    "tx_ticks": 81685,
+    "listen_ticks": 2046552,
+    "tick_rate": 32768
+  },
+  "receiver_radio_energest_last": {
+    "role": 2,
+    "cpu_ticks": 66310,
+    "lpm_ticks": 2719673,
+    "tx_ticks": 9318,
+    "listen_ticks": 1988005,
+    "tick_rate": 32768
+  },
+  "physical_power_monitor_not_audited_in_this_trace_module": true,
+  "source_original_controller_executed_on_hardware": false,
+  "limitations": "Physical 2-board transport, not 40-node controller; initial UART frames uncaptured; radio register values uncalibrated; ENERGEST cannot yield Joules without currents/voltage."
+}

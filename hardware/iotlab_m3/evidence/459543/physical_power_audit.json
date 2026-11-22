@@ -1,0 +1,51 @@
+{
+  "verification": "PASS",
+  "iotlab_experiment_id": 459543,
+  "measurement_site": "FIT IoT-LAB Grenoble",
+  "power_profile": "acr_m3_active_power_20261122",
+  "measured_quantities": [
+    "device_supply_power_w",
+    "device_supply_voltage_v",
+    "device_supply_current_a"
+  ],
+  "independent_new_firmware": true,
+  "roles": {
+    "m3_14": "TX, 100 times 500B eight-fragment source",
+    "m3_15": "RX, real 500B reassembly"
+  },
+  "per_board": [
+    {
+      "device": "m3_14",
+      "number_of_physical_samples": 52,
+      "first_timestamp_seconds": 1795339540.243813,
+      "last_timestamp_seconds": 1795339647.904797,
+      "duration_s": 107.66098403930664,
+      "total_supplied_electrical_energy_j": 11.728256531712532,
+      "time_average_total_power_w": 0.10893692488850545,
+      "mean_supply_voltage_v": 3.2605528846153846,
+      "mean_supply_current_a": 0.03341840384615385,
+      "max_monitor_gap_s": 2.111023187637329,
+      "raw_file_sha256": "4a1cffb7e46db926fa04dc9e5b225c3a8cbea9577538ba722b5c16f7e5f19031"
+    },
+    {
+      "device": "m3_15",
+      "number_of_physical_samples": 53,
+      "first_timestamp_seconds": 1795339540.237962,
+      "last_timestamp_seconds": 1795339649.399687,
+      "duration_s": 109.16172504425049,
+      "total_supplied_electrical_energy_j": 11.127305963789702,
+      "time_average_total_power_w": 0.10193413450803444,
+      "mean_supply_voltage_v": 3.220990566037736,
+      "mean_supply_current_a": 0.03166371698113207,
+      "max_monitor_gap_s": 2.0993058681488037,
+      "raw_file_sha256": "75181c73eb89e17ccc3a0a46adb9ebaf1c13005865b68bc80045b575bc8b4388"
+    }
+  ],
+  "physical_total_energy_measured": true,
+  "transmission_only_power_measured": false,
+  "host_optimizer_CPU_energy_measured": false,
+  "time_resolved_packet_energy_attribution": false,
+  "energy_harvesting_or_energy_neutrality_validated": false,
+  "externally_calibrated_SNR_PER": false,
+  "limits": "Active external DC supplied M3 boards; baseline CPU/radio/serial included in device power, so no per-packet physical energy estimate, no 40-node distributed optimizer power. Firmware is a transport-only hardware pilot."
+}

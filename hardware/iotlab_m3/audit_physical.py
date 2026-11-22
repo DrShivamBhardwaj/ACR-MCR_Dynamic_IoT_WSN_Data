@@ -61,13 +61,13 @@ def audit(root):
     if not ene_sender or not ene_receiver:
         raise ValueError("Missing original M3 ENERGEST counters")
     summary=dict(
-      verification="PASS",experiment="459542",site="Grenoble",boards=["M3-14","M3-15"],
+      verification="PASS",experiment=root.name,site="Grenoble",boards=["M3-14","M3-15"],
       transmitter_uart_sha256=sha(snd),receiver_uart_sha256=sha(rcv),
       original_source_offers_reported=100,original_source_callback_count_reported=800,
       original_source_ACK_success_reported=800,
       capture_starts_at_sample=int(ids[0]),capture_ends_at_sample=int(ids[-1]),
       excluded_uncaptured_source_samples=list(range(ids[0])),
-      capture_complete_for_original_100_samples=False,
+      capture_complete_for_original_100_samples=(ids==list(range(100))),
       captured_matched_source_samples=len(ids),
       captured_matched_fragment_pairs=len(tx),
       captured_valid_500byte_reassemblies=len(full),
@@ -75,11 +75,11 @@ def audit(root):
       recorded_payload_integrity_failures=0,
       captured_window_fragment_delivery_ratio=len(rx)/len(tx),
       captured_window_full_sample_delivery_ratio=len(full)/len(ids),
-      full_100_sample_PER_estimate_allowed=False,
+      full_100_sample_PER_estimate_allowed=(ids==list(range(100))),
       received_register_values_unverified_rssi_or_snr=True,
       sender_radio_energest_last=dict(zip(("role","cpu_ticks","lpm_ticks","tx_ticks","listen_ticks","tick_rate"),ene_sender[-1])),
       receiver_radio_energest_last=dict(zip(("role","cpu_ticks","lpm_ticks","tx_ticks","listen_ticks","tick_rate"),ene_receiver[-1])),
-      physical_current_voltage_calibration=False,
+      physical_power_monitor_not_audited_in_this_trace_module=True,
       source_original_controller_executed_on_hardware=False,
       limitations="Physical 2-board transport, not 40-node controller; initial UART frames uncaptured; radio register values uncalibrated; ENERGEST cannot yield Joules without currents/voltage.")
     return summary

@@ -49,7 +49,7 @@
     "listen_ticks": 1987887,
     "tick_rate": 32768
   },
-  "physical_current_voltage_calibration": false,
+  "physical_power_monitor_not_audited_in_this_trace_module": true,
   "source_original_controller_executed_on_hardware": false,
   "limitations": "Physical 2-board transport, not 40-node controller; initial UART frames uncaptured; radio register values uncalibrated; ENERGEST cannot yield Joules without currents/voltage."
 }
