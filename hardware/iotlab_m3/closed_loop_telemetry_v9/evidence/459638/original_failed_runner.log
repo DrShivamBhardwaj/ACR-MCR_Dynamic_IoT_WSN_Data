@@ -1,0 +1,8 @@
+{"utc": "2026-11-22T16:53:18.205645+00:00", "status": "reserved", "experiment": 459638, "roles": {"14": "sensor_01", "15": "sensor_02", "18": "sink_41"}}
+{"utc": "2026-11-22T16:56:09.026969+00:00", "status": "failed", "experiment": 459638, "error": "Reservation did not reach Running state"}
+{"utc": "2026-11-22T16:56:10.238944+00:00", "status": "own_reservation_stopped", "experiment": 459638, "stop_result": {"id": 459638, "status": "Delete request registered"}}
+Traceback (most recent call last):
+  File "/Users/shivambhardwaj/research/ACR_MCR_Recovery_20261122/data/hardware/iotlab_m3/closed_loop_telemetry_v9/run_3node_physical.py", line 61, in <module>
+    else:raise RuntimeError("Reservation did not reach Running state")
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: Reservation did not reach Running state

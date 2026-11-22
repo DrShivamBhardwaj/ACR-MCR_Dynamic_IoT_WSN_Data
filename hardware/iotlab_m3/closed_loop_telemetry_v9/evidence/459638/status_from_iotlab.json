@@ -1,0 +1,39 @@
+{
+  "effective_duration": 0,
+  "firmwareassociations": [
+    {
+      "firmwarename": "ea8660abf855a20e556673dc97f4a62b_sensor_02.iotlab",
+      "nodes": [
+        "m3-15.grenoble.iot-lab.info"
+      ]
+    },
+    {
+      "firmwarename": "79a5edd02289bbd121c5901777fb03cd_sensor_01.iotlab",
+      "nodes": [
+        "m3-14.grenoble.iot-lab.info"
+      ]
+    },
+    {
+      "firmwarename": "411935806369ebb6e5c72ecf8843db5b_sink_41.iotlab",
+      "nodes": [
+        "m3-18.grenoble.iot-lab.info"
+      ]
+    }
+  ],
+  "id": 459638,
+  "name": "ACR-3-M3-physical-probe-ACK-telemetry-v9",
+  "nb_nodes": 3,
+  "nodes": [
+    "m3-14.grenoble.iot-lab.info",
+    "m3-15.grenoble.iot-lab.info",
+    "m3-18.grenoble.iot-lab.info"
+  ],
+  "scheduled_date": "2026-11-23T12:33:10Z",
+  "start_date": "1970-01-01T00:00:00Z",
+  "state": "Waiting",
+  "stop_date": "1970-01-01T00:00:00Z",
+  "submission_date": "2026-11-22T16:53:17Z",
+  "submitted_duration": 10,
+  "type": "physical",
+  "user": "sbhardwa"
+}

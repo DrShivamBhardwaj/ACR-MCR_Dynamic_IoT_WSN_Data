@@ -1,0 +1,9 @@
+{
+  "utc": "2026-11-22T16:56:10.238944+00:00",
+  "status": "own_reservation_stopped",
+  "experiment": 459638,
+  "stop_result": {
+    "id": 459638,
+    "status": "Delete request registered"
+  }
+}
