@@ -1,0 +1,22 @@
+{
+  "physical_roles": {
+    "m3-14": "source1/head",
+    "m3-15": "source2",
+    "m3-18": "sink41"
+  },
+  "algorithm": "static cluster only, radio telemetry return link added",
+  "files": {
+    "sink_41": {
+      "sha256": "6f7f92f4cf7c5ab3ee1fa1eebdde5a6d59b261f0f00e1403bbf60acd39988670",
+      "bytes": 610792
+    },
+    "sensor_01": {
+      "sha256": "e05f7ef2cebe8769908978661097778ffa14bf64cde83f0ade01aad562c1a629",
+      "bytes": 610860
+    },
+    "sensor_02": {
+      "sha256": "39dfabde618c93d50b7452b67a4e64b25bbadefc570fab5eb820a0bfe69703e8",
+      "bytes": 610840
+    }
+  }
+}
