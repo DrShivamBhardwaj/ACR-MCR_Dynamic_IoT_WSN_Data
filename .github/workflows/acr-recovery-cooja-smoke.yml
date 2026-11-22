@@ -37,6 +37,10 @@ jobs:
         working-directory: contiki-ng/tools/cooja
         run: |
           set -o pipefail
+          # The pinned upstream source has one GCC const-qualifier warning in shell.c.
+          # Keep the warning visible while allowing the unrelated RPL/TSCH stack smoke test.
+          export MAKEFLAGS='-e'
+          export CFLAGS='-Wno-error=discarded-qualifiers'
           ./gradlew --no-daemon run --args='--no-gui ../../tests/07-simulation-base/19-cooja-rpl-tsch.csc' 2>&1 | tee "${{ github.workspace }}/cooja_base_test.log"
           grep -E 'TEST OK' "${{ github.workspace }}/cooja_base_test.log"
       - name: Label scope and track exact environment
@@ -45,6 +49,7 @@ jobs:
         run: |
           printf 'Contiki-NG source: 4ccd1a3b9e767f168d12ec3df187fe6b7dc736b5\n' > cooja_provenance.txt
           printf 'Cooja test: 19-cooja-rpl-tsch.csc\n' >> cooja_provenance.txt
+          printf 'Build compatibility: GCC discarded-qualifiers remains a warning; pinned upstream source unchanged.\n' >> cooja_provenance.txt
           printf 'Scope: network-stack Cooja smoke test ONLY, not ACR-MCR controller validation.\n' >> cooja_provenance.txt
           printf 'GitHub run: %s\n' "$GITHUB_RUN_ID" >> cooja_provenance.txt
       - name: Archive bounded Cooja log
