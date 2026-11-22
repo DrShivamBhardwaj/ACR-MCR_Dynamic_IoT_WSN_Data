@@ -33,7 +33,14 @@ try:
     # Verify authorized frontend host, preserving strict SSH host key checks.
     command(SSH+["mkdir -p ~/acr_m3_transport"],timeout=25)
     payload=(HERE/"capture_3node_frontend.py").read_text()
-    command(SSH+["cat > ~/acr_m3_transport/capture_3node_frontend.py"],timeout=25,stdin=payload)
+    for upload_attempt in range(1,4):
+        try:
+            command(SSH+["cat > ~/acr_m3_transport/capture_3node_frontend.py"],
+                    timeout=70,stdin=payload)
+            break
+        except Exception:
+            if upload_attempt==3:raise
+            time.sleep(3)
     request=["submit","-d","10","-n","ACR-3-M3-500B-overair-smoke-20261122"]
     for board,label in ROLES:
         request+=["-l","grenoble,m3,"+str(board)+","+str(images[str(board)])]
