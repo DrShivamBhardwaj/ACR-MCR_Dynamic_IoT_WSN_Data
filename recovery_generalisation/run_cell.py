@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Independent original-simulator generalisation run; no source modifications."""
-import argparse,hashlib,json,platform,sys
+import argparse,hashlib,json,platform,sys,math
 from pathlib import Path
 import numpy as np
 
@@ -35,6 +35,11 @@ def main():
                 independent_seed_unit=seed,
                 python_version=platform.python_version(),numpy_version=np.__version__,
                 limitations="Synthetic half-duplex transaction model; not Cooja or hardware")
+            for key,value in list(row.items()):
+                if isinstance(value,(float,np.floating)) and not math.isfinite(float(value)):
+                    if key in ("PDR","timely_ratio","service_violation_rate"):
+                        raise ValueError(f"Non-finite primary metric {key}")
+                    row[key]=None
             records.append(row)
             print(f"COMPLETE {a.scenario} N={a.nodes} seed={seed} method={method} timely={r['timely_ratio']:.6f}",flush=True)
     out=Path(a.out);out.parent.mkdir(parents=True,exist_ok=True)
