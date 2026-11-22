@@ -1,0 +1,3 @@
+# V8 sink startup work, 2026-11-22
+
+The V7 run 459613 captured 41 UART streams but omitted the initial boot line for sink m3-219. This V8 prototype adds a repeated sink run-identity telemetry record at each round opening. It is NOT a reservation-bound challenge-response, and it does NOT authenticate a device to the experiment. Python syntax checks passed; C compilation and physical testing are pending. The legacy validator still requires a boot record, so these changes alone do not meet 41/41 startup validation. Do not claim a PASS or reuse earlier firmware hashes for this candidate. Another account experiment 459614 was active during inspection; no reservation was submitted or stopped. Independent paired comparisons and closed-loop validation remain pending.
