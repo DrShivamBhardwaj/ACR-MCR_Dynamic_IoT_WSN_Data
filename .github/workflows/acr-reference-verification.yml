@@ -1,0 +1,31 @@
+name: ACR-MCR Supplied Citation Verification
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '51 2 * * 1'
+
+permissions:
+  contents: read
+concurrency:
+  group: acr-mcr-bibliography-verification
+  cancel-in-progress: false
+
+jobs:
+  crossref-metadata-check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Verify only author-supplied reference DOI metadata
+        run: python tools/verify_supplied_references.py
+      - name: Archive titles, years and explicit missing/manual statuses
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: acr-mcr-supplied-reference-audit
+          path: recovery_reports/supplied_reference_check.json
+          if-no-files-found: warn
+          retention-days: 14
