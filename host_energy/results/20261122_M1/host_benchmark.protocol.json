@@ -1,0 +1,29 @@
+{
+  "code_sha256": "3f134a8826525215f7cf2ff307bab3893c0d64b050f742bdc3c250b1c0302ea4",
+  "scenarios": [
+    "S1",
+    "S5"
+  ],
+  "seeds": [
+    10301,
+    10302,
+    10303,
+    10304,
+    10305,
+    10306,
+    10307,
+    10308,
+    10309,
+    10310
+  ],
+  "methods": [
+    "POINT-EA",
+    "ACR-MCR"
+  ],
+  "nodes": 40,
+  "rounds": 160,
+  "probes": 1,
+  "registered_outcome": "Controller wall-clock CPU timing, not physical energy",
+  "energy_joules_available": false,
+  "root_permission_for_powermetrics": false
+}

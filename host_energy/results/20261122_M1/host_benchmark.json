@@ -1,0 +1,128 @@
+{
+  "status": "PASS_RUNTIME_NOT_JOULES",
+  "original_sha256": "3f134a8826525215f7cf2ff307bab3893c0d64b050f742bdc3c250b1c0302ea4",
+  "runs": 40,
+  "independent_seed_blocks": 10,
+  "calibrated_host_energy_joules": null,
+  "by_method": {
+    "POINT-EA": {
+      "controller_wall_seconds": 0.1182314802572364,
+      "process_cpu_seconds": 0.45183854999999995,
+      "total_wall_seconds": 0.45870321659895125,
+      "process_user_seconds": 0.44739425,
+      "process_system_seconds": 0.0044443,
+      "fitness_evaluations": 534.95
+    },
+    "ACR-MCR": {
+      "controller_wall_seconds": 0.1773927131012897,
+      "process_cpu_seconds": 0.51773965,
+      "total_wall_seconds": 0.5224944271001732,
+      "process_user_seconds": 0.5123568,
+      "process_system_seconds": 0.00538285,
+      "fitness_evaluations": 550.95
+    }
+  },
+  "paired_controller_differences": [
+    {
+      "scenario": "S1",
+      "seed": 10301,
+      "delta_acr_minus_point": 0.05783333597355522
+    },
+    {
+      "scenario": "S1",
+      "seed": 10302,
+      "delta_acr_minus_point": 0.06408562700380571
+    },
+    {
+      "scenario": "S1",
+      "seed": 10303,
+      "delta_acr_minus_point": 0.06352611491456628
+    },
+    {
+      "scenario": "S1",
+      "seed": 10304,
+      "delta_acr_minus_point": 0.05830396030796692
+    },
+    {
+      "scenario": "S1",
+      "seed": 10305,
+      "delta_acr_minus_point": 0.05601091973949224
+    },
+    {
+      "scenario": "S1",
+      "seed": 10306,
+      "delta_acr_minus_point": 0.07515996077563614
+    },
+    {
+      "scenario": "S1",
+      "seed": 10307,
+      "delta_acr_minus_point": 0.05408438786980696
+    },
+    {
+      "scenario": "S1",
+      "seed": 10308,
+      "delta_acr_minus_point": 0.05549079203046858
+    },
+    {
+      "scenario": "S1",
+      "seed": 10309,
+      "delta_acr_minus_point": -0.0010125091357622296
+    },
+    {
+      "scenario": "S1",
+      "seed": 10310,
+      "delta_acr_minus_point": 0.05938304794835858
+    },
+    {
+      "scenario": "S5",
+      "seed": 10301,
+      "delta_acr_minus_point": 0.050866783189121634
+    },
+    {
+      "scenario": "S5",
+      "seed": 10302,
+      "delta_acr_minus_point": 0.05839808518067002
+    },
+    {
+      "scenario": "S5",
+      "seed": 10303,
+      "delta_acr_minus_point": 0.07374550506938249
+    },
+    {
+      "scenario": "S5",
+      "seed": 10304,
+      "delta_acr_minus_point": 0.06985746987629682
+    },
+    {
+      "scenario": "S5",
+      "seed": 10305,
+      "delta_acr_minus_point": 0.06165461830096319
+    },
+    {
+      "scenario": "S5",
+      "seed": 10306,
+      "delta_acr_minus_point": 0.05869042390258983
+    },
+    {
+      "scenario": "S5",
+      "seed": 10307,
+      "delta_acr_minus_point": 0.06244566597160883
+    },
+    {
+      "scenario": "S5",
+      "seed": 10308,
+      "delta_acr_minus_point": 0.06989903788780794
+    },
+    {
+      "scenario": "S5",
+      "seed": 10309,
+      "delta_acr_minus_point": 0.06792283002869226
+    },
+    {
+      "scenario": "S5",
+      "seed": 10310,
+      "delta_acr_minus_point": 0.06687860004603863
+    }
+  ],
+  "caveat": "Original simulator itself uses CPU; even isolated controller wall time is not Joules. powermetrics needs administrator rights; no external calibrated wattmeter available."
+}
