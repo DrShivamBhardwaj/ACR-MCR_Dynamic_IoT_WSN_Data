@@ -1,0 +1,82 @@
+name: ACR-MCR Fresh Paired Pilot
+on:
+  workflow_dispatch:
+    inputs:
+      seeds_per_block:
+        description: "Fresh exploratory seeds per block (1 to 5), not primary seeds"
+        required: true
+        default: '1'
+        type: choice
+        options: ['1', '2', '3', '4', '5']
+
+permissions:
+  contents: read
+concurrency:
+  group: acr-mcr-pilot-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  preflight:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+      - run: python -m pip install numpy==2.3.5 pandas==2.2.3 scipy==1.17.0
+      - run: PYTHONPATH=. python test_mechanisms.py
+      - run: python tools/recovery_gate.py
+
+  paired-pilot:
+    needs: preflight
+    strategy:
+      fail-fast: false
+      max-parallel: 4
+      matrix:
+        scenario: [S1, S2, S3, S4, S5]
+        block: [0, 1]
+    runs-on: ubuntu-latest
+    timeout-minutes: 115
+    env:
+      PYTHONPATH: .
+      OPENBLAS_NUM_THREADS: '1'
+      OMP_NUM_THREADS: '1'
+      MKL_NUM_THREADS: '1'
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+      - run: python -m pip install numpy==2.3.5 pandas==2.2.3 scipy==1.17.0
+      - name: Execute paired ACR-MCR and POINT-EA exploratory runs
+        run: |
+          python tools/paired_pilot.py --scenario '${{ matrix.scenario }}' --block '${{ matrix.block }}' --seeds '${{ inputs.seeds_per_block }}'
+      - uses: actions/upload-artifact@v4
+        with:
+          name: pilot-${{ matrix.scenario }}-block${{ matrix.block }}
+          path: recovery_reports/pilot/
+          if-no-files-found: error
+          retention-days: 10
+
+  aggregate:
+    needs: paired-pilot
+    if: always() && needs.paired-pilot.result == 'success'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: pilot-*
+          path: recovery_reports/collected
+          merge-multiple: true
+      - name: Aggregate without claiming statistical superiority
+        run: python tools/aggregate_pilot.py --dir recovery_reports/collected --out recovery_reports/pilot_summary.json
+      - uses: actions/upload-artifact@v4
+        with:
+          name: acr-mcr-pilot-summary
+          path: recovery_reports/pilot_summary.json
+          retention-days: 14
