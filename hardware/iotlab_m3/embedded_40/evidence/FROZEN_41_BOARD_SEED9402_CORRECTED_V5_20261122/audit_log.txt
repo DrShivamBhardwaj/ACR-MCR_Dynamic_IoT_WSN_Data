@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "/Users/shivambhardwaj/research/ACR_MCR_Recovery_20261122/data/hardware/iotlab_m3/embedded_40/audit_41_frozen_seed9402.py", line 105, in <module>
+    if __name__=="__main__":main()
+                            ^^^^^^
+  File "/Users/shivambhardwaj/research/ACR_MCR_Recovery_20261122/data/hardware/iotlab_m3/embedded_40/audit_41_frozen_seed9402.py", line 90, in main
+    results=[audit(m,a.root) for m in ("POINT-EA","ACR-MCR")]
+             ^^^^^^^^^^^^^^^
+  File "/Users/shivambhardwaj/research/ACR_MCR_Recovery_20261122/data/hardware/iotlab_m3/embedded_40/audit_41_frozen_seed9402.py", line 15, in audit
+    if len(captured)!=1:raise ValueError(f"{method}: not one archived original capture")
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: POINT-EA: not one archived original capture

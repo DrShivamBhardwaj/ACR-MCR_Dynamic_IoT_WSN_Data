@@ -1,0 +1,9 @@
+{
+  "timestamp_utc": "2026-11-22T15:18:54.109631+00:00",
+  "status": "own_experiment_stopped",
+  "experiment_id": 459606,
+  "stop_result": {
+    "id": 459606,
+    "status": "Delete request registered"
+  }
+}

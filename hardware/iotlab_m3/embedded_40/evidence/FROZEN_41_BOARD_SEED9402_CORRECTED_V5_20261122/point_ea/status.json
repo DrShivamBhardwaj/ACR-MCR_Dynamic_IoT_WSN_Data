@@ -1,0 +1,6 @@
+{
+  "timestamp_utc": "2026-11-22T15:14:25.252656+00:00",
+  "status": "failed",
+  "experiment_id": null,
+  "error": "Another account reservation is active"
+}
