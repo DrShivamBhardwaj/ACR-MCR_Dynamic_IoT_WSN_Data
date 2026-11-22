@@ -1,0 +1,110 @@
+name: ACR-MCR Paired Cooja Packet Mechanism
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '43 2 * * 5'
+
+permissions:
+  contents: read
+concurrency:
+  group: acr-mcr-packet-mechanism
+  cancel-in-progress: false
+
+jobs:
+  packet-pairs:
+    strategy:
+      fail-fast: false
+      max-parallel: 3
+      matrix:
+        seed: [11, 13, 17]
+        rx_pct: [94, 82]
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - name: Get frozen ACR research experiment
+        uses: actions/checkout@v4
+        with:
+          path: data
+      - name: Get pinned Contiki-NG and Cooja
+        uses: actions/checkout@v4
+        with:
+          repository: contiki-ng/contiki-ng
+          ref: 4ccd1a3b9e767f168d12ec3df187fe6b7dc736b5
+          submodules: recursive
+          path: contiki-ng
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '25'
+      - name: Install toolchain
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y --no-install-recommends gcc g++ make
+      - name: Copy experiment to isolated upstream checkout
+        run: |
+          mkdir -p contiki-ng/examples/acr_mcr_packet
+          cp data/packet_validation/acr_packet.c data/packet_validation/Makefile contiki-ng/examples/acr_mcr_packet/
+          python3 - <<'PY'
+          from pathlib import Path
+          p=Path('contiki-ng/os/services/shell/shell.c')
+          s=p.read_text()
+          old="    args = strchr(cmd, ' ');"
+          assert s.count(old)==1, 'Pin changed; review GCC compatibility'
+          p.write_text(s.replace(old, "    args = (char *)strchr(cmd, ' ');"))
+          PY
+          git -C contiki-ng diff --check
+      - name: Execute both packet-level decision modes
+        shell: bash
+        run: |
+          set -euo pipefail
+          RESULT_DIR="$GITHUB_WORKSPACE/results/seed${{ matrix.seed }}_rx${{ matrix.rx_pct }}"
+          mkdir -p "$RESULT_DIR"
+          for MODE in 0 1; do
+            python3 data/packet_validation/generate_csc.py \
+              --template contiki-ng/tests/07-simulation-base/05-nullnet-unicast.csc \
+              --mode "$MODE" --seed '${{ matrix.seed }}' \
+              --rx-success '0.${{ matrix.rx_pct }}' \
+              --out "contiki-ng/tests/acr_packet_${MODE}.csc"
+            (
+              cd contiki-ng/tools/cooja
+              rm -f COOJA.testlog
+              ./gradlew --no-daemon run --args="--no-gui ../../tests/acr_packet_${MODE}.csc" 2>&1 | tee "$RESULT_DIR/mode${MODE}_build.log"
+              grep -q 'TEST OK' COOJA.testlog
+              cp COOJA.testlog "$RESULT_DIR/mode${MODE}_testlog.txt"
+            )
+          done
+          python3 data/packet_validation/analyze_packet.py \
+            --dir "$RESULT_DIR" --out "$RESULT_DIR/packet_summary.json"
+      - name: Save packet traces without Git commits
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: acr-packet-seed${{ matrix.seed }}-rx${{ matrix.rx_pct }}
+          path: results/
+          if-no-files-found: warn
+          retention-days: 7
+
+  collect:
+    needs: packet-pairs
+    if: always() && needs.packet-pairs.result == 'success'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: acr-packet-seed*
+          path: collected_packet_evidence
+          merge-multiple: false
+      - name: Aggregate and reject invalid packet traces
+        run: |
+          python3 packet_validation/analyze_packet.py --dir collected_packet_evidence \
+            --out packet_validation_summary.json
+      - uses: actions/upload-artifact@v4
+        with:
+          name: acr-mcr-packet-mechanism-summary
+          path: |
+            packet_validation_summary.json
+            packet_validation_summary.csv
+          if-no-files-found: error
+          retention-days: 14
