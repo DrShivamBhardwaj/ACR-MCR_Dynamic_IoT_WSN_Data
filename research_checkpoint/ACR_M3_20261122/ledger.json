@@ -21,6 +21,41 @@
       "recorded_utc": "2026-11-22T15:42:51.048294+00:00",
       "status": "COMPLETE"
     },
+    "m3_frozen_kernel_memory": {
+      "details": {
+        "fit": [
+          {
+            "flash_bytes": 157992,
+            "flash_fraction": 0.3013458251953125,
+            "initialized_data_bytes": 2628,
+            "method": "point_ea",
+            "ram_bytes": 35760,
+            "ram_fraction": 0.545654296875,
+            "text_bytes": 155364,
+            "verified_binary_sha256": "71ac8e388aa4f3c884cd408ac216720a88159afaa9c3bedbfb948ecf66ffd248",
+            "zero_init_data_bytes": 33132
+          },
+          {
+            "flash_bytes": 337000,
+            "flash_fraction": 0.6427764892578125,
+            "initialized_data_bytes": 2628,
+            "method": "acr_mcr",
+            "ram_bytes": 35760,
+            "ram_fraction": 0.545654296875,
+            "text_bytes": 334372,
+            "verified_binary_sha256": "39770f4a1ef57109937b386b99e2b8148765dac6d0d616590326625a957e0baa",
+            "zero_init_data_bytes": 33132
+          }
+        ],
+        "scope": "compiled frozen-input M3 sink kernel; not full adaptive runtime"
+      },
+      "evidence_sha256": {
+        "acr_mcr_v2.py": "3f134a8826525215f7cf2ff307bab3893c0d64b050f742bdc3c250b1c0302ea4",
+        "hardware/iotlab_m3/embedded_40/m3_frozen_kernel_memory_audit_seed9402.json": "a4c61f345d67f9b82acc47144ef13077e3e2eb60ce453d77983262dabdb7bc6c"
+      },
+      "recorded_utc": "2026-11-22T15:42:55.218982+00:00",
+      "status": "COMPLETE"
+    },
     "original_source": {
       "details": {
         "interpretation": "Immutable original reference",
@@ -33,5 +68,5 @@
       "status": "COMPLETE"
     }
   },
-  "updated_utc": "2026-11-22T15:42:51.048497+00:00"
+  "updated_utc": "2026-11-22T15:42:55.219121+00:00"
 }
