@@ -1,0 +1,125 @@
+{
+  "status": "PASS_RECOMPUTED_FROM_ORIGINAL_40_CELL_CASES",
+  "original_source_sha256": "3f134a8826525215f7cf2ff307bab3893c0d64b050f742bdc3c250b1c0302ea4",
+  "original_30_seed_primary_records": {
+    "timely_ratio": {
+      "difference": -0.0021298123774581216,
+      "ci_low": -0.01065528023497405,
+      "ci_high": 0.006395655480057806,
+      "p": 0.6155038449615504,
+      "p_holm": 0.6155038449615504
+    },
+    "service_violation_rate": {
+      "difference": -0.007333333333333325,
+      "ci_low": -0.018405328648369045,
+      "ci_high": 0.0037386619817023955,
+      "p": 0.1896681033189668,
+      "p_holm": 0.3793362066379336
+    }
+  },
+  "cooja_run_id": 45009267734,
+  "packet_40_cell_source_sha256": "8dae8321fcd71119b614a566989b0ded353885282e412a48235aee2846c189cb",
+  "independent_10_seed_packet_effects": {
+    "PDR_nominal": {
+      "label": "full_500byte_PDR",
+      "method_acr_minus_point": 0.0065781250000000405,
+      "ci95": [
+        -0.019805854438210167,
+        0.032962104438210245
+      ],
+      "p_unadjusted": 0.5865268594604622,
+      "independent_seed_effects": [
+        0.03156250000000005,
+        -7.812499999992895e-05,
+        -0.07039062499999993,
+        0.03257812500000001,
+        0.0067968750000000355,
+        -0.011093749999999958,
+        0.05585937499999999,
+        0.019765625000000064,
+        0.03187500000000004,
+        -0.031093749999999976
+      ],
+      "independent_units": 10,
+      "p_holm": 0.7837157959833374
+    },
+    "timely_ratio_nominal": {
+      "label": "within_500ms",
+      "method_acr_minus_point": -0.0005078125000000002,
+      "ci95": [
+        -0.001785026229226944,
+        0.0007694012292269435
+      ],
+      "p_unadjusted": 0.3918578979916687,
+      "independent_seed_effects": [
+        0.000859374999999999,
+        0.00031250000000000006,
+        -0.0017968750000000003,
+        0.0033593749999999995,
+        -0.0026562499999999998,
+        -0.0014062500000000004,
+        -0.0004687500000000002,
+        -0.0015624999999999997,
+        0.00031250000000000006,
+        -0.00203125
+      ],
+      "independent_units": 10,
+      "p_holm": 0.7837157959833374
+    }
+  },
+  "exploratory_packet_accounting": {
+    "control_receptions": {
+      "by_method_means": {
+        "POINT-EA": 4369.3,
+        "ACR-MCR": 4430.7
+      },
+      "difference": 61.4,
+      "ci95_exploratory_unadjusted": [
+        -107.12369090308783,
+        229.92369090308785
+      ]
+    },
+    "controller_control_radio_packets": {
+      "by_method_means": {
+        "POINT-EA": 10475.25,
+        "ACR-MCR": 10540.7
+      },
+      "difference": 65.45,
+      "ci95_exploratory_unadjusted": [
+        -83.6506273955137,
+        214.5506273955137
+      ]
+    },
+    "data_fragment_radio_callbacks": {
+      "by_method_means": {
+        "POINT-EA": 68122.7,
+        "ACR-MCR": 73381
+      },
+      "difference": 5258.3,
+      "ci95_exploratory_unadjusted": [
+        2019.9258669361839,
+        8496.674133063816
+      ]
+    },
+    "total_MAC_callbacks": {
+      "by_method_means": {
+        "POINT-EA": 82836.4,
+        "ACR-MCR": 88214.35
+      },
+      "difference": 5377.95,
+      "ci95_exploratory_unadjusted": [
+        1910.1649538734196,
+        8845.73504612658
+      ]
+    }
+  },
+  "distinct_units": "Original 30 synthetic paired blocks vs new Cooja 10 independent seed blocks. Never combine.",
+  "publisher_venue": "new submission research reconstruction, not formal Discover Networks revision",
+  "cannot_support": [
+    "ACR-MCR service superiority over POINT-EA",
+    "full embedded physical adaptive controller performance",
+    "equivalence of methods from nonsignificant p",
+    "causal link between conformal uncertainty and physical 500ms deadline",
+    "calibrated wall-plug or on-M3 total sensor network energy"
+  ]
+}
