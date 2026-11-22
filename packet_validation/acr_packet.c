@@ -68,6 +68,7 @@ static TxMeta probe_meta, data_meta, forward_meta;
 static Packet forward_buf;
 static uint8_t forward_pending = 0;
 static uint16_t data_tx_count=0, probe_tx_count=0, forwarded=0;
+static uint8_t completion_logged=0;
 static double qsort_buffer[MAX_RESID];
 
 PROCESS(acr_packet_process,"ACR packet-level policy mechanism");
@@ -229,10 +230,16 @@ PROCESS_THREAD(acr_packet_process,ev,data) {
     if(id==4 && ev==PROCESS_EVENT_TIMER) {
       if(etimer_expired(&tick)) {
         if(round_id>=TOTAL_ROUNDS) {
-          printf("DONE mode=%d rounds=%u probes=%u data_tx=%u searches_periodic=%u searches_coverage=%u head_changes=%u\n",
-                 ACR_POLICY,round_id,probe_tx_count,data_tx_count,
-                 periodic_searches,trigger_searches,head_changes);
-          break;
+          if(!completion_logged) {
+            printf("DONE mode=%d rounds=%u probes=%u data_tx=%u searches_periodic=%u searches_coverage=%u head_changes=%u\n",
+                   ACR_POLICY,round_id,probe_tx_count,data_tx_count,
+                   periodic_searches,trigger_searches,head_changes);
+            completion_logged=1;
+          }
+          /* Keep a benign event scheduled while Cooja's script thread
+           * acknowledges TEST OK. No more probes or data are transmitted. */
+          etimer_set(&tick,CLOCK_SECOND);
+          continue;
         }
         ++round_id;
         target=(round_id&1)?2:3;
