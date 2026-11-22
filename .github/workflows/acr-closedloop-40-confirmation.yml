@@ -25,8 +25,8 @@ jobs:
       MKL_NUM_THREADS: '1'
       CL_ROUNDS: '160'
       CL_SEED: '${{ matrix.seed }}'
-      CL_SCENARIO: '${{ matrix.scenario == 'S5' && '5' || '1' }}'
-      CL_METHOD: '${{ matrix.method == 'ACR-MCR' && '1' || '0' }}'
+      CL_SCENARIO: "${{ matrix.scenario == 'S5' && '5' || '1' }}"
+      CL_METHOD: "${{ matrix.method == 'ACR-MCR' && '1' || '0' }}"
     steps:
       - uses: actions/checkout@v4
         with:
