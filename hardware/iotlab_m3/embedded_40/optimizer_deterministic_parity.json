@@ -2,16 +2,17 @@
   "status": "PASS_DETERMINISTIC_INNER_KERNEL",
   "original_source_sha256": "3f134a8826525215f7cf2ff307bab3893c0d64b050f742bdc3c250b1c0302ea4",
   "port_source_sha256": "3c78cd09a9eb4bbb38eb15f9ff3eb5bf797ecd3522812a3c244d1f2f0538cfca",
-  "fixtures": 12,
-  "risk_enabled_fixtures": 4,
-  "evaluated_candidate_plan_and_objective_checks": 72,
-  "full_search_trace_checks": 12,
-  "max_objective_abs_error": 2.220446049250313e-16,
+  "fixtures": 80,
+  "risk_enabled_fixtures": 20,
+  "independent_seed_blocks": 10,
+  "evaluated_candidate_plan_and_objective_checks": 480,
+  "full_search_trace_checks": 80,
+  "max_objective_abs_error": 4.440892098500626e-16,
   "candidate_rng_ported_to_M3": false,
   "full_controller_ported_to_M3": false,
   "guaranteed_embedded_memory_fit": false,
   "statement": "Equal genotype sets, equal fixed input matrices and stress tensors; original Python vs C complete scoring and generation survivor selection. NumPy PCG64 RNG, feedback-state evolution, and physical adaptive controller parity are unverified.",
-  "elapsed_seconds": 0.995,
+  "elapsed_seconds": 5.449,
   "records": [
     {
       "seed": 9401,
@@ -46,6 +47,36 @@
     {
       "seed": 9401,
       "scenario": "S1",
+      "method": "POINT-EA",
+      "round": 20,
+      "reason": "periodic",
+      "used_tail_risk": false,
+      "objective_py": 0.33588141000807403,
+      "objective_c": 0.33588141000807403,
+      "max_abs_objective_error": 1.1102230246251565e-16,
+      "python_search_heads": [
+        4,
+        7,
+        9,
+        23
+      ],
+      "c_search_heads": [
+        4,
+        7,
+        9,
+        23
+      ],
+      "original_controller_final_heads": [
+        4,
+        7,
+        9,
+        23
+      ],
+      "search_candidate_sets": 32
+    },
+    {
+      "seed": 9401,
+      "scenario": "S1",
       "method": "ACR-MCR",
       "round": 0,
       "reason": "initial",
@@ -70,66 +101,6 @@
         13,
         24,
         29
-      ],
-      "search_candidate_sets": 32
-    },
-    {
-      "seed": 9402,
-      "scenario": "S5",
-      "method": "POINT-EA",
-      "round": 0,
-      "reason": "initial",
-      "used_tail_risk": false,
-      "objective_py": 0.33687007172895606,
-      "objective_c": 0.336870071728956,
-      "max_abs_objective_error": 5.551115123125783e-17,
-      "python_search_heads": [
-        3,
-        6,
-        9,
-        37
-      ],
-      "c_search_heads": [
-        3,
-        6,
-        9,
-        37
-      ],
-      "original_controller_final_heads": [
-        3,
-        6,
-        9,
-        37
-      ],
-      "search_candidate_sets": 32
-    },
-    {
-      "seed": 9402,
-      "scenario": "S5",
-      "method": "ACR-MCR",
-      "round": 0,
-      "reason": "initial",
-      "used_tail_risk": false,
-      "objective_py": 0.33687007172895606,
-      "objective_c": 0.336870071728956,
-      "max_abs_objective_error": 5.551115123125783e-17,
-      "python_search_heads": [
-        3,
-        6,
-        9,
-        37
-      ],
-      "c_search_heads": [
-        3,
-        6,
-        9,
-        37
-      ],
-      "original_controller_final_heads": [
-        3,
-        6,
-        9,
-        37
       ],
       "search_candidate_sets": 32
     },
@@ -165,13 +136,103 @@
     },
     {
       "seed": 9401,
-      "scenario": "S1",
+      "scenario": "S5",
+      "method": "POINT-EA",
+      "round": 0,
+      "reason": "initial",
+      "used_tail_risk": false,
+      "objective_py": 0.3473462732567079,
+      "objective_c": 0.34734627325670797,
+      "max_abs_objective_error": 5.551115123125783e-17,
+      "python_search_heads": [
+        10,
+        13,
+        24,
+        29
+      ],
+      "c_search_heads": [
+        10,
+        13,
+        24,
+        29
+      ],
+      "original_controller_final_heads": [
+        10,
+        13,
+        24,
+        29
+      ],
+      "search_candidate_sets": 32
+    },
+    {
+      "seed": 9401,
+      "scenario": "S5",
       "method": "POINT-EA",
       "round": 20,
       "reason": "periodic",
       "used_tail_risk": false,
-      "objective_py": 0.33588141000807403,
-      "objective_c": 0.33588141000807403,
+      "objective_py": 0.3424717747904168,
+      "objective_c": 0.34247177479041674,
+      "max_abs_objective_error": 1.1102230246251565e-16,
+      "python_search_heads": [
+        5,
+        13,
+        24,
+        29
+      ],
+      "c_search_heads": [
+        5,
+        13,
+        24,
+        29
+      ],
+      "original_controller_final_heads": [
+        5,
+        13,
+        24,
+        29
+      ],
+      "search_candidate_sets": 32
+    },
+    {
+      "seed": 9401,
+      "scenario": "S5",
+      "method": "ACR-MCR",
+      "round": 0,
+      "reason": "initial",
+      "used_tail_risk": false,
+      "objective_py": 0.3473462732567079,
+      "objective_c": 0.34734627325670797,
+      "max_abs_objective_error": 5.551115123125783e-17,
+      "python_search_heads": [
+        10,
+        13,
+        24,
+        29
+      ],
+      "c_search_heads": [
+        10,
+        13,
+        24,
+        29
+      ],
+      "original_controller_final_heads": [
+        10,
+        13,
+        24,
+        29
+      ],
+      "search_candidate_sets": 32
+    },
+    {
+      "seed": 9401,
+      "scenario": "S5",
+      "method": "ACR-MCR",
+      "round": 20,
+      "reason": "periodic",
+      "used_tail_risk": true,
+      "objective_py": 0.5757931850890242,
+      "objective_c": 0.5757931850890243,
       "max_abs_objective_error": 1.1102230246251565e-16,
       "python_search_heads": [
         4,
@@ -190,6 +251,216 @@
         7,
         9,
         23
+      ],
+      "search_candidate_sets": 32
+    },
+    {
+      "seed": 9402,
+      "scenario": "S1",
+      "method": "POINT-EA",
+      "round": 0,
+      "reason": "initial",
+      "used_tail_risk": false,
+      "objective_py": 0.33687007172895606,
+      "objective_c": 0.336870071728956,
+      "max_abs_objective_error": 5.551115123125783e-17,
+      "python_search_heads": [
+        3,
+        6,
+        9,
+        37
+      ],
+      "c_search_heads": [
+        3,
+        6,
+        9,
+        37
+      ],
+      "original_controller_final_heads": [
+        3,
+        6,
+        9,
+        37
+      ],
+      "search_candidate_sets": 32
+    },
+    {
+      "seed": 9402,
+      "scenario": "S1",
+      "method": "POINT-EA",
+      "round": 20,
+      "reason": "periodic",
+      "used_tail_risk": false,
+      "objective_py": 0.3335874754335967,
+      "objective_c": 0.33358747543359657,
+      "max_abs_objective_error": 1.1102230246251565e-16,
+      "python_search_heads": [
+        3,
+        6,
+        24,
+        31
+      ],
+      "c_search_heads": [
+        3,
+        6,
+        24,
+        31
+      ],
+      "original_controller_final_heads": [
+        3,
+        6,
+        24,
+        31
+      ],
+      "search_candidate_sets": 32
+    },
+    {
+      "seed": 9402,
+      "scenario": "S1",
+      "method": "ACR-MCR",
+      "round": 0,
+      "reason": "initial",
+      "used_tail_risk": false,
+      "objective_py": 0.33687007172895606,
+      "objective_c": 0.336870071728956,
+      "max_abs_objective_error": 5.551115123125783e-17,
+      "python_search_heads": [
+        3,
+        6,
+        9,
+        37
+      ],
+      "c_search_heads": [
+        3,
+        6,
+        9,
+        37
+      ],
+      "original_controller_final_heads": [
+        3,
+        6,
+        9,
+        37
+      ],
+      "search_candidate_sets": 32
+    },
+    {
+      "seed": 9402,
+      "scenario": "S1",
+      "method": "ACR-MCR",
+      "round": 20,
+      "reason": "periodic",
+      "used_tail_risk": true,
+      "objective_py": 0.5367273536208519,
+      "objective_c": 0.536727353620852,
+      "max_abs_objective_error": 1.1102230246251565e-16,
+      "python_search_heads": [
+        6,
+        19,
+        24,
+        31
+      ],
+      "c_search_heads": [
+        6,
+        19,
+        24,
+        31
+      ],
+      "original_controller_final_heads": [
+        6,
+        19,
+        24,
+        31
+      ],
+      "search_candidate_sets": 32
+    },
+    {
+      "seed": 9402,
+      "scenario": "S5",
+      "method": "POINT-EA",
+      "round": 0,
+      "reason": "initial",
+      "used_tail_risk": false,
+      "objective_py": 0.33687007172895606,
+      "objective_c": 0.336870071728956,
+      "max_abs_objective_error": 5.551115123125783e-17,
+      "python_search_heads": [
+        3,
+        6,
+        9,
+        37
+      ],
+      "c_search_heads": [
+        3,
+        6,
+        9,
+        37
+      ],
+      "original_controller_final_heads": [
+        3,
+        6,
+        9,
+        37
+      ],
+      "search_candidate_sets": 32
+    },
+    {
+      "seed": 9402,
+      "scenario": "S5",
+      "method": "POINT-EA",
+      "round": 20,
+      "reason": "periodic",
+      "used_tail_risk": false,
+      "objective_py": 0.33730372691995675,
+      "objective_c": 0.3373037269199567,
+      "max_abs_objective_error": 1.1102230246251565e-16,
+      "python_search_heads": [
+        3,
+        9,
+        34,
+        37
+      ],
+      "c_search_heads": [
+        3,
+        9,
+        34,
+        37
+      ],
+      "original_controller_final_heads": [
+        3,
+        9,
+        34,
+        37
+      ],
+      "search_candidate_sets": 32
+    },
+    {
+      "seed": 9402,
+      "scenario": "S5",
+      "method": "ACR-MCR",
+      "round": 0,
+      "reason": "initial",
+      "used_tail_risk": false,
+      "objective_py": 0.33687007172895606,
+      "objective_c": 0.336870071728956,
+      "max_abs_objective_error": 5.551115123125783e-17,
+      "python_search_heads": [
+        3,
+        6,
+        9,
+        37
+      ],
+      "c_search_heads": [
+        3,
+        6,
+        9,
+        37
+      ],
+      "original_controller_final_heads": [
+        3,
+        6,
+        9,
+        37
       ],
       "search_candidate_sets": 32
     },
@@ -224,32 +495,92 @@
       "search_candidate_sets": 32
     },
     {
-      "seed": 9402,
-      "scenario": "S5",
+      "seed": 9403,
+      "scenario": "S1",
+      "method": "POINT-EA",
+      "round": 0,
+      "reason": "initial",
+      "used_tail_risk": false,
+      "objective_py": 0.3332865391257795,
+      "objective_c": 0.33328653912577955,
+      "max_abs_objective_error": 5.551115123125783e-17,
+      "python_search_heads": [
+        13,
+        17,
+        25,
+        34
+      ],
+      "c_search_heads": [
+        13,
+        17,
+        25,
+        34
+      ],
+      "original_controller_final_heads": [
+        13,
+        17,
+        25,
+        34
+      ],
+      "search_candidate_sets": 32
+    },
+    {
+      "seed": 9403,
+      "scenario": "S1",
       "method": "POINT-EA",
       "round": 20,
       "reason": "periodic",
       "used_tail_risk": false,
-      "objective_py": 0.33730372691995675,
-      "objective_c": 0.3373037269199567,
-      "max_abs_objective_error": 1.1102230246251565e-16,
+      "objective_py": 0.32803198241837556,
+      "objective_c": 0.32803198241837556,
+      "max_abs_objective_error": 5.551115123125783e-17,
       "python_search_heads": [
-        3,
-        9,
-        34,
-        37
+        10,
+        13,
+        25,
+        30
       ],
       "c_search_heads": [
-        3,
-        9,
-        34,
-        37
+        10,
+        13,
+        25,
+        30
       ],
       "original_controller_final_heads": [
-        3,
-        9,
-        34,
-        37
+        10,
+        13,
+        25,
+        30
+      ],
+      "search_candidate_sets": 32
+    },
+    {
+      "seed": 9403,
+      "scenario": "S1",
+      "method": "ACR-MCR",
+      "round": 0,
+      "reason": "initial",
+      "used_tail_risk": false,
+      "objective_py": 0.3332865391257795,
+      "objective_c": 0.33328653912577955,
+      "max_abs_objective_error": 5.551115123125783e-17,
+      "python_search_heads": [
+        13,
+        17,
+        25,
+        34
+      ],
+      "c_search_heads": [
+        13,
+        17,
+        25,
+        34
+      ],
+      "original_controller_final_heads": [
+        13,
+        17,
+        25,
+        34
       ],
       "search_candidate_sets": 32
     },
@@ -285,13 +616,43 @@
     },
     {
       "seed": 9403,
-      "scenario": "S1",
+      "scenario": "S5",
+      "method": "POINT-EA",
+      "round": 0,
+      "reason": "initial",
+      "used_tail_risk": false,
+      "objective_py": 0.3332865391257795,
+      "objective_c": 0.33328653912577955,
+      "max_abs_objective_error": 5.551115123125783e-17,
+      "python_search_heads": [
+        13,
+        17,
+        25,
+        34
+      ],
+      "c_search_heads": [
+        13,
+        17,
+        25,
+        34
+      ],
+      "original_controller_final_heads": [
+        13,
+        17,
+        25,
+        34
+      ],
+      "search_candidate_sets": 32
+    },
+    {
+      "seed": 9403,
+      "scenario": "S5",
       "method": "POINT-EA",
       "round": 20,
       "reason": "periodic",
       "used_tail_risk": false,
-      "objective_py": 0.32803198241837556,
-      "objective_c": 0.32803198241837556,
+      "objective_py": 0.32937057648762197,
+      "objective_c": 0.329370576487622,
       "max_abs_objective_error": 5.551115123125783e-17,
       "python_search_heads": [
         10,
@@ -310,6 +671,276 @@
         13,
         25,
         30
+      ],
+      "search_candidate_sets": 32
+    },
+    {
+      "seed": 9403,
+      "scenario": "S5",
+      "method": "ACR-MCR",
+      "round": 0,
+      "reason": "initial",
+      "used_tail_risk": false,
+      "objective_py": 0.3332865391257795,
+      "objective_c": 0.33328653912577955,
+      "max_abs_objective_error": 5.551115123125783e-17,
+      "python_search_heads": [
+        13,
+        17,
+        25,
+        34
+      ],
+      "c_search_heads": [
+        13,
+        17,
+        25,
+        34
+      ],
+      "original_controller_final_heads": [
+        13,
+        17,
+        25,
+        34
+      ],
+      "search_candidate_sets": 32
+    },
+    {
+      "seed": 9403,
+      "scenario": "S5",
+      "method": "ACR-MCR",
+      "round": 20,
+      "reason": "periodic",
+      "used_tail_risk": true,
+      "objective_py": 0.505404279027258,
+      "objective_c": 0.5054042790272582,
+      "max_abs_objective_error": 2.220446049250313e-16,
+      "python_search_heads": [
+        9,
+        14,
+        15,
+        20
+      ],
+      "c_search_heads": [
+        9,
+        14,
+        15,
+        20
+      ],
+      "original_controller_final_heads": [
+        9,
+        14,
+        15,
+        20
+      ],
+      "search_candidate_sets": 32
+    },
+    {
+      "seed": 9404,
+      "scenario": "S1",
+      "method": "POINT-EA",
+      "round": 0,
+      "reason": "initial",
+      "used_tail_risk": false,
+      "objective_py": 0.3459069163072115,
+      "objective_c": 0.34590691630721143,
+      "max_abs_objective_error": 5.551115123125783e-17,
+      "python_search_heads": [
+        5,
+        16,
+        19,
+        28
+      ],
+      "c_search_heads": [
+        5,
+        16,
+        19,
+        28
+      ],
+      "original_controller_final_heads": [
+        5,
+        16,
+        19,
+        28
+      ],
+      "search_candidate_sets": 32
+    },
+    {
+      "seed": 9404,
+      "scenario": "S1",
+      "method": "POINT-EA",
+      "round": 20,
+      "reason": "periodic",
+      "used_tail_risk": false,
+      "objective_py": 0.3291398804895778,
+      "objective_c": 0.32913988048957776,
+      "max_abs_objective_error": 5.551115123125783e-17,
+      "python_search_heads": [
+        11,
+        20,
+        34,
+        37
+      ],
+      "c_search_heads": [
+        11,
+        20,
+        34,
+        37
+      ],
+      "original_controller_final_heads": [
+        11,
+        20,
+        34,
+        37
+      ],
+      "search_candidate_sets": 32
+    },
+    {
+      "seed": 9404,
+      "scenario": "S1",
+      "method": "ACR-MCR",
+      "round": 0,
+      "reason": "initial",
+      "used_tail_risk": false,
+      "objective_py": 0.3459069163072115,
+      "objective_c": 0.34590691630721143,
+      "max_abs_objective_error": 5.551115123125783e-17,
+      "python_search_heads": [
+        5,
+        16,
+        19,
+        28
+      ],
+      "c_search_heads": [
+        5,
+        16,
+        19,
+        28
+      ],
+      "original_controller_final_heads": [
+        5,
+        16,
+        19,
+        28
+      ],
+      "search_candidate_sets": 32
+    },
+    {
+      "seed": 9404,
+      "scenario": "S1",
+      "method": "ACR-MCR",
+      "round": 20,
+      "reason": "periodic",
+      "used_tail_risk": true,
+      "objective_py": 0.46275873261899336,
+      "objective_c": 0.4627587326189934,
+      "max_abs_objective_error": 1.1102230246251565e-16,
+      "python_search_heads": [
+        11,
+        16,
+        20,
+        24
+      ],
+      "c_search_heads": [
+        11,
+        16,
+        20,
+        24
+      ],
+      "original_controller_final_heads": [
+        11,
+        16,
+        20,
+        24
+      ],
+      "search_candidate_sets": 32
+    },
+    {
+      "seed": 9404,
+      "scenario": "S5",
+      "method": "POINT-EA",
+      "round": 0,
+      "reason": "initial",
+      "used_tail_risk": false,
+      "objective_py": 0.3459069163072115,
+      "objective_c": 0.34590691630721143,
+      "max_abs_objective_error": 5.551115123125783e-17,
+      "python_search_heads": [
+        5,
+        16,
+        19,
+        28
+      ],
+      "c_search_heads": [
+        5,
+        16,
+        19,
+        28
+      ],
+      "original_controller_final_heads": [
+        5,
+        16,
+        19,
+        28
+      ],
+      "search_candidate_sets": 32
+    },
+    {
+      "seed": 9404,
+      "scenario": "S5",
+      "method": "POINT-EA",
+      "round": 20,
+      "reason": "periodic",
+      "used_tail_risk": false,
+      "objective_py": 0.345070054732461,
+      "objective_c": 0.34507005473246105,
+      "max_abs_objective_error": 1.6653345369377348e-16,
+      "python_search_heads": [
+        9,
+        16,
+        25,
+        33
+      ],
+      "c_search_heads": [
+        9,
+        16,
+        25,
+        33
+      ],
+      "original_controller_final_heads": [
+        9,
+        16,
+        25,
+        33
+      ],
+      "search_candidate_sets": 32
+    },
+    {
+      "seed": 9404,
+      "scenario": "S5",
+      "method": "ACR-MCR",
+      "round": 0,
+      "reason": "initial",
+      "used_tail_risk": false,
+      "objective_py": 0.3459069163072115,
+      "objective_c": 0.34590691630721143,
+      "max_abs_objective_error": 5.551115123125783e-17,
+      "python_search_heads": [
+        5,
+        16,
+        19,
+        28
+      ],
+      "c_search_heads": [
+        5,
+        16,
+        19,
+        28
+      ],
+      "original_controller_final_heads": [
+        5,
+        16,
+        19,
+        28
       ],
       "search_candidate_sets": 32
     },
@@ -344,32 +975,1442 @@
       "search_candidate_sets": 32
     },
     {
-      "seed": 9404,
+      "seed": 9405,
+      "scenario": "S1",
+      "method": "POINT-EA",
+      "round": 0,
+      "reason": "initial",
+      "used_tail_risk": false,
+      "objective_py": 0.34352177535758976,
+      "objective_c": 0.3435217753575898,
+      "max_abs_objective_error": 5.551115123125783e-17,
+      "python_search_heads": [
+        20,
+        26,
+        31,
+        39
+      ],
+      "c_search_heads": [
+        20,
+        26,
+        31,
+        39
+      ],
+      "original_controller_final_heads": [
+        20,
+        26,
+        31,
+        39
+      ],
+      "search_candidate_sets": 32
+    },
+    {
+      "seed": 9405,
+      "scenario": "S1",
+      "method": "POINT-EA",
+      "round": 20,
+      "reason": "periodic",
+      "used_tail_risk": false,
+      "objective_py": 0.3252585694924531,
+      "objective_c": 0.3252585694924531,
+      "max_abs_objective_error": 2.220446049250313e-16,
+      "python_search_heads": [
+        8,
+        22,
+        34,
+        36
+      ],
+      "c_search_heads": [
+        8,
+        22,
+        34,
+        36
+      ],
+      "original_controller_final_heads": [
+        8,
+        22,
+        34,
+        36
+      ],
+      "search_candidate_sets": 32
+    },
+    {
+      "seed": 9405,
+      "scenario": "S1",
+      "method": "ACR-MCR",
+      "round": 0,
+      "reason": "initial",
+      "used_tail_risk": false,
+      "objective_py": 0.34352177535758976,
+      "objective_c": 0.3435217753575898,
+      "max_abs_objective_error": 5.551115123125783e-17,
+      "python_search_heads": [
+        20,
+        26,
+        31,
+        39
+      ],
+      "c_search_heads": [
+        20,
+        26,
+        31,
+        39
+      ],
+      "original_controller_final_heads": [
+        20,
+        26,
+        31,
+        39
+      ],
+      "search_candidate_sets": 32
+    },
+    {
+      "seed": 9405,
+      "scenario": "S1",
+      "method": "ACR-MCR",
+      "round": 20,
+      "reason": "periodic",
+      "used_tail_risk": true,
+      "objective_py": 0.4576338071694534,
+      "objective_c": 0.45763380716945323,
+      "max_abs_objective_error": 1.6653345369377348e-16,
+      "python_search_heads": [
+        8,
+        22,
+        36,
+        39
+      ],
+      "c_search_heads": [
+        8,
+        22,
+        36,
+        39
+      ],
+      "original_controller_final_heads": [
+        8,
+        22,
+        36,
+        39
+      ],
+      "search_candidate_sets": 32
+    },
+    {
+      "seed": 9405,
+      "scenario": "S5",
+      "method": "POINT-EA",
+      "round": 0,
+      "reason": "initial",
+      "used_tail_risk": false,
+      "objective_py": 0.34352177535758976,
+      "objective_c": 0.3435217753575898,
+      "max_abs_objective_error": 5.551115123125783e-17,
+      "python_search_heads": [
+        20,
+        26,
+        31,
+        39
+      ],
+      "c_search_heads": [
+        20,
+        26,
+        31,
+        39
+      ],
+      "original_controller_final_heads": [
+        20,
+        26,
+        31,
+        39
+      ],
+      "search_candidate_sets": 32
+    },
+    {
+      "seed": 9405,
       "scenario": "S5",
       "method": "POINT-EA",
       "round": 20,
       "reason": "periodic",
       "used_tail_risk": false,
-      "objective_py": 0.345070054732461,
-      "objective_c": 0.34507005473246105,
+      "objective_py": 0.32809301982120553,
+      "objective_c": 0.3280930198212057,
       "max_abs_objective_error": 1.6653345369377348e-16,
       "python_search_heads": [
+        8,
+        22,
+        34,
+        36
+      ],
+      "c_search_heads": [
+        8,
+        22,
+        34,
+        36
+      ],
+      "original_controller_final_heads": [
+        8,
+        22,
+        34,
+        36
+      ],
+      "search_candidate_sets": 32
+    },
+    {
+      "seed": 9405,
+      "scenario": "S5",
+      "method": "ACR-MCR",
+      "round": 0,
+      "reason": "initial",
+      "used_tail_risk": false,
+      "objective_py": 0.34352177535758976,
+      "objective_c": 0.3435217753575898,
+      "max_abs_objective_error": 5.551115123125783e-17,
+      "python_search_heads": [
+        20,
+        26,
+        31,
+        39
+      ],
+      "c_search_heads": [
+        20,
+        26,
+        31,
+        39
+      ],
+      "original_controller_final_heads": [
+        20,
+        26,
+        31,
+        39
+      ],
+      "search_candidate_sets": 32
+    },
+    {
+      "seed": 9405,
+      "scenario": "S5",
+      "method": "ACR-MCR",
+      "round": 20,
+      "reason": "periodic",
+      "used_tail_risk": true,
+      "objective_py": 0.5123283833906104,
+      "objective_c": 0.5123283833906105,
+      "max_abs_objective_error": 1.1102230246251565e-16,
+      "python_search_heads": [
         9,
-        16,
-        25,
-        33
+        22,
+        34,
+        36
       ],
       "c_search_heads": [
         9,
-        16,
-        25,
-        33
+        22,
+        34,
+        36
       ],
       "original_controller_final_heads": [
         9,
-        16,
+        22,
+        34,
+        36
+      ],
+      "search_candidate_sets": 32
+    },
+    {
+      "seed": 9406,
+      "scenario": "S1",
+      "method": "POINT-EA",
+      "round": 0,
+      "reason": "initial",
+      "used_tail_risk": false,
+      "objective_py": 0.33109477437762597,
+      "objective_c": 0.33109477437762597,
+      "max_abs_objective_error": 5.551115123125783e-17,
+      "python_search_heads": [
+        3,
+        6,
+        26,
+        34
+      ],
+      "c_search_heads": [
+        3,
+        6,
+        26,
+        34
+      ],
+      "original_controller_final_heads": [
+        3,
+        6,
+        26,
+        34
+      ],
+      "search_candidate_sets": 32
+    },
+    {
+      "seed": 9406,
+      "scenario": "S1",
+      "method": "POINT-EA",
+      "round": 20,
+      "reason": "periodic",
+      "used_tail_risk": false,
+      "objective_py": 0.32907018726245385,
+      "objective_c": 0.3290701872624538,
+      "max_abs_objective_error": 2.220446049250313e-16,
+      "python_search_heads": [
+        3,
+        6,
+        15,
+        23
+      ],
+      "c_search_heads": [
+        3,
+        6,
+        15,
+        23
+      ],
+      "original_controller_final_heads": [
+        3,
+        6,
+        15,
+        23
+      ],
+      "search_candidate_sets": 32
+    },
+    {
+      "seed": 9406,
+      "scenario": "S1",
+      "method": "ACR-MCR",
+      "round": 0,
+      "reason": "initial",
+      "used_tail_risk": false,
+      "objective_py": 0.33109477437762597,
+      "objective_c": 0.33109477437762597,
+      "max_abs_objective_error": 5.551115123125783e-17,
+      "python_search_heads": [
+        3,
+        6,
+        26,
+        34
+      ],
+      "c_search_heads": [
+        3,
+        6,
+        26,
+        34
+      ],
+      "original_controller_final_heads": [
+        3,
+        6,
+        26,
+        34
+      ],
+      "search_candidate_sets": 32
+    },
+    {
+      "seed": 9406,
+      "scenario": "S1",
+      "method": "ACR-MCR",
+      "round": 20,
+      "reason": "periodic",
+      "used_tail_risk": true,
+      "objective_py": 0.46625109613476695,
+      "objective_c": 0.4662510961347669,
+      "max_abs_objective_error": 1.1102230246251565e-16,
+      "python_search_heads": [
+        3,
+        6,
+        15,
+        23
+      ],
+      "c_search_heads": [
+        3,
+        6,
+        15,
+        23
+      ],
+      "original_controller_final_heads": [
+        3,
+        6,
+        15,
+        23
+      ],
+      "search_candidate_sets": 32
+    },
+    {
+      "seed": 9406,
+      "scenario": "S5",
+      "method": "POINT-EA",
+      "round": 0,
+      "reason": "initial",
+      "used_tail_risk": false,
+      "objective_py": 0.33109477437762597,
+      "objective_c": 0.33109477437762597,
+      "max_abs_objective_error": 5.551115123125783e-17,
+      "python_search_heads": [
+        3,
+        6,
+        26,
+        34
+      ],
+      "c_search_heads": [
+        3,
+        6,
+        26,
+        34
+      ],
+      "original_controller_final_heads": [
+        3,
+        6,
+        26,
+        34
+      ],
+      "search_candidate_sets": 32
+    },
+    {
+      "seed": 9406,
+      "scenario": "S5",
+      "method": "POINT-EA",
+      "round": 20,
+      "reason": "periodic",
+      "used_tail_risk": false,
+      "objective_py": 0.33271932624979356,
+      "objective_c": 0.33271932624979356,
+      "max_abs_objective_error": 1.1102230246251565e-16,
+      "python_search_heads": [
+        3,
+        6,
+        15,
+        23
+      ],
+      "c_search_heads": [
+        3,
+        6,
+        15,
+        23
+      ],
+      "original_controller_final_heads": [
+        3,
+        6,
+        15,
+        23
+      ],
+      "search_candidate_sets": 32
+    },
+    {
+      "seed": 9406,
+      "scenario": "S5",
+      "method": "ACR-MCR",
+      "round": 0,
+      "reason": "initial",
+      "used_tail_risk": false,
+      "objective_py": 0.33109477437762597,
+      "objective_c": 0.33109477437762597,
+      "max_abs_objective_error": 5.551115123125783e-17,
+      "python_search_heads": [
+        3,
+        6,
+        26,
+        34
+      ],
+      "c_search_heads": [
+        3,
+        6,
+        26,
+        34
+      ],
+      "original_controller_final_heads": [
+        3,
+        6,
+        26,
+        34
+      ],
+      "search_candidate_sets": 32
+    },
+    {
+      "seed": 9406,
+      "scenario": "S5",
+      "method": "ACR-MCR",
+      "round": 20,
+      "reason": "periodic",
+      "used_tail_risk": true,
+      "objective_py": 0.5918352022288534,
+      "objective_c": 0.5918352022288534,
+      "max_abs_objective_error": 1.1102230246251565e-16,
+      "python_search_heads": [
+        8,
+        12,
+        15,
+        39
+      ],
+      "c_search_heads": [
+        8,
+        12,
+        15,
+        39
+      ],
+      "original_controller_final_heads": [
+        8,
+        12,
+        15,
+        39
+      ],
+      "search_candidate_sets": 32
+    },
+    {
+      "seed": 9407,
+      "scenario": "S1",
+      "method": "POINT-EA",
+      "round": 0,
+      "reason": "initial",
+      "used_tail_risk": false,
+      "objective_py": 0.3263413081873141,
+      "objective_c": 0.32634130818731405,
+      "max_abs_objective_error": 1.1102230246251565e-16,
+      "python_search_heads": [
+        10,
+        13,
+        35,
+        36
+      ],
+      "c_search_heads": [
+        10,
+        13,
+        35,
+        36
+      ],
+      "original_controller_final_heads": [
+        10,
+        13,
+        35,
+        36
+      ],
+      "search_candidate_sets": 32
+    },
+    {
+      "seed": 9407,
+      "scenario": "S1",
+      "method": "POINT-EA",
+      "round": 20,
+      "reason": "periodic",
+      "used_tail_risk": false,
+      "objective_py": 0.3288818342176778,
+      "objective_c": 0.3288818342176778,
+      "max_abs_objective_error": 5.551115123125783e-17,
+      "python_search_heads": [
+        10,
+        13,
+        35,
+        36
+      ],
+      "c_search_heads": [
+        10,
+        13,
+        35,
+        36
+      ],
+      "original_controller_final_heads": [
+        10,
+        13,
+        35,
+        36
+      ],
+      "search_candidate_sets": 32
+    },
+    {
+      "seed": 9407,
+      "scenario": "S1",
+      "method": "ACR-MCR",
+      "round": 0,
+      "reason": "initial",
+      "used_tail_risk": false,
+      "objective_py": 0.3263413081873141,
+      "objective_c": 0.32634130818731405,
+      "max_abs_objective_error": 1.1102230246251565e-16,
+      "python_search_heads": [
+        10,
+        13,
+        35,
+        36
+      ],
+      "c_search_heads": [
+        10,
+        13,
+        35,
+        36
+      ],
+      "original_controller_final_heads": [
+        10,
+        13,
+        35,
+        36
+      ],
+      "search_candidate_sets": 32
+    },
+    {
+      "seed": 9407,
+      "scenario": "S1",
+      "method": "ACR-MCR",
+      "round": 20,
+      "reason": "periodic",
+      "used_tail_risk": true,
+      "objective_py": 0.4722356983587129,
+      "objective_c": 0.4722356983587128,
+      "max_abs_objective_error": 2.220446049250313e-16,
+      "python_search_heads": [
+        10,
+        20,
+        35,
+        36
+      ],
+      "c_search_heads": [
+        10,
+        20,
+        35,
+        36
+      ],
+      "original_controller_final_heads": [
+        10,
+        20,
+        35,
+        36
+      ],
+      "search_candidate_sets": 32
+    },
+    {
+      "seed": 9407,
+      "scenario": "S5",
+      "method": "POINT-EA",
+      "round": 0,
+      "reason": "initial",
+      "used_tail_risk": false,
+      "objective_py": 0.3263413081873141,
+      "objective_c": 0.32634130818731405,
+      "max_abs_objective_error": 1.1102230246251565e-16,
+      "python_search_heads": [
+        10,
+        13,
+        35,
+        36
+      ],
+      "c_search_heads": [
+        10,
+        13,
+        35,
+        36
+      ],
+      "original_controller_final_heads": [
+        10,
+        13,
+        35,
+        36
+      ],
+      "search_candidate_sets": 32
+    },
+    {
+      "seed": 9407,
+      "scenario": "S5",
+      "method": "POINT-EA",
+      "round": 20,
+      "reason": "periodic",
+      "used_tail_risk": false,
+      "objective_py": 0.32912738521477264,
+      "objective_c": 0.3291273852147727,
+      "max_abs_objective_error": 1.1102230246251565e-16,
+      "python_search_heads": [
+        10,
+        13,
+        35,
+        36
+      ],
+      "c_search_heads": [
+        10,
+        13,
+        35,
+        36
+      ],
+      "original_controller_final_heads": [
+        10,
+        13,
+        35,
+        36
+      ],
+      "search_candidate_sets": 32
+    },
+    {
+      "seed": 9407,
+      "scenario": "S5",
+      "method": "ACR-MCR",
+      "round": 0,
+      "reason": "initial",
+      "used_tail_risk": false,
+      "objective_py": 0.3263413081873141,
+      "objective_c": 0.32634130818731405,
+      "max_abs_objective_error": 1.1102230246251565e-16,
+      "python_search_heads": [
+        10,
+        13,
+        35,
+        36
+      ],
+      "c_search_heads": [
+        10,
+        13,
+        35,
+        36
+      ],
+      "original_controller_final_heads": [
+        10,
+        13,
+        35,
+        36
+      ],
+      "search_candidate_sets": 32
+    },
+    {
+      "seed": 9407,
+      "scenario": "S5",
+      "method": "ACR-MCR",
+      "round": 20,
+      "reason": "periodic",
+      "used_tail_risk": true,
+      "objective_py": 0.5445526680603368,
+      "objective_c": 0.5445526680603368,
+      "max_abs_objective_error": 1.1102230246251565e-16,
+      "python_search_heads": [
+        10,
+        20,
+        35,
+        36
+      ],
+      "c_search_heads": [
+        10,
+        20,
+        35,
+        36
+      ],
+      "original_controller_final_heads": [
+        10,
+        20,
+        35,
+        36
+      ],
+      "search_candidate_sets": 32
+    },
+    {
+      "seed": 9408,
+      "scenario": "S1",
+      "method": "POINT-EA",
+      "round": 0,
+      "reason": "initial",
+      "used_tail_risk": false,
+      "objective_py": 0.33864355637863625,
+      "objective_c": 0.33864355637863625,
+      "max_abs_objective_error": 4.440892098500626e-16,
+      "python_search_heads": [
+        20,
+        22,
+        29,
+        35
+      ],
+      "c_search_heads": [
+        20,
+        22,
+        29,
+        35
+      ],
+      "original_controller_final_heads": [
+        20,
+        22,
+        29,
+        35
+      ],
+      "search_candidate_sets": 32
+    },
+    {
+      "seed": 9408,
+      "scenario": "S1",
+      "method": "POINT-EA",
+      "round": 20,
+      "reason": "periodic",
+      "used_tail_risk": false,
+      "objective_py": 0.3352444197049627,
+      "objective_c": 0.33524441970496277,
+      "max_abs_objective_error": 5.551115123125783e-17,
+      "python_search_heads": [
+        0,
+        5,
+        32,
+        39
+      ],
+      "c_search_heads": [
+        0,
+        5,
+        32,
+        39
+      ],
+      "original_controller_final_heads": [
+        0,
+        5,
+        32,
+        39
+      ],
+      "search_candidate_sets": 32
+    },
+    {
+      "seed": 9408,
+      "scenario": "S1",
+      "method": "ACR-MCR",
+      "round": 0,
+      "reason": "initial",
+      "used_tail_risk": false,
+      "objective_py": 0.33864355637863625,
+      "objective_c": 0.33864355637863625,
+      "max_abs_objective_error": 4.440892098500626e-16,
+      "python_search_heads": [
+        20,
+        22,
+        29,
+        35
+      ],
+      "c_search_heads": [
+        20,
+        22,
+        29,
+        35
+      ],
+      "original_controller_final_heads": [
+        20,
+        22,
+        29,
+        35
+      ],
+      "search_candidate_sets": 32
+    },
+    {
+      "seed": 9408,
+      "scenario": "S1",
+      "method": "ACR-MCR",
+      "round": 20,
+      "reason": "periodic",
+      "used_tail_risk": true,
+      "objective_py": 0.5024212255818185,
+      "objective_c": 0.5024212255818185,
+      "max_abs_objective_error": 1.1102230246251565e-16,
+      "python_search_heads": [
+        1,
+        15,
         25,
+        30
+      ],
+      "c_search_heads": [
+        1,
+        15,
+        25,
+        30
+      ],
+      "original_controller_final_heads": [
+        1,
+        15,
+        25,
+        30
+      ],
+      "search_candidate_sets": 32
+    },
+    {
+      "seed": 9408,
+      "scenario": "S5",
+      "method": "POINT-EA",
+      "round": 0,
+      "reason": "initial",
+      "used_tail_risk": false,
+      "objective_py": 0.33864355637863625,
+      "objective_c": 0.33864355637863625,
+      "max_abs_objective_error": 4.440892098500626e-16,
+      "python_search_heads": [
+        20,
+        22,
+        29,
+        35
+      ],
+      "c_search_heads": [
+        20,
+        22,
+        29,
+        35
+      ],
+      "original_controller_final_heads": [
+        20,
+        22,
+        29,
+        35
+      ],
+      "search_candidate_sets": 32
+    },
+    {
+      "seed": 9408,
+      "scenario": "S5",
+      "method": "POINT-EA",
+      "round": 20,
+      "reason": "periodic",
+      "used_tail_risk": false,
+      "objective_py": 0.33966481700776585,
+      "objective_c": 0.33966481700776596,
+      "max_abs_objective_error": 1.1102230246251565e-16,
+      "python_search_heads": [
+        6,
+        13,
+        35,
+        39
+      ],
+      "c_search_heads": [
+        6,
+        13,
+        35,
+        39
+      ],
+      "original_controller_final_heads": [
+        6,
+        13,
+        35,
+        39
+      ],
+      "search_candidate_sets": 32
+    },
+    {
+      "seed": 9408,
+      "scenario": "S5",
+      "method": "ACR-MCR",
+      "round": 0,
+      "reason": "initial",
+      "used_tail_risk": false,
+      "objective_py": 0.33864355637863625,
+      "objective_c": 0.33864355637863625,
+      "max_abs_objective_error": 4.440892098500626e-16,
+      "python_search_heads": [
+        20,
+        22,
+        29,
+        35
+      ],
+      "c_search_heads": [
+        20,
+        22,
+        29,
+        35
+      ],
+      "original_controller_final_heads": [
+        20,
+        22,
+        29,
+        35
+      ],
+      "search_candidate_sets": 32
+    },
+    {
+      "seed": 9408,
+      "scenario": "S5",
+      "method": "ACR-MCR",
+      "round": 20,
+      "reason": "periodic",
+      "used_tail_risk": true,
+      "objective_py": 0.5493436243989696,
+      "objective_c": 0.5493436243989694,
+      "max_abs_objective_error": 1.1102230246251565e-16,
+      "python_search_heads": [
+        1,
+        6,
+        15,
+        30
+      ],
+      "c_search_heads": [
+        1,
+        6,
+        15,
+        30
+      ],
+      "original_controller_final_heads": [
+        1,
+        6,
+        15,
+        30
+      ],
+      "search_candidate_sets": 32
+    },
+    {
+      "seed": 9409,
+      "scenario": "S1",
+      "method": "POINT-EA",
+      "round": 0,
+      "reason": "initial",
+      "used_tail_risk": false,
+      "objective_py": 0.3346593159926845,
+      "objective_c": 0.3346593159926845,
+      "max_abs_objective_error": 1.1102230246251565e-16,
+      "python_search_heads": [
+        1,
+        29,
+        31,
         33
+      ],
+      "c_search_heads": [
+        1,
+        29,
+        31,
+        33
+      ],
+      "original_controller_final_heads": [
+        1,
+        29,
+        31,
+        33
+      ],
+      "search_candidate_sets": 32
+    },
+    {
+      "seed": 9409,
+      "scenario": "S1",
+      "method": "POINT-EA",
+      "round": 20,
+      "reason": "periodic",
+      "used_tail_risk": false,
+      "objective_py": 0.34206733807696166,
+      "objective_c": 0.3420673380769616,
+      "max_abs_objective_error": 1.1102230246251565e-16,
+      "python_search_heads": [
+        3,
+        19,
+        22,
+        23
+      ],
+      "c_search_heads": [
+        3,
+        19,
+        22,
+        23
+      ],
+      "original_controller_final_heads": [
+        3,
+        19,
+        22,
+        23
+      ],
+      "search_candidate_sets": 32
+    },
+    {
+      "seed": 9409,
+      "scenario": "S1",
+      "method": "ACR-MCR",
+      "round": 0,
+      "reason": "initial",
+      "used_tail_risk": false,
+      "objective_py": 0.3346593159926845,
+      "objective_c": 0.3346593159926845,
+      "max_abs_objective_error": 1.1102230246251565e-16,
+      "python_search_heads": [
+        1,
+        29,
+        31,
+        33
+      ],
+      "c_search_heads": [
+        1,
+        29,
+        31,
+        33
+      ],
+      "original_controller_final_heads": [
+        1,
+        29,
+        31,
+        33
+      ],
+      "search_candidate_sets": 32
+    },
+    {
+      "seed": 9409,
+      "scenario": "S1",
+      "method": "ACR-MCR",
+      "round": 20,
+      "reason": "periodic",
+      "used_tail_risk": true,
+      "objective_py": 0.515140114259728,
+      "objective_c": 0.515140114259728,
+      "max_abs_objective_error": 1.1102230246251565e-16,
+      "python_search_heads": [
+        1,
+        19,
+        22,
+        23
+      ],
+      "c_search_heads": [
+        1,
+        19,
+        22,
+        23
+      ],
+      "original_controller_final_heads": [
+        1,
+        19,
+        22,
+        23
+      ],
+      "search_candidate_sets": 32
+    },
+    {
+      "seed": 9409,
+      "scenario": "S5",
+      "method": "POINT-EA",
+      "round": 0,
+      "reason": "initial",
+      "used_tail_risk": false,
+      "objective_py": 0.3346593159926845,
+      "objective_c": 0.3346593159926845,
+      "max_abs_objective_error": 1.1102230246251565e-16,
+      "python_search_heads": [
+        1,
+        29,
+        31,
+        33
+      ],
+      "c_search_heads": [
+        1,
+        29,
+        31,
+        33
+      ],
+      "original_controller_final_heads": [
+        1,
+        29,
+        31,
+        33
+      ],
+      "search_candidate_sets": 32
+    },
+    {
+      "seed": 9409,
+      "scenario": "S5",
+      "method": "POINT-EA",
+      "round": 20,
+      "reason": "periodic",
+      "used_tail_risk": false,
+      "objective_py": 0.3397246162276592,
+      "objective_c": 0.3397246162276592,
+      "max_abs_objective_error": 5.551115123125783e-17,
+      "python_search_heads": [
+        5,
+        7,
+        12,
+        18
+      ],
+      "c_search_heads": [
+        5,
+        7,
+        12,
+        18
+      ],
+      "original_controller_final_heads": [
+        5,
+        7,
+        12,
+        18
+      ],
+      "search_candidate_sets": 32
+    },
+    {
+      "seed": 9409,
+      "scenario": "S5",
+      "method": "ACR-MCR",
+      "round": 0,
+      "reason": "initial",
+      "used_tail_risk": false,
+      "objective_py": 0.3346593159926845,
+      "objective_c": 0.3346593159926845,
+      "max_abs_objective_error": 1.1102230246251565e-16,
+      "python_search_heads": [
+        1,
+        29,
+        31,
+        33
+      ],
+      "c_search_heads": [
+        1,
+        29,
+        31,
+        33
+      ],
+      "original_controller_final_heads": [
+        1,
+        29,
+        31,
+        33
+      ],
+      "search_candidate_sets": 32
+    },
+    {
+      "seed": 9409,
+      "scenario": "S5",
+      "method": "ACR-MCR",
+      "round": 20,
+      "reason": "periodic",
+      "used_tail_risk": true,
+      "objective_py": 0.5762343356776093,
+      "objective_c": 0.5762343356776092,
+      "max_abs_objective_error": 1.1102230246251565e-16,
+      "python_search_heads": [
+        24,
+        33,
+        36,
+        39
+      ],
+      "c_search_heads": [
+        24,
+        33,
+        36,
+        39
+      ],
+      "original_controller_final_heads": [
+        24,
+        33,
+        36,
+        39
+      ],
+      "search_candidate_sets": 32
+    },
+    {
+      "seed": 9410,
+      "scenario": "S1",
+      "method": "POINT-EA",
+      "round": 0,
+      "reason": "initial",
+      "used_tail_risk": false,
+      "objective_py": 0.3309132946356753,
+      "objective_c": 0.3309132946356752,
+      "max_abs_objective_error": 1.1102230246251565e-16,
+      "python_search_heads": [
+        0,
+        1,
+        3,
+        9
+      ],
+      "c_search_heads": [
+        0,
+        1,
+        3,
+        9
+      ],
+      "original_controller_final_heads": [
+        0,
+        1,
+        3,
+        9
+      ],
+      "search_candidate_sets": 32
+    },
+    {
+      "seed": 9410,
+      "scenario": "S1",
+      "method": "POINT-EA",
+      "round": 20,
+      "reason": "periodic",
+      "used_tail_risk": false,
+      "objective_py": 0.3316230473800943,
+      "objective_c": 0.33162304738009424,
+      "max_abs_objective_error": 1.1102230246251565e-16,
+      "python_search_heads": [
+        0,
+        1,
+        3,
+        9
+      ],
+      "c_search_heads": [
+        0,
+        1,
+        3,
+        9
+      ],
+      "original_controller_final_heads": [
+        0,
+        1,
+        3,
+        9
+      ],
+      "search_candidate_sets": 32
+    },
+    {
+      "seed": 9410,
+      "scenario": "S1",
+      "method": "ACR-MCR",
+      "round": 0,
+      "reason": "initial",
+      "used_tail_risk": false,
+      "objective_py": 0.3309132946356753,
+      "objective_c": 0.3309132946356752,
+      "max_abs_objective_error": 1.1102230246251565e-16,
+      "python_search_heads": [
+        0,
+        1,
+        3,
+        9
+      ],
+      "c_search_heads": [
+        0,
+        1,
+        3,
+        9
+      ],
+      "original_controller_final_heads": [
+        0,
+        1,
+        3,
+        9
+      ],
+      "search_candidate_sets": 32
+    },
+    {
+      "seed": 9410,
+      "scenario": "S1",
+      "method": "ACR-MCR",
+      "round": 20,
+      "reason": "periodic",
+      "used_tail_risk": true,
+      "objective_py": 0.4674073984114288,
+      "objective_c": 0.4674073984114288,
+      "max_abs_objective_error": 1.1102230246251565e-16,
+      "python_search_heads": [
+        28,
+        29,
+        36,
+        37
+      ],
+      "c_search_heads": [
+        28,
+        29,
+        36,
+        37
+      ],
+      "original_controller_final_heads": [
+        28,
+        29,
+        36,
+        37
+      ],
+      "search_candidate_sets": 32
+    },
+    {
+      "seed": 9410,
+      "scenario": "S5",
+      "method": "POINT-EA",
+      "round": 0,
+      "reason": "initial",
+      "used_tail_risk": false,
+      "objective_py": 0.3309132946356753,
+      "objective_c": 0.3309132946356752,
+      "max_abs_objective_error": 1.1102230246251565e-16,
+      "python_search_heads": [
+        0,
+        1,
+        3,
+        9
+      ],
+      "c_search_heads": [
+        0,
+        1,
+        3,
+        9
+      ],
+      "original_controller_final_heads": [
+        0,
+        1,
+        3,
+        9
+      ],
+      "search_candidate_sets": 32
+    },
+    {
+      "seed": 9410,
+      "scenario": "S5",
+      "method": "POINT-EA",
+      "round": 20,
+      "reason": "periodic",
+      "used_tail_risk": false,
+      "objective_py": 0.34081937471427776,
+      "objective_c": 0.3408193747142777,
+      "max_abs_objective_error": 1.1102230246251565e-16,
+      "python_search_heads": [
+        1,
+        3,
+        9,
+        22
+      ],
+      "c_search_heads": [
+        1,
+        3,
+        9,
+        22
+      ],
+      "original_controller_final_heads": [
+        1,
+        3,
+        9,
+        22
+      ],
+      "search_candidate_sets": 32
+    },
+    {
+      "seed": 9410,
+      "scenario": "S5",
+      "method": "ACR-MCR",
+      "round": 0,
+      "reason": "initial",
+      "used_tail_risk": false,
+      "objective_py": 0.3309132946356753,
+      "objective_c": 0.3309132946356752,
+      "max_abs_objective_error": 1.1102230246251565e-16,
+      "python_search_heads": [
+        0,
+        1,
+        3,
+        9
+      ],
+      "c_search_heads": [
+        0,
+        1,
+        3,
+        9
+      ],
+      "original_controller_final_heads": [
+        0,
+        1,
+        3,
+        9
+      ],
+      "search_candidate_sets": 32
+    },
+    {
+      "seed": 9410,
+      "scenario": "S5",
+      "method": "ACR-MCR",
+      "round": 20,
+      "reason": "periodic",
+      "used_tail_risk": true,
+      "objective_py": 0.5736332240878371,
+      "objective_c": 0.573633224087837,
+      "max_abs_objective_error": 1.1102230246251565e-16,
+      "python_search_heads": [
+        24,
+        28,
+        36,
+        37
+      ],
+      "c_search_heads": [
+        24,
+        28,
+        36,
+        37
+      ],
+      "original_controller_final_heads": [
+        24,
+        28,
+        36,
+        37
       ],
       "search_candidate_sets": 32
     }

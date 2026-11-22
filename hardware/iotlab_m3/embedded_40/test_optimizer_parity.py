@@ -169,6 +169,7 @@ def evaluate_fixture(lib,seed,scenario,method,t):
 def main():
     ap=argparse.ArgumentParser()
     ap.add_argument("--quick",action="store_true")
+    ap.add_argument("--extended",action="store_true")
     a=ap.parse_args()
     lib=get_lib()
     # t=0 verifies optimization without empirical tail risk; t=20 verifies
@@ -183,7 +184,13 @@ def main():
        (9402,"S5","ACR-MCR",20),
        (9402,"S5","POINT-EA",20),
     ]
-    if not a.quick:
+    if a.extended:
+        fixtures=[(seed,scenario,method,round_id)
+          for seed in range(9401,9411)
+          for scenario in ("S1","S5")
+          for method in ("POINT-EA","ACR-MCR")
+          for round_id in (0,20)]
+    elif not a.quick:
         fixtures.extend([
            (9403,"S1","ACR-MCR",20),(9403,"S1","POINT-EA",20),
            (9404,"S5","ACR-MCR",20),(9404,"S5","POINT-EA",20)])
@@ -196,10 +203,14 @@ def main():
               params,"maxerr",rec["max_abs_objective_error"],flush=True)
     risk=sum(r["used_tail_risk"] for r in records)
     if not risk or len(records)<8:raise AssertionError("Risk cases absent")
+    if a.extended:
+        assert len({r["seed"] for r in records})==10
+        assert risk==20
     outcome=dict(status="PASS_DETERMINISTIC_INNER_KERNEL",
       original_source_sha256=hashlib.sha256((ROOT/"acr_mcr_v2.py").read_bytes()).hexdigest(),
       port_source_sha256=hashlib.sha256((HERE/"acr_optimizer_core.c").read_bytes()).hexdigest(),
       fixtures=len(records),risk_enabled_fixtures=risk,
+      independent_seed_blocks=len({r["seed"] for r in records}),
       evaluated_candidate_plan_and_objective_checks=6*len(records),
       full_search_trace_checks=len(records),
       max_objective_abs_error=max(x["max_abs_objective_error"] for x in records),
