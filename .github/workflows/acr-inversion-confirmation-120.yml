@@ -1,0 +1,66 @@
+name: ACR-MCR Heldout Reliability Deadline 120 Runs
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: acr-inversion-heldout
+  cancel-in-progress: false
+jobs:
+  simulate:
+    strategy:
+      fail-fast: false
+      max-parallel: 6
+      matrix:
+        scenario: [S0, S1, S2, S3, S4, S5]
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    env:
+      OPENBLAS_NUM_THREADS: '1'
+      OMP_NUM_THREADS: '1'
+      MKL_NUM_THREADS: '1'
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+      - run: python -m pip install -r requirements.txt
+      - run: python tools/recovery_gate.py
+      - name: Perform full untouched-seed paired inversion cohort
+        run: |
+          python recovery_generalisation/confirm_inversion_cell.py \
+            --scenario '${{ matrix.scenario }}' \
+            --out 'inversion_${{ matrix.scenario }}.jsonl'
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: inversion-${{ matrix.scenario }}
+          path: inversion_*.jsonl
+          if-no-files-found: warn
+          retention-days: 14
+  analyze:
+    needs: simulate
+    if: always() && needs.simulate.result == 'success'
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+      - run: python -m pip install -r requirements.txt
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: inversion-*
+          path: inversion_collected
+          merge-multiple: true
+      - run: |
+          python recovery_generalisation/analyze_inversion.py \
+            --directory inversion_collected --out confirmed_inversion.json
+      - uses: actions/upload-artifact@v4
+        with:
+          name: acr-heldout-reliability-deadline-inversion-120
+          path: confirmed_inversion.json
+          retention-days: 21
