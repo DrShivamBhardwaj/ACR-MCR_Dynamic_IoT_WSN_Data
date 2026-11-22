@@ -1,0 +1,12 @@
+{
+  "independent_seed_blocks": 10,
+  "paired_scenario_cells": 20,
+  "estimated_mean_acr_minus_point_controller_seconds": 0.0591612328440533,
+  "ci95_seconds": [
+    0.052040797315486574,
+    0.06628166837262002
+  ],
+  "two_sided_p": 1.5692292129904162e-08,
+  "physical_joules_measured": false,
+  "caveat": "Paired inference for M1 wall time, not joules or installed physical ACR hardware"
+}

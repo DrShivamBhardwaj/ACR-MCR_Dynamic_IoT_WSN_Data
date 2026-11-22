@@ -25,3 +25,5 @@ or calibrated external meter with synchronized idle baseline.
 Original simulator SHA256: 3f134a8826525215f7cf2ff307bab3893c0d64b050f742bdc3c250b1c0302ea4
 
 All 40 raw records retained in JSONL and CSV with a SHA256 manifest.
+
+Independent seed-block paired controller-time effect, averaging S1/S5 within each seed: 0.059161 seconds (95% Student-t CI [0.052041, 0.066282], two-sided paired p=1.56923e-08). These estimates do not imply a physically measured energy difference.
