@@ -1,0 +1,9 @@
+CONTIKI_PROJECT = acr_packet
+all: $(CONTIKI_PROJECT)
+
+CONTIKI = ../..
+MAKE_NET = MAKE_NET_NULLNET
+MAKE_MAC = MAKE_MAC_CSMA
+MODE ?= 0
+CFLAGS += -DACR_POLICY=$(MODE)
+include $(CONTIKI)/Makefile.include
