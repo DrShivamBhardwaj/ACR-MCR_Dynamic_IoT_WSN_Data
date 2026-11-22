@@ -1,0 +1,385 @@
+{
+  "experiment": 459595,
+  "site": "Grenoble",
+  "requested_sources": 40,
+  "requested_sink_nodes": 1,
+  "requested_rounds": 3,
+  "sink_reported_experiment_finished": true,
+  "captured_serial_nodes": 41,
+  "control_receptions": 120,
+  "full_500B_sink_reassemblies": 10,
+  "physical_serial_records": {
+    "218": {
+      "logical_id": 1,
+      "raw_lines": 89,
+      "control_received": 3,
+      "mac_callbacks": 33,
+      "reassembled_500B": 0,
+      "energy_snapshots": 1,
+      "boot_records": 1
+    },
+    "233": {
+      "logical_id": 2,
+      "raw_lines": 89,
+      "control_received": 3,
+      "mac_callbacks": 33,
+      "reassembled_500B": 0,
+      "energy_snapshots": 1,
+      "boot_records": 1
+    },
+    "234": {
+      "logical_id": 3,
+      "raw_lines": 89,
+      "control_received": 3,
+      "mac_callbacks": 33,
+      "reassembled_500B": 0,
+      "energy_snapshots": 1,
+      "boot_records": 1
+    },
+    "236": {
+      "logical_id": 4,
+      "raw_lines": 89,
+      "control_received": 3,
+      "mac_callbacks": 33,
+      "reassembled_500B": 0,
+      "energy_snapshots": 1,
+      "boot_records": 1
+    },
+    "237": {
+      "logical_id": 5,
+      "raw_lines": 425,
+      "control_received": 3,
+      "mac_callbacks": 201,
+      "reassembled_500B": 0,
+      "energy_snapshots": 1,
+      "boot_records": 1
+    },
+    "239": {
+      "logical_id": 6,
+      "raw_lines": 89,
+      "control_received": 3,
+      "mac_callbacks": 33,
+      "reassembled_500B": 0,
+      "energy_snapshots": 1,
+      "boot_records": 1
+    },
+    "295": {
+      "logical_id": 7,
+      "raw_lines": 89,
+      "control_received": 3,
+      "mac_callbacks": 33,
+      "reassembled_500B": 0,
+      "energy_snapshots": 1,
+      "boot_records": 1
+    },
+    "240": {
+      "logical_id": 8,
+      "raw_lines": 444,
+      "control_received": 3,
+      "mac_callbacks": 200,
+      "reassembled_500B": 0,
+      "energy_snapshots": 1,
+      "boot_records": 1
+    },
+    "241": {
+      "logical_id": 9,
+      "raw_lines": 89,
+      "control_received": 3,
+      "mac_callbacks": 33,
+      "reassembled_500B": 0,
+      "energy_snapshots": 1,
+      "boot_records": 1
+    },
+    "197": {
+      "logical_id": 10,
+      "raw_lines": 375,
+      "control_received": 3,
+      "mac_callbacks": 176,
+      "reassembled_500B": 0,
+      "energy_snapshots": 1,
+      "boot_records": 1
+    },
+    "216": {
+      "logical_id": 11,
+      "raw_lines": 89,
+      "control_received": 3,
+      "mac_callbacks": 33,
+      "reassembled_500B": 0,
+      "energy_snapshots": 1,
+      "boot_records": 1
+    },
+    "290": {
+      "logical_id": 12,
+      "raw_lines": 89,
+      "control_received": 3,
+      "mac_callbacks": 33,
+      "reassembled_500B": 0,
+      "energy_snapshots": 1,
+      "boot_records": 1
+    },
+    "204": {
+      "logical_id": 13,
+      "raw_lines": 89,
+      "control_received": 3,
+      "mac_callbacks": 33,
+      "reassembled_500B": 0,
+      "energy_snapshots": 1,
+      "boot_records": 1
+    },
+    "245": {
+      "logical_id": 14,
+      "raw_lines": 89,
+      "control_received": 3,
+      "mac_callbacks": 33,
+      "reassembled_500B": 0,
+      "energy_snapshots": 1,
+      "boot_records": 1
+    },
+    "292": {
+      "logical_id": 15,
+      "raw_lines": 89,
+      "control_received": 3,
+      "mac_callbacks": 33,
+      "reassembled_500B": 0,
+      "energy_snapshots": 1,
+      "boot_records": 1
+    },
+    "202": {
+      "logical_id": 16,
+      "raw_lines": 89,
+      "control_received": 3,
+      "mac_callbacks": 33,
+      "reassembled_500B": 0,
+      "energy_snapshots": 1,
+      "boot_records": 1
+    },
+    "293": {
+      "logical_id": 17,
+      "raw_lines": 89,
+      "control_received": 3,
+      "mac_callbacks": 33,
+      "reassembled_500B": 0,
+      "energy_snapshots": 1,
+      "boot_records": 1
+    },
+    "201": {
+      "logical_id": 18,
+      "raw_lines": 89,
+      "control_received": 3,
+      "mac_callbacks": 33,
+      "reassembled_500B": 0,
+      "energy_snapshots": 1,
+      "boot_records": 1
+    },
+    "200": {
+      "logical_id": 19,
+      "raw_lines": 89,
+      "control_received": 3,
+      "mac_callbacks": 33,
+      "reassembled_500B": 0,
+      "energy_snapshots": 1,
+      "boot_records": 1
+    },
+    "199": {
+      "logical_id": 20,
+      "raw_lines": 89,
+      "control_received": 3,
+      "mac_callbacks": 33,
+      "reassembled_500B": 0,
+      "energy_snapshots": 1,
+      "boot_records": 1
+    },
+    "220": {
+      "logical_id": 21,
+      "raw_lines": 89,
+      "control_received": 3,
+      "mac_callbacks": 33,
+      "reassembled_500B": 0,
+      "energy_snapshots": 1,
+      "boot_records": 1
+    },
+    "222": {
+      "logical_id": 22,
+      "raw_lines": 89,
+      "control_received": 3,
+      "mac_callbacks": 33,
+      "reassembled_500B": 0,
+      "energy_snapshots": 1,
+      "boot_records": 1
+    },
+    "223": {
+      "logical_id": 23,
+      "raw_lines": 89,
+      "control_received": 3,
+      "mac_callbacks": 33,
+      "reassembled_500B": 0,
+      "energy_snapshots": 1,
+      "boot_records": 1
+    },
+    "224": {
+      "logical_id": 24,
+      "raw_lines": 1008,
+      "control_received": 3,
+      "mac_callbacks": 331,
+      "reassembled_500B": 0,
+      "energy_snapshots": 1,
+      "boot_records": 1
+    },
+    "225": {
+      "logical_id": 25,
+      "raw_lines": 89,
+      "control_received": 3,
+      "mac_callbacks": 33,
+      "reassembled_500B": 0,
+      "energy_snapshots": 1,
+      "boot_records": 1
+    },
+    "226": {
+      "logical_id": 26,
+      "raw_lines": 89,
+      "control_received": 3,
+      "mac_callbacks": 33,
+      "reassembled_500B": 0,
+      "energy_snapshots": 1,
+      "boot_records": 1
+    },
+    "227": {
+      "logical_id": 27,
+      "raw_lines": 89,
+      "control_received": 3,
+      "mac_callbacks": 33,
+      "reassembled_500B": 0,
+      "energy_snapshots": 1,
+      "boot_records": 1
+    },
+    "228": {
+      "logical_id": 28,
+      "raw_lines": 89,
+      "control_received": 3,
+      "mac_callbacks": 33,
+      "reassembled_500B": 0,
+      "energy_snapshots": 1,
+      "boot_records": 1
+    },
+    "229": {
+      "logical_id": 29,
+      "raw_lines": 89,
+      "control_received": 3,
+      "mac_callbacks": 33,
+      "reassembled_500B": 0,
+      "energy_snapshots": 1,
+      "boot_records": 1
+    },
+    "230": {
+      "logical_id": 30,
+      "raw_lines": 89,
+      "control_received": 3,
+      "mac_callbacks": 33,
+      "reassembled_500B": 0,
+      "energy_snapshots": 1,
+      "boot_records": 1
+    },
+    "215": {
+      "logical_id": 31,
+      "raw_lines": 75,
+      "control_received": 3,
+      "mac_callbacks": 33,
+      "reassembled_500B": 0,
+      "energy_snapshots": 0,
+      "boot_records": 0
+    },
+    "214": {
+      "logical_id": 32,
+      "raw_lines": 89,
+      "control_received": 3,
+      "mac_callbacks": 33,
+      "reassembled_500B": 0,
+      "energy_snapshots": 1,
+      "boot_records": 1
+    },
+    "213": {
+      "logical_id": 33,
+      "raw_lines": 89,
+      "control_received": 3,
+      "mac_callbacks": 33,
+      "reassembled_500B": 0,
+      "energy_snapshots": 1,
+      "boot_records": 1
+    },
+    "212": {
+      "logical_id": 34,
+      "raw_lines": 89,
+      "control_received": 3,
+      "mac_callbacks": 33,
+      "reassembled_500B": 0,
+      "energy_snapshots": 1,
+      "boot_records": 1
+    },
+    "211": {
+      "logical_id": 35,
+      "raw_lines": 89,
+      "control_received": 3,
+      "mac_callbacks": 33,
+      "reassembled_500B": 0,
+      "energy_snapshots": 1,
+      "boot_records": 1
+    },
+    "210": {
+      "logical_id": 36,
+      "raw_lines": 89,
+      "control_received": 3,
+      "mac_callbacks": 33,
+      "reassembled_500B": 0,
+      "energy_snapshots": 1,
+      "boot_records": 1
+    },
+    "209": {
+      "logical_id": 37,
+      "raw_lines": 89,
+      "control_received": 3,
+      "mac_callbacks": 33,
+      "reassembled_500B": 0,
+      "energy_snapshots": 1,
+      "boot_records": 1
+    },
+    "208": {
+      "logical_id": 38,
+      "raw_lines": 89,
+      "control_received": 3,
+      "mac_callbacks": 33,
+      "reassembled_500B": 0,
+      "energy_snapshots": 1,
+      "boot_records": 1
+    },
+    "205": {
+      "logical_id": 39,
+      "raw_lines": 89,
+      "control_received": 3,
+      "mac_callbacks": 33,
+      "reassembled_500B": 0,
+      "energy_snapshots": 1,
+      "boot_records": 1
+    },
+    "203": {
+      "logical_id": 40,
+      "raw_lines": 87,
+      "control_received": 3,
+      "mac_callbacks": 32,
+      "reassembled_500B": 0,
+      "energy_snapshots": 1,
+      "boot_records": 1
+    },
+    "219": {
+      "logical_id": 41,
+      "raw_lines": 48,
+      "control_received": 0,
+      "mac_callbacks": 6,
+      "reassembled_500B": 10,
+      "energy_snapshots": 1,
+      "boot_records": 1
+    }
+  },
+  "errors": [],
+  "scientific_limit": "STATIC sink-generated four-cluster route map. Adaptive ACR-MCR does NOT execute on M3. No synchronized 500ms latency claim.",
+  "capture_duration_s": 141.183
+}

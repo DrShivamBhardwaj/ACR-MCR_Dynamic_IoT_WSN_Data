@@ -1,0 +1,48 @@
+2026-11-22T14:33:01.382429+00:00	Platform starting in 1...
+2026-11-22T14:33:01.382590+00:00	GO!
+2026-11-22T14:33:01.382657+00:00	[in clock_init() DEBUG] Starting systick timer at 100Hz
+2026-11-22T14:33:01.382712+00:00	[INFO: Main      ] Starting Contiki-NG-20c6bb8-dirty
+2026-11-22T14:33:01.382759+00:00	[INFO: Main      ] - Routing: nullrouting
+2026-11-22T14:33:01.382805+00:00	[INFO: Main      ] - Net: nullnet
+2026-11-22T14:33:01.382878+00:00	[INFO: Main      ] - MAC: CSMA
+2026-11-22T14:33:01.382923+00:00	[INFO: Main      ] - 802.15.4 PANID: 0xabcd
+2026-11-22T14:33:01.398208+00:00	[INFO: Main      ] - 802.15.4 Default channel: 26
+2026-11-22T14:33:01.398336+00:00	[INFO: Main      ] Node ID: 46209
+2026-11-22T14:33:01.398397+00:00	[INFO: Main      ] Link-layer address: 0200.0000.0000.b481
+2026-11-22T14:33:01.398449+00:00	[INFO: IoT-LAB   ] Target: iotlab, board: m3
+2026-11-22T14:33:04.294044+00:00	ONBOARD_OPT_READY fixture=ACR-MCR_9401_S5_r20 risk=1 heads=5,8,10,24 objective_micro=575793 error_nano=45 cpu_ticks=289 hz=100 enabled=40
+2026-11-22T14:33:04.294173+00:00	M3_TRANSPORT_BOOT id=41 site=frozen_original_kernel algorithm=OPENLOOP seed=8701 method=0 scenario=1 rounds=3 app_bytes=500 fragments=8 ctrl_over_radio=1
+2026-11-22T14:33:26.387874+00:00	ROUND_OPEN round=0 node=41
+2026-11-22T14:33:26.787633+00:00	CONTROL_ENQUEUED round=0 chunk=0 id=41 entries=20 payload_bytes=80
+2026-11-22T14:33:26.803337+00:00	CONTROL_ENQUEUED round=0 chunk=1 id=41 entries=20 payload_bytes=80
+2026-11-22T14:33:26.803410+00:00	MAC_START round=0 type=3 src=41 sender=41 to=0 part=0 bytes=89
+2026-11-22T14:33:26.803460+00:00	MAC_TX round=0 type=3 src=41 sender=41 to=0 part=0 status=0 attempts=1 bytes=89
+2026-11-22T14:33:26.803507+00:00	MAC_START round=0 type=3 src=41 sender=41 to=0 part=1 bytes=89
+2026-11-22T14:33:26.819250+00:00	MAC_TX round=0 type=3 src=41 sender=41 to=0 part=1 status=0 attempts=1 bytes=89
+2026-11-22T14:33:32.050886+00:00	SINK_REASSEMBLED round=0 src=5 app_bytes=500 parts=8 checksum=PASS
+2026-11-22T14:33:32.370828+00:00	SINK_REASSEMBLED round=0 src=24 app_bytes=500 parts=8 checksum=PASS
+2026-11-22T14:33:46.385614+00:00	ROUND_BARRIER round=0 node=41
+2026-11-22T14:33:46.801192+00:00	CONTROL_ENQUEUED round=1 chunk=0 id=41 entries=20 payload_bytes=80
+2026-11-22T14:33:46.801249+00:00	CONTROL_ENQUEUED round=1 chunk=1 id=41 entries=20 payload_bytes=80
+2026-11-22T14:33:46.801266+00:00	MAC_START round=1 type=3 src=41 sender=41 to=0 part=0 bytes=89
+2026-11-22T14:33:46.833137+00:00	MAC_TX round=1 type=3 src=41 sender=41 to=0 part=0 status=0 attempts=1 bytes=89
+2026-11-22T14:33:46.833189+00:00	MAC_START round=1 type=3 src=41 sender=41 to=0 part=1 bytes=89
+2026-11-22T14:33:46.929164+00:00	MAC_TX round=1 type=3 src=41 sender=41 to=0 part=1 status=0 attempts=1 bytes=89
+2026-11-22T14:33:52.384689+00:00	SINK_REASSEMBLED round=1 src=4 app_bytes=500 parts=8 checksum=PASS
+2026-11-22T14:33:53.424621+00:00	SINK_REASSEMBLED round=1 src=24 app_bytes=500 parts=8 checksum=PASS
+2026-11-22T14:33:53.744443+00:00	SINK_REASSEMBLED round=1 src=5 app_bytes=500 parts=8 checksum=PASS
+2026-11-22T14:33:54.880453+00:00	SINK_REASSEMBLED round=1 src=3 app_bytes=500 parts=8 checksum=PASS
+2026-11-22T14:33:58.975981+00:00	SINK_REASSEMBLED round=1 src=13 app_bytes=500 parts=8 checksum=PASS
+2026-11-22T14:34:06.399488+00:00	ROUND_BARRIER round=1 node=41
+2026-11-22T14:34:06.799230+00:00	CONTROL_ENQUEUED round=2 chunk=0 id=41 entries=20 payload_bytes=80
+2026-11-22T14:34:06.799362+00:00	CONTROL_ENQUEUED round=2 chunk=1 id=41 entries=20 payload_bytes=80
+2026-11-22T14:34:06.799420+00:00	MAC_START round=2 type=3 src=41 sender=41 to=0 part=0 bytes=89
+2026-11-22T14:34:06.799469+00:00	MAC_TX round=2 type=3 src=41 sender=41 to=0 part=0 status=0 attempts=1 bytes=89
+2026-11-22T14:34:06.815026+00:00	MAC_START round=2 type=3 src=41 sender=41 to=0 part=1 bytes=89
+2026-11-22T14:34:07.198972+00:00	MAC_TX round=2 type=3 src=41 sender=41 to=0 part=1 status=0 attempts=1 bytes=89
+2026-11-22T14:34:12.641382+00:00	SINK_REASSEMBLED round=2 src=24 app_bytes=500 parts=8 checksum=PASS
+2026-11-22T14:34:14.942357+00:00	SINK_REASSEMBLED round=2 src=5 app_bytes=500 parts=8 checksum=PASS
+2026-11-22T14:34:15.518112+00:00	SINK_REASSEMBLED round=2 src=29 app_bytes=500 parts=8 checksum=PASS
+2026-11-22T14:34:26.397593+00:00	ROUND_BARRIER round=2 node=41
+2026-11-22T14:34:26.397735+00:00	ENERGEST_RAW id=41 round=3 cpu=79583 lpm=2640849 deep=0 tx=6051 listen=1334529 ticks_per_second=32768
+2026-11-22T14:34:27.389162+00:00	DIST_DONE seed=8701 method=0 rounds=3 packets=6 control_packets=6 reassembled=10
