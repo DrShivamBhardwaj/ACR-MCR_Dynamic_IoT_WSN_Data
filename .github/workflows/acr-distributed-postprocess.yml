@@ -1,0 +1,94 @@
+name: ACR-MCR Archive Confirmatory 500B Results
+on:
+  workflow_run:
+    workflows:
+      - ACR-MCR Radio Control and 500B Fragmentation Confirmation
+    types: [completed]
+
+permissions:
+  actions: read
+  contents: write
+
+jobs:
+  archive:
+    if: github.event.workflow_run.id == 45009267734 && github.event.workflow_run.head_branch == 'main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    env:
+      GH_TOKEN: ${{ github.token }}
+      RUN_ID: '45009267734'
+      REPO_NAME: 'DrShivamBhardwaj/ACR-MCR_Dynamic_IoT_WSN_Data'
+      DEST: 'packet_validation/results/45009267734'
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          persist-credentials: true
+      - name: Safely record the exact completed run and its independently validated outputs
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p "$DEST" temp_results
+          STATUS=$(gh api "repos/$REPO_NAME/actions/runs/$RUN_ID" --jq '.conclusion')
+          echo "EXACT_CONFIRMED_ACTIONS_STATUS=$STATUS"
+          if [ "$STATUS" = "success" ];then
+            gh run download "$RUN_ID" -R "$REPO_NAME" \
+              -n acr-500byte-overair-control-independent-confirmation \
+              -D temp_results
+            test -s temp_results/distributed_500byte_confirmation.json
+            test -s temp_results/distributed_500byte_confirmation.csv
+            python3 packet_validation/finalize_40case.py \
+              --input temp_results/distributed_500byte_confirmation.json \
+              --out "$DEST/REGISTERED_EVIDENCE_REPORT.md"
+            cp temp_results/distributed_500byte_confirmation.json "$DEST/full_40case_result.json"
+            cp temp_results/distributed_500byte_confirmation.csv "$DEST/40case_per_run.csv"
+            python3 - <<'PY'
+          import json,pathlib
+          p=pathlib.Path('packet_validation/results/45009267734/validated_completion.json')
+          p.write_text(json.dumps({'run_id':45009267734,'status':'PASS',
+             'source':'GitHub 40-cell paired-analysis artifact',
+             'scientific_scope':'Cooja 40-node over-air control, 500-byte payload, 160 rounds',
+             'physical_40_node_deployment':False,
+             'external_SNR_PER_calibrated':False},indent=2)+'\n')
+          PY
+          else
+            echo "::warning::Registered run not scientifically complete: $STATUS"
+            gh api "repos/$REPO_NAME/actions/runs/$RUN_ID/jobs?per_page=100" \
+              > "$DEST/original_workflow_jobs.json"
+            python3 - <<'PY'
+          import json,pathlib
+          root=pathlib.Path('packet_validation/results/45009267734')
+          jobs=json.loads((root/'original_workflow_jobs.json').read_text())['jobs']
+          failures=[{'name':j['name'],'status':j['status'],
+                     'conclusion':j['conclusion'],'job_id':j['id']}
+                    for j in jobs if j['conclusion']!='success']
+          (root/'UNRESOLVED_EXECUTION.json').write_text(
+              json.dumps({'run_id':45009267734,'status':'FAILED_OR_PARTIAL',
+                'failing_jobs':failures,
+                'allowed_claim':'No registered confirmatory result until every required case passes'},indent=2)+'\n')
+          PY
+          fi
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add "$DEST"
+          git diff --cached --check || {
+            echo "::warning::Unmodified official machine-generated text may have trailing spaces"
+          }
+          git commit -m "Archive completed ACR 500B confirmation run $RUN_ID ($STATUS)"
+          for TRY in 1 2 3;do
+            git pull --rebase origin main
+            if git push origin HEAD:main;then
+              echo "PERSISTENT_RESULTS_ARCHIVED=$DEST"
+              exit 0
+            fi
+            sleep $((TRY*5))
+          done
+          echo "::error::Could not push archive to GitHub after three attempts"
+          exit 1
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: acr-radio-500b-auto-final-evidence
+          path: packet_validation/results/45009267734/
+          retention-days: 30
+          if-no-files-found: warn
