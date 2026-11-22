@@ -1,0 +1,343 @@
+{
+  "site": "Grenoble",
+  "source_sha256": "e4d15f7bb5ec35ee7177e7b154851619b7b19b3e9fb8fe4c0d5e4e285947f312",
+  "Makefile_sha256": "ef01f970a1b153fdfcf3715b05a94ddce7aaac511ddaa4ed5a5ec3550c629313",
+  "rounds": 3,
+  "start_delay_seconds": 25,
+  "network": "forty sources plus one sink",
+  "system": "Contiki-NG IoT-LAB M3, CSMA, NullNet, 500-byte/8-fragment payload",
+  "algorithm": "STATIC members' real over-air control-triggered timing. Sink on-M3 ORIGINAL frozen method-specific Python-equivalent search.",
+  "logical_to_physical": {
+    "1": 218,
+    "2": 233,
+    "3": 234,
+    "4": 236,
+    "5": 237,
+    "6": 239,
+    "7": 295,
+    "8": 240,
+    "9": 241,
+    "10": 197,
+    "11": 216,
+    "12": 290,
+    "13": 204,
+    "14": 245,
+    "15": 292,
+    "16": 202,
+    "17": 293,
+    "18": 201,
+    "19": 200,
+    "20": 199,
+    "21": 220,
+    "22": 222,
+    "23": 223,
+    "24": 224,
+    "25": 225,
+    "26": 226,
+    "27": 227,
+    "28": 228,
+    "29": 229,
+    "30": 230,
+    "31": 196,
+    "32": 214,
+    "33": 213,
+    "34": 212,
+    "35": 211,
+    "36": 210,
+    "37": 209,
+    "38": 208,
+    "39": 205,
+    "40": 203,
+    "41": 219
+  },
+  "firmware": {
+    "1": {
+      "logical_id": 1,
+      "physical_board": 218,
+      "filename": "node_01.iotlab",
+      "sha256": "4649617edb497aeb6168cefcb7fed78d51c06f8357b00901b76713c9f14888b7",
+      "bytes": 609860
+    },
+    "2": {
+      "logical_id": 2,
+      "physical_board": 233,
+      "filename": "node_02.iotlab",
+      "sha256": "2c7a9bd19e244f09ddee4785fde0b78ea6a4dd06a33e805e894fe82a03b79c1d",
+      "bytes": 609844
+    },
+    "3": {
+      "logical_id": 3,
+      "physical_board": 234,
+      "filename": "node_03.iotlab",
+      "sha256": "e91123719a258e39fd623e2b0a4d5e7fedd50acaf04ff75aefebd3879477e786",
+      "bytes": 609844
+    },
+    "4": {
+      "logical_id": 4,
+      "physical_board": 236,
+      "filename": "node_04.iotlab",
+      "sha256": "891b5f46a81d86e4dd31e4a6d122efcc60e72a1f7ab354921967f57888927649",
+      "bytes": 609844
+    },
+    "5": {
+      "logical_id": 5,
+      "physical_board": 237,
+      "filename": "node_05.iotlab",
+      "sha256": "9fdfe6eb32d6c53ef9044c7d8bfe716178ed46b4129374cf7772fa283149df9b",
+      "bytes": 609844
+    },
+    "6": {
+      "logical_id": 6,
+      "physical_board": 239,
+      "filename": "node_06.iotlab",
+      "sha256": "f1bade800fb987d972bb343384874c477e6dc60ac5d4a534d291b17229a266f5",
+      "bytes": 609844
+    },
+    "7": {
+      "logical_id": 7,
+      "physical_board": 295,
+      "filename": "node_07.iotlab",
+      "sha256": "e730d8cd82a216ff57d7b484907c512fcb95710b17fa02e98693b2708e6c5a52",
+      "bytes": 609844
+    },
+    "8": {
+      "logical_id": 8,
+      "physical_board": 240,
+      "filename": "node_08.iotlab",
+      "sha256": "90e940f701fb95e19ad86e450cbb5f06be8fcd45d8a4dd984c238dfee6bfd093",
+      "bytes": 609840
+    },
+    "9": {
+      "logical_id": 9,
+      "physical_board": 241,
+      "filename": "node_09.iotlab",
+      "sha256": "312ca3f8e43d06e9585aa387a058c8b87e23fd153bf72e54744b5bad4d1cb22e",
+      "bytes": 609844
+    },
+    "10": {
+      "logical_id": 10,
+      "physical_board": 197,
+      "filename": "node_10.iotlab",
+      "sha256": "848da467aadc4791f6a9635751141d9f9931073db3f62c008ff3a68fcfaa5954",
+      "bytes": 609860
+    },
+    "11": {
+      "logical_id": 11,
+      "physical_board": 216,
+      "filename": "node_11.iotlab",
+      "sha256": "0269f61f5719cf580eb5d4ca821332ae9ede9516905d5eb79a2abc68d2565919",
+      "bytes": 609844
+    },
+    "12": {
+      "logical_id": 12,
+      "physical_board": 290,
+      "filename": "node_12.iotlab",
+      "sha256": "5d91af6a292823749415bff0c0d28c683ac3b535e73607884c5d1cb31154deb9",
+      "bytes": 609844
+    },
+    "13": {
+      "logical_id": 13,
+      "physical_board": 204,
+      "filename": "node_13.iotlab",
+      "sha256": "6199e0078a35b6750fab0e319b017e8930b6e894ee7b6ed87dcf63bd1670a8d4",
+      "bytes": 609844
+    },
+    "14": {
+      "logical_id": 14,
+      "physical_board": 245,
+      "filename": "node_14.iotlab",
+      "sha256": "0380de6f0c9e9a7f6e4e6a3881875805925c616312f5b924ff26db3e3bb070b4",
+      "bytes": 609844
+    },
+    "15": {
+      "logical_id": 15,
+      "physical_board": 292,
+      "filename": "node_15.iotlab",
+      "sha256": "d94ef6df1102295facb1d67654e5e80665ebf94ae37b548f89cd0414e7546c75",
+      "bytes": 609844
+    },
+    "16": {
+      "logical_id": 16,
+      "physical_board": 202,
+      "filename": "node_16.iotlab",
+      "sha256": "20723d1ee796c35fd2564d9f7148ca6456a3e4d0781494613f3071295388b4f2",
+      "bytes": 609844
+    },
+    "17": {
+      "logical_id": 17,
+      "physical_board": 293,
+      "filename": "node_17.iotlab",
+      "sha256": "ad68c3e00f4dbfade3bbb3943e45734f373c8504fc67db242383a59a551ed44f",
+      "bytes": 609844
+    },
+    "18": {
+      "logical_id": 18,
+      "physical_board": 201,
+      "filename": "node_18.iotlab",
+      "sha256": "2c001055b95c5c7d797d6caaa5bded24399ed7ca610fc9db39bb8bf4826d0dd5",
+      "bytes": 609844
+    },
+    "19": {
+      "logical_id": 19,
+      "physical_board": 200,
+      "filename": "node_19.iotlab",
+      "sha256": "0ad02779a208eceee7699da25f4fb3c0f2592d410417e7a4c1d409151dee49ad",
+      "bytes": 609844
+    },
+    "20": {
+      "logical_id": 20,
+      "physical_board": 199,
+      "filename": "node_20.iotlab",
+      "sha256": "584d155f261d66072615ad3e940040d58452d2cab5d208778efd9e9a2f268b59",
+      "bytes": 609844
+    },
+    "21": {
+      "logical_id": 21,
+      "physical_board": 220,
+      "filename": "node_21.iotlab",
+      "sha256": "b2b31d5e28054e6c452e082b20eb0a37a31163dab7b84511d6457ccbdafa1f58",
+      "bytes": 609844
+    },
+    "22": {
+      "logical_id": 22,
+      "physical_board": 222,
+      "filename": "node_22.iotlab",
+      "sha256": "be4ff8f442851866286930d6b2726fa48d4ea953cca087687c8747d14737e65a",
+      "bytes": 609844
+    },
+    "23": {
+      "logical_id": 23,
+      "physical_board": 223,
+      "filename": "node_23.iotlab",
+      "sha256": "66c1ce4aec8a1925d39a153ec5e9cf05b85a7fbb3fe632b3c85ef7fa6016fc62",
+      "bytes": 609844
+    },
+    "24": {
+      "logical_id": 24,
+      "physical_board": 224,
+      "filename": "node_24.iotlab",
+      "sha256": "1043603e6cfa10bb496a8ab0c4666759d1d4f787bd498249bec10702ec5b09a1",
+      "bytes": 609844
+    },
+    "25": {
+      "logical_id": 25,
+      "physical_board": 225,
+      "filename": "node_25.iotlab",
+      "sha256": "6b3d204fbbb85b94aa89a684247c80ce6bfd7e4fc7a9adc10c10348c4bdb356e",
+      "bytes": 609844
+    },
+    "26": {
+      "logical_id": 26,
+      "physical_board": 226,
+      "filename": "node_26.iotlab",
+      "sha256": "d1eb35470de07a3b85d6e19d722c62b17246459179148d3b4219dea25bcc5040",
+      "bytes": 609844
+    },
+    "27": {
+      "logical_id": 27,
+      "physical_board": 227,
+      "filename": "node_27.iotlab",
+      "sha256": "5bf99defd52e4fb91a24c3984a754b7ecc3f43effc2d3a577377aa553a3bca2b",
+      "bytes": 609844
+    },
+    "28": {
+      "logical_id": 28,
+      "physical_board": 228,
+      "filename": "node_28.iotlab",
+      "sha256": "6aed57f0ba58b31e13662949a26be2a8f394d1ae2ba1e6faf33c46a35979565a",
+      "bytes": 609844
+    },
+    "29": {
+      "logical_id": 29,
+      "physical_board": 229,
+      "filename": "node_29.iotlab",
+      "sha256": "dae2760dd18a8badd380ab13f34008dcfaaeb128527875f5c7212610dc250401",
+      "bytes": 609844
+    },
+    "30": {
+      "logical_id": 30,
+      "physical_board": 230,
+      "filename": "node_30.iotlab",
+      "sha256": "be37903eed68ca6485944c6ccd1e0b3d72f4698a2dcbb0eaef87d2b727b616ae",
+      "bytes": 609844
+    },
+    "31": {
+      "logical_id": 31,
+      "physical_board": 196,
+      "filename": "node_31.iotlab",
+      "sha256": "02ff88d40f484dbfeef82bc53fe578f7871370ea1a4c92efa5bb657728f5e277",
+      "bytes": 609844
+    },
+    "32": {
+      "logical_id": 32,
+      "physical_board": 214,
+      "filename": "node_32.iotlab",
+      "sha256": "47bbe2d7af7a7c9078e35e870d2b8c7c2c604836cab7fcd426deb12998b2a27a",
+      "bytes": 609844
+    },
+    "33": {
+      "logical_id": 33,
+      "physical_board": 213,
+      "filename": "node_33.iotlab",
+      "sha256": "0cf458af31726a4f7e063ea8a96ebbaf0294db48bd2728a83c70e9839e78fab6",
+      "bytes": 609844
+    },
+    "34": {
+      "logical_id": 34,
+      "physical_board": 212,
+      "filename": "node_34.iotlab",
+      "sha256": "78f46e6a994c1a9dfdc748481e7f1622e403c0f032060e8d6c20ce67f7c434ed",
+      "bytes": 609844
+    },
+    "35": {
+      "logical_id": 35,
+      "physical_board": 211,
+      "filename": "node_35.iotlab",
+      "sha256": "2df6aba22865226893f255a16709cfceb216002690d6bd4978dc60515ea37d7d",
+      "bytes": 609844
+    },
+    "36": {
+      "logical_id": 36,
+      "physical_board": 210,
+      "filename": "node_36.iotlab",
+      "sha256": "56a109c7f2eeeccd9e05d75d2e147b6d9c292c5f67ef26445ddfa63505336a1c",
+      "bytes": 609844
+    },
+    "37": {
+      "logical_id": 37,
+      "physical_board": 209,
+      "filename": "node_37.iotlab",
+      "sha256": "7a213c9436237f6938bea28c90b9ca4e928e18a4de569e7e69ffbbee9975f24f",
+      "bytes": 609844
+    },
+    "38": {
+      "logical_id": 38,
+      "physical_board": 208,
+      "filename": "node_38.iotlab",
+      "sha256": "e8a7c2bde6522282036887449fb8adced73c31776228c7fa5f9574430c07e467",
+      "bytes": 609844
+    },
+    "39": {
+      "logical_id": 39,
+      "physical_board": 205,
+      "filename": "node_39.iotlab",
+      "sha256": "288e0a0e52a2598c6a67442abff036239a5ca2645eadaf08103d51352151be24",
+      "bytes": 609844
+    },
+    "40": {
+      "logical_id": 40,
+      "physical_board": 203,
+      "filename": "node_40.iotlab",
+      "sha256": "3fb4d3d186cc157181dbf9e605a15a7c8dfba69980a6aa1e93526a0b567c27fd",
+      "bytes": 609844
+    },
+    "41": {
+      "logical_id": 41,
+      "physical_board": 219,
+      "filename": "node_41.iotlab",
+      "sha256": "6f97cd16e3ce2a815f83e3f6f4f806c965b9018d33ab3c150222d8276b2a1855",
+      "bytes": 609468
+    }
+  },
+  "hardware_revision": "v6: substitute M3-196 for repeated IoT-LAB firmware-flash failure at M3-215"
+}

@@ -1,0 +1,335 @@
+{
+  "date": "2026-11-22",
+  "testbed_site": "Grenoble",
+  "platform": "M3 AT86RF231",
+  "procedure": "40 closest Alive boards to optimized sink; four nearest heads; 9 members each",
+  "independent_hardware_sources": 40,
+  "sink_logical_id": 41,
+  "sink_physical_board": 219,
+  "max_sink_to_source_distance_m": 6.627216610312356,
+  "max_member_to_head_distance_m": 7.022827066075313,
+  "nodes": {
+    "1": {
+      "board": 218,
+      "role": "head",
+      "sink_board": 219,
+      "x": "18.95",
+      "y": "5.43",
+      "z": "-0.04"
+    },
+    "2": {
+      "board": 233,
+      "role": "member",
+      "head_board": 218,
+      "x": "18.35",
+      "y": "9.63",
+      "z": "-0.04"
+    },
+    "3": {
+      "board": 234,
+      "role": "member",
+      "head_board": 218,
+      "x": "18.95",
+      "y": "10.23",
+      "z": "-0.04"
+    },
+    "4": {
+      "board": 236,
+      "role": "member",
+      "head_board": 218,
+      "x": "18.95",
+      "y": "10.83",
+      "z": "-0.04"
+    },
+    "5": {
+      "board": 237,
+      "role": "member",
+      "head_board": 218,
+      "x": "18.35",
+      "y": "10.83",
+      "z": "-0.04"
+    },
+    "6": {
+      "board": 239,
+      "role": "member",
+      "head_board": 218,
+      "x": "18.35",
+      "y": "11.43",
+      "z": "-0.04"
+    },
+    "7": {
+      "board": 295,
+      "role": "member",
+      "head_board": 218,
+      "x": "23.05",
+      "y": "0.94",
+      "z": "-0.04"
+    },
+    "8": {
+      "board": 240,
+      "role": "member",
+      "head_board": 218,
+      "x": "18.95",
+      "y": "12.03",
+      "z": "-0.04"
+    },
+    "9": {
+      "board": 241,
+      "role": "member",
+      "head_board": 218,
+      "x": "18.35",
+      "y": "12.03",
+      "z": "-0.04"
+    },
+    "10": {
+      "board": 197,
+      "role": "member",
+      "head_board": 218,
+      "x": "13.55",
+      "y": "0.94",
+      "z": "-0.04"
+    },
+    "11": {
+      "board": 216,
+      "role": "head",
+      "sink_board": 219,
+      "x": "18.95",
+      "y": "4.83",
+      "z": "-0.04"
+    },
+    "12": {
+      "board": 290,
+      "role": "member",
+      "head_board": 216,
+      "x": "20.05",
+      "y": "0.94",
+      "z": "-0.04"
+    },
+    "13": {
+      "board": 204,
+      "role": "member",
+      "head_board": 216,
+      "x": "18.95",
+      "y": "0.75",
+      "z": "-0.04"
+    },
+    "14": {
+      "board": 245,
+      "role": "member",
+      "head_board": 216,
+      "x": "18.35",
+      "y": "13.23",
+      "z": "-0.04"
+    },
+    "15": {
+      "board": 292,
+      "role": "member",
+      "head_board": 216,
+      "x": "21.25",
+      "y": "0.94",
+      "z": "-0.04"
+    },
+    "16": {
+      "board": 202,
+      "role": "member",
+      "head_board": 216,
+      "x": "16.55",
+      "y": "0.94",
+      "z": "-0.04"
+    },
+    "17": {
+      "board": 293,
+      "role": "member",
+      "head_board": 216,
+      "x": "21.85",
+      "y": "0.94",
+      "z": "-0.04"
+    },
+    "18": {
+      "board": 201,
+      "role": "member",
+      "head_board": 216,
+      "x": "15.95",
+      "y": "0.94",
+      "z": "-0.04"
+    },
+    "19": {
+      "board": 200,
+      "role": "member",
+      "head_board": 216,
+      "x": "15.35",
+      "y": "0.94",
+      "z": "-0.04"
+    },
+    "20": {
+      "board": 199,
+      "role": "member",
+      "head_board": 216,
+      "x": "14.75",
+      "y": "0.94",
+      "z": "-0.04"
+    },
+    "21": {
+      "board": 220,
+      "role": "head",
+      "sink_board": 219,
+      "x": "18.95",
+      "y": "6.03",
+      "z": "-0.04"
+    },
+    "22": {
+      "board": 222,
+      "role": "member",
+      "head_board": 220,
+      "x": "18.95",
+      "y": "6.63",
+      "z": "-0.04"
+    },
+    "23": {
+      "board": 223,
+      "role": "member",
+      "head_board": 220,
+      "x": "18.35",
+      "y": "6.63",
+      "z": "-0.04"
+    },
+    "24": {
+      "board": 224,
+      "role": "member",
+      "head_board": 220,
+      "x": "18.95",
+      "y": "7.23",
+      "z": "-0.04"
+    },
+    "25": {
+      "board": 225,
+      "role": "member",
+      "head_board": 220,
+      "x": "18.35",
+      "y": "7.23",
+      "z": "-0.04"
+    },
+    "26": {
+      "board": 226,
+      "role": "member",
+      "head_board": 220,
+      "x": "18.95",
+      "y": "7.83",
+      "z": "-0.04"
+    },
+    "27": {
+      "board": 227,
+      "role": "member",
+      "head_board": 220,
+      "x": "18.35",
+      "y": "7.83",
+      "z": "-0.04"
+    },
+    "28": {
+      "board": 228,
+      "role": "member",
+      "head_board": 220,
+      "x": "18.95",
+      "y": "8.43",
+      "z": "-0.04"
+    },
+    "29": {
+      "board": 229,
+      "role": "member",
+      "head_board": 220,
+      "x": "18.35",
+      "y": "8.43",
+      "z": "-0.04"
+    },
+    "30": {
+      "board": 230,
+      "role": "member",
+      "head_board": 220,
+      "x": "18.95",
+      "y": "9.03",
+      "z": "-0.04"
+    },
+    "31": {
+      "board": 196,
+      "role": "head",
+      "sink_board": 219,
+      "x": "12.95",
+      "y": "0.94",
+      "z": "-0.04"
+    },
+    "32": {
+      "board": 214,
+      "role": "member",
+      "head_board": 215,
+      "x": "18.95",
+      "y": "4.23",
+      "z": "-0.04"
+    },
+    "33": {
+      "board": 213,
+      "role": "member",
+      "head_board": 215,
+      "x": "18.35",
+      "y": "3.63",
+      "z": "-0.04"
+    },
+    "34": {
+      "board": 212,
+      "role": "member",
+      "head_board": 215,
+      "x": "18.95",
+      "y": "3.63",
+      "z": "-0.04"
+    },
+    "35": {
+      "board": 211,
+      "role": "member",
+      "head_board": 215,
+      "x": "18.35",
+      "y": "3.03",
+      "z": "-0.04"
+    },
+    "36": {
+      "board": 210,
+      "role": "member",
+      "head_board": 215,
+      "x": "18.95",
+      "y": "3.03",
+      "z": "-0.04"
+    },
+    "37": {
+      "board": 209,
+      "role": "member",
+      "head_board": 215,
+      "x": "18.35",
+      "y": "2.43",
+      "z": "-0.04"
+    },
+    "38": {
+      "board": 208,
+      "role": "member",
+      "head_board": 215,
+      "x": "18.95",
+      "y": "2.43",
+      "z": "-0.04"
+    },
+    "39": {
+      "board": 205,
+      "role": "member",
+      "head_board": 215,
+      "x": "18.35",
+      "y": "0.75",
+      "z": "-0.04"
+    },
+    "40": {
+      "board": 203,
+      "role": "member",
+      "head_board": 215,
+      "x": "17.15",
+      "y": "0.94",
+      "z": "-0.04"
+    }
+  },
+  "observational_limit": "ALIVE does not prove a 41-board reservation is currently schedulable. This is STATIC fixed-head transport, not embedded ACR-MCR. V4 substitutes source M3-291 with Alive M3-245 due repeat UART unavailability.",
+  "hardware_revision": "v6: substitute M3-196 for repeated IoT-LAB firmware-flash failure at M3-215"
+}
