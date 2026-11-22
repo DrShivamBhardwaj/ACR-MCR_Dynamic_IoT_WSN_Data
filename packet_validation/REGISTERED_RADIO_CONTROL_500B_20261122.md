@@ -70,3 +70,22 @@ favourable scenarios.
   archived. External RSSI/noise/SNR measurements remain a separate gate.
 
 Do not update the frozen 1,280-run results with these new experiments.
+
+
+## Explicit correction to validation gate (22 November, 15:15 IST)
+
+The first 160-round cloud run incorrectly treated fewer than 20
+route-plan receptions per round as a software failure. In the S1
+seed9210 ACR-MCR raw controller log, 3,038/6,400 actual unique
+node-round installations were measured. This is an intended transport
+outcome under radio loss, not a reason to reject data. The test now
+logs exact measured missed control opportunities and fails only if
+full energy capture of 41 motes is missing, if any reassembled payload
+fails byte-integrity, if fewer than two sink-origin control frames are
+counted per round, or if the recorded control receptions exceed
+physically possible opportunities. No change to the optimizer,
+data generation, seed matrix, method parameters, or primary endpoints.
+This replaces the initial incorrect validation gate BEFORE analyzing
+the complete 40-case result. All 40 registered combinations will be
+recomputed in a single corrected GitHub study; prior intermediate
+outcomes are excluded from the confirmatory inferential analysis.

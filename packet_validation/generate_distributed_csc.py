@@ -174,9 +174,16 @@ while(true) {
     var count=Object.keys(energySeen).length;
     log.log("REASSEMBLY_AUDIT_COMPLETE rounds="+completed+
             " energy_nodes="+count+" controller_plan_injected_only_at_sink=1\n");
-    if(count<30 || allControlApplied<__ROUNDS__*20 || badPayload>0) {
-      log.log("VALIDATION_LIMIT energy_nodes="+count+" control_applied="+allControlApplied+
-              " bad_payload="+badPayload+"\n");
+    // A lost control packet is a real observed network failure, NOT
+    // a failed software execution. It lowers demand and PDR, so log it.
+    // Only invalid/incomplete instrumentation or corrupt content fails.
+    log.log("CONTROL_TRANSPORT_OUTCOME installed="+allControlApplied+
+       " possible="+(__ROUNDS__*40)+" missed="+(__ROUNDS__*40-allControlApplied)+"\n");
+    if(count!==41 || badPayload>0 || allControlPackets<__ROUNDS__*2
+       || allControlApplied>__ROUNDS__*40) {
+      log.log("VALIDATION_INTEGRITY_FAILURE energy_nodes="+count+
+         " control_applied="+allControlApplied+" control_mac="+allControlPackets+
+         " bad_payload="+badPayload+"\n");
       log.testFailed();
     }
     toPython.close();fromPython.close();
