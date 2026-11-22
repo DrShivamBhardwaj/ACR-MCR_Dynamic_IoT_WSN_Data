@@ -1,0 +1,20 @@
+{
+  "original_reference_sha256": "3f134a8826525215f7cf2ff307bab3893c0d64b050f742bdc3c250b1c0302ea4",
+  "policy": "Only COMPLETE stages with reverified hashes may be skipped. Failed and blocked tasks are never called successful.",
+  "project": "ACR-MCR Original M3 40-source 41-board physical port",
+  "schema": 1,
+  "stages": {
+    "original_source": {
+      "details": {
+        "interpretation": "Immutable original reference",
+        "original_sha256": "3f134a8826525215f7cf2ff307bab3893c0d64b050f742bdc3c250b1c0302ea4"
+      },
+      "evidence_sha256": {
+        "acr_mcr_v2.py": "3f134a8826525215f7cf2ff307bab3893c0d64b050f742bdc3c250b1c0302ea4"
+      },
+      "recorded_utc": "2026-11-22T15:42:46.688807+00:00",
+      "status": "COMPLETE"
+    }
+  },
+  "updated_utc": "2026-11-22T15:42:46.688955+00:00"
+}
