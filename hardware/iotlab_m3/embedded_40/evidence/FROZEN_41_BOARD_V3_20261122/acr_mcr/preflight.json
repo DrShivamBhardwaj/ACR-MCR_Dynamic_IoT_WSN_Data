@@ -1,0 +1,302 @@
+{
+  "associations": null,
+  "duration": 15,
+  "firmwareassociations": [
+    {
+      "firmwarename": "node_01.iotlab",
+      "nodes": [
+        "m3-218.grenoble.iot-lab.info"
+      ]
+    },
+    {
+      "firmwarename": "node_02.iotlab",
+      "nodes": [
+        "m3-233.grenoble.iot-lab.info"
+      ]
+    },
+    {
+      "firmwarename": "node_03.iotlab",
+      "nodes": [
+        "m3-234.grenoble.iot-lab.info"
+      ]
+    },
+    {
+      "firmwarename": "node_04.iotlab",
+      "nodes": [
+        "m3-236.grenoble.iot-lab.info"
+      ]
+    },
+    {
+      "firmwarename": "node_05.iotlab",
+      "nodes": [
+        "m3-237.grenoble.iot-lab.info"
+      ]
+    },
+    {
+      "firmwarename": "node_06.iotlab",
+      "nodes": [
+        "m3-239.grenoble.iot-lab.info"
+      ]
+    },
+    {
+      "firmwarename": "node_07.iotlab",
+      "nodes": [
+        "m3-295.grenoble.iot-lab.info"
+      ]
+    },
+    {
+      "firmwarename": "node_08.iotlab",
+      "nodes": [
+        "m3-240.grenoble.iot-lab.info"
+      ]
+    },
+    {
+      "firmwarename": "node_09.iotlab",
+      "nodes": [
+        "m3-241.grenoble.iot-lab.info"
+      ]
+    },
+    {
+      "firmwarename": "node_10.iotlab",
+      "nodes": [
+        "m3-197.grenoble.iot-lab.info"
+      ]
+    },
+    {
+      "firmwarename": "node_11.iotlab",
+      "nodes": [
+        "m3-216.grenoble.iot-lab.info"
+      ]
+    },
+    {
+      "firmwarename": "node_12.iotlab",
+      "nodes": [
+        "m3-290.grenoble.iot-lab.info"
+      ]
+    },
+    {
+      "firmwarename": "node_13.iotlab",
+      "nodes": [
+        "m3-204.grenoble.iot-lab.info"
+      ]
+    },
+    {
+      "firmwarename": "node_14.iotlab",
+      "nodes": [
+        "m3-291.grenoble.iot-lab.info"
+      ]
+    },
+    {
+      "firmwarename": "node_15.iotlab",
+      "nodes": [
+        "m3-292.grenoble.iot-lab.info"
+      ]
+    },
+    {
+      "firmwarename": "node_16.iotlab",
+      "nodes": [
+        "m3-202.grenoble.iot-lab.info"
+      ]
+    },
+    {
+      "firmwarename": "node_17.iotlab",
+      "nodes": [
+        "m3-293.grenoble.iot-lab.info"
+      ]
+    },
+    {
+      "firmwarename": "node_18.iotlab",
+      "nodes": [
+        "m3-201.grenoble.iot-lab.info"
+      ]
+    },
+    {
+      "firmwarename": "node_19.iotlab",
+      "nodes": [
+        "m3-200.grenoble.iot-lab.info"
+      ]
+    },
+    {
+      "firmwarename": "node_20.iotlab",
+      "nodes": [
+        "m3-199.grenoble.iot-lab.info"
+      ]
+    },
+    {
+      "firmwarename": "node_21.iotlab",
+      "nodes": [
+        "m3-220.grenoble.iot-lab.info"
+      ]
+    },
+    {
+      "firmwarename": "node_22.iotlab",
+      "nodes": [
+        "m3-222.grenoble.iot-lab.info"
+      ]
+    },
+    {
+      "firmwarename": "node_23.iotlab",
+      "nodes": [
+        "m3-223.grenoble.iot-lab.info"
+      ]
+    },
+    {
+      "firmwarename": "node_24.iotlab",
+      "nodes": [
+        "m3-224.grenoble.iot-lab.info"
+      ]
+    },
+    {
+      "firmwarename": "node_25.iotlab",
+      "nodes": [
+        "m3-225.grenoble.iot-lab.info"
+      ]
+    },
+    {
+      "firmwarename": "node_26.iotlab",
+      "nodes": [
+        "m3-226.grenoble.iot-lab.info"
+      ]
+    },
+    {
+      "firmwarename": "node_27.iotlab",
+      "nodes": [
+        "m3-227.grenoble.iot-lab.info"
+      ]
+    },
+    {
+      "firmwarename": "node_28.iotlab",
+      "nodes": [
+        "m3-228.grenoble.iot-lab.info"
+      ]
+    },
+    {
+      "firmwarename": "node_29.iotlab",
+      "nodes": [
+        "m3-229.grenoble.iot-lab.info"
+      ]
+    },
+    {
+      "firmwarename": "node_30.iotlab",
+      "nodes": [
+        "m3-230.grenoble.iot-lab.info"
+      ]
+    },
+    {
+      "firmwarename": "node_31.iotlab",
+      "nodes": [
+        "m3-215.grenoble.iot-lab.info"
+      ]
+    },
+    {
+      "firmwarename": "node_32.iotlab",
+      "nodes": [
+        "m3-214.grenoble.iot-lab.info"
+      ]
+    },
+    {
+      "firmwarename": "node_33.iotlab",
+      "nodes": [
+        "m3-213.grenoble.iot-lab.info"
+      ]
+    },
+    {
+      "firmwarename": "node_34.iotlab",
+      "nodes": [
+        "m3-212.grenoble.iot-lab.info"
+      ]
+    },
+    {
+      "firmwarename": "node_35.iotlab",
+      "nodes": [
+        "m3-211.grenoble.iot-lab.info"
+      ]
+    },
+    {
+      "firmwarename": "node_36.iotlab",
+      "nodes": [
+        "m3-210.grenoble.iot-lab.info"
+      ]
+    },
+    {
+      "firmwarename": "node_37.iotlab",
+      "nodes": [
+        "m3-209.grenoble.iot-lab.info"
+      ]
+    },
+    {
+      "firmwarename": "node_38.iotlab",
+      "nodes": [
+        "m3-208.grenoble.iot-lab.info"
+      ]
+    },
+    {
+      "firmwarename": "node_39.iotlab",
+      "nodes": [
+        "m3-205.grenoble.iot-lab.info"
+      ]
+    },
+    {
+      "firmwarename": "node_40.iotlab",
+      "nodes": [
+        "m3-203.grenoble.iot-lab.info"
+      ]
+    },
+    {
+      "firmwarename": "sink_openloop.iotlab",
+      "nodes": [
+        "m3-219.grenoble.iot-lab.info"
+      ]
+    }
+  ],
+  "mobilities": null,
+  "name": "ACR-original-kernel-S5r20-41M3-acr_mcr",
+  "nodes": [
+    "m3-197.grenoble.iot-lab.info",
+    "m3-199.grenoble.iot-lab.info",
+    "m3-200.grenoble.iot-lab.info",
+    "m3-201.grenoble.iot-lab.info",
+    "m3-202.grenoble.iot-lab.info",
+    "m3-203.grenoble.iot-lab.info",
+    "m3-204.grenoble.iot-lab.info",
+    "m3-205.grenoble.iot-lab.info",
+    "m3-208.grenoble.iot-lab.info",
+    "m3-209.grenoble.iot-lab.info",
+    "m3-210.grenoble.iot-lab.info",
+    "m3-211.grenoble.iot-lab.info",
+    "m3-212.grenoble.iot-lab.info",
+    "m3-213.grenoble.iot-lab.info",
+    "m3-214.grenoble.iot-lab.info",
+    "m3-215.grenoble.iot-lab.info",
+    "m3-216.grenoble.iot-lab.info",
+    "m3-218.grenoble.iot-lab.info",
+    "m3-219.grenoble.iot-lab.info",
+    "m3-220.grenoble.iot-lab.info",
+    "m3-222.grenoble.iot-lab.info",
+    "m3-223.grenoble.iot-lab.info",
+    "m3-224.grenoble.iot-lab.info",
+    "m3-225.grenoble.iot-lab.info",
+    "m3-226.grenoble.iot-lab.info",
+    "m3-227.grenoble.iot-lab.info",
+    "m3-228.grenoble.iot-lab.info",
+    "m3-229.grenoble.iot-lab.info",
+    "m3-230.grenoble.iot-lab.info",
+    "m3-233.grenoble.iot-lab.info",
+    "m3-234.grenoble.iot-lab.info",
+    "m3-236.grenoble.iot-lab.info",
+    "m3-237.grenoble.iot-lab.info",
+    "m3-239.grenoble.iot-lab.info",
+    "m3-240.grenoble.iot-lab.info",
+    "m3-241.grenoble.iot-lab.info",
+    "m3-290.grenoble.iot-lab.info",
+    "m3-291.grenoble.iot-lab.info",
+    "m3-292.grenoble.iot-lab.info",
+    "m3-293.grenoble.iot-lab.info",
+    "m3-295.grenoble.iot-lab.info"
+  ],
+  "profileassociations": null,
+  "profiles": null,
+  "reservation": null,
+  "siteassociations": null,
+  "type": "physical"
+}

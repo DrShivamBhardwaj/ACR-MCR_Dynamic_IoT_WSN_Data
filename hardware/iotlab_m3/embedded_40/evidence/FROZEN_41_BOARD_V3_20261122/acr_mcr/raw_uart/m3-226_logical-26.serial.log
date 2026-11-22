@@ -1,0 +1,13 @@
+2026-11-22T14:12:15.690366+00:00	MAC_START round=0 type=3 src=41 sender=26 to=0 part=0 bytes=89
+2026-11-22T14:12:15.706160+00:00	MAC_TX round=0 type=3 src=41 sender=26 to=0 part=0 status=0 attempts=1 bytes=89
+2026-11-22T14:12:15.706197+00:00	CTRL_APPLIED round=0 id=26 next=5 probe=41 enabled=1 head=0
+2026-11-22T14:12:15.706225+00:00	MAC_START round=0 type=3 src=41 sender=26 to=0 part=1 bytes=89
+2026-11-22T14:12:15.770321+00:00	MAC_TX round=0 type=3 src=41 sender=26 to=0 part=1 status=0 attempts=1 bytes=89
+2026-11-22T14:12:35.720295+00:00	MAC_START round=1 type=3 src=41 sender=26 to=0 part=0 bytes=89
+2026-11-22T14:12:35.976418+00:00	MAC_TX round=1 type=3 src=41 sender=26 to=0 part=0 status=0 attempts=1 bytes=89
+2026-11-22T14:12:55.702222+00:00	MAC_START round=2 type=3 src=41 sender=26 to=0 part=0 bytes=89
+2026-11-22T14:12:55.733910+00:00	MAC_TX round=2 type=3 src=41 sender=26 to=0 part=0 status=0 attempts=1 bytes=89
+2026-11-22T14:12:55.958384+00:00	CTRL_APPLIED round=2 id=26 next=5 probe=41 enabled=1 head=0
+2026-11-22T14:12:55.958425+00:00	MAC_START round=2 type=3 src=41 sender=26 to=0 part=1 bytes=89
+2026-11-22T14:12:56.006007+00:00	MAC_TX round=2 type=3 src=41 sender=26 to=0 part=1 status=0 attempts=1 bytes=89
+2026-11-22T14:13:00.549585+00:00	ENERGEST_RAW id=26 round=3 cpu=5092 lpm=2780853 deep=0 tx=592 listen=360373 ticks_per_second=32768

@@ -1,0 +1,22 @@
+2026-11-22T14:08:38.086920+00:00	MAC_START round=0 type=3 src=41 sender=13 to=0 part=0 bytes=89
+2026-11-22T14:08:38.102898+00:00	CTRL_APPLIED round=0 id=13 next=30 probe=41 enabled=1 head=0
+2026-11-22T14:08:38.518739+00:00	MAC_TX round=0 type=3 src=41 sender=13 to=0 part=0 status=0 attempts=1 bytes=89
+2026-11-22T14:08:38.518869+00:00	MAC_START round=0 type=3 src=41 sender=13 to=0 part=1 bytes=89
+2026-11-22T14:08:38.534883+00:00	MAC_TX round=0 type=3 src=41 sender=13 to=0 part=1 status=0 attempts=1 bytes=89
+2026-11-22T14:08:44.725973+00:00	MAC_START round=0 type=2 src=13 sender=13 to=41 part=0 bytes=17
+2026-11-22T14:08:44.757990+00:00	MAC_TX round=0 type=2 src=13 sender=13 to=41 part=0 status=0 attempts=1 bytes=17
+2026-11-22T14:08:58.116828+00:00	MAC_START round=1 type=3 src=41 sender=13 to=0 part=0 bytes=89
+2026-11-22T14:08:58.276749+00:00	MAC_TX round=1 type=3 src=41 sender=13 to=0 part=0 status=0 attempts=1 bytes=89
+2026-11-22T14:08:58.372665+00:00	CTRL_APPLIED round=1 id=13 next=30 probe=41 enabled=1 head=0
+2026-11-22T14:08:58.388071+00:00	MAC_START round=1 type=3 src=41 sender=13 to=0 part=1 bytes=89
+2026-11-22T14:08:58.500401+00:00	MAC_TX round=1 type=3 src=41 sender=13 to=0 part=1 status=0 attempts=1 bytes=89
+2026-11-22T14:09:04.724041+00:00	MAC_START round=1 type=2 src=13 sender=13 to=41 part=0 bytes=17
+2026-11-22T14:09:04.803811+00:00	MAC_TX round=1 type=2 src=13 sender=13 to=41 part=0 status=0 attempts=1 bytes=17
+2026-11-22T14:09:18.098195+00:00	MAC_START round=2 type=3 src=41 sender=13 to=0 part=0 bytes=89
+2026-11-22T14:09:18.178325+00:00	MAC_TX round=2 type=3 src=41 sender=13 to=0 part=0 status=0 attempts=1 bytes=89
+2026-11-22T14:09:18.193946+00:00	CTRL_APPLIED round=2 id=13 next=30 probe=41 enabled=1 head=0
+2026-11-22T14:09:18.193993+00:00	MAC_START round=2 type=3 src=41 sender=13 to=0 part=1 bytes=89
+2026-11-22T14:09:18.354340+00:00	MAC_TX round=2 type=3 src=41 sender=13 to=0 part=1 status=0 attempts=1 bytes=89
+2026-11-22T14:09:24.721826+00:00	MAC_START round=2 type=2 src=13 sender=13 to=41 part=0 bytes=17
+2026-11-22T14:09:24.785639+00:00	MAC_TX round=2 type=2 src=13 sender=13 to=41 part=0 status=0 attempts=1 bytes=17
+2026-11-22T14:09:33.137004+00:00	ENERGEST_RAW id=13 round=3 cpu=26636 lpm=2759309 deep=0 tx=858 listen=948520 ticks_per_second=32768

@@ -1,0 +1,93 @@
+{
+  "status": "BOTH_INCOMPLETE_NOT_ELIGIBLE_FOR_INDEPENDENT_COMPARISON",
+  "original_method_cores_pass": true,
+  "source_sha256": "3f134a8826525215f7cf2ff307bab3893c0d64b050f742bdc3c250b1c0302ea4",
+  "attempts": [
+    {
+      "method": "POINT-EA",
+      "experiment": 459586,
+      "session_name": 459586,
+      "original_source_sha256": "3f134a8826525215f7cf2ff307bab3893c0d64b050f742bdc3c250b1c0302ea4",
+      "fixture_id": "POINT-EA_9401_S5_r20",
+      "firmware_sha256": "711dec50b8d6d1dc7af0a9f754bc21541152ee6a71434ff3746557a98e7c2ccc",
+      "kernel_checked": true,
+      "onboard_kernel_pass": true,
+      "status": "INCOMPLETE_OR_INVALID",
+      "audit_issues": [
+        "Missing serial boards [(14, 291)]",
+        "Not all physical 41 sources captured"
+      ],
+      "physical_41_board_uart_count": 40,
+      "registered_nominal_sources": 40,
+      "registered_rounds": 3,
+      "nominal_source_round_demand": 120,
+      "real_control_installations": 117,
+      "real_data_demand_logs": 42,
+      "full_byte_verified_500B_sink_deliveries": 33,
+      "observed_full_500B_pdr_over_nominal": 0.275,
+      "energest_motes_captured": 39,
+      "energest_total_motes": 41,
+      "missing_or_duplicate_energest": [
+        31
+      ],
+      "actual_sink_uart_sha256": "cd376151fe5f5b6773055c727b4c8710b6d14cd7f58f4c07f368604dcb873792",
+      "physical_endpoint_500ms_deadline_measured": false,
+      "full_closed_loop_adaptive_algorithm": false,
+      "frozen_synthetic_fixture": true,
+      "onboard_kernel_result": [
+        "POINT-EA_9401_S5_r20",
+        "0",
+        "6,14,25,30",
+        "342472",
+        "21",
+        "15",
+        "100",
+        "40"
+      ],
+      "limitations": "One three-round 41-M3 session using original synthetic frozen RNG/edge/stress input, original risk or point C kernel only; NO physical feedback-driven conformal state update. No independent seed-block statistics. No synchronized 500ms deadlines. Energy data not equivalent to host CPU energy."
+    },
+    {
+      "method": "ACR-MCR",
+      "experiment": 459587,
+      "session_name": 459587,
+      "original_source_sha256": "3f134a8826525215f7cf2ff307bab3893c0d64b050f742bdc3c250b1c0302ea4",
+      "fixture_id": "ACR-MCR_9401_S5_r20",
+      "firmware_sha256": "b85102de08a40cd67a69126d9b22a4eda406e1fdec93f0af51f9866627a08544",
+      "kernel_checked": true,
+      "onboard_kernel_pass": true,
+      "status": "INCOMPLETE_OR_INVALID",
+      "audit_issues": [
+        "Missing serial boards [(14, 291)]",
+        "Not all physical 41 sources captured"
+      ],
+      "physical_41_board_uart_count": 40,
+      "registered_nominal_sources": 40,
+      "registered_rounds": 3,
+      "nominal_source_round_demand": 120,
+      "real_control_installations": 78,
+      "real_data_demand_logs": 0,
+      "full_byte_verified_500B_sink_deliveries": 0,
+      "observed_full_500B_pdr_over_nominal": 0.0,
+      "energest_motes_captured": 39,
+      "energest_total_motes": 41,
+      "missing_or_duplicate_energest": [
+        31
+      ],
+      "actual_sink_uart_sha256": "9da6075b42ecb89040958a64a828ace9d2a7b90090f0f3b9402b77074607051e",
+      "physical_endpoint_500ms_deadline_measured": false,
+      "full_closed_loop_adaptive_algorithm": false,
+      "frozen_synthetic_fixture": true,
+      "onboard_kernel_result": [
+        "ACR-MCR_9401_S5_r20",
+        "1",
+        "5,8,10,24",
+        "575793",
+        "45",
+        "289",
+        "100",
+        "40"
+      ],
+      "limitations": "One three-round 41-M3 session using original synthetic frozen RNG/edge/stress input, original risk or point C kernel only; NO physical feedback-driven conformal state update. No independent seed-block statistics. No synchronized 500ms deadlines. Energy data not equivalent to host CPU energy."
+    }
+  ]
+}

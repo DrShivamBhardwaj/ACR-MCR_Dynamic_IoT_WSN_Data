@@ -1,0 +1,28 @@
+2026-11-22T14:08:35.787169+00:00	Platform starting in 1...
+2026-11-22T14:08:35.787334+00:00	GO!
+2026-11-22T14:08:35.787399+00:00	[in clock_init() DEBUG] Starting systick timer at 100Hz
+2026-11-22T14:08:35.787449+00:00	[INFO: Main      ] Starting Contiki-NG-20c6bb8-dirty
+2026-11-22T14:08:35.787496+00:00	[INFO: Main      ] - Routing: nullrouting
+2026-11-22T14:08:35.787542+00:00	[INFO: Main      ] - Net: nullnet
+2026-11-22T14:08:35.787582+00:00	[INFO: Main      ] - MAC: CSMA
+2026-11-22T14:08:35.787623+00:00	[INFO: Main      ] - 802.15.4 PANID: 0xabcd
+2026-11-22T14:08:35.787662+00:00	[INFO: Main      ] - 802.15.4 Default channel: 26
+2026-11-22T14:08:35.802876+00:00	[INFO: Main      ] Node ID: 37237
+2026-11-22T14:08:35.803005+00:00	[INFO: Main      ] Link-layer address: 0200.0000.0000.9175
+2026-11-22T14:08:35.803065+00:00	[INFO: IoT-LAB   ] Target: iotlab, board: m3
+2026-11-22T14:08:35.803115+00:00	M3_TRANSPORT_BOOT id=31 site=fixed_cluster algorithm=NONE seed=8701 method=0 scenario=1 rounds=3 app_bytes=500 fragments=8 ctrl_over_radio=1
+2026-11-22T14:08:38.090381+00:00	MAC_START round=0 type=3 src=41 sender=31 to=0 part=0 bytes=89
+2026-11-22T14:08:38.106210+00:00	CTRL_APPLIED round=0 id=31 next=25 probe=41 enabled=1 head=0
+2026-11-22T14:08:38.330521+00:00	MAC_TX round=0 type=3 src=41 sender=31 to=0 part=0 status=0 attempts=1 bytes=89
+2026-11-22T14:08:38.330651+00:00	MAC_START round=0 type=3 src=41 sender=31 to=0 part=1 bytes=89
+2026-11-22T14:08:38.346383+00:00	MAC_TX round=0 type=3 src=41 sender=31 to=0 part=1 status=0 attempts=1 bytes=89
+2026-11-22T14:08:58.120107+00:00	MAC_START round=1 type=3 src=41 sender=31 to=0 part=0 bytes=89
+2026-11-22T14:08:58.375976+00:00	CTRL_APPLIED round=1 id=31 next=25 probe=41 enabled=1 head=0
+2026-11-22T14:08:58.488316+00:00	MAC_TX round=1 type=3 src=41 sender=31 to=0 part=0 status=0 attempts=1 bytes=89
+2026-11-22T14:08:58.488475+00:00	MAC_START round=1 type=3 src=41 sender=31 to=0 part=1 bytes=89
+2026-11-22T14:08:58.648225+00:00	MAC_TX round=1 type=3 src=41 sender=31 to=0 part=1 status=0 attempts=1 bytes=89
+2026-11-22T14:09:18.101894+00:00	MAC_START round=2 type=3 src=41 sender=31 to=0 part=0 bytes=89
+2026-11-22T14:09:18.101967+00:00	MAC_TX round=2 type=3 src=41 sender=31 to=0 part=0 status=0 attempts=1 bytes=89
+2026-11-22T14:09:18.181721+00:00	CTRL_APPLIED round=2 id=31 next=25 probe=41 enabled=1 head=0
+2026-11-22T14:09:18.197593+00:00	MAC_START round=2 type=3 src=41 sender=31 to=0 part=1 bytes=89
+2026-11-22T14:09:18.406104+00:00	MAC_TX round=2 type=3 src=41 sender=31 to=0 part=1 status=0 attempts=1 bytes=89
