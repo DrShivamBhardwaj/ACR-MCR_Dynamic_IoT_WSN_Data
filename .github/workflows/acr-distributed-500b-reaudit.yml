@@ -1,0 +1,87 @@
+name: ACR-MCR Independent Trace Reaudit without Resimulation
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  actions: read
+
+concurrency:
+  group: acr-distributed-500b-reaudit
+  cancel-in-progress: false
+
+jobs:
+  check-original-traces:
+    runs-on: ubuntu-latest
+    timeout-minutes: 165
+    env:
+      GH_TOKEN: ${{ github.token }}
+      REFERENCE_RUN: '45005314706'
+      REFERENCE_REPO: 'DrShivamBhardwaj/ACR-MCR_Dynamic_IoT_WSN_Data'
+      OPENBLAS_NUM_THREADS: '1'
+      OMP_NUM_THREADS: '1'
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+      - run: python -m pip install -r requirements.txt
+      - name: Require the original 40-case simulation to finish first
+        shell: bash
+        run: |
+          set -euo pipefail
+          for COUNT in $(seq 1 130); do
+            STATUS=$(gh api "repos/${REFERENCE_REPO}/actions/runs/${REFERENCE_RUN}" --jq .status)
+            echo "Original run ${REFERENCE_RUN} status ${STATUS} check ${COUNT}"
+            if [ "$STATUS" = "completed" ]; then
+              exit 0
+            fi
+            sleep 45
+          done
+          echo "Original run did not finish within bounded wait" >&2
+          exit 1
+      - name: Download original 40 raw trace artifacts, including failed-audit cases
+        uses: actions/download-artifact@v4
+        with:
+          run-id: 45005314706
+          github-token: ${{ github.token }}
+          pattern: distributed-*
+          path: traces
+          merge-multiple: false
+      - name: Recheck exactly 40 raw Cooja traces with corrected unique-control auditor
+        shell: bash
+        run: |
+          set -euo pipefail
+          python - <<'PY'
+          import json,pathlib,subprocess,gzip
+          root=pathlib.Path("traces")
+          dirs=sorted(p for p in root.glob("distributed-*") if p.is_dir())
+          assert len(dirs)==40,f"Expected 40 raw seed/method cells, found {len(dirs)}"
+          for d in dirs:
+              gz=d/"COOJA.testlog.gz"
+              plain=d/"COOJA.testlog"
+              if gz.is_file() and not plain.is_file():
+                  with gzip.open(gz,"rb") as source,plain.open("wb") as dest:
+                      import shutil;shutil.copyfileobj(source,dest)
+              meta=json.loads((d/"controller.summary.json").read_text())
+              cmd=["python","packet_validation/audit_distributed.py",
+                   "--run-dir",str(d),"--method",meta["method"],
+                   "--scenario",meta["scenario"],"--seed",str(meta["seed"]),
+                   "--rounds","160","--out",str(d/"distributed_audit.json")]
+              subprocess.run(cmd,check=True)
+          print("AUDIT_PASS 40/40 original packet traces (no simulation reruns)")
+          PY
+      - name: Registered two-endpoint seed-paired confidence intervals
+        run: |
+          python packet_validation/analyze_distributed_matrix.py \
+            --source traces --out distributed_500byte_reaudited_confirmation.json
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: acr-500byte-controller-40-run-reaudit
+          path: |
+            distributed_500byte_reaudited_confirmation.json
+            distributed_500byte_reaudited_confirmation.csv
+          if-no-files-found: warn
+          retention-days: 21
