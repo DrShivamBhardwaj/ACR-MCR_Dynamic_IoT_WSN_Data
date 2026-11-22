@@ -66,3 +66,18 @@ comparison and synchronized deadline inference: **[NEED SOURCE]**.
 
 Do not combine Cooja, physical 2-board power or host CPU timing into a
 fabricated 40-node real energy-per-delivered-sample result.
+
+
+## Mandated post-audit correction, 20:50 IST, 22 Nov 2026
+
+Historical frozen on-M3 41-board tests 459594/459595 and
+459600/459602 had firmware deployment code **1** on physical
+M3-215 (logical head31), with only 40/41 boards reporting flash
+success, despite 41 readable UART files. Prior descriptions of
+41-board physical complete kernel validation are superseded.
+The original outcomes and records remain archived as
+engineering diagnostics, not valid 41-board performance
+comparisons. The V6 experimental protocol substitutes M3-196
+and requires 41/41 flash-success status before endpoint
+evaluation. The original closed-loop adaptive algorithm remains
+incomplete, and no M1 electrical Joules are measured.
