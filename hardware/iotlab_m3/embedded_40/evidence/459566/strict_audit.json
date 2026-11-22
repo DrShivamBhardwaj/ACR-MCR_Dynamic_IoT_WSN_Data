@@ -1,0 +1,31 @@
+{
+  "status": "PASS_TRANSPORT_ONLY",
+  "experiment": 459566,
+  "physical_boards": {
+    "14": "source1/head",
+    "15": "source2/relay_via1",
+    "18": "sink41"
+  },
+  "unique_verified_500B_samples": 6,
+  "expected_source_rounds": 6,
+  "control_installations": {
+    "14": 3,
+    "15": 3
+  },
+  "physical_hop2_source2_via_source1_MAC_success": 24,
+  "physical_source1_data_to_sink_MAC_success": 24,
+  "physical_source2_to_source1_MAC_success": 24,
+  "control_broadcast_MAC_success": 6,
+  "energest_records": {
+    "14": 1,
+    "15": 1,
+    "18": 1
+  },
+  "source_code": "Static four-head sink plan; ACR-MCR optimizer NOT implemented on M3.",
+  "calibrated_latency_500ms": false,
+  "file_sha256": {
+    "m3-14.log": "8b3dbef9cd83a659603638c153d48d21136795c99e96110c54c0e2ae48a57f89",
+    "m3-15.log": "e9b0611cc7cdc57804969dd6c55299e426a751cc6c8f1f6893e264612783fd65",
+    "m3-18.log": "dd3b25b64d47b722b7bad861c41f0757d301b3c6ef8d89efd34813837e9758f4"
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "experiment": 459566,
+  "site": "Grenoble",
+  "physical_boards": [
+    14,
+    15,
+    18
+  ],
+  "logical_roles": {
+    "14": 1,
+    "15": 2,
+    "18": 41
+  },
+  "source_code": "native M3 fixed cluster/radio transport, NOT original adaptive ACR-MCR",
+  "sink_reported_done": true,
+  "per_board": {
+    "14": {
+      "lines": 121,
+      "boot": 0,
+      "control_applied": 3,
+      "reassembled": 0,
+      "mac": 57,
+      "energest": 1
+    },
+    "15": {
+      "lines": 73,
+      "boot": 0,
+      "control_applied": 3,
+      "reassembled": 0,
+      "mac": 33,
+      "energest": 1
+    },
+    "18": {
+      "lines": 30,
+      "boot": 0,
+      "control_applied": 0,
+      "reassembled": 6,
+      "mac": 6,
+      "energest": 1
+    }
+  },
+  "errors": [],
+  "capture_duration_s": 84.018
+}
