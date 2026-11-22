@@ -1,0 +1,11 @@
+{
+  "experiment": 459573,
+  "source": "actual Grenoble m3-14 UART",
+  "lines": [
+    "OPT_KERNEL_RESULT fixture=POINT-EA_9401_S1_r20 rc=0 PASS=1 heads=4,7,9,23 objective_micro=335881 expected_micro=335881 absolute_error_nanounits=18 cpu_wall_ticks=15 clock_hz=100 tail=0",
+    "OPT_KERNEL_ENERGEST fixture=POINT-EA_9401_S1_r20 cpu=5674 lpm=491331 tx=0 listen=38231 hz=32768",
+    "OPT_KERNEL_DONE fixture=POINT-EA_9401_S1_r20 PASS=1"
+  ],
+  "complete": true,
+  "time_elapsed_s": 47.614090805873275
+}

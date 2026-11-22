@@ -1,0 +1,29 @@
+{
+  "associations": null,
+  "duration": 10,
+  "firmwareassociations": [
+    {
+      "firmwarename": "firmware.iotlab",
+      "nodes": [
+        "m3-14.grenoble.iot-lab.info"
+      ]
+    }
+  ],
+  "mobilities": null,
+  "name": "ACR-native-M3-POINTEA-CVaR-kernel-9401",
+  "nodes": [
+    "m3-14.grenoble.iot-lab.info"
+  ],
+  "profileassociations": [
+    {
+      "nodes": [
+        "m3-14.grenoble.iot-lab.info"
+      ],
+      "profilename": "acr_m3_active_power_20261122"
+    }
+  ],
+  "profiles": null,
+  "reservation": null,
+  "siteassociations": null,
+  "type": "physical"
+}

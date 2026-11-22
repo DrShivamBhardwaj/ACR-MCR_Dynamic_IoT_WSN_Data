@@ -1,0 +1,3 @@
+2026-11-22T13:08:49.520946+00:00	OPT_KERNEL_RESULT fixture=ACR-MCR_9401_S1_r20 rc=0 PASS=1 heads=4,7,9,23 objective_micro=485829 expected_micro=485829 absolute_error_nanounits=10 cpu_wall_ticks=295 clock_hz=100 tail=1
+2026-11-22T13:08:49.521294+00:00	OPT_KERNEL_ENERGEST fixture=ACR-MCR_9401_S1_r20 cpu=32061 lpm=491333 tx=0 listen=64620 hz=32768
+2026-11-22T13:08:54.527898+00:00	OPT_KERNEL_DONE fixture=ACR-MCR_9401_S1_r20 PASS=1

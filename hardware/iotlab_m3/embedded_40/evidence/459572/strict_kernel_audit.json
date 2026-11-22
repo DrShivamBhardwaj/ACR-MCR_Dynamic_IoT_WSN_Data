@@ -1,0 +1,26 @@
+{
+  "hardware": "Grenoble FIT IoT-LAB M3-14 real Cortex-M3",
+  "experiment": 459572,
+  "method": "ACR-MCR",
+  "verification": "PASS_HARDWARE_DECISION_PARITY",
+  "original_synthetic_reference_fixture": "ACR-MCR_9401_S1_r20",
+  "source_original_sha256": "3f134a8826525215f7cf2ff307bab3893c0d64b050f742bdc3c250b1c0302ea4",
+  "actual_binary_sha256": "7bd41494f537752ebd8c1f63b66b3932ba5eefa70faad162fc6beb21e052b94d",
+  "selected_head_ids": [
+    4,
+    7,
+    9,
+    23
+  ],
+  "python_objective": 0.4858285552310888,
+  "observed_m3_objective_micro": 485829,
+  "m3_absolute_objective_error_nano": 10,
+  "observed_m3_controller_wall_s": 2.95,
+  "m3_energest_line": "2026-11-22T13:08:49.521294+00:00\tOPT_KERNEL_ENERGEST fixture=ACR-MCR_9401_S1_r20 cpu=32061 lpm=491333 tx=0 listen=64620 hz=32768",
+  "complete_uart_sha256": "9bebf90272f6834d8df5fa06ca4549738a5f3cd968359c1ce49976f7d1f1dc5e",
+  "raw_power_oml_sha256": "7778bf924e35f56787f08e2708c417821ae3fb7120b7fba12cdc330efa7394f4",
+  "validated_M3_total_supply_energy": null,
+  "insufficient_OML_reason": "Missing original consumption schema or insufficient samples /Users/shivambhardwaj/research/ACR_MCR_Recovery_20261122/logs/m3_optimizer_kernel_20261122/m3fixture_acr_mcr/m3_14.oml (19)",
+  "calibrated_Apple_M1_host_electrical_J": null,
+  "scientific_bound": "Frozen synthetic data and NumPy RNG trace in FLASH, not a real 40-node closed-loop ACR-MCR controller. One physical board and one fixture per method are not independent generalisation trials."
+}

@@ -1,0 +1,47 @@
+{
+  "effective_duration": 0,
+  "firmwareassociations": [
+    {
+      "firmwarename": "8e4e1af67b866419e4020b659ca3c00e_firmware.iotlab",
+      "nodes": [
+        "m3-14.grenoble.iot-lab.info"
+      ]
+    }
+  ],
+  "id": 459573,
+  "name": "ACR-native-M3-POINTEA-CVaR-kernel-9401",
+  "nb_nodes": 1,
+  "nodes": [
+    "m3-14.grenoble.iot-lab.info"
+  ],
+  "profileassociations": [
+    {
+      "nodes": [
+        "m3-14.grenoble.iot-lab.info"
+      ],
+      "profilename": "acr_m3_active_power_20261122"
+    }
+  ],
+  "profiles": {
+    "acr_m3_active_power_20261122": {
+      "consumption": {
+        "average": 128,
+        "current": true,
+        "period": 8244,
+        "power": true,
+        "voltage": true
+      },
+      "nodearch": "m3",
+      "power": "dc",
+      "profilename": "acr_m3_active_power_20261122"
+    }
+  },
+  "scheduled_date": "2026-11-22T13:13:13Z",
+  "start_date": "2026-11-22T13:13:13Z",
+  "state": "Running",
+  "stop_date": "1970-01-01T00:00:00Z",
+  "submission_date": "2026-11-22T13:13:11Z",
+  "submitted_duration": 10,
+  "type": "physical",
+  "user": "sbhardwa"
+}

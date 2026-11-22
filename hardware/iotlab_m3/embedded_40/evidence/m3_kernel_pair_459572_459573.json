@@ -1,0 +1,15 @@
+{
+  "status": "PASS_PAIRED_M3_KERNEL_PARITY",
+  "hardware_session_count": 2,
+  "independent_seed_blocks": 1,
+  "both_firmware_sources_verified": true,
+  "controlled_by_original_python_input": true,
+  "risk_method_m3_seconds": 2.95,
+  "point_method_m3_seconds": 0.15,
+  "observed_difference_m3_seconds": 2.8000000000000003,
+  "observed_decision_kernel_ratio": 19.666666666666668,
+  "valid_paired_statistical_service_effect": false,
+  "original_full_controller_physical_baseline": false,
+  "host_mac_joules_measured": false,
+  "physical_m3_device_joules_validated": false
+}
