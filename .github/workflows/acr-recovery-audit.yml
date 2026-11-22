@@ -9,6 +9,7 @@ on:
       - 'analyze_study.py'
       - 'test_mechanisms.py'
       - 'PROTOCOL.md'
+      - 'tools/telemetry_tradeoff.py'
       - 'MODEL.md'
       - '.github/workflows/acr-recovery-audit.yml'
   schedule:
@@ -41,6 +42,8 @@ jobs:
         run: python tools/recovery_gate.py
       - name: Execute mechanism verification suite
         run: python test_mechanisms.py
+      - name: Audit frozen S5 probe-budget cost and service relationship
+        run: python tools/telemetry_tradeoff.py
       - name: Recompute analyses without changing released inference
         run: |
           python analyze_study.py
