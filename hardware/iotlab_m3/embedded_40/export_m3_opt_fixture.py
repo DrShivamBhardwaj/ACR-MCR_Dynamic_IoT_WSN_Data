@@ -27,6 +27,7 @@ def main():
     p.add_argument("--seed",type=int,default=9401)
     p.add_argument("--scenario",choices=("S1","S5"),default="S1")
     p.add_argument("--round",type=int,default=20)
+    p.add_argument("--tag",default="")
     args=p.parse_args()
     s=Simulator(args.seed,args.scenario,args.method,Config(nodes=40,rounds=45))
     for t in range(args.round+1):
@@ -49,7 +50,7 @@ def main():
           np.maximum(1.,ref.delay_pred[None]+ref.delay_scale[None]*scores[idx][...,1]),
           atol=0,rtol=1e-14)
         if len(scores)>512:raise ValueError("Score index exceeds 9-bit storage")
-    name="m3fixture_"+args.method.replace("-","_").lower()
+    name="m3fixture_"+args.method.replace("-","_").lower()+("_"+args.tag if args.tag else "")
     out=HERE/"m3_kernel_fixtures"/name
     out.mkdir(exist_ok=True,parents=True)
     arrays={
