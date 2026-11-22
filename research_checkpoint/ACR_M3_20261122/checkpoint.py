@@ -78,6 +78,26 @@ def proof(stage):
               BASE/'41_firmware_manifest_v6.json',BASE/'41node_physical_layout_v6.json']
         result={'experiment':459607,'flash_ok':41,'UART':41,'energest':41,'full_500B':47,
                 'denominator':120,'scope':'single frozen original seed, packet-only hardware feasibility, not real adaptive closed loop'}
+    elif stage=='host_m1_apple_cpu_power_estimate':
+        p=REPO/'host_energy/authorized_m1_power_runs/20261122T161647Z'
+        f=p/'independent_interval_power_verification.json'
+        x=read(f)
+        assert x['status']=='PASS_6_ROOT_POWER_TRACES_WITH_EXPLICIT_SCIENTIFIC_LIMITS'
+        assert x['original_sha256']==SHA_ORIGINAL and x['independent_trace_count']==6
+        assert x['workload_cases_each_method']==200
+        assert x['sampled_while_euid_root'] is True
+        assert x['original_cpu_subsystem_power_is_estimated'] is True
+        assert x['calibrated_wallplug_J'] is None and x['actual_electricity_meter_used'] is False
+        q=read(p/'independent_file_sha256.json')
+        for name,hashvalue in q.items():
+            assert digest(p/name)==hashvalue,('POWER_RAW_CHANGED',name)
+        assert len(q)==16
+        e += [f,p/'registration.json',p/'independent_file_sha256.json',
+              REPO/'host_energy/verify_power_independent.py']
+        result={'root_sampling':'CONFIRMED','raw_power_traces':6,'full_cases_per_method':200,
+            'point_estimated_cpu_J_per_full_sim_case':x['by_method']['POINT-EA']['mean_estimated_cpu_J_per_simulator_case'],
+            'acr_estimated_cpu_J_per_full_sim_case':x['by_method']['ACR-MCR']['mean_estimated_cpu_J_per_simulator_case'],
+            'scope':'Apple aggregate CPU subsystem estimate, NOT host optimizer-only calibrated electrical energy'}
     elif stage=='m3_v7_risk_flash_pass':
         p=BASE/'evidence/FROZEN_41_BOARD_SEED9402_V7_ACR_ONLY_20261122/acr_mcr'
         f=p/'deployment.json';g=p/'reservation.json'
