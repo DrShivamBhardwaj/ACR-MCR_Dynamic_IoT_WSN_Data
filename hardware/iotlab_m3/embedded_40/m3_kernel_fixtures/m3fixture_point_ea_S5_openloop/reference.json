@@ -20,5 +20,7 @@
   "tail_risk_enabled": false,
   "frozen_risk_index_tensor_9bit": 0,
   "fixture_h_sha256": "a59dfcadb868d28b04676296951b783b879428ff4a065f0316805445cbf17645",
-  "interpretation": "Original NumPy candidate and risk-index sequences are frozen in firmware FLASH. This tests M3 deterministic decision kernel only."
+  "interpretation": "Original NumPy candidate and risk-index sequences are frozen in firmware FLASH. This tests M3 deterministic decision kernel only.",
+  "physical_sink_firmware_sha256": "711dec50b8d6d1dc7af0a9f754bc21541152ee6a71434ff3746557a98e7c2ccc",
+  "physical_sink_firmware_bytes": 766496
 }
