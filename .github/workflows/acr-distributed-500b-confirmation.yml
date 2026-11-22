@@ -1,0 +1,249 @@
+name: ACR-MCR Radio Control and 500B Fragmentation Confirmation
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+concurrency:
+  group: acr-distributed-radio-500bytes
+  cancel-in-progress: false
+
+jobs:
+  pilot:
+    strategy:
+      fail-fast: false
+      max-parallel: 2
+      matrix:
+        method: [POINT-EA, ACR-MCR]
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    env:
+      OPENBLAS_NUM_THREADS: '1'
+      OMP_NUM_THREADS: '1'
+      MKL_NUM_THREADS: '1'
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          path: data
+      - uses: actions/checkout@v4
+        with:
+          repository: contiki-ng/contiki-ng
+          ref: 4ccd1a3b9e767f168d12ec3df187fe6b7dc736b5
+          submodules: recursive
+          path: contiki-ng
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+          cache-dependency-path: data/requirements.txt
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '25'
+      - uses: gradle/actions/setup-gradle@v4
+      - name: Install project dependencies
+        run: |
+          python -m pip install -r data/requirements.txt
+          sudo apt-get update -qq
+          sudo apt-get install -y --no-install-recommends gcc g++ make
+      - name: Pin upstream GCC compatibility and assemble sample
+        shell: bash
+        run: |
+          set -euo pipefail
+          python data/tools/recovery_gate.py
+          python - <<'PY'
+          from pathlib import Path
+          p=Path('contiki-ng/os/services/shell/shell.c')
+          s=p.read_text()
+          old="    args = strchr(cmd, ' ');"
+          assert s.count(old)==1
+          p.write_text(s.replace(old,"    args = (char *)strchr(cmd, ' ');"))
+          PY
+          git -C contiki-ng diff --check
+          mkdir -p generated contiki-ng/examples/acr_mcr_transport
+          cp data/packet_validation/acr_40_distributed_transport.c contiki-ng/examples/acr_mcr_transport/
+          cp data/packet_validation/Makefile.distributed contiki-ng/examples/acr_mcr_transport/Makefile
+          python data/packet_validation/generate_positions.py \
+            --seed 9051 --scenario S1 --out generated/positions.json
+          python data/packet_validation/generate_distributed_csc.py \
+            --template contiki-ng/tests/07-simulation-base/05-nullnet-unicast.csc \
+            --positions generated/positions.json \
+            --method '${{ matrix.method }}' --seed 9051 --scenario S1 --rounds 16 \
+            --python "$(command -v python)" \
+            --controller-script "$GITHUB_WORKSPACE/data/packet_validation/distributed_controller.py" \
+            --workdir "$GITHUB_WORKSPACE/data" \
+            --output-log "$GITHUB_WORKSPACE/generated/controller.jsonl" \
+            --stderr-log "$GITHUB_WORKSPACE/generated/controller_stderr.log" \
+            --rx-success 0.94 --radio-range 78 \
+            --out contiki-ng/tests/radio_500.csc
+          cp contiki-ng/tests/radio_500.csc generated/radio_500.csc
+      - name: Run 16-round pilot with 500B reassembly
+        shell: bash
+        run: |
+          set -euo pipefail
+          cd contiki-ng/tools/cooja
+          rm -f COOJA.testlog
+          set +e
+          ./gradlew --no-daemon run --args='--no-gui ../../tests/radio_500.csc' \
+            2>&1 | tee "$GITHUB_WORKSPACE/generated/cooja_build.log"
+          STATUS=${PIPESTATUS[0]}
+          set -e
+          if test -f COOJA.testlog; then
+            cp COOJA.testlog "$GITHUB_WORKSPACE/generated/COOJA.testlog"
+            tail -9 COOJA.testlog
+          fi
+          if test "$STATUS" -ne 0; then exit "$STATUS"; fi
+          python "$GITHUB_WORKSPACE/data/packet_validation/audit_distributed.py" \
+            --run-dir "$GITHUB_WORKSPACE/generated" \
+            --method '${{ matrix.method }}' --scenario S1 --seed 9051 \
+            --rounds 16 --out "$GITHUB_WORKSPACE/generated/distributed_audit.json"
+          gzip -9 "$GITHUB_WORKSPACE/generated/COOJA.testlog"
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: radio-500-pilot-${{ matrix.method }}
+          path: generated/
+          retention-days: 10
+          if-no-files-found: warn
+
+  independent-confirmation:
+    needs: pilot
+    if: needs.pilot.result == 'success'
+    strategy:
+      fail-fast: false
+      max-parallel: 4
+      matrix:
+        seed: [9201, 9202, 9203, 9204, 9205, 9206, 9207, 9208, 9209, 9210]
+        scenario: [S1, S5]
+        method: [POINT-EA, ACR-MCR]
+    runs-on: ubuntu-latest
+    timeout-minutes: 180
+    env:
+      OPENBLAS_NUM_THREADS: '1'
+      OMP_NUM_THREADS: '1'
+      MKL_NUM_THREADS: '1'
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          path: data
+      - uses: actions/checkout@v4
+        with:
+          repository: contiki-ng/contiki-ng
+          ref: 4ccd1a3b9e767f168d12ec3df187fe6b7dc736b5
+          submodules: recursive
+          path: contiki-ng
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+          cache-dependency-path: data/requirements.txt
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '25'
+      - uses: gradle/actions/setup-gradle@v4
+      - name: Install pinned scientific environment
+        run: |
+          python -m pip install -r data/requirements.txt
+          sudo apt-get update -qq
+          sudo apt-get install -y --no-install-recommends gcc g++ make
+      - name: Export geometry and compile real radio protocol
+        shell: bash
+        run: |
+          set -euo pipefail
+          python data/tools/recovery_gate.py
+          python - <<'PY'
+          from pathlib import Path
+          p=Path('contiki-ng/os/services/shell/shell.c')
+          s=p.read_text()
+          old="    args = strchr(cmd, ' ');"
+          assert s.count(old)==1
+          p.write_text(s.replace(old,"    args = (char *)strchr(cmd, ' ');"))
+          PY
+          git -C contiki-ng diff --check
+          mkdir -p generated contiki-ng/examples/acr_mcr_transport
+          cp data/packet_validation/acr_40_distributed_transport.c contiki-ng/examples/acr_mcr_transport/
+          cp data/packet_validation/Makefile.distributed contiki-ng/examples/acr_mcr_transport/Makefile
+          python data/packet_validation/generate_positions.py \
+            --seed '${{ matrix.seed }}' --scenario '${{ matrix.scenario }}' \
+            --out generated/positions.json
+          RX=0.94
+          if [ '${{ matrix.scenario }}' = S5 ]; then RX=0.82;fi
+          python data/packet_validation/generate_distributed_csc.py \
+            --template contiki-ng/tests/07-simulation-base/05-nullnet-unicast.csc \
+            --positions generated/positions.json \
+            --method '${{ matrix.method }}' \
+            --seed '${{ matrix.seed }}' --scenario '${{ matrix.scenario }}' \
+            --rounds 160 --python "$(command -v python)" \
+            --controller-script "$GITHUB_WORKSPACE/data/packet_validation/distributed_controller.py" \
+            --workdir "$GITHUB_WORKSPACE/data" \
+            --output-log "$GITHUB_WORKSPACE/generated/controller.jsonl" \
+            --stderr-log "$GITHUB_WORKSPACE/generated/controller_stderr.log" \
+            --rx-success "$RX" --radio-range 78 \
+            --out contiki-ng/tests/radio_500.csc
+          cp contiki-ng/tests/radio_500.csc generated/radio_500.csc
+      - name: Execute 160-round packet/telemetry study
+        shell: bash
+        run: |
+          set -euo pipefail
+          cd contiki-ng/tools/cooja
+          RESULT=1
+          for ATTEMPT in 1 2 3; do
+            rm -f COOJA.testlog
+            rm -f "$GITHUB_WORKSPACE/generated/controller.jsonl" "$GITHUB_WORKSPACE/generated/controller.summary.json"
+            set +e
+            ./gradlew --no-daemon run --args='--no-gui ../../tests/radio_500.csc' \
+              2>&1 | tee "$GITHUB_WORKSPACE/generated/cooja_attempt_${ATTEMPT}.log"
+            RESULT=${PIPESTATUS[0]}
+            set -e
+            if [ "$RESULT" -eq 0 ];then break;fi
+            if [ "$ATTEMPT" -lt 3 ] && grep -Eiq 'status code 429|Too Many Requests|HTTP 429' \
+              "$GITHUB_WORKSPACE/generated/cooja_attempt_${ATTEMPT}.log";then
+              sleep $((ATTEMPT*35))
+            else exit "$RESULT";fi
+          done
+          cp COOJA.testlog "$GITHUB_WORKSPACE/generated/COOJA.testlog"
+          python "$GITHUB_WORKSPACE/data/packet_validation/audit_distributed.py" \
+            --run-dir "$GITHUB_WORKSPACE/generated" \
+            --method '${{ matrix.method }}' \
+            --scenario '${{ matrix.scenario }}' \
+            --seed '${{ matrix.seed }}' --rounds 160 \
+            --out "$GITHUB_WORKSPACE/generated/distributed_audit.json"
+          gzip -9 "$GITHUB_WORKSPACE/generated/COOJA.testlog"
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: distributed-${{ matrix.scenario }}-seed${{ matrix.seed }}-${{ matrix.method }}
+          path: generated/
+          retention-days: 21
+          if-no-files-found: warn
+
+  paired-analysis:
+    needs: independent-confirmation
+    if: always() && needs.independent-confirmation.result == 'success'
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+      - run: python -m pip install -r requirements.txt
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: distributed-*
+          path: distributed_collected
+          merge-multiple: false
+      - name: All 40 cells, ten paired independent seeds, two Holm-corrected outcomes
+        run: |
+          python packet_validation/analyze_distributed_matrix.py \
+            --source distributed_collected \
+            --out distributed_500byte_confirmation.json
+      - uses: actions/upload-artifact@v4
+        with:
+          name: acr-500byte-overair-control-independent-confirmation
+          path: |
+            distributed_500byte_confirmation.json
+            distributed_500byte_confirmation.csv
+          retention-days: 21
