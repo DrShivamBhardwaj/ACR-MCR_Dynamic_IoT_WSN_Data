@@ -1,0 +1,65 @@
+name: ACR-MCR Scientific Audit
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'tools/recovery_gate.py'
+      - 'acr_mcr_v2.py'
+      - 'analyze_study.py'
+      - 'test_mechanisms.py'
+      - 'PROTOCOL.md'
+      - 'MODEL.md'
+      - '.github/workflows/acr-recovery-audit.yml'
+  schedule:
+    - cron: '19 3 * * *'
+
+permissions:
+  contents: read
+concurrency:
+  group: acr-mcr-scientific-audit
+  cancel-in-progress: false
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 55
+    env:
+      OPENBLAS_NUM_THREADS: '1'
+      OMP_NUM_THREADS: '1'
+      MKL_NUM_THREADS: '1'
+      PYTHONPATH: .
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+      - name: Install frozen scientific dependencies
+        run: python -m pip install -r requirements.txt
+      - name: Audit frozen primary outcomes, manifests and telemetry
+        run: python tools/recovery_gate.py
+      - name: Execute mechanism verification suite
+        run: python test_mechanisms.py
+      - name: Recompute analyses without changing released inference
+        run: |
+          python analyze_study.py
+          python tools/recovery_gate.py
+      - name: Write provenance summary
+        if: always()
+        run: |
+          mkdir -p recovery_reports
+          printf 'github_run_id=%s\ngit_sha=%s\nworkflow=%s\n' "$GITHUB_RUN_ID" "$GITHUB_SHA" "$GITHUB_WORKFLOW" > recovery_reports/ci_provenance.txt
+          git status --short > recovery_reports/worktree_changes.txt
+      - name: Archive audit without committing generated files
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: acr-mcr-scientific-audit
+          path: |
+            recovery_reports/
+            verification.json
+            analysis/analysis_verification.json
+            analysis/primary_effects.csv
+          if-no-files-found: warn
+          retention-days: 7
