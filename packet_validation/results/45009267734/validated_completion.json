@@ -1,0 +1,8 @@
+{
+  "run_id": 45009267734,
+  "status": "PASS",
+  "source": "GitHub 40-cell paired-analysis artifact",
+  "scientific_scope": "Cooja 40-node over-air control, 500-byte payload, 160 rounds",
+  "physical_40_node_deployment": false,
+  "external_SNR_PER_calibrated": false
+}
