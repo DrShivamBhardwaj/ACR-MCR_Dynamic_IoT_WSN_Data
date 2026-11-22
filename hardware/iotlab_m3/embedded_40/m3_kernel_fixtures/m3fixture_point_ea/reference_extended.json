@@ -1,0 +1,32 @@
+{
+  "fixture_id": "POINT-EA_9401_S1_r20",
+  "original_simulator_sha256": "3f134a8826525215f7cf2ff307bab3893c0d64b050f742bdc3c250b1c0302ea4",
+  "original_method": "POINT-EA",
+  "seed": 9401,
+  "scenario": "S1",
+  "t": 20,
+  "source": "Synthetic original simulator state (NOT physical observations)",
+  "n_sensors": 40,
+  "n_heads": 4,
+  "stress_samples": 0,
+  "score_window_records": 512,
+  "selected_head_ids": [
+    4,
+    7,
+    9,
+    23
+  ],
+  "selected_objective": 0.33588141000807403,
+  "tail_risk_enabled": false,
+  "frozen_risk_index_tensor_9bit": 0,
+  "fixture_h_sha256": "689c72797ef86c560bc4be9e86f91d0d3aebf387aa5ac214c96d774ec4c13f61",
+  "interpretation": "Original NumPy candidate and risk-index sequences are frozen in firmware FLASH. This tests M3 deterministic decision kernel only.",
+  "m3_firmware_sha256": "5fcb2a960749e546ff815217a64102d5f299e6e5d1603d097c71f42835204dd3",
+  "m3_firmware_bytes": 751680,
+  "repeated_identical_kernel_calls": 20,
+  "physical_energy_in_Apple_M1_J": null,
+  "physical_board_m3_profile": "acr_m3_active_power_20261122",
+  "extended_elf_sha256": "4fc0aeb68940d362980a2f01e09efcd5b6ff1b8247fc73436925271616e560f0",
+  "extended_elf_size_bytes": 751940,
+  "experiment_type": "descriptive original kernel 20-run same-fixture physical board power"
+}
