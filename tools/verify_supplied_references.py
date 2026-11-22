@@ -47,7 +47,12 @@ def main():
                     result=json.loads(f.read().decode("utf-8"))
                 meta=result["message"]
                 title=(meta.get("title") or [""])[0]
-                year=((meta.get("published",{}).get("date-parts") or [[None]])[0][0])
+                year=None
+                for field in ("published","issued","published-print","published-online","created"):
+                    candidate=(meta.get(field,{}) or {}).get("date-parts") or []
+                    if candidate and candidate[0]:
+                        year=candidate[0][0]
+                        break
                 record.update(
                     metadata_source=endpoint,returned_title=title,
                     returned_year=year,
