@@ -99,10 +99,14 @@ static double upper_quantile(uint8_t relay) {
     }
     qsort_buffer[j]=val;
   }
-  k=(int)ceil(((double)e->n+1.0)*(1.0-alpha_t));
+  {
+    double rank=((double)e->n+1.0)*(1.0-alpha_t);
+    k=(int)rank;
+    if((double)k<rank) ++k;
+  }
   if(k<1) k=1;
   if(k>e->n) k=e->n;
-  return fmax(0.0,qsort_buffer[k-1]);
+  return qsort_buffer[k-1]>0.0?qsort_buffer[k-1]:0.0;
 }
 static double score_for(uint8_t relay) {
   double v=evidence[relay].mean_cost;
