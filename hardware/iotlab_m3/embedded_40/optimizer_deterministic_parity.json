@@ -12,7 +12,7 @@
   "full_controller_ported_to_M3": false,
   "guaranteed_embedded_memory_fit": false,
   "statement": "Equal genotype sets, equal fixed input matrices and stress tensors; original Python vs C complete scoring and generation survivor selection. NumPy PCG64 RNG, feedback-state evolution, and physical adaptive controller parity are unverified.",
-  "elapsed_seconds": 5.449,
+  "elapsed_seconds": 5.189,
   "records": [
     {
       "seed": 9401,
