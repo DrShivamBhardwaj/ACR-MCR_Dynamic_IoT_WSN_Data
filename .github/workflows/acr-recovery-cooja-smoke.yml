@@ -32,6 +32,21 @@ jobs:
           sudo apt-get update -qq
           sudo apt-get install -y --no-install-recommends make gcc g++
           make --version | head -1
+      - name: Apply narrowly scoped GCC compatibility fix to runner copy only
+        shell: bash
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          p=Path('contiki-ng/os/services/shell/shell.c')
+          original=p.read_text()
+          old="    args = strchr(cmd, ' ');"
+          new="    args = (char *)strchr(cmd, ' ');"
+          assert original.count(old)==1, 'Pinned upstream changed; review compatibility fix before rerunning'
+          p.write_text(original.replace(old,new))
+          PY
+          git -C contiki-ng diff --check
+          git -C contiki-ng diff -- os/services/shell/shell.c > gcc_compatibility.patch
+          cat gcc_compatibility.patch
       - name: Run packet-level RPL TSCH base test in headless Cooja
         shell: bash
         working-directory: contiki-ng/tools/cooja
@@ -49,7 +64,7 @@ jobs:
         run: |
           printf 'Contiki-NG source: 4ccd1a3b9e767f168d12ec3df187fe6b7dc736b5\n' > cooja_provenance.txt
           printf 'Cooja test: 19-cooja-rpl-tsch.csc\n' >> cooja_provenance.txt
-          printf 'Build compatibility: GCC discarded-qualifiers remains a warning; pinned upstream source unchanged.\n' >> cooja_provenance.txt
+          printf 'Build compatibility: one-line const cast in temporary checked-out upstream shell.c; see gcc_compatibility.patch.\n' >> cooja_provenance.txt
           printf 'Scope: network-stack Cooja smoke test ONLY, not ACR-MCR controller validation.\n' >> cooja_provenance.txt
           printf 'GitHub run: %s\n' "$GITHUB_RUN_ID" >> cooja_provenance.txt
       - name: Archive bounded Cooja log
@@ -60,5 +75,6 @@ jobs:
           path: |
             cooja_base_test.log
             cooja_provenance.txt
+            gcc_compatibility.patch
           if-no-files-found: warn
           retention-days: 7
