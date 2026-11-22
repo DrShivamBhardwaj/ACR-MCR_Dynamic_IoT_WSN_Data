@@ -107,6 +107,29 @@
       "recorded_utc": "2026-11-22T15:43:03.720675+00:00",
       "status": "PENDING"
     },
+    "m3_v9_real_probe_radio_feedback": {
+      "details": {
+        "ENRGEST": 3,
+        "UART": 3,
+        "experiment": 459639,
+        "fully_verified_500B_samples": 6,
+        "physical_flashes": 3,
+        "radio_received_matched_probe_observations": 6,
+        "scope": "STATIC physical radio MAC observation return; original conformal/optimizer NOT physically closed loop",
+        "source_mac_observations": 6
+      },
+      "evidence_sha256": {
+        "acr_mcr_v2.py": "3f134a8826525215f7cf2ff307bab3893c0d64b050f742bdc3c250b1c0302ea4",
+        "hardware/iotlab_m3/closed_loop_telemetry_v9/MANIFEST_FIRMWARE_SMOKE_second.json": "1d746e4c90a4dec2259eb5b547b2cabc14a611199405c0fd7ea6ebad38cb60b2",
+        "hardware/iotlab_m3/closed_loop_telemetry_v9/audit_physical_telemetry.py": "a1b40e740eb9765a3b64e9a091d76fdc1c108225a9920b60890aab29cf08bb35",
+        "hardware/iotlab_m3/closed_loop_telemetry_v9/evidence/459639/deployment.json": "dd129b6e6bdad3ca3dd48f34cd7a62035a48b169cd0222f2dcc2423526e1a0fe",
+        "hardware/iotlab_m3/closed_loop_telemetry_v9/evidence/459639/final_status.json": "755f951b676923ffe330160302154af6034309de837fd8d230b12f21c2110697",
+        "hardware/iotlab_m3/closed_loop_telemetry_v9/evidence/459639/manifest_sha256.json": "e31473faa6be7a79a6d832d5c904cbff2fe2b1d65209136af536e680ab0c806e",
+        "hardware/iotlab_m3/closed_loop_telemetry_v9/evidence/459639/strict_radio_telemetry_audit.json": "182f8b3188ee1da002a7d9f1ac8b94a4affb02acdcbadca1979c7525e476179a"
+      },
+      "recorded_utc": "2026-11-22T17:05:48.017985+00:00",
+      "status": "COMPLETE"
+    },
     "original_source": {
       "details": {
         "interpretation": "Immutable original reference",
@@ -119,5 +142,5 @@
       "status": "COMPLETE"
     }
   },
-  "updated_utc": "2026-11-22T16:30:01.887662+00:00"
+  "updated_utc": "2026-11-22T17:05:48.018138+00:00"
 }
