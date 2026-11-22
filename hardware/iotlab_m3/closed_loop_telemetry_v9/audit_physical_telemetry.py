@@ -9,14 +9,23 @@ START=re.compile(r'PROBE_TX_EVIDENCE round=(\d+) src=(\d+) to=(\d+) attempts=(\d
 OBS=re.compile(r'SINK_REAL_PROBE_OBS round=(\d+) src=(\d+) to=(\d+) attempts=(\d+) ok=(\d+) duration_ms=(\d+) status=(\d+) via_radio=1')
 def audit(root,firmware):
     root=Path(root);manifest=json.loads(Path(firmware).read_text())
-    ident={14:1,15:2,18:41}
+    ident={}
+    for identifier,role in manifest['physical_roles'].items():
+        match=re.fullmatch(r'm3-(\d+)',identifier)
+        if not match:raise ValueError('Unregistered physical board name')
+        logical=41 if role=='sink41' else (1 if role.startswith('source1') else (2 if role.startswith('source2') else None))
+        if logical is None:raise ValueError('Unregistered physical role')
+        ident[int(match.group(1))]=logical
+    if len(ident)!=3 or set(ident.values())!={1,2,41}:raise ValueError('Physical topology unexpected')
+    sinkboard=next(n for n,v in ident.items() if v==41)
+    sourceboards={n for n,v in ident.items() if v!=41}
     paths={n:root/f'm3-{n}.log' for n in ident}
     missing=[p.name for p in paths.values() if not p.exists() or not p.stat().st_size]
     if missing:raise RuntimeError('Missing original physical serial: '+repr(missing))
     lines={n:p.read_text(errors='replace') for n,p in paths.items()}
-    assert 'DIST_DONE' in lines[18], 'Sink test did not complete'
+    assert 'DIST_DONE' in lines[sinkboard], 'Sink test did not complete'
     expected={}
-    for n in (14,15):
+    for n in sorted(sourceboards):
         source=ident[n]
         for match in START.finditer(lines[n]):
             round_id,origin,to,attempts,ok,duration=map(int,match.groups())
@@ -26,7 +35,7 @@ def audit(root,firmware):
             if key in expected:raise ValueError('Duplicate physical source probe observation')
             expected[key]=(to,attempts,ok,duration)
     sink={}
-    for match in OBS.finditer(lines[18]):
+    for match in OBS.finditer(lines[sinkboard]):
         r,source,to,attempts,ok,duration,status=map(int,match.groups())
         key=(r,source)
         if key in sink:raise ValueError('Duplicate matching sink telemetry')
@@ -34,9 +43,9 @@ def audit(root,firmware):
     unmatched={str(k):v for k,v in sink.items() if k not in expected or expected[k]!=v}
     if unmatched:raise ValueError('Sink telemetry did not match any actual source MAC report: '+repr(unmatched))
     energy={n:lines[n].count('ENERGEST_RAW') for n in ident}
-    controlled={n:lines[n].count('CTRL_APPLIED') for n in (14,15)}
+    controlled={n:lines[n].count('CTRL_APPLIED') for n in sorted(sourceboards)}
     delivery=[tuple(map(int,m)) for m in re.findall(
-       r'SINK_REASSEMBLED round=(\d+) src=(\d+) app_bytes=500 parts=8 checksum=PASS',lines[18])]
+       r'SINK_REASSEMBLED round=(\d+) src=(\d+) app_bytes=500 parts=8 checksum=PASS',lines[sinkboard])]
     if len(set(delivery))!=len(delivery):raise ValueError('Duplicate 500B completion')
     records=dict(
         kind='REAL_MAC_PROBE_TELEMETRY_NATIVE_M3',

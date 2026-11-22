@@ -1,0 +1,9 @@
+
+Traceback (most recent call last):
+  File "/Users/shivambhardwaj/research/ACR_MCR_Recovery_20261122/data/hardware/iotlab_m3/closed_loop_telemetry_v9/audit_physical_telemetry.py", line 69, in <module>
+    a=ap.parse_args(); result=audit(a.original_uart,a.firmware)
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/shivambhardwaj/research/ACR_MCR_Recovery_20261122/data/hardware/iotlab_m3/closed_loop_telemetry_v9/audit_physical_telemetry.py", line 15, in audit
+    if missing:raise RuntimeError('Missing original physical serial: '+repr(missing))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: Missing original physical serial: ['m3-14.log']

@@ -1,0 +1,12 @@
+{
+  "experiment": 459639,
+  "original_false_negative": "INCOMPLETE_KEEP_RAW caused by auditor expecting m3-14.log after preregistered source1 substitution to M3-16",
+  "source_data_changed": false,
+  "correct_physical_mapping": {
+    "16": 1,
+    "15": 2,
+    "18": 41
+  },
+  "original_audit_log_sha256": "4bd2a9e29eb911ce6f247328daa8c6669693f61fe88c0828e53185a4175a43fb",
+  "correction": "Read physical node IDs from registered firmware manifest, never from previous experiment"
+}
