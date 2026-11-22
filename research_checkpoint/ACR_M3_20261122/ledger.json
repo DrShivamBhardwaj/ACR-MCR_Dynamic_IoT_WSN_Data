@@ -41,8 +41,8 @@
       "status": "COMPLETE"
     },
     "host_m1_electrical_joules": {
-      "reason": "macOS powermetrics requires administrator privilege; connection prohibits privileged execution; no external calibrated meter data",
-      "recorded_utc": "2026-11-22T15:43:07.912947+00:00",
+      "reason": "Administrator-authorized powermetrics six-phase CPU estimates now measured and archived; calibrated wall-plug total host or optimizer-only electrical Joules still need external wattmeter and process attribution",
+      "recorded_utc": "2026-11-22T16:30:01.887451+00:00",
       "status": "BLOCKED"
     },
     "m3_frozen_kernel_memory": {
@@ -119,5 +119,5 @@
       "status": "COMPLETE"
     }
   },
-  "updated_utc": "2026-11-22T16:29:57.994592+00:00"
+  "updated_utc": "2026-11-22T16:30:01.887662+00:00"
 }
