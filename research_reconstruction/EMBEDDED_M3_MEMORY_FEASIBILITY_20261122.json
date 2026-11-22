@@ -1,0 +1,32 @@
+{
+  "source_sha256": "3f134a8826525215f7cf2ff307bab3893c0d64b050f742bdc3c250b1c0302ea4",
+  "sensors": 40,
+  "sink_count": 1,
+  "directed_edge_slots": 1640,
+  "synthetic_tail_scenarios": 64,
+  "source_float_type": "original NumPy float64 in Python",
+  "m3_sram_bytes": 65536,
+  "m3_flash_bytes": 524288,
+  "previously_compiled_frozen_kernel_BSS_plus_data_bytes": 35760,
+  "byte_requirements": {
+    "beta_a": 13120,
+    "beta_b": 13120,
+    "frame_hat": 13120,
+    "cost_pred": 13120,
+    "delay_pred": 13120,
+    "edge_cost": 13120,
+    "stress_cost": 839680,
+    "stress_delay": 839680,
+    "calibrator_last_512_scores": 8192
+  },
+  "naive_minimal_3_double_predictor_arrays_bytes": 39360,
+  "naive_predictor_plus_frozen_static_RAM_bytes": 75120,
+  "naive_pair_dense_stress_bytes": 1679360,
+  "claim": "Literal dense Python-style float64 state does not fit M3 64KB SRAM. A logically equivalent streamed/sparse, compressed or offloaded implementation may still be possible but requires its own parity and physical validation.",
+  "alternatives": [
+    "Full feedback closed loop on connected host, with physical radio control and calibrated measurement; clearly label external optimizer, not embedded.",
+    "Native M3 streamed exact-double risk terms and sparse link-state updates: requires carefully bounded stack/flash and independent Python/C parity; no result yet.",
+    "Fixed-point/float32 quantization for predictor and compressed tail fields: changes numerical semantics and needs separate equivalence tolerances, failure cases and tests."
+  ],
+  "limit": "This is a memory-footprint lower-bound check for naive layout, not a proof that any complete optimised native M3 port is impossible."
+}
