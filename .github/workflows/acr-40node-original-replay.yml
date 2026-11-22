@@ -1,0 +1,157 @@
+name: ACR-MCR 40-Node Cooja Original-Controller Replay
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+concurrency:
+  group: acr-40-replay
+  cancel-in-progress: false
+
+jobs:
+  packet-40-node:
+    strategy:
+      fail-fast: false
+      max-parallel: 4
+      matrix:
+        seed: [8101, 8102]
+        scenario: [S1, S5]
+        method: [POINT-EA, ACR-MCR]
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    env:
+      OPENBLAS_NUM_THREADS: '1'
+      OMP_NUM_THREADS: '1'
+      MKL_NUM_THREADS: '1'
+      PYTHONPATH: .
+    steps:
+      - name: Checkout immutable original controller source and new experiment
+        uses: actions/checkout@v4
+        with:
+          path: data
+      - name: Checkout pinned Contiki-NG with Cooja submodules
+        uses: actions/checkout@v4
+        with:
+          repository: contiki-ng/contiki-ng
+          ref: 4ccd1a3b9e767f168d12ec3df187fe6b7dc736b5
+          submodules: recursive
+          path: contiki-ng
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+          cache-dependency-path: data/requirements.txt
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '25'
+      - name: Install pinned scientific Python and standard C compiler
+        run: |
+          python -m pip install -r data/requirements.txt
+          sudo apt-get update -qq
+          sudo apt-get install -y --no-install-recommends gcc g++ make
+      - name: Apply isolated one-line upstream GCC compatibility cast
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          f=Path('contiki-ng/os/services/shell/shell.c')
+          s=f.read_text()
+          old="    args = strchr(cmd, ' ');"
+          assert s.count(old)==1, 'Upstream changed; examine compatibility'
+          f.write_text(s.replace(old,"    args = (char *)strchr(cmd, ' ');"))
+          PY
+          git -C contiki-ng diff --check
+          git -C contiki-ng diff -- os/services/shell/shell.c > compatibility.patch
+      - name: Export exact 40-node Python optimizer decisions for this seed
+        shell: bash
+        run: |
+          set -euo pipefail
+          PROV="$GITHUB_WORKSPACE/generated"
+          mkdir -p "$PROV"
+          (
+            cd data
+            python packet_validation/export_40node_replay.py \
+              --seed '${{ matrix.seed }}' \
+              --method '${{ matrix.method }}' \
+              --scenario '${{ matrix.scenario }}' \
+              --rounds 160 \
+              --out "$PROV"
+          ) | tee "$PROV/export.log"
+          mkdir -p contiki-ng/examples/acr_mcr_40
+          cp data/packet_validation/acr_40_replay.c contiki-ng/examples/acr_mcr_40/
+          cp data/packet_validation/Makefile.40node contiki-ng/examples/acr_mcr_40/Makefile
+          cp "$PROV/acr_40_plan.h" contiki-ng/examples/acr_mcr_40/
+          RX=0.94
+          if [ '${{ matrix.scenario }}' = 'S5' ]; then RX=0.82; fi
+          python data/packet_validation/generate_40node_csc.py \
+            --template contiki-ng/tests/07-simulation-base/05-nullnet-unicast.csc \
+            --positions "$PROV/positions.json" --seed '${{ matrix.seed }}' \
+            --method '${{ matrix.method }}' --scenario '${{ matrix.scenario }}' \
+            --rounds 160 --rx-success "$RX" \
+            --out contiki-ng/tests/acr_40_replay.csc
+          cp contiki-ng/tests/acr_40_replay.csc "$PROV/replay.csc"
+      - name: Run 41-mote packet test, archive logs even on failure
+        shell: bash
+        run: |
+          set -euo pipefail
+          cd contiki-ng/tools/cooja
+          rm -f COOJA.testlog
+          set +e
+          ./gradlew --no-daemon run --args='--no-gui ../../tests/acr_40_replay.csc' \
+            2>&1 | tee "$GITHUB_WORKSPACE/generated/build.log"
+          RESULT=${PIPESTATUS[0]}
+          set -e
+          if [ -f COOJA.testlog ]; then
+            cp COOJA.testlog "$GITHUB_WORKSPACE/generated/COOJA.testlog"
+            tail -12 COOJA.testlog
+          fi
+          if [ "$RESULT" -ne 0 ]; then exit "$RESULT"; fi
+          grep -q '^REPLAY_SUMMARY ' "$GITHUB_WORKSPACE/generated/COOJA.testlog"
+          grep -q '^TEST OK$' "$GITHUB_WORKSPACE/generated/COOJA.testlog"
+      - name: Audit packet receipts, retries and provenance
+        run: |
+          python data/packet_validation/analyze_40_replay.py \
+            --input-root generated --out generated/single_packet_audit.json
+      - name: Archive bounded packet trace and original controller provenance
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: replay-${{ matrix.scenario }}-seed${{ matrix.seed }}-${{ matrix.method }}
+          path: |
+            generated/
+            compatibility.patch
+          retention-days: 14
+          if-no-files-found: warn
+
+  paired-audit:
+    needs: packet-40-node
+    if: always() && needs.packet-40-node.result == 'success'
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: replay-*
+          path: collected_replays
+          merge-multiple: false
+      - name: Require all 8 registered cells with matched methods
+        run: |
+          python packet_validation/analyze_40_replay.py \
+            --input-root collected_replays \
+            --out collected_40node_replay_summary.json \
+            --require-pairs
+          python - <<'PY'
+          import json
+          x=json.load(open('collected_40node_replay_summary.json'))
+          assert x['n_runs']==8 and x['n_pairs']==4
+          assert not x['closed_loop_packet_observation_used_by_controller']
+          print('Reproducibility audit complete. No closed-loop claim.')
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: acr-40node-openloop-replay-paired-results
+          path: |
+            collected_40node_replay_summary.json
+            collected_40node_replay_summary.csv
+          retention-days: 21
