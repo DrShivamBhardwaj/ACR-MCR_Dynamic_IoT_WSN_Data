@@ -1,0 +1,134 @@
+{
+  "verdict": "APPLE_REPORTED_CPU_SUBSYSTEM_ESTIMATES_ONLY",
+  "scientific_scope": "CPU subsystem power estimate in watts from root-authorized Mac powermetrics; baseline-subtracted J are estimates, NOT calibrated electricity or exclusive optimizer Joules.",
+  "original_model_sha256": "3f134a8826525215f7cf2ff307bab3893c0d64b050f742bdc3c250b1c0302ea4",
+  "root_authorized_trace_collected": true,
+  "raw_run_directory": "/Users/shivambhardwaj/research/ACR_MCR_Recovery_20261122/data/host_energy/authorized_m1_power_runs/20261122T161647Z",
+  "phases": [
+    {
+      "phase_index": 1,
+      "method": "IDLE",
+      "run_seconds": 48.008943875000114,
+      "parsed_cpu_watt_samples": 47,
+      "cpu_power_mean_W": 1.8997659574468087,
+      "cpu_power_std_W": 1.8524113100023458,
+      "estimated_cpu_subsystem_energy_J": 89.289,
+      "sampler_interval_s": 1.0,
+      "source_file_sha256": "5cf22215141abffb348abd8e56a8f187db2e406a7fa4c3f62bef21ad28dc3d11",
+      "estimated_CPU_energy_not_calibrated": true
+    },
+    {
+      "phase_index": 2,
+      "method": "POINT-EA",
+      "run_seconds": 49.064458792010555,
+      "parsed_cpu_watt_samples": 48,
+      "cpu_power_mean_W": 5.5349375,
+      "cpu_power_std_W": 1.5884461885386545,
+      "estimated_cpu_subsystem_energy_J": 265.677,
+      "sampler_interval_s": 1.0,
+      "source_file_sha256": "cad9204955e3bbc57e676cb1d5adff28ee4ef583e975dd4a6d23fb69120e4c38",
+      "estimated_CPU_energy_not_calibrated": true
+    },
+    {
+      "phase_index": 3,
+      "method": "ACR-MCR",
+      "run_seconds": 57.38087575000827,
+      "parsed_cpu_watt_samples": 56,
+      "cpu_power_mean_W": 6.291339285714286,
+      "cpu_power_std_W": 1.7988308251021448,
+      "estimated_cpu_subsystem_energy_J": 352.315,
+      "sampler_interval_s": 1.0,
+      "source_file_sha256": "aef3b6deca1d78e27f0f5f2d2c08f01c8cf8aa52640a1edc2e51d18ce4e8cfb1",
+      "estimated_CPU_energy_not_calibrated": true
+    },
+    {
+      "phase_index": 4,
+      "method": "ACR-MCR",
+      "run_seconds": 54.165643082989845,
+      "parsed_cpu_watt_samples": 53,
+      "cpu_power_mean_W": 5.476169811320755,
+      "cpu_power_std_W": 1.2993234739049195,
+      "estimated_cpu_subsystem_energy_J": 290.237,
+      "sampler_interval_s": 1.0,
+      "source_file_sha256": "80006df1aeb0c95a9e0d7e1299311d4ae7ffaf2f61e988ea3198526b2f126d3e",
+      "estimated_CPU_energy_not_calibrated": true
+    },
+    {
+      "phase_index": 5,
+      "method": "POINT-EA",
+      "run_seconds": 49.717032249987824,
+      "parsed_cpu_watt_samples": 49,
+      "cpu_power_mean_W": 6.20495918367347,
+      "cpu_power_std_W": 2.0484284215708684,
+      "estimated_cpu_subsystem_energy_J": 304.043,
+      "sampler_interval_s": 1.0,
+      "source_file_sha256": "3690ae6cb7dc6ae92c4358742154d91d4fd57e25bd44c9fb961c25ad573e1e24",
+      "estimated_CPU_energy_not_calibrated": true
+    },
+    {
+      "phase_index": 6,
+      "method": "IDLE",
+      "run_seconds": 48.006971166993026,
+      "parsed_cpu_watt_samples": 47,
+      "cpu_power_mean_W": 1.285063829787234,
+      "cpu_power_std_W": 1.2629680433193404,
+      "estimated_cpu_subsystem_energy_J": 60.398,
+      "sampler_interval_s": 1.0,
+      "source_file_sha256": "a3fbf8d152283cc53d1922b351a30882631213695bc312e288fe35cae72262f4",
+      "estimated_CPU_energy_not_calibrated": true
+    }
+  ],
+  "method_comparisons": {
+    "POINT-EA": [
+      {
+        "phase": 2,
+        "estimated_cpu_watts": 5.5349375,
+        "interpolated_idle_cpu_watts": 1.7768255319148938,
+        "excess_CPU_watts": 3.758111968085106,
+        "net_CPU_subsystem_energy_J": 173.11539388961805,
+        "estimated_work_seconds": 46.064458792010555,
+        "uncertainty_note": "No per-process attribution. One-second sample timing approximated from phase duration."
+      },
+      {
+        "phase": 5,
+        "estimated_cpu_watts": 6.20495918367347,
+        "interpolated_idle_cpu_watts": 1.408004255319149,
+        "excess_CPU_watts": 4.796954928354321,
+        "net_CPU_subsystem_energy_J": 224.09949808966684,
+        "estimated_work_seconds": 46.717032249987824,
+        "uncertainty_note": "No per-process attribution. One-second sample timing approximated from phase duration."
+      }
+    ],
+    "ACR-MCR": [
+      {
+        "phase": 3,
+        "estimated_cpu_watts": 6.291339285714286,
+        "interpolated_idle_cpu_watts": 1.6538851063829787,
+        "excess_CPU_watts": 4.637454179331307,
+        "net_CPU_subsystem_energy_J": 252.1888195225724,
+        "estimated_work_seconds": 54.38087575000827,
+        "uncertainty_note": "No per-process attribution. One-second sample timing approximated from phase duration."
+      },
+      {
+        "phase": 4,
+        "estimated_cpu_watts": 5.476169811320755,
+        "interpolated_idle_cpu_watts": 1.5309446808510638,
+        "excess_CPU_watts": 3.9452251304696913,
+        "net_CPU_subsystem_energy_J": 201.85998090765426,
+        "estimated_work_seconds": 51.165643082989845,
+        "uncertainty_note": "No per-process attribution. One-second sample timing approximated from phase duration."
+      }
+    ]
+  },
+  "wallplug_joules_measured": false,
+  "independent_calibrated_energy_meter_used": false,
+  "permitted_publication_claim": "estimated M1 CPU-subsystem energy expenditure under paired programs, not physical per-process or whole-host electricity",
+  "caveats": [
+    "Powermetrics Apple SoC power is explicitly estimated and may be inaccurate.",
+    "Other Mac processes influence measured aggregate CPU power.",
+    "Only two computational phases per method and two idle phases; this is not a large independent power study.",
+    "Without exact per-sample timestamps, integration uses nominal 1-second sampler intervals.",
+    "The original Python simulator is included in each method's process.",
+    "Do not interpret these estimates as measured calibrated ACR-MCR host Joules or M3 sensor-node Joules."
+  ]
+}

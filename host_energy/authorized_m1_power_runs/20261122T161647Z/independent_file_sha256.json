@@ -1,0 +1,18 @@
+{
+  "INDEPENDENT_CPU_POWER_REPORT.md": "3e12e835140a01b5e72ff4efec3d33ed7188c5e124dc68cc0615997220693dfe",
+  "estimated_cpu_power_audit.json": "8aa1f1862b65ef45ab71b12583dea01a5c304660282d99c5b6610c3f704150d2",
+  "independent_interval_power_verification.json": "c6c751641c22e24667526a045593db799216de935e7f23a43ad2c3f22e50c2d5",
+  "phase_01_IDLE.powermetrics.txt": "5cf22215141abffb348abd8e56a8f187db2e406a7fa4c3f62bef21ad28dc3d11",
+  "phase_01_IDLE.workload.json": "a67f42d420c5bfca471f834297ec5ab31a279a80f152860b0442ca4714755176",
+  "phase_02_POINT_EA.powermetrics.txt": "cad9204955e3bbc57e676cb1d5adff28ee4ef583e975dd4a6d23fb69120e4c38",
+  "phase_02_POINT_EA.workload.json": "f652457a295717b6ba5388c2485fd59567364bd8523859ed584239dedabe4ba9",
+  "phase_03_ACR_MCR.powermetrics.txt": "aef3b6deca1d78e27f0f5f2d2c08f01c8cf8aa52640a1edc2e51d18ce4e8cfb1",
+  "phase_03_ACR_MCR.workload.json": "be018eeb2ed8dfba8724667fc4f532650710bee12f28af3225b27ef81a51e5f1",
+  "phase_04_ACR_MCR.powermetrics.txt": "80006df1aeb0c95a9e0d7e1299311d4ae7ffaf2f61e988ea3198526b2f126d3e",
+  "phase_04_ACR_MCR.workload.json": "cc79e182b8e330faeff1a517ef508c6d5cd25433e4c41e00766a96a2cf111d50",
+  "phase_05_POINT_EA.powermetrics.txt": "3690ae6cb7dc6ae92c4358742154d91d4fd57e25bd44c9fb961c25ad573e1e24",
+  "phase_05_POINT_EA.workload.json": "06bb0c999509818beaefffaa025a8e436072c63976a1d8d5f9a49f0e4264870f",
+  "phase_06_IDLE.powermetrics.txt": "a3fbf8d152283cc53d1922b351a30882631213695bc312e288fe35cae72262f4",
+  "phase_06_IDLE.workload.json": "5d287297e465da558a5d2734b64cd61b8f036c6d70a0d593d607f0febf7d19f7",
+  "registration.json": "4c06c15e9d2872fa1c643ba9ddc161375b989bb7b0acfb8bfba5197675d8ec43"
+}

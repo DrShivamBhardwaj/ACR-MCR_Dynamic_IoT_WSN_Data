@@ -1,0 +1,52 @@
+{
+  "status": "RAW_POWER_SAMPLED_NOT_CALIBRATED_JOULES",
+  "original_sim_sha256": "3f134a8826525215f7cf2ff307bab3893c0d64b050f742bdc3c250b1c0302ea4",
+  "board": "Apple M1 MacBook Air",
+  "system_powermetrics": true,
+  "tool_installed": true,
+  "logged_in_as_root": true,
+  "methods": [
+    "IDLE",
+    "POINT-EA",
+    "ACR-MCR",
+    "ACR-MCR",
+    "POINT-EA",
+    "IDLE"
+  ],
+  "repeats_per_method": 5,
+  "ics": "No external calibrated wattmeter: CPU package power is estimated.",
+  "host_physical_joules_calibrated": false,
+  "raw_phases": [
+    {
+      "method": "IDLE",
+      "raw_power_file": "phase_01_IDLE.powermetrics.txt",
+      "worker_file": "phase_01_IDLE.workload.json"
+    },
+    {
+      "method": "POINT-EA",
+      "raw_power_file": "phase_02_POINT_EA.powermetrics.txt",
+      "worker_file": "phase_02_POINT_EA.workload.json"
+    },
+    {
+      "method": "ACR-MCR",
+      "raw_power_file": "phase_03_ACR_MCR.powermetrics.txt",
+      "worker_file": "phase_03_ACR_MCR.workload.json"
+    },
+    {
+      "method": "ACR-MCR",
+      "raw_power_file": "phase_04_ACR_MCR.powermetrics.txt",
+      "worker_file": "phase_04_ACR_MCR.workload.json"
+    },
+    {
+      "method": "POINT-EA",
+      "raw_power_file": "phase_05_POINT_EA.powermetrics.txt",
+      "worker_file": "phase_05_POINT_EA.workload.json"
+    },
+    {
+      "method": "IDLE",
+      "raw_power_file": "phase_06_IDLE.powermetrics.txt",
+      "worker_file": "phase_06_IDLE.workload.json"
+    }
+  ],
+  "source_sha256": "3f134a8826525215f7cf2ff307bab3893c0d64b050f742bdc3c250b1c0302ea4"
+}

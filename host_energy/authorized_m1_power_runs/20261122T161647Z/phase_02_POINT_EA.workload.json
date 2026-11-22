@@ -1,0 +1,26 @@
+{
+  "method": "POINT-EA",
+  "phase_s": 49.064458792010555,
+  "cases": 100,
+  "seeds": [
+    10301,
+    10302,
+    10303,
+    10304,
+    10305,
+    10306,
+    10307,
+    10308,
+    10309,
+    10310
+  ],
+  "source_sha256": "3f134a8826525215f7cf2ff307bab3893c0d64b050f742bdc3c250b1c0302ea4",
+  "scenarios": [
+    "S1",
+    "S5"
+  ],
+  "controller_wall_seconds_sum": 11.870321095600957,
+  "whole_program_wall_seconds": 45.8629811250139,
+  "fitness_evaluations_sum": 53495,
+  "physical_Apple_M1_electrical_energy_joules": null
+}
