@@ -1,0 +1,1098 @@
+{
+  "experiment": 459602,
+  "method": "ACR-MCR",
+  "reservation_utc": "2026-11-22T15:08:33.200748+00:00",
+  "site": "Grenoble",
+  "requested_sources": 40,
+  "requested_sink_nodes": 1,
+  "requested_rounds": 3,
+  "sink_reported_experiment_finished": true,
+  "captured_serial_nodes": 41,
+  "control_receptions": 120,
+  "full_500B_sink_reassemblies": 48,
+  "physical_serial_records": {
+    "218": {
+      "logical_id": 1,
+      "raw_lines": 70,
+      "boot_records": 0,
+      "control_received": 3,
+      "mac_callbacks": 30,
+      "reassembled_500B": 0,
+      "energy_snapshots": 1,
+      "first_timestamp_utc": "2026-11-22T15:06:44.403250+00:00",
+      "last_timestamp_utc": "2026-11-22T15:07:31.101481+00:00",
+      "connected_utc": "2026-11-22T15:06:04.361015+00:00",
+      "disconnected_utc": "2026-11-22T15:08:14.997956+00:00",
+      "first_boot_utc": null,
+      "boot_id_verified": false,
+      "boot_method_verified": false,
+      "pre_reservation_lines": 70,
+      "post_done_lines": 0
+    },
+    "233": {
+      "logical_id": 2,
+      "raw_lines": 85,
+      "boot_records": 1,
+      "control_received": 3,
+      "mac_callbacks": 31,
+      "reassembled_500B": 0,
+      "energy_snapshots": 1,
+      "first_timestamp_utc": "2026-11-22T15:06:04.095025+00:00",
+      "last_timestamp_utc": "2026-11-22T15:07:31.157118+00:00",
+      "connected_utc": "2026-11-22T15:06:03.351499+00:00",
+      "disconnected_utc": "2026-11-22T15:08:15.000112+00:00",
+      "first_boot_utc": "2026-11-22T15:06:04.110979+00:00",
+      "boot_id_verified": true,
+      "boot_method_verified": true,
+      "pre_reservation_lines": 85,
+      "post_done_lines": 0
+    },
+    "234": {
+      "logical_id": 3,
+      "raw_lines": 72,
+      "boot_records": 0,
+      "control_received": 3,
+      "mac_callbacks": 31,
+      "reassembled_500B": 0,
+      "energy_snapshots": 1,
+      "first_timestamp_utc": "2026-11-22T15:06:44.394817+00:00",
+      "last_timestamp_utc": "2026-11-22T15:07:31.077121+00:00",
+      "connected_utc": "2026-11-22T15:06:04.382491+00:00",
+      "disconnected_utc": "2026-11-22T15:08:15.000323+00:00",
+      "first_boot_utc": null,
+      "boot_id_verified": false,
+      "boot_method_verified": false,
+      "pre_reservation_lines": 72,
+      "post_done_lines": 0
+    },
+    "236": {
+      "logical_id": 4,
+      "raw_lines": 72,
+      "boot_records": 0,
+      "control_received": 3,
+      "mac_callbacks": 31,
+      "reassembled_500B": 0,
+      "energy_snapshots": 1,
+      "first_timestamp_utc": "2026-11-22T15:06:44.394974+00:00",
+      "last_timestamp_utc": "2026-11-22T15:07:31.093420+00:00",
+      "connected_utc": "2026-11-22T15:06:04.383444+00:00",
+      "disconnected_utc": "2026-11-22T15:08:15.000550+00:00",
+      "first_boot_utc": null,
+      "boot_id_verified": false,
+      "boot_method_verified": false,
+      "pre_reservation_lines": 72,
+      "post_done_lines": 0
+    },
+    "237": {
+      "logical_id": 5,
+      "raw_lines": 229,
+      "boot_records": 1,
+      "control_received": 3,
+      "mac_callbacks": 103,
+      "reassembled_500B": 0,
+      "energy_snapshots": 1,
+      "first_timestamp_utc": "2026-11-22T15:06:04.067480+00:00",
+      "last_timestamp_utc": "2026-11-22T15:07:31.382163+00:00",
+      "connected_utc": "2026-11-22T15:06:03.360819+00:00",
+      "disconnected_utc": "2026-11-22T15:08:15.000630+00:00",
+      "first_boot_utc": "2026-11-22T15:06:04.096552+00:00",
+      "boot_id_verified": true,
+      "boot_method_verified": true,
+      "pre_reservation_lines": 229,
+      "post_done_lines": 0
+    },
+    "239": {
+      "logical_id": 6,
+      "raw_lines": 72,
+      "boot_records": 0,
+      "control_received": 3,
+      "mac_callbacks": 31,
+      "reassembled_500B": 0,
+      "energy_snapshots": 1,
+      "first_timestamp_utc": "2026-11-22T15:06:44.404217+00:00",
+      "last_timestamp_utc": "2026-11-22T15:07:31.198874+00:00",
+      "connected_utc": "2026-11-22T15:06:04.381914+00:00",
+      "disconnected_utc": "2026-11-22T15:08:15.000840+00:00",
+      "first_boot_utc": null,
+      "boot_id_verified": false,
+      "boot_method_verified": false,
+      "pre_reservation_lines": 72,
+      "post_done_lines": 0
+    },
+    "295": {
+      "logical_id": 7,
+      "raw_lines": 70,
+      "boot_records": 0,
+      "control_received": 3,
+      "mac_callbacks": 30,
+      "reassembled_500B": 0,
+      "energy_snapshots": 1,
+      "first_timestamp_utc": "2026-11-22T15:06:44.410884+00:00",
+      "last_timestamp_utc": "2026-11-22T15:07:31.509419+00:00",
+      "connected_utc": "2026-11-22T15:06:04.385698+00:00",
+      "disconnected_utc": "2026-11-22T15:08:15.002166+00:00",
+      "first_boot_utc": null,
+      "boot_id_verified": false,
+      "boot_method_verified": false,
+      "pre_reservation_lines": 70,
+      "post_done_lines": 0
+    },
+    "240": {
+      "logical_id": 8,
+      "raw_lines": 70,
+      "boot_records": 0,
+      "control_received": 3,
+      "mac_callbacks": 30,
+      "reassembled_500B": 0,
+      "energy_snapshots": 1,
+      "first_timestamp_utc": "2026-11-22T15:06:44.396663+00:00",
+      "last_timestamp_utc": "2026-11-22T15:07:33.174629+00:00",
+      "connected_utc": "2026-11-22T15:06:04.394813+00:00",
+      "disconnected_utc": "2026-11-22T15:08:15.001111+00:00",
+      "first_boot_utc": null,
+      "boot_id_verified": false,
+      "boot_method_verified": false,
+      "pre_reservation_lines": 70,
+      "post_done_lines": 0
+    },
+    "241": {
+      "logical_id": 9,
+      "raw_lines": 70,
+      "boot_records": 0,
+      "control_received": 3,
+      "mac_callbacks": 30,
+      "reassembled_500B": 0,
+      "energy_snapshots": 1,
+      "first_timestamp_utc": "2026-11-22T15:06:44.411510+00:00",
+      "last_timestamp_utc": "2026-11-22T15:07:31.669994+00:00",
+      "connected_utc": "2026-11-22T15:06:04.385142+00:00",
+      "disconnected_utc": "2026-11-22T15:08:15.001340+00:00",
+      "first_boot_utc": null,
+      "boot_id_verified": false,
+      "boot_method_verified": false,
+      "pre_reservation_lines": 70,
+      "post_done_lines": 0
+    },
+    "197": {
+      "logical_id": 10,
+      "raw_lines": 68,
+      "boot_records": 0,
+      "control_received": 3,
+      "mac_callbacks": 29,
+      "reassembled_500B": 0,
+      "energy_snapshots": 1,
+      "first_timestamp_utc": "2026-11-22T15:06:44.419146+00:00",
+      "last_timestamp_utc": "2026-11-22T15:07:32.030009+00:00",
+      "connected_utc": "2026-11-22T15:06:04.344343+00:00",
+      "disconnected_utc": "2026-11-22T15:08:14.993201+00:00",
+      "first_boot_utc": null,
+      "boot_id_verified": false,
+      "boot_method_verified": false,
+      "pre_reservation_lines": 68,
+      "post_done_lines": 0
+    },
+    "216": {
+      "logical_id": 11,
+      "raw_lines": 70,
+      "boot_records": 0,
+      "control_received": 3,
+      "mac_callbacks": 30,
+      "reassembled_500B": 0,
+      "energy_snapshots": 1,
+      "first_timestamp_utc": "2026-11-22T15:06:44.403528+00:00",
+      "last_timestamp_utc": "2026-11-22T15:07:31.310061+00:00",
+      "connected_utc": "2026-11-22T15:06:04.379306+00:00",
+      "disconnected_utc": "2026-11-22T15:08:14.997681+00:00",
+      "first_boot_utc": null,
+      "boot_id_verified": false,
+      "boot_method_verified": false,
+      "pre_reservation_lines": 70,
+      "post_done_lines": 0
+    },
+    "290": {
+      "logical_id": 12,
+      "raw_lines": 83,
+      "boot_records": 1,
+      "control_received": 3,
+      "mac_callbacks": 30,
+      "reassembled_500B": 0,
+      "energy_snapshots": 1,
+      "first_timestamp_utc": "2026-11-22T15:06:04.086365+00:00",
+      "last_timestamp_utc": "2026-11-22T15:07:31.338850+00:00",
+      "connected_utc": "2026-11-22T15:06:03.349417+00:00",
+      "disconnected_utc": "2026-11-22T15:08:15.001649+00:00",
+      "first_boot_utc": "2026-11-22T15:06:04.116355+00:00",
+      "boot_id_verified": true,
+      "boot_method_verified": true,
+      "pre_reservation_lines": 83,
+      "post_done_lines": 0
+    },
+    "204": {
+      "logical_id": 13,
+      "raw_lines": 83,
+      "boot_records": 1,
+      "control_received": 3,
+      "mac_callbacks": 30,
+      "reassembled_500B": 0,
+      "energy_snapshots": 1,
+      "first_timestamp_utc": "2026-11-22T15:06:04.044447+00:00",
+      "last_timestamp_utc": "2026-11-22T15:07:31.714056+00:00",
+      "connected_utc": "2026-11-22T15:06:03.324822+00:00",
+      "disconnected_utc": "2026-11-22T15:08:14.994783+00:00",
+      "first_boot_utc": "2026-11-22T15:06:04.060873+00:00",
+      "boot_id_verified": true,
+      "boot_method_verified": true,
+      "pre_reservation_lines": 83,
+      "post_done_lines": 0
+    },
+    "245": {
+      "logical_id": 14,
+      "raw_lines": 70,
+      "boot_records": 0,
+      "control_received": 3,
+      "mac_callbacks": 30,
+      "reassembled_500B": 0,
+      "energy_snapshots": 1,
+      "first_timestamp_utc": "2026-11-22T15:06:44.443537+00:00",
+      "last_timestamp_utc": "2026-11-22T15:07:32.662443+00:00",
+      "connected_utc": "2026-11-22T15:06:04.384005+00:00",
+      "disconnected_utc": "2026-11-22T15:08:15.001568+00:00",
+      "first_boot_utc": null,
+      "boot_id_verified": false,
+      "boot_method_verified": false,
+      "pre_reservation_lines": 70,
+      "post_done_lines": 0
+    },
+    "292": {
+      "logical_id": 15,
+      "raw_lines": 83,
+      "boot_records": 1,
+      "control_received": 3,
+      "mac_callbacks": 30,
+      "reassembled_500B": 0,
+      "energy_snapshots": 1,
+      "first_timestamp_utc": "2026-11-22T15:06:04.083923+00:00",
+      "last_timestamp_utc": "2026-11-22T15:07:31.545512+00:00",
+      "connected_utc": "2026-11-22T15:06:03.361517+00:00",
+      "disconnected_utc": "2026-11-22T15:08:15.001708+00:00",
+      "first_boot_utc": "2026-11-22T15:06:04.099886+00:00",
+      "boot_id_verified": true,
+      "boot_method_verified": true,
+      "pre_reservation_lines": 83,
+      "post_done_lines": 0
+    },
+    "202": {
+      "logical_id": 16,
+      "raw_lines": 70,
+      "boot_records": 0,
+      "control_received": 3,
+      "mac_callbacks": 30,
+      "reassembled_500B": 0,
+      "energy_snapshots": 1,
+      "first_timestamp_utc": "2026-11-22T15:06:44.416412+00:00",
+      "last_timestamp_utc": "2026-11-22T15:07:32.011029+00:00",
+      "connected_utc": "2026-11-22T15:06:04.351613+00:00",
+      "disconnected_utc": "2026-11-22T15:08:14.994591+00:00",
+      "first_boot_utc": null,
+      "boot_id_verified": false,
+      "boot_method_verified": false,
+      "pre_reservation_lines": 70,
+      "post_done_lines": 0
+    },
+    "293": {
+      "logical_id": 17,
+      "raw_lines": 70,
+      "boot_records": 0,
+      "control_received": 3,
+      "mac_callbacks": 30,
+      "reassembled_500B": 0,
+      "energy_snapshots": 1,
+      "first_timestamp_utc": "2026-11-22T15:06:44.408652+00:00",
+      "last_timestamp_utc": "2026-11-22T15:07:32.243505+00:00",
+      "connected_utc": "2026-11-22T15:06:04.396192+00:00",
+      "disconnected_utc": "2026-11-22T15:08:15.001941+00:00",
+      "first_boot_utc": null,
+      "boot_id_verified": false,
+      "boot_method_verified": false,
+      "pre_reservation_lines": 70,
+      "post_done_lines": 0
+    },
+    "201": {
+      "logical_id": 18,
+      "raw_lines": 70,
+      "boot_records": 0,
+      "control_received": 3,
+      "mac_callbacks": 30,
+      "reassembled_500B": 0,
+      "energy_snapshots": 1,
+      "first_timestamp_utc": "2026-11-22T15:06:44.401242+00:00",
+      "last_timestamp_utc": "2026-11-22T15:07:32.476098+00:00",
+      "connected_utc": "2026-11-22T15:06:04.347183+00:00",
+      "disconnected_utc": "2026-11-22T15:08:14.994337+00:00",
+      "first_boot_utc": null,
+      "boot_id_verified": false,
+      "boot_method_verified": false,
+      "pre_reservation_lines": 70,
+      "post_done_lines": 0
+    },
+    "200": {
+      "logical_id": 19,
+      "raw_lines": 70,
+      "boot_records": 0,
+      "control_received": 3,
+      "mac_callbacks": 30,
+      "reassembled_500B": 0,
+      "energy_snapshots": 1,
+      "first_timestamp_utc": "2026-11-22T15:06:44.401400+00:00",
+      "last_timestamp_utc": "2026-11-22T15:07:31.979935+00:00",
+      "connected_utc": "2026-11-22T15:06:04.358829+00:00",
+      "disconnected_utc": "2026-11-22T15:08:14.994045+00:00",
+      "first_boot_utc": null,
+      "boot_id_verified": false,
+      "boot_method_verified": false,
+      "pre_reservation_lines": 70,
+      "post_done_lines": 0
+    },
+    "199": {
+      "logical_id": 20,
+      "raw_lines": 70,
+      "boot_records": 0,
+      "control_received": 3,
+      "mac_callbacks": 30,
+      "reassembled_500B": 0,
+      "energy_snapshots": 1,
+      "first_timestamp_utc": "2026-11-22T15:06:44.403679+00:00",
+      "last_timestamp_utc": "2026-11-22T15:07:31.918038+00:00",
+      "connected_utc": "2026-11-22T15:06:04.345473+00:00",
+      "disconnected_utc": "2026-11-22T15:08:14.993696+00:00",
+      "first_boot_utc": null,
+      "boot_id_verified": false,
+      "boot_method_verified": false,
+      "pre_reservation_lines": 70,
+      "post_done_lines": 0
+    },
+    "220": {
+      "logical_id": 21,
+      "raw_lines": 70,
+      "boot_records": 0,
+      "control_received": 3,
+      "mac_callbacks": 30,
+      "reassembled_500B": 0,
+      "energy_snapshots": 1,
+      "first_timestamp_utc": "2026-11-22T15:06:44.403815+00:00",
+      "last_timestamp_utc": "2026-11-22T15:07:31.550256+00:00",
+      "connected_utc": "2026-11-22T15:06:04.378787+00:00",
+      "disconnected_utc": "2026-11-22T15:08:14.998259+00:00",
+      "first_boot_utc": null,
+      "boot_id_verified": false,
+      "boot_method_verified": false,
+      "pre_reservation_lines": 70,
+      "post_done_lines": 0
+    },
+    "222": {
+      "logical_id": 22,
+      "raw_lines": 70,
+      "boot_records": 0,
+      "control_received": 3,
+      "mac_callbacks": 30,
+      "reassembled_500B": 0,
+      "energy_snapshots": 1,
+      "first_timestamp_utc": "2026-11-22T15:06:44.402265+00:00",
+      "last_timestamp_utc": "2026-11-22T15:07:31.596357+00:00",
+      "connected_utc": "2026-11-22T15:06:04.360260+00:00",
+      "disconnected_utc": "2026-11-22T15:08:14.998482+00:00",
+      "first_boot_utc": null,
+      "boot_id_verified": false,
+      "boot_method_verified": false,
+      "pre_reservation_lines": 70,
+      "post_done_lines": 0
+    },
+    "223": {
+      "logical_id": 23,
+      "raw_lines": 70,
+      "boot_records": 0,
+      "control_received": 3,
+      "mac_callbacks": 30,
+      "reassembled_500B": 0,
+      "energy_snapshots": 1,
+      "first_timestamp_utc": "2026-11-22T15:06:44.401045+00:00",
+      "last_timestamp_utc": "2026-11-22T15:07:31.803701+00:00",
+      "connected_utc": "2026-11-22T15:06:04.359696+00:00",
+      "disconnected_utc": "2026-11-22T15:08:14.998722+00:00",
+      "first_boot_utc": null,
+      "boot_id_verified": false,
+      "boot_method_verified": false,
+      "pre_reservation_lines": 70,
+      "post_done_lines": 0
+    },
+    "224": {
+      "logical_id": 24,
+      "raw_lines": 85,
+      "boot_records": 1,
+      "control_received": 3,
+      "mac_callbacks": 31,
+      "reassembled_500B": 0,
+      "energy_snapshots": 1,
+      "first_timestamp_utc": "2026-11-22T15:06:04.086079+00:00",
+      "last_timestamp_utc": "2026-11-22T15:07:31.947936+00:00",
+      "connected_utc": "2026-11-22T15:06:03.348657+00:00",
+      "disconnected_utc": "2026-11-22T15:08:14.998820+00:00",
+      "first_boot_utc": "2026-11-22T15:06:04.102463+00:00",
+      "boot_id_verified": true,
+      "boot_method_verified": true,
+      "pre_reservation_lines": 85,
+      "post_done_lines": 0
+    },
+    "225": {
+      "logical_id": 25,
+      "raw_lines": 674,
+      "boot_records": 0,
+      "control_received": 3,
+      "mac_callbacks": 308,
+      "reassembled_500B": 0,
+      "energy_snapshots": 1,
+      "first_timestamp_utc": "2026-11-22T15:06:44.408029+00:00",
+      "last_timestamp_utc": "2026-11-22T15:07:35.025997+00:00",
+      "connected_utc": "2026-11-22T15:06:04.352145+00:00",
+      "disconnected_utc": "2026-11-22T15:08:14.999037+00:00",
+      "first_boot_utc": null,
+      "boot_id_verified": false,
+      "boot_method_verified": false,
+      "pre_reservation_lines": 674,
+      "post_done_lines": 0
+    },
+    "226": {
+      "logical_id": 26,
+      "raw_lines": 72,
+      "boot_records": 0,
+      "control_received": 3,
+      "mac_callbacks": 31,
+      "reassembled_500B": 0,
+      "energy_snapshots": 1,
+      "first_timestamp_utc": "2026-11-22T15:06:44.396819+00:00",
+      "last_timestamp_utc": "2026-11-22T15:07:31.687445+00:00",
+      "connected_utc": "2026-11-22T15:06:05.375219+00:00",
+      "disconnected_utc": "2026-11-22T15:08:14.999260+00:00",
+      "first_boot_utc": null,
+      "boot_id_verified": false,
+      "boot_method_verified": false,
+      "pre_reservation_lines": 72,
+      "post_done_lines": 0
+    },
+    "227": {
+      "logical_id": 27,
+      "raw_lines": 72,
+      "boot_records": 0,
+      "control_received": 3,
+      "mac_callbacks": 31,
+      "reassembled_500B": 0,
+      "energy_snapshots": 1,
+      "first_timestamp_utc": "2026-11-22T15:06:44.408222+00:00",
+      "last_timestamp_utc": "2026-11-22T15:07:31.666165+00:00",
+      "connected_utc": "2026-11-22T15:06:04.396987+00:00",
+      "disconnected_utc": "2026-11-22T15:08:14.999483+00:00",
+      "first_boot_utc": null,
+      "boot_id_verified": false,
+      "boot_method_verified": false,
+      "pre_reservation_lines": 72,
+      "post_done_lines": 0
+    },
+    "228": {
+      "logical_id": 28,
+      "raw_lines": 85,
+      "boot_records": 1,
+      "control_received": 3,
+      "mac_callbacks": 31,
+      "reassembled_500B": 0,
+      "energy_snapshots": 1,
+      "first_timestamp_utc": "2026-11-22T15:06:04.054326+00:00",
+      "last_timestamp_utc": "2026-11-22T15:07:31.852077+00:00",
+      "connected_utc": "2026-11-22T15:06:03.350013+00:00",
+      "disconnected_utc": "2026-11-22T15:08:14.999562+00:00",
+      "first_boot_utc": "2026-11-22T15:06:04.070259+00:00",
+      "boot_id_verified": true,
+      "boot_method_verified": true,
+      "pre_reservation_lines": 85,
+      "post_done_lines": 0
+    },
+    "229": {
+      "logical_id": 29,
+      "raw_lines": 72,
+      "boot_records": 0,
+      "control_received": 3,
+      "mac_callbacks": 31,
+      "reassembled_500B": 0,
+      "energy_snapshots": 1,
+      "first_timestamp_utc": "2026-11-22T15:06:44.394544+00:00",
+      "last_timestamp_utc": "2026-11-22T15:07:31.700775+00:00",
+      "connected_utc": "2026-11-22T15:06:04.381040+00:00",
+      "disconnected_utc": "2026-11-22T15:08:14.999780+00:00",
+      "first_boot_utc": null,
+      "boot_id_verified": false,
+      "boot_method_verified": false,
+      "pre_reservation_lines": 72,
+      "post_done_lines": 0
+    },
+    "230": {
+      "logical_id": 30,
+      "raw_lines": 72,
+      "boot_records": 0,
+      "control_received": 3,
+      "mac_callbacks": 31,
+      "reassembled_500B": 0,
+      "energy_snapshots": 1,
+      "first_timestamp_utc": "2026-11-22T15:06:44.399903+00:00",
+      "last_timestamp_utc": "2026-11-22T15:07:31.930005+00:00",
+      "connected_utc": "2026-11-22T15:06:04.384558+00:00",
+      "disconnected_utc": "2026-11-22T15:08:15.000031+00:00",
+      "first_boot_utc": null,
+      "boot_id_verified": false,
+      "boot_method_verified": false,
+      "pre_reservation_lines": 72,
+      "post_done_lines": 0
+    },
+    "215": {
+      "logical_id": 31,
+      "raw_lines": 87,
+      "boot_records": 1,
+      "control_received": 3,
+      "mac_callbacks": 32,
+      "reassembled_500B": 0,
+      "energy_snapshots": 1,
+      "first_timestamp_utc": "2026-11-22T15:06:32.131130+00:00",
+      "last_timestamp_utc": "2026-11-22T15:07:57.144962+00:00",
+      "connected_utc": "2026-11-22T15:06:31.793023+00:00",
+      "disconnected_utc": "2026-11-22T15:08:14.997376+00:00",
+      "first_boot_utc": "2026-11-22T15:06:32.147131+00:00",
+      "boot_id_verified": true,
+      "boot_method_verified": true,
+      "pre_reservation_lines": 87,
+      "post_done_lines": 1
+    },
+    "214": {
+      "logical_id": 32,
+      "raw_lines": 604,
+      "boot_records": 0,
+      "control_received": 3,
+      "mac_callbacks": 235,
+      "reassembled_500B": 0,
+      "energy_snapshots": 1,
+      "first_timestamp_utc": "2026-11-22T15:06:44.404116+00:00",
+      "last_timestamp_utc": "2026-11-22T15:07:33.934602+00:00",
+      "connected_utc": "2026-11-22T15:06:04.378047+00:00",
+      "disconnected_utc": "2026-11-22T15:08:14.996576+00:00",
+      "first_boot_utc": null,
+      "boot_id_verified": false,
+      "boot_method_verified": false,
+      "pre_reservation_lines": 604,
+      "post_done_lines": 0
+    },
+    "213": {
+      "logical_id": 33,
+      "raw_lines": 83,
+      "boot_records": 1,
+      "control_received": 3,
+      "mac_callbacks": 30,
+      "reassembled_500B": 0,
+      "energy_snapshots": 1,
+      "first_timestamp_utc": "2026-11-22T15:06:04.052548+00:00",
+      "last_timestamp_utc": "2026-11-22T15:07:31.848234+00:00",
+      "connected_utc": "2026-11-22T15:06:03.327097+00:00",
+      "disconnected_utc": "2026-11-22T15:08:14.996357+00:00",
+      "first_boot_utc": "2026-11-22T15:06:04.082049+00:00",
+      "boot_id_verified": true,
+      "boot_method_verified": true,
+      "pre_reservation_lines": 83,
+      "post_done_lines": 0
+    },
+    "212": {
+      "logical_id": 34,
+      "raw_lines": 70,
+      "boot_records": 0,
+      "control_received": 3,
+      "mac_callbacks": 30,
+      "reassembled_500B": 0,
+      "energy_snapshots": 1,
+      "first_timestamp_utc": "2026-11-22T15:06:44.404354+00:00",
+      "last_timestamp_utc": "2026-11-22T15:07:32.030859+00:00",
+      "connected_utc": "2026-11-22T15:06:04.357788+00:00",
+      "disconnected_utc": "2026-11-22T15:08:14.996258+00:00",
+      "first_boot_utc": null,
+      "boot_id_verified": false,
+      "boot_method_verified": false,
+      "pre_reservation_lines": 70,
+      "post_done_lines": 0
+    },
+    "211": {
+      "logical_id": 35,
+      "raw_lines": 368,
+      "boot_records": 0,
+      "control_received": 3,
+      "mac_callbacks": 179,
+      "reassembled_500B": 0,
+      "energy_snapshots": 1,
+      "first_timestamp_utc": "2026-11-22T15:06:44.405279+00:00",
+      "last_timestamp_utc": "2026-11-22T15:07:33.567369+00:00",
+      "connected_utc": "2026-11-22T15:06:04.348379+00:00",
+      "disconnected_utc": "2026-11-22T15:08:14.996017+00:00",
+      "first_boot_utc": null,
+      "boot_id_verified": false,
+      "boot_method_verified": false,
+      "pre_reservation_lines": 368,
+      "post_done_lines": 0
+    },
+    "210": {
+      "logical_id": 36,
+      "raw_lines": 70,
+      "boot_records": 0,
+      "control_received": 3,
+      "mac_callbacks": 30,
+      "reassembled_500B": 0,
+      "energy_snapshots": 1,
+      "first_timestamp_utc": "2026-11-22T15:06:44.396228+00:00",
+      "last_timestamp_utc": "2026-11-22T15:07:31.958451+00:00",
+      "connected_utc": "2026-11-22T15:06:04.353558+00:00",
+      "disconnected_utc": "2026-11-22T15:08:14.995759+00:00",
+      "first_boot_utc": null,
+      "boot_id_verified": false,
+      "boot_method_verified": false,
+      "pre_reservation_lines": 70,
+      "post_done_lines": 0
+    },
+    "209": {
+      "logical_id": 37,
+      "raw_lines": 70,
+      "boot_records": 0,
+      "control_received": 3,
+      "mac_callbacks": 30,
+      "reassembled_500B": 0,
+      "energy_snapshots": 1,
+      "first_timestamp_utc": "2026-11-22T15:06:44.405894+00:00",
+      "last_timestamp_utc": "2026-11-22T15:07:31.968449+00:00",
+      "connected_utc": "2026-11-22T15:06:04.350575+00:00",
+      "disconnected_utc": "2026-11-22T15:08:14.995529+00:00",
+      "first_boot_utc": null,
+      "boot_id_verified": false,
+      "boot_method_verified": false,
+      "pre_reservation_lines": 70,
+      "post_done_lines": 0
+    },
+    "208": {
+      "logical_id": 38,
+      "raw_lines": 70,
+      "boot_records": 0,
+      "control_received": 3,
+      "mac_callbacks": 30,
+      "reassembled_500B": 0,
+      "energy_snapshots": 1,
+      "first_timestamp_utc": "2026-11-22T15:06:44.406118+00:00",
+      "last_timestamp_utc": "2026-11-22T15:07:32.016495+00:00",
+      "connected_utc": "2026-11-22T15:06:04.349198+00:00",
+      "disconnected_utc": "2026-11-22T15:08:14.995293+00:00",
+      "first_boot_utc": null,
+      "boot_id_verified": false,
+      "boot_method_verified": false,
+      "pre_reservation_lines": 70,
+      "post_done_lines": 0
+    },
+    "205": {
+      "logical_id": 39,
+      "raw_lines": 70,
+      "boot_records": 0,
+      "control_received": 3,
+      "mac_callbacks": 30,
+      "reassembled_500B": 0,
+      "energy_snapshots": 1,
+      "first_timestamp_utc": "2026-11-22T15:06:44.405691+00:00",
+      "last_timestamp_utc": "2026-11-22T15:07:33.231757+00:00",
+      "connected_utc": "2026-11-22T15:06:04.349921+00:00",
+      "disconnected_utc": "2026-11-22T15:08:14.995046+00:00",
+      "first_boot_utc": null,
+      "boot_id_verified": false,
+      "boot_method_verified": false,
+      "pre_reservation_lines": 70,
+      "post_done_lines": 0
+    },
+    "203": {
+      "logical_id": 40,
+      "raw_lines": 83,
+      "boot_records": 1,
+      "control_received": 3,
+      "mac_callbacks": 30,
+      "reassembled_500B": 0,
+      "energy_snapshots": 1,
+      "first_timestamp_utc": "2026-11-22T15:06:04.068460+00:00",
+      "last_timestamp_utc": "2026-11-22T15:07:32.314163+00:00",
+      "connected_utc": "2026-11-22T15:06:03.336385+00:00",
+      "disconnected_utc": "2026-11-22T15:08:14.994714+00:00",
+      "first_boot_utc": "2026-11-22T15:06:04.084739+00:00",
+      "boot_id_verified": true,
+      "boot_method_verified": true,
+      "pre_reservation_lines": 83,
+      "post_done_lines": 0
+    },
+    "219": {
+      "logical_id": 41,
+      "raw_lines": 86,
+      "boot_records": 1,
+      "control_received": 0,
+      "mac_callbacks": 6,
+      "reassembled_500B": 48,
+      "energy_snapshots": 1,
+      "first_timestamp_utc": "2026-11-22T15:06:18.968457+00:00",
+      "last_timestamp_utc": "2026-11-22T15:07:44.991119+00:00",
+      "connected_utc": "2026-11-22T15:06:18.586976+00:00",
+      "disconnected_utc": "2026-11-22T15:08:14.998044+00:00",
+      "first_boot_utc": "2026-11-22T15:06:21.976199+00:00",
+      "boot_id_verified": true,
+      "boot_method_verified": false,
+      "pre_reservation_lines": 86,
+      "post_done_lines": 0
+    }
+  },
+  "errors": [],
+  "missing_uart": [],
+  "missing_boot": [
+    {
+      "board": 218,
+      "logical_id": 1
+    },
+    {
+      "board": 234,
+      "logical_id": 3
+    },
+    {
+      "board": 236,
+      "logical_id": 4
+    },
+    {
+      "board": 239,
+      "logical_id": 6
+    },
+    {
+      "board": 295,
+      "logical_id": 7
+    },
+    {
+      "board": 240,
+      "logical_id": 8
+    },
+    {
+      "board": 241,
+      "logical_id": 9
+    },
+    {
+      "board": 197,
+      "logical_id": 10
+    },
+    {
+      "board": 216,
+      "logical_id": 11
+    },
+    {
+      "board": 245,
+      "logical_id": 14
+    },
+    {
+      "board": 202,
+      "logical_id": 16
+    },
+    {
+      "board": 293,
+      "logical_id": 17
+    },
+    {
+      "board": 201,
+      "logical_id": 18
+    },
+    {
+      "board": 200,
+      "logical_id": 19
+    },
+    {
+      "board": 199,
+      "logical_id": 20
+    },
+    {
+      "board": 220,
+      "logical_id": 21
+    },
+    {
+      "board": 222,
+      "logical_id": 22
+    },
+    {
+      "board": 223,
+      "logical_id": 23
+    },
+    {
+      "board": 225,
+      "logical_id": 25
+    },
+    {
+      "board": 226,
+      "logical_id": 26
+    },
+    {
+      "board": 227,
+      "logical_id": 27
+    },
+    {
+      "board": 229,
+      "logical_id": 29
+    },
+    {
+      "board": 230,
+      "logical_id": 30
+    },
+    {
+      "board": 214,
+      "logical_id": 32
+    },
+    {
+      "board": 212,
+      "logical_id": 34
+    },
+    {
+      "board": 211,
+      "logical_id": 35
+    },
+    {
+      "board": 210,
+      "logical_id": 36
+    },
+    {
+      "board": 209,
+      "logical_id": 37
+    },
+    {
+      "board": 208,
+      "logical_id": 38
+    },
+    {
+      "board": 205,
+      "logical_id": 39
+    }
+  ],
+  "bad_boot": [
+    {
+      "board": 219,
+      "logical_id": 41
+    }
+  ],
+  "stale_uart": [
+    {
+      "board": 218,
+      "logical_id": 1,
+      "count": 70
+    },
+    {
+      "board": 233,
+      "logical_id": 2,
+      "count": 85
+    },
+    {
+      "board": 234,
+      "logical_id": 3,
+      "count": 72
+    },
+    {
+      "board": 236,
+      "logical_id": 4,
+      "count": 72
+    },
+    {
+      "board": 237,
+      "logical_id": 5,
+      "count": 229
+    },
+    {
+      "board": 239,
+      "logical_id": 6,
+      "count": 72
+    },
+    {
+      "board": 295,
+      "logical_id": 7,
+      "count": 70
+    },
+    {
+      "board": 240,
+      "logical_id": 8,
+      "count": 70
+    },
+    {
+      "board": 241,
+      "logical_id": 9,
+      "count": 70
+    },
+    {
+      "board": 197,
+      "logical_id": 10,
+      "count": 68
+    },
+    {
+      "board": 216,
+      "logical_id": 11,
+      "count": 70
+    },
+    {
+      "board": 290,
+      "logical_id": 12,
+      "count": 83
+    },
+    {
+      "board": 204,
+      "logical_id": 13,
+      "count": 83
+    },
+    {
+      "board": 245,
+      "logical_id": 14,
+      "count": 70
+    },
+    {
+      "board": 292,
+      "logical_id": 15,
+      "count": 83
+    },
+    {
+      "board": 202,
+      "logical_id": 16,
+      "count": 70
+    },
+    {
+      "board": 293,
+      "logical_id": 17,
+      "count": 70
+    },
+    {
+      "board": 201,
+      "logical_id": 18,
+      "count": 70
+    },
+    {
+      "board": 200,
+      "logical_id": 19,
+      "count": 70
+    },
+    {
+      "board": 199,
+      "logical_id": 20,
+      "count": 70
+    },
+    {
+      "board": 220,
+      "logical_id": 21,
+      "count": 70
+    },
+    {
+      "board": 222,
+      "logical_id": 22,
+      "count": 70
+    },
+    {
+      "board": 223,
+      "logical_id": 23,
+      "count": 70
+    },
+    {
+      "board": 224,
+      "logical_id": 24,
+      "count": 85
+    },
+    {
+      "board": 225,
+      "logical_id": 25,
+      "count": 674
+    },
+    {
+      "board": 226,
+      "logical_id": 26,
+      "count": 72
+    },
+    {
+      "board": 227,
+      "logical_id": 27,
+      "count": 72
+    },
+    {
+      "board": 228,
+      "logical_id": 28,
+      "count": 85
+    },
+    {
+      "board": 229,
+      "logical_id": 29,
+      "count": 72
+    },
+    {
+      "board": 230,
+      "logical_id": 30,
+      "count": 72
+    },
+    {
+      "board": 215,
+      "logical_id": 31,
+      "count": 87
+    },
+    {
+      "board": 214,
+      "logical_id": 32,
+      "count": 604
+    },
+    {
+      "board": 213,
+      "logical_id": 33,
+      "count": 83
+    },
+    {
+      "board": 212,
+      "logical_id": 34,
+      "count": 70
+    },
+    {
+      "board": 211,
+      "logical_id": 35,
+      "count": 368
+    },
+    {
+      "board": 210,
+      "logical_id": 36,
+      "count": 70
+    },
+    {
+      "board": 209,
+      "logical_id": 37,
+      "count": 70
+    },
+    {
+      "board": 208,
+      "logical_id": 38,
+      "count": 70
+    },
+    {
+      "board": 205,
+      "logical_id": 39,
+      "count": 70
+    },
+    {
+      "board": 203,
+      "logical_id": 40,
+      "count": 83
+    },
+    {
+      "board": 219,
+      "logical_id": 41,
+      "count": 86
+    }
+  ],
+  "failures": [
+    "MISSING_NODE_BOOT",
+    "BOOT_ID_OR_METHOD_MISMATCH",
+    "PRE_RESERVATION_UART_ACTIVITY"
+  ],
+  "scientific_validation_pass": false,
+  "scientific_limit": "STATIC frozen controller; NOT adaptive closed-loop ACR-MCR. Source firmware method=0 for both arms; sink method identifies arm.",
+  "capture_duration_s": 165.372
+}

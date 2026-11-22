@@ -1,0 +1,26 @@
+{
+  "fixture_id": "POINT-EA_9402_S5_r20",
+  "original_simulator_sha256": "3f134a8826525215f7cf2ff307bab3893c0d64b050f742bdc3c250b1c0302ea4",
+  "original_method": "POINT-EA",
+  "seed": 9402,
+  "scenario": "S5",
+  "t": 20,
+  "source": "Synthetic original simulator state (NOT physical observations)",
+  "n_sensors": 40,
+  "n_heads": 4,
+  "stress_samples": 0,
+  "score_window_records": 512,
+  "selected_head_ids": [
+    3,
+    9,
+    34,
+    37
+  ],
+  "selected_objective": 0.33730372691995675,
+  "tail_risk_enabled": false,
+  "frozen_risk_index_tensor_9bit": 0,
+  "fixture_h_sha256": "1365110edea79d77397e30cdccc507c9ca925dc0fa65790c11cbc72a695c6924",
+  "interpretation": "Original NumPy candidate and risk-index sequences are frozen in firmware FLASH. This tests M3 deterministic decision kernel only.",
+  "physical_sink_firmware_sha256": "71ac8e388aa4f3c884cd408ac216720a88159afaa9c3bedbfb948ecf66ffd248",
+  "physical_firmware_algorithm": "Native on-M3 original deterministic search + CVaR on synthetic frozen fixture; NOT closed loop"
+}

@@ -1,0 +1,74 @@
+2026-11-22T15:03:15.874563+00:00	MAC_START round=0 type=3 src=41 sender=17 to=0 part=0 bytes=89
+2026-11-22T15:03:15.890549+00:00	MAC_TX round=0 type=3 src=41 sender=17 to=0 part=0 status=0 attempts=1 bytes=89
+2026-11-22T15:03:15.906600+00:00	CTRL_APPLIED round=0 id=17 next=4 probe=41 enabled=1 head=0
+2026-11-22T15:03:15.906663+00:00	DATA_TIMER_CONTROL_TRIGGER round=0 id=17
+2026-11-22T15:03:15.906713+00:00	MAC_START round=0 type=3 src=41 sender=17 to=0 part=1 bytes=89
+2026-11-22T15:03:16.114673+00:00	MAC_TX round=0 type=3 src=41 sender=17 to=0 part=1 status=0 attempts=1 bytes=89
+2026-11-22T15:03:17.922415+00:00	DATA_DEMAND round=0 src=17 app_bytes=500 fragments=8 head=0 next=4
+2026-11-22T15:03:17.922486+00:00	MAC_START round=0 type=1 src=17 sender=17 to=4 part=0 bytes=73
+2026-11-22T15:03:18.818661+00:00	MAC_TX round=0 type=1 src=17 sender=17 to=4 part=0 status=2 attempts=8 bytes=73
+2026-11-22T15:03:18.818808+00:00	MAC_START round=0 type=1 src=17 sender=17 to=4 part=1 bytes=73
+2026-11-22T15:03:19.282566+00:00	MAC_TX round=0 type=1 src=17 sender=17 to=4 part=1 status=2 attempts=8 bytes=73
+2026-11-22T15:03:19.282710+00:00	MAC_START round=0 type=1 src=17 sender=17 to=4 part=2 bytes=73
+2026-11-22T15:03:20.322482+00:00	MAC_TX round=0 type=1 src=17 sender=17 to=4 part=2 status=2 attempts=8 bytes=73
+2026-11-22T15:03:20.322632+00:00	MAC_START round=0 type=1 src=17 sender=17 to=4 part=3 bytes=73
+2026-11-22T15:03:21.234307+00:00	MAC_TX round=0 type=1 src=17 sender=17 to=4 part=3 status=2 attempts=8 bytes=73
+2026-11-22T15:03:21.234448+00:00	MAC_START round=0 type=1 src=17 sender=17 to=4 part=4 bytes=73
+2026-11-22T15:03:21.911524+00:00	MAC_TX round=0 type=1 src=17 sender=17 to=4 part=4 status=2 attempts=8 bytes=73
+2026-11-22T15:03:21.911666+00:00	MAC_START round=0 type=1 src=17 sender=17 to=4 part=5 bytes=73
+2026-11-22T15:03:22.866261+00:00	MAC_TX round=0 type=1 src=17 sender=17 to=4 part=5 status=2 attempts=8 bytes=73
+2026-11-22T15:03:22.866410+00:00	MAC_START round=0 type=1 src=17 sender=17 to=4 part=6 bytes=73
+2026-11-22T15:03:23.986139+00:00	MAC_TX round=0 type=1 src=17 sender=17 to=4 part=6 status=2 attempts=8 bytes=73
+2026-11-22T15:03:23.986288+00:00	MAC_START round=0 type=1 src=17 sender=17 to=4 part=7 bytes=61
+2026-11-22T15:03:24.273919+00:00	MAC_TX round=0 type=1 src=17 sender=17 to=4 part=7 status=2 attempts=8 bytes=61
+2026-11-22T15:03:24.274061+00:00	MAC_START round=0 type=2 src=17 sender=17 to=41 part=0 bytes=17
+2026-11-22T15:03:24.690023+00:00	MAC_TX round=0 type=2 src=17 sender=17 to=41 part=0 status=2 attempts=8 bytes=17
+2026-11-22T15:03:35.904390+00:00	MAC_START round=1 type=3 src=41 sender=17 to=0 part=0 bytes=89
+2026-11-22T15:03:35.952348+00:00	CTRL_APPLIED round=1 id=17 next=4 probe=41 enabled=1 head=0
+2026-11-22T15:03:35.968339+00:00	DATA_TIMER_CONTROL_TRIGGER round=1 id=17
+2026-11-22T15:03:36.224442+00:00	MAC_TX round=1 type=3 src=41 sender=17 to=0 part=0 status=0 attempts=1 bytes=89
+2026-11-22T15:03:37.968405+00:00	DATA_DEMAND round=1 src=17 app_bytes=500 fragments=8 head=0 next=4
+2026-11-22T15:03:37.968494+00:00	MAC_START round=1 type=1 src=17 sender=17 to=4 part=0 bytes=73
+2026-11-22T15:03:38.992386+00:00	MAC_TX round=1 type=1 src=17 sender=17 to=4 part=0 status=2 attempts=8 bytes=73
+2026-11-22T15:03:38.992532+00:00	MAC_START round=1 type=1 src=17 sender=17 to=4 part=1 bytes=73
+2026-11-22T15:03:39.936455+00:00	MAC_TX round=1 type=1 src=17 sender=17 to=4 part=1 status=2 attempts=8 bytes=73
+2026-11-22T15:03:39.936594+00:00	MAC_START round=1 type=1 src=17 sender=17 to=4 part=2 bytes=73
+2026-11-22T15:03:41.472101+00:00	MAC_TX round=1 type=1 src=17 sender=17 to=4 part=2 status=2 attempts=8 bytes=73
+2026-11-22T15:03:41.472247+00:00	MAC_START round=1 type=1 src=17 sender=17 to=4 part=3 bytes=73
+2026-11-22T15:03:42.223964+00:00	MAC_TX round=1 type=1 src=17 sender=17 to=4 part=3 status=2 attempts=8 bytes=73
+2026-11-22T15:03:42.224104+00:00	MAC_START round=1 type=1 src=17 sender=17 to=4 part=4 bytes=73
+2026-11-22T15:03:43.312080+00:00	MAC_TX round=1 type=1 src=17 sender=17 to=4 part=4 status=2 attempts=8 bytes=73
+2026-11-22T15:03:43.312221+00:00	MAC_START round=1 type=1 src=17 sender=17 to=4 part=5 bytes=73
+2026-11-22T15:03:43.951915+00:00	MAC_TX round=1 type=1 src=17 sender=17 to=4 part=5 status=2 attempts=8 bytes=73
+2026-11-22T15:03:43.952060+00:00	MAC_START round=1 type=1 src=17 sender=17 to=4 part=6 bytes=73
+2026-11-22T15:03:44.319835+00:00	MAC_TX round=1 type=1 src=17 sender=17 to=4 part=6 status=2 attempts=8 bytes=73
+2026-11-22T15:03:44.319975+00:00	MAC_START round=1 type=1 src=17 sender=17 to=4 part=7 bytes=61
+2026-11-22T15:03:44.863801+00:00	MAC_TX round=1 type=1 src=17 sender=17 to=4 part=7 status=2 attempts=8 bytes=61
+2026-11-22T15:03:44.863949+00:00	MAC_START round=1 type=2 src=17 sender=17 to=41 part=0 bytes=17
+2026-11-22T15:03:45.535918+00:00	MAC_TX round=1 type=2 src=17 sender=17 to=41 part=0 status=2 attempts=8 bytes=17
+2026-11-22T15:03:55.902607+00:00	MAC_START round=2 type=3 src=41 sender=17 to=0 part=0 bytes=89
+2026-11-22T15:03:55.950322+00:00	MAC_TX round=2 type=3 src=41 sender=17 to=0 part=0 status=0 attempts=1 bytes=89
+2026-11-22T15:03:55.950385+00:00	CTRL_APPLIED round=2 id=17 next=4 probe=41 enabled=1 head=0
+2026-11-22T15:03:55.950464+00:00	DATA_TIMER_CONTROL_TRIGGER round=2 id=17
+2026-11-22T15:03:55.950516+00:00	MAC_START round=2 type=3 src=41 sender=17 to=0 part=1 bytes=89
+2026-11-22T15:03:56.238467+00:00	MAC_TX round=2 type=3 src=41 sender=17 to=0 part=1 status=0 attempts=1 bytes=89
+2026-11-22T15:03:57.966053+00:00	DATA_DEMAND round=2 src=17 app_bytes=500 fragments=8 head=0 next=4
+2026-11-22T15:03:57.966124+00:00	MAC_START round=2 type=1 src=17 sender=17 to=4 part=0 bytes=73
+2026-11-22T15:04:00.142283+00:00	MAC_TX round=2 type=1 src=17 sender=17 to=4 part=0 status=2 attempts=8 bytes=73
+2026-11-22T15:04:00.142433+00:00	MAC_START round=2 type=1 src=17 sender=17 to=4 part=1 bytes=73
+2026-11-22T15:04:00.702198+00:00	MAC_TX round=2 type=1 src=17 sender=17 to=4 part=1 status=2 attempts=8 bytes=73
+2026-11-22T15:04:00.702340+00:00	MAC_START round=2 type=1 src=17 sender=17 to=4 part=2 bytes=73
+2026-11-22T15:04:01.294013+00:00	MAC_TX round=2 type=1 src=17 sender=17 to=4 part=2 status=2 attempts=8 bytes=73
+2026-11-22T15:04:01.294173+00:00	MAC_START round=2 type=1 src=17 sender=17 to=4 part=3 bytes=73
+2026-11-22T15:04:02.158029+00:00	MAC_TX round=2 type=1 src=17 sender=17 to=4 part=3 status=2 attempts=8 bytes=73
+2026-11-22T15:04:02.158239+00:00	MAC_START round=2 type=1 src=17 sender=17 to=4 part=4 bytes=73
+2026-11-22T15:04:03.133945+00:00	MAC_TX round=2 type=1 src=17 sender=17 to=4 part=4 status=2 attempts=8 bytes=73
+2026-11-22T15:04:03.134128+00:00	MAC_START round=2 type=1 src=17 sender=17 to=4 part=5 bytes=73
+2026-11-22T15:04:03.869897+00:00	MAC_TX round=2 type=1 src=17 sender=17 to=4 part=5 status=2 attempts=8 bytes=73
+2026-11-22T15:04:03.870062+00:00	MAC_START round=2 type=1 src=17 sender=17 to=4 part=6 bytes=73
+2026-11-22T15:04:04.541771+00:00	MAC_TX round=2 type=1 src=17 sender=17 to=4 part=6 status=2 attempts=8 bytes=73
+2026-11-22T15:04:04.541912+00:00	MAC_START round=2 type=1 src=17 sender=17 to=4 part=7 bytes=61
+2026-11-22T15:04:04.797534+00:00	MAC_TX round=2 type=1 src=17 sender=17 to=4 part=7 status=2 attempts=8 bytes=61
+2026-11-22T15:04:04.797669+00:00	MAC_START round=2 type=2 src=17 sender=17 to=41 part=0 bytes=17
+2026-11-22T15:04:05.421657+00:00	MAC_TX round=2 type=2 src=17 sender=17 to=41 part=0 status=2 attempts=8 bytes=17
+2026-11-22T15:04:10.877120+00:00	ENERGEST_RAW id=17 round=3 cpu=94604 lpm=2691340 deep=0 tx=23184 listen=1251660 ticks_per_second=32768

@@ -1,0 +1,1124 @@
+{
+  "experiment": 459600,
+  "method": "POINT-EA",
+  "reservation_utc": "2026-11-22T15:05:28.943455+00:00",
+  "site": "Grenoble",
+  "requested_sources": 40,
+  "requested_sink_nodes": 1,
+  "requested_rounds": 3,
+  "sink_reported_experiment_finished": true,
+  "captured_serial_nodes": 41,
+  "control_receptions": 120,
+  "full_500B_sink_reassemblies": 55,
+  "physical_serial_records": {
+    "218": {
+      "logical_id": 1,
+      "raw_lines": 76,
+      "boot_records": 0,
+      "control_received": 3,
+      "mac_callbacks": 33,
+      "reassembled_500B": 0,
+      "energy_snapshots": 1,
+      "first_timestamp_utc": "2026-11-22T15:03:15.868728+00:00",
+      "last_timestamp_utc": "2026-11-22T15:04:10.902493+00:00",
+      "connected_utc": "2026-11-22T15:02:45.923624+00:00",
+      "disconnected_utc": "2026-11-22T15:04:46.450133+00:00",
+      "first_boot_utc": null,
+      "boot_id_verified": false,
+      "boot_method_verified": false,
+      "pre_reservation_lines": 76,
+      "post_done_lines": 0
+    },
+    "233": {
+      "logical_id": 2,
+      "raw_lines": 74,
+      "boot_records": 0,
+      "control_received": 3,
+      "mac_callbacks": 32,
+      "reassembled_500B": 0,
+      "energy_snapshots": 1,
+      "first_timestamp_utc": "2026-11-22T15:03:15.867853+00:00",
+      "last_timestamp_utc": "2026-11-22T15:04:10.852447+00:00",
+      "connected_utc": "2026-11-22T15:02:45.961046+00:00",
+      "disconnected_utc": "2026-11-22T15:04:46.452853+00:00",
+      "first_boot_utc": null,
+      "boot_id_verified": false,
+      "boot_method_verified": false,
+      "pre_reservation_lines": 74,
+      "post_done_lines": 0
+    },
+    "234": {
+      "logical_id": 3,
+      "raw_lines": 76,
+      "boot_records": 0,
+      "control_received": 3,
+      "mac_callbacks": 33,
+      "reassembled_500B": 0,
+      "energy_snapshots": 1,
+      "first_timestamp_utc": "2026-11-22T15:03:15.866988+00:00",
+      "last_timestamp_utc": "2026-11-22T15:04:10.868545+00:00",
+      "connected_utc": "2026-11-22T15:02:45.958329+00:00",
+      "disconnected_utc": "2026-11-22T15:04:46.453021+00:00",
+      "first_boot_utc": null,
+      "boot_id_verified": false,
+      "boot_method_verified": false,
+      "pre_reservation_lines": 76,
+      "post_done_lines": 0
+    },
+    "236": {
+      "logical_id": 4,
+      "raw_lines": 407,
+      "boot_records": 0,
+      "control_received": 3,
+      "mac_callbacks": 196,
+      "reassembled_500B": 0,
+      "energy_snapshots": 1,
+      "first_timestamp_utc": "2026-11-22T15:03:15.865198+00:00",
+      "last_timestamp_utc": "2026-11-22T15:04:10.835605+00:00",
+      "connected_utc": "2026-11-22T15:02:45.957271+00:00",
+      "disconnected_utc": "2026-11-22T15:04:46.453238+00:00",
+      "first_boot_utc": null,
+      "boot_id_verified": false,
+      "boot_method_verified": false,
+      "pre_reservation_lines": 407,
+      "post_done_lines": 0
+    },
+    "237": {
+      "logical_id": 5,
+      "raw_lines": 76,
+      "boot_records": 0,
+      "control_received": 3,
+      "mac_callbacks": 33,
+      "reassembled_500B": 0,
+      "energy_snapshots": 1,
+      "first_timestamp_utc": "2026-11-22T15:03:15.867333+00:00",
+      "last_timestamp_utc": "2026-11-22T15:04:10.868228+00:00",
+      "connected_utc": "2026-11-22T15:02:45.961745+00:00",
+      "disconnected_utc": "2026-11-22T15:04:46.453413+00:00",
+      "first_boot_utc": null,
+      "boot_id_verified": false,
+      "boot_method_verified": false,
+      "pre_reservation_lines": 76,
+      "post_done_lines": 0
+    },
+    "239": {
+      "logical_id": 6,
+      "raw_lines": 74,
+      "boot_records": 0,
+      "control_received": 3,
+      "mac_callbacks": 32,
+      "reassembled_500B": 0,
+      "energy_snapshots": 1,
+      "first_timestamp_utc": "2026-11-22T15:03:15.866510+00:00",
+      "last_timestamp_utc": "2026-11-22T15:04:10.883914+00:00",
+      "connected_utc": "2026-11-22T15:02:45.959757+00:00",
+      "disconnected_utc": "2026-11-22T15:04:46.453583+00:00",
+      "first_boot_utc": null,
+      "boot_id_verified": false,
+      "boot_method_verified": false,
+      "pre_reservation_lines": 74,
+      "post_done_lines": 0
+    },
+    "295": {
+      "logical_id": 7,
+      "raw_lines": 74,
+      "boot_records": 0,
+      "control_received": 3,
+      "mac_callbacks": 32,
+      "reassembled_500B": 0,
+      "energy_snapshots": 1,
+      "first_timestamp_utc": "2026-11-22T15:03:15.874125+00:00",
+      "last_timestamp_utc": "2026-11-22T15:04:10.924198+00:00",
+      "connected_utc": "2026-11-22T15:02:45.967822+00:00",
+      "disconnected_utc": "2026-11-22T15:04:46.454749+00:00",
+      "first_boot_utc": null,
+      "boot_id_verified": false,
+      "boot_method_verified": false,
+      "pre_reservation_lines": 74,
+      "post_done_lines": 0
+    },
+    "240": {
+      "logical_id": 8,
+      "raw_lines": 76,
+      "boot_records": 0,
+      "control_received": 3,
+      "mac_callbacks": 33,
+      "reassembled_500B": 0,
+      "energy_snapshots": 1,
+      "first_timestamp_utc": "2026-11-22T15:03:15.856489+00:00",
+      "last_timestamp_utc": "2026-11-22T15:04:10.890080+00:00",
+      "connected_utc": "2026-11-22T15:02:45.963023+00:00",
+      "disconnected_utc": "2026-11-22T15:04:46.453752+00:00",
+      "first_boot_utc": null,
+      "boot_id_verified": false,
+      "boot_method_verified": false,
+      "pre_reservation_lines": 76,
+      "post_done_lines": 0
+    },
+    "241": {
+      "logical_id": 9,
+      "raw_lines": 76,
+      "boot_records": 0,
+      "control_received": 3,
+      "mac_callbacks": 33,
+      "reassembled_500B": 0,
+      "energy_snapshots": 1,
+      "first_timestamp_utc": "2026-11-22T15:03:15.878497+00:00",
+      "last_timestamp_utc": "2026-11-22T15:04:10.880379+00:00",
+      "connected_utc": "2026-11-22T15:02:45.964261+00:00",
+      "disconnected_utc": "2026-11-22T15:04:46.453918+00:00",
+      "first_boot_utc": null,
+      "boot_id_verified": false,
+      "boot_method_verified": false,
+      "pre_reservation_lines": 76,
+      "post_done_lines": 0
+    },
+    "197": {
+      "logical_id": 10,
+      "raw_lines": 180,
+      "boot_records": 0,
+      "control_received": 3,
+      "mac_callbacks": 85,
+      "reassembled_500B": 0,
+      "energy_snapshots": 1,
+      "first_timestamp_utc": "2026-11-22T15:03:15.864969+00:00",
+      "last_timestamp_utc": "2026-11-22T15:04:10.819208+00:00",
+      "connected_utc": "2026-11-22T15:02:45.904407+00:00",
+      "disconnected_utc": "2026-11-22T15:04:46.444397+00:00",
+      "first_boot_utc": null,
+      "boot_id_verified": false,
+      "boot_method_verified": false,
+      "pre_reservation_lines": 180,
+      "post_done_lines": 0
+    },
+    "216": {
+      "logical_id": 11,
+      "raw_lines": 76,
+      "boot_records": 0,
+      "control_received": 3,
+      "mac_callbacks": 33,
+      "reassembled_500B": 0,
+      "energy_snapshots": 1,
+      "first_timestamp_utc": "2026-11-22T15:03:15.869275+00:00",
+      "last_timestamp_utc": "2026-11-22T15:04:10.886736+00:00",
+      "connected_utc": "2026-11-22T15:02:45.924099+00:00",
+      "disconnected_utc": "2026-11-22T15:04:46.449841+00:00",
+      "first_boot_utc": null,
+      "boot_id_verified": false,
+      "boot_method_verified": false,
+      "pre_reservation_lines": 76,
+      "post_done_lines": 0
+    },
+    "290": {
+      "logical_id": 12,
+      "raw_lines": 76,
+      "boot_records": 0,
+      "control_received": 3,
+      "mac_callbacks": 33,
+      "reassembled_500B": 0,
+      "energy_snapshots": 1,
+      "first_timestamp_utc": "2026-11-22T15:03:15.858237+00:00",
+      "last_timestamp_utc": "2026-11-22T15:04:10.908590+00:00",
+      "connected_utc": "2026-11-22T15:02:45.965916+00:00",
+      "disconnected_utc": "2026-11-22T15:04:46.454250+00:00",
+      "first_boot_utc": null,
+      "boot_id_verified": false,
+      "boot_method_verified": false,
+      "pre_reservation_lines": 76,
+      "post_done_lines": 0
+    },
+    "204": {
+      "logical_id": 13,
+      "raw_lines": 70,
+      "boot_records": 0,
+      "control_received": 3,
+      "mac_callbacks": 30,
+      "reassembled_500B": 0,
+      "energy_snapshots": 1,
+      "first_timestamp_utc": "2026-11-22T15:03:15.865986+00:00",
+      "last_timestamp_utc": "2026-11-22T15:04:10.851913+00:00",
+      "connected_utc": "2026-11-22T15:02:45.905322+00:00",
+      "disconnected_utc": "2026-11-22T15:04:46.446594+00:00",
+      "first_boot_utc": null,
+      "boot_id_verified": false,
+      "boot_method_verified": false,
+      "pre_reservation_lines": 70,
+      "post_done_lines": 0
+    },
+    "245": {
+      "logical_id": 14,
+      "raw_lines": 74,
+      "boot_records": 0,
+      "control_received": 3,
+      "mac_callbacks": 32,
+      "reassembled_500B": 0,
+      "energy_snapshots": 1,
+      "first_timestamp_utc": "2026-11-22T15:03:15.889768+00:00",
+      "last_timestamp_utc": "2026-11-22T15:04:10.940059+00:00",
+      "connected_utc": "2026-11-22T15:02:45.966568+00:00",
+      "disconnected_utc": "2026-11-22T15:04:46.454085+00:00",
+      "first_boot_utc": null,
+      "boot_id_verified": false,
+      "boot_method_verified": false,
+      "pre_reservation_lines": 74,
+      "post_done_lines": 0
+    },
+    "292": {
+      "logical_id": 15,
+      "raw_lines": 76,
+      "boot_records": 0,
+      "control_received": 3,
+      "mac_callbacks": 33,
+      "reassembled_500B": 0,
+      "energy_snapshots": 1,
+      "first_timestamp_utc": "2026-11-22T15:03:15.858392+00:00",
+      "last_timestamp_utc": "2026-11-22T15:04:10.924434+00:00",
+      "connected_utc": "2026-11-22T15:02:45.967207+00:00",
+      "disconnected_utc": "2026-11-22T15:04:46.454419+00:00",
+      "first_boot_utc": null,
+      "boot_id_verified": false,
+      "boot_method_verified": false,
+      "pre_reservation_lines": 76,
+      "post_done_lines": 0
+    },
+    "202": {
+      "logical_id": 16,
+      "raw_lines": 76,
+      "boot_records": 0,
+      "control_received": 3,
+      "mac_callbacks": 33,
+      "reassembled_500B": 0,
+      "energy_snapshots": 1,
+      "first_timestamp_utc": "2026-11-22T15:03:15.865498+00:00",
+      "last_timestamp_utc": "2026-11-22T15:04:10.883739+00:00",
+      "connected_utc": "2026-11-22T15:02:45.906720+00:00",
+      "disconnected_utc": "2026-11-22T15:04:46.445922+00:00",
+      "first_boot_utc": null,
+      "boot_id_verified": false,
+      "boot_method_verified": false,
+      "pre_reservation_lines": 76,
+      "post_done_lines": 0
+    },
+    "293": {
+      "logical_id": 17,
+      "raw_lines": 74,
+      "boot_records": 0,
+      "control_received": 3,
+      "mac_callbacks": 32,
+      "reassembled_500B": 0,
+      "energy_snapshots": 1,
+      "first_timestamp_utc": "2026-11-22T15:03:15.874563+00:00",
+      "last_timestamp_utc": "2026-11-22T15:04:10.877120+00:00",
+      "connected_utc": "2026-11-22T15:02:45.968440+00:00",
+      "disconnected_utc": "2026-11-22T15:04:46.454585+00:00",
+      "first_boot_utc": null,
+      "boot_id_verified": false,
+      "boot_method_verified": false,
+      "pre_reservation_lines": 74,
+      "post_done_lines": 0
+    },
+    "201": {
+      "logical_id": 18,
+      "raw_lines": 74,
+      "boot_records": 0,
+      "control_received": 3,
+      "mac_callbacks": 32,
+      "reassembled_500B": 0,
+      "energy_snapshots": 1,
+      "first_timestamp_utc": "2026-11-22T15:03:15.857571+00:00",
+      "last_timestamp_utc": "2026-11-22T15:04:10.828274+00:00",
+      "connected_utc": "2026-11-22T15:02:45.910188+00:00",
+      "disconnected_utc": "2026-11-22T15:04:46.445630+00:00",
+      "first_boot_utc": null,
+      "boot_id_verified": false,
+      "boot_method_verified": false,
+      "pre_reservation_lines": 74,
+      "post_done_lines": 0
+    },
+    "200": {
+      "logical_id": 19,
+      "raw_lines": 76,
+      "boot_records": 0,
+      "control_received": 3,
+      "mac_callbacks": 33,
+      "reassembled_500B": 0,
+      "energy_snapshots": 1,
+      "first_timestamp_utc": "2026-11-22T15:03:15.867141+00:00",
+      "last_timestamp_utc": "2026-11-22T15:04:10.836143+00:00",
+      "connected_utc": "2026-11-22T15:02:45.910774+00:00",
+      "disconnected_utc": "2026-11-22T15:04:46.445329+00:00",
+      "first_boot_utc": null,
+      "boot_id_verified": false,
+      "boot_method_verified": false,
+      "pre_reservation_lines": 76,
+      "post_done_lines": 0
+    },
+    "199": {
+      "logical_id": 20,
+      "raw_lines": 76,
+      "boot_records": 0,
+      "control_received": 3,
+      "mac_callbacks": 33,
+      "reassembled_500B": 0,
+      "energy_snapshots": 1,
+      "first_timestamp_utc": "2026-11-22T15:03:15.865648+00:00",
+      "last_timestamp_utc": "2026-11-22T15:04:10.883567+00:00",
+      "connected_utc": "2026-11-22T15:02:45.909311+00:00",
+      "disconnected_utc": "2026-11-22T15:04:46.444929+00:00",
+      "first_boot_utc": null,
+      "boot_id_verified": false,
+      "boot_method_verified": false,
+      "pre_reservation_lines": 76,
+      "post_done_lines": 0
+    },
+    "220": {
+      "logical_id": 21,
+      "raw_lines": 89,
+      "boot_records": 1,
+      "control_received": 3,
+      "mac_callbacks": 33,
+      "reassembled_500B": 0,
+      "energy_snapshots": 1,
+      "first_timestamp_utc": "2026-11-22T15:02:45.969245+00:00",
+      "last_timestamp_utc": "2026-11-22T15:04:10.964191+00:00",
+      "connected_utc": "2026-11-22T15:02:45.921519+00:00",
+      "disconnected_utc": "2026-11-22T15:04:46.450663+00:00",
+      "first_boot_utc": "2026-11-22T15:02:45.981817+00:00",
+      "boot_id_verified": true,
+      "boot_method_verified": true,
+      "pre_reservation_lines": 89,
+      "post_done_lines": 0
+    },
+    "222": {
+      "logical_id": 22,
+      "raw_lines": 76,
+      "boot_records": 0,
+      "control_received": 3,
+      "mac_callbacks": 33,
+      "reassembled_500B": 0,
+      "energy_snapshots": 1,
+      "first_timestamp_utc": "2026-11-22T15:03:15.868921+00:00",
+      "last_timestamp_utc": "2026-11-22T15:04:10.806260+00:00",
+      "connected_utc": "2026-11-22T15:02:45.922648+00:00",
+      "disconnected_utc": "2026-11-22T15:04:46.450950+00:00",
+      "first_boot_utc": null,
+      "boot_id_verified": false,
+      "boot_method_verified": false,
+      "pre_reservation_lines": 76,
+      "post_done_lines": 0
+    },
+    "223": {
+      "logical_id": 23,
+      "raw_lines": 76,
+      "boot_records": 0,
+      "control_received": 3,
+      "mac_callbacks": 33,
+      "reassembled_500B": 0,
+      "energy_snapshots": 1,
+      "first_timestamp_utc": "2026-11-22T15:03:15.865739+00:00",
+      "last_timestamp_utc": "2026-11-22T15:04:10.851743+00:00",
+      "connected_utc": "2026-11-22T15:02:45.918909+00:00",
+      "disconnected_utc": "2026-11-22T15:04:46.451198+00:00",
+      "first_boot_utc": null,
+      "boot_id_verified": false,
+      "boot_method_verified": false,
+      "pre_reservation_lines": 76,
+      "post_done_lines": 0
+    },
+    "224": {
+      "logical_id": 24,
+      "raw_lines": 76,
+      "boot_records": 0,
+      "control_received": 3,
+      "mac_callbacks": 33,
+      "reassembled_500B": 0,
+      "energy_snapshots": 1,
+      "first_timestamp_utc": "2026-11-22T15:03:15.868454+00:00",
+      "last_timestamp_utc": "2026-11-22T15:04:10.854370+00:00",
+      "connected_utc": "2026-11-22T15:02:45.923140+00:00",
+      "disconnected_utc": "2026-11-22T15:04:46.451429+00:00",
+      "first_boot_utc": null,
+      "boot_id_verified": false,
+      "boot_method_verified": false,
+      "pre_reservation_lines": 76,
+      "post_done_lines": 0
+    },
+    "225": {
+      "logical_id": 25,
+      "raw_lines": 76,
+      "boot_records": 0,
+      "control_received": 3,
+      "mac_callbacks": 33,
+      "reassembled_500B": 0,
+      "energy_snapshots": 1,
+      "first_timestamp_utc": "2026-11-22T15:03:15.862008+00:00",
+      "last_timestamp_utc": "2026-11-22T15:04:10.863715+00:00",
+      "connected_utc": "2026-11-22T15:02:45.920996+00:00",
+      "disconnected_utc": "2026-11-22T15:04:46.451659+00:00",
+      "first_boot_utc": null,
+      "boot_id_verified": false,
+      "boot_method_verified": false,
+      "pre_reservation_lines": 76,
+      "post_done_lines": 0
+    },
+    "226": {
+      "logical_id": 26,
+      "raw_lines": 76,
+      "boot_records": 0,
+      "control_received": 3,
+      "mac_callbacks": 33,
+      "reassembled_500B": 0,
+      "energy_snapshots": 1,
+      "first_timestamp_utc": "2026-11-22T15:03:15.866190+00:00",
+      "last_timestamp_utc": "2026-11-22T15:04:10.852054+00:00",
+      "connected_utc": "2026-11-22T15:02:45.962390+00:00",
+      "disconnected_utc": "2026-11-22T15:04:46.451888+00:00",
+      "first_boot_utc": null,
+      "boot_id_verified": false,
+      "boot_method_verified": false,
+      "pre_reservation_lines": 76,
+      "post_done_lines": 0
+    },
+    "227": {
+      "logical_id": 27,
+      "raw_lines": 76,
+      "boot_records": 0,
+      "control_received": 3,
+      "mac_callbacks": 33,
+      "reassembled_500B": 0,
+      "energy_snapshots": 1,
+      "first_timestamp_utc": "2026-11-22T15:03:15.859231+00:00",
+      "last_timestamp_utc": "2026-11-22T15:04:10.876875+00:00",
+      "connected_utc": "2026-11-22T15:02:45.959068+00:00",
+      "disconnected_utc": "2026-11-22T15:04:46.452121+00:00",
+      "first_boot_utc": null,
+      "boot_id_verified": false,
+      "boot_method_verified": false,
+      "pre_reservation_lines": 76,
+      "post_done_lines": 0
+    },
+    "228": {
+      "logical_id": 28,
+      "raw_lines": 76,
+      "boot_records": 0,
+      "control_received": 3,
+      "mac_callbacks": 33,
+      "reassembled_500B": 0,
+      "energy_snapshots": 1,
+      "first_timestamp_utc": "2026-11-22T15:03:15.856780+00:00",
+      "last_timestamp_utc": "2026-11-22T15:04:10.810883+00:00",
+      "connected_utc": "2026-11-22T15:02:45.965209+00:00",
+      "disconnected_utc": "2026-11-22T15:04:46.452324+00:00",
+      "first_boot_utc": null,
+      "boot_id_verified": false,
+      "boot_method_verified": false,
+      "pre_reservation_lines": 76,
+      "post_done_lines": 0
+    },
+    "229": {
+      "logical_id": 29,
+      "raw_lines": 76,
+      "boot_records": 0,
+      "control_received": 3,
+      "mac_callbacks": 33,
+      "reassembled_500B": 0,
+      "energy_snapshots": 1,
+      "first_timestamp_utc": "2026-11-22T15:03:15.866792+00:00",
+      "last_timestamp_utc": "2026-11-22T15:04:10.932447+00:00",
+      "connected_utc": "2026-11-22T15:02:45.960424+00:00",
+      "disconnected_utc": "2026-11-22T15:04:46.452503+00:00",
+      "first_boot_utc": null,
+      "boot_id_verified": false,
+      "boot_method_verified": false,
+      "pre_reservation_lines": 76,
+      "post_done_lines": 0
+    },
+    "230": {
+      "logical_id": 30,
+      "raw_lines": 76,
+      "boot_records": 0,
+      "control_received": 3,
+      "mac_callbacks": 33,
+      "reassembled_500B": 0,
+      "energy_snapshots": 1,
+      "first_timestamp_utc": "2026-11-22T15:03:15.863763+00:00",
+      "last_timestamp_utc": "2026-11-22T15:04:10.865087+00:00",
+      "connected_utc": "2026-11-22T15:02:45.954992+00:00",
+      "disconnected_utc": "2026-11-22T15:04:46.452684+00:00",
+      "first_boot_utc": null,
+      "boot_id_verified": false,
+      "boot_method_verified": false,
+      "pre_reservation_lines": 76,
+      "post_done_lines": 0
+    },
+    "215": {
+      "logical_id": 31,
+      "raw_lines": 85,
+      "boot_records": 1,
+      "control_received": 3,
+      "mac_callbacks": 31,
+      "reassembled_500B": 0,
+      "energy_snapshots": 1,
+      "first_timestamp_utc": "2026-11-22T15:03:13.658394+00:00",
+      "last_timestamp_utc": "2026-11-22T15:04:38.656856+00:00",
+      "connected_utc": "2026-11-22T15:03:13.361635+00:00",
+      "disconnected_utc": "2026-11-22T15:04:46.449445+00:00",
+      "first_boot_utc": "2026-11-22T15:03:13.674143+00:00",
+      "boot_id_verified": true,
+      "boot_method_verified": true,
+      "pre_reservation_lines": 85,
+      "post_done_lines": 1
+    },
+    "214": {
+      "logical_id": 32,
+      "raw_lines": 76,
+      "boot_records": 0,
+      "control_received": 3,
+      "mac_callbacks": 33,
+      "reassembled_500B": 0,
+      "energy_snapshots": 1,
+      "first_timestamp_utc": "2026-11-22T15:03:15.869356+00:00",
+      "last_timestamp_utc": "2026-11-22T15:04:10.855098+00:00",
+      "connected_utc": "2026-11-22T15:02:45.922135+00:00",
+      "disconnected_utc": "2026-11-22T15:04:46.448650+00:00",
+      "first_boot_utc": null,
+      "boot_id_verified": false,
+      "boot_method_verified": false,
+      "pre_reservation_lines": 76,
+      "post_done_lines": 0
+    },
+    "213": {
+      "logical_id": 33,
+      "raw_lines": 74,
+      "boot_records": 0,
+      "control_received": 3,
+      "mac_callbacks": 32,
+      "reassembled_500B": 0,
+      "energy_snapshots": 1,
+      "first_timestamp_utc": "2026-11-22T15:03:15.868177+00:00",
+      "last_timestamp_utc": "2026-11-22T15:04:10.869866+00:00",
+      "connected_utc": "2026-11-22T15:02:45.919920+00:00",
+      "disconnected_utc": "2026-11-22T15:04:46.448409+00:00",
+      "first_boot_utc": null,
+      "boot_id_verified": false,
+      "boot_method_verified": false,
+      "pre_reservation_lines": 74,
+      "post_done_lines": 0
+    },
+    "212": {
+      "logical_id": 34,
+      "raw_lines": 72,
+      "boot_records": 0,
+      "control_received": 3,
+      "mac_callbacks": 31,
+      "reassembled_500B": 0,
+      "energy_snapshots": 1,
+      "first_timestamp_utc": "2026-11-22T15:03:15.867926+00:00",
+      "last_timestamp_utc": "2026-11-22T15:04:10.868630+00:00",
+      "connected_utc": "2026-11-22T15:02:45.920477+00:00",
+      "disconnected_utc": "2026-11-22T15:04:46.448153+00:00",
+      "first_boot_utc": null,
+      "boot_id_verified": false,
+      "boot_method_verified": false,
+      "pre_reservation_lines": 72,
+      "post_done_lines": 0
+    },
+    "211": {
+      "logical_id": 35,
+      "raw_lines": 334,
+      "boot_records": 0,
+      "control_received": 3,
+      "mac_callbacks": 162,
+      "reassembled_500B": 0,
+      "energy_snapshots": 1,
+      "first_timestamp_utc": "2026-11-22T15:03:15.867778+00:00",
+      "last_timestamp_utc": "2026-11-22T15:04:10.852269+00:00",
+      "connected_utc": "2026-11-22T15:02:45.912145+00:00",
+      "disconnected_utc": "2026-11-22T15:04:46.447879+00:00",
+      "first_boot_utc": null,
+      "boot_id_verified": false,
+      "boot_method_verified": false,
+      "pre_reservation_lines": 334,
+      "post_done_lines": 0
+    },
+    "210": {
+      "logical_id": 36,
+      "raw_lines": 72,
+      "boot_records": 0,
+      "control_received": 3,
+      "mac_callbacks": 31,
+      "reassembled_500B": 0,
+      "energy_snapshots": 1,
+      "first_timestamp_utc": "2026-11-22T15:03:15.867416+00:00",
+      "last_timestamp_utc": "2026-11-22T15:04:10.868398+00:00",
+      "connected_utc": "2026-11-22T15:02:45.912781+00:00",
+      "disconnected_utc": "2026-11-22T15:04:46.447620+00:00",
+      "first_boot_utc": null,
+      "boot_id_verified": false,
+      "boot_method_verified": false,
+      "pre_reservation_lines": 72,
+      "post_done_lines": 0
+    },
+    "209": {
+      "logical_id": 37,
+      "raw_lines": 74,
+      "boot_records": 0,
+      "control_received": 3,
+      "mac_callbacks": 32,
+      "reassembled_500B": 0,
+      "energy_snapshots": 1,
+      "first_timestamp_utc": "2026-11-22T15:03:15.865347+00:00",
+      "last_timestamp_utc": "2026-11-22T15:04:10.787556+00:00",
+      "connected_utc": "2026-11-22T15:02:45.900986+00:00",
+      "disconnected_utc": "2026-11-22T15:04:46.447366+00:00",
+      "first_boot_utc": null,
+      "boot_id_verified": false,
+      "boot_method_verified": false,
+      "pre_reservation_lines": 74,
+      "post_done_lines": 0
+    },
+    "208": {
+      "logical_id": 38,
+      "raw_lines": 564,
+      "boot_records": 0,
+      "control_received": 3,
+      "mac_callbacks": 267,
+      "reassembled_500B": 0,
+      "energy_snapshots": 1,
+      "first_timestamp_utc": "2026-11-22T15:03:15.868093+00:00",
+      "last_timestamp_utc": "2026-11-22T15:04:10.869692+00:00",
+      "connected_utc": "2026-11-22T15:02:45.913370+00:00",
+      "disconnected_utc": "2026-11-22T15:04:46.447113+00:00",
+      "first_boot_utc": null,
+      "boot_id_verified": false,
+      "boot_method_verified": false,
+      "pre_reservation_lines": 564,
+      "post_done_lines": 0
+    },
+    "205": {
+      "logical_id": 39,
+      "raw_lines": 72,
+      "boot_records": 0,
+      "control_received": 3,
+      "mac_callbacks": 31,
+      "reassembled_500B": 0,
+      "energy_snapshots": 1,
+      "first_timestamp_utc": "2026-11-22T15:03:15.867067+00:00",
+      "last_timestamp_utc": "2026-11-22T15:04:10.884002+00:00",
+      "connected_utc": "2026-11-22T15:02:45.911334+00:00",
+      "disconnected_utc": "2026-11-22T15:04:46.446854+00:00",
+      "first_boot_utc": null,
+      "boot_id_verified": false,
+      "boot_method_verified": false,
+      "pre_reservation_lines": 72,
+      "post_done_lines": 0
+    },
+    "203": {
+      "logical_id": 40,
+      "raw_lines": 76,
+      "boot_records": 0,
+      "control_received": 3,
+      "mac_callbacks": 33,
+      "reassembled_500B": 0,
+      "energy_snapshots": 1,
+      "first_timestamp_utc": "2026-11-22T15:03:15.866585+00:00",
+      "last_timestamp_utc": "2026-11-22T15:04:10.852189+00:00",
+      "connected_utc": "2026-11-22T15:02:45.907857+00:00",
+      "disconnected_utc": "2026-11-22T15:04:46.446196+00:00",
+      "first_boot_utc": null,
+      "boot_id_verified": false,
+      "boot_method_verified": false,
+      "pre_reservation_lines": 76,
+      "post_done_lines": 0
+    },
+    "219": {
+      "logical_id": 41,
+      "raw_lines": 93,
+      "boot_records": 1,
+      "control_received": 0,
+      "mac_callbacks": 6,
+      "reassembled_500B": 55,
+      "energy_snapshots": 1,
+      "first_timestamp_utc": "2026-11-22T15:02:50.434190+00:00",
+      "last_timestamp_utc": "2026-11-22T15:04:16.441252+00:00",
+      "connected_utc": "2026-11-22T15:02:49.984016+00:00",
+      "disconnected_utc": "2026-11-22T15:04:46.450397+00:00",
+      "first_boot_utc": "2026-11-22T15:02:50.609898+00:00",
+      "boot_id_verified": true,
+      "boot_method_verified": true,
+      "pre_reservation_lines": 93,
+      "post_done_lines": 0
+    }
+  },
+  "errors": [],
+  "missing_uart": [],
+  "missing_boot": [
+    {
+      "board": 218,
+      "logical_id": 1
+    },
+    {
+      "board": 233,
+      "logical_id": 2
+    },
+    {
+      "board": 234,
+      "logical_id": 3
+    },
+    {
+      "board": 236,
+      "logical_id": 4
+    },
+    {
+      "board": 237,
+      "logical_id": 5
+    },
+    {
+      "board": 239,
+      "logical_id": 6
+    },
+    {
+      "board": 295,
+      "logical_id": 7
+    },
+    {
+      "board": 240,
+      "logical_id": 8
+    },
+    {
+      "board": 241,
+      "logical_id": 9
+    },
+    {
+      "board": 197,
+      "logical_id": 10
+    },
+    {
+      "board": 216,
+      "logical_id": 11
+    },
+    {
+      "board": 290,
+      "logical_id": 12
+    },
+    {
+      "board": 204,
+      "logical_id": 13
+    },
+    {
+      "board": 245,
+      "logical_id": 14
+    },
+    {
+      "board": 292,
+      "logical_id": 15
+    },
+    {
+      "board": 202,
+      "logical_id": 16
+    },
+    {
+      "board": 293,
+      "logical_id": 17
+    },
+    {
+      "board": 201,
+      "logical_id": 18
+    },
+    {
+      "board": 200,
+      "logical_id": 19
+    },
+    {
+      "board": 199,
+      "logical_id": 20
+    },
+    {
+      "board": 222,
+      "logical_id": 22
+    },
+    {
+      "board": 223,
+      "logical_id": 23
+    },
+    {
+      "board": 224,
+      "logical_id": 24
+    },
+    {
+      "board": 225,
+      "logical_id": 25
+    },
+    {
+      "board": 226,
+      "logical_id": 26
+    },
+    {
+      "board": 227,
+      "logical_id": 27
+    },
+    {
+      "board": 228,
+      "logical_id": 28
+    },
+    {
+      "board": 229,
+      "logical_id": 29
+    },
+    {
+      "board": 230,
+      "logical_id": 30
+    },
+    {
+      "board": 214,
+      "logical_id": 32
+    },
+    {
+      "board": 213,
+      "logical_id": 33
+    },
+    {
+      "board": 212,
+      "logical_id": 34
+    },
+    {
+      "board": 211,
+      "logical_id": 35
+    },
+    {
+      "board": 210,
+      "logical_id": 36
+    },
+    {
+      "board": 209,
+      "logical_id": 37
+    },
+    {
+      "board": 208,
+      "logical_id": 38
+    },
+    {
+      "board": 205,
+      "logical_id": 39
+    },
+    {
+      "board": 203,
+      "logical_id": 40
+    }
+  ],
+  "bad_boot": [],
+  "stale_uart": [
+    {
+      "board": 218,
+      "logical_id": 1,
+      "count": 76
+    },
+    {
+      "board": 233,
+      "logical_id": 2,
+      "count": 74
+    },
+    {
+      "board": 234,
+      "logical_id": 3,
+      "count": 76
+    },
+    {
+      "board": 236,
+      "logical_id": 4,
+      "count": 407
+    },
+    {
+      "board": 237,
+      "logical_id": 5,
+      "count": 76
+    },
+    {
+      "board": 239,
+      "logical_id": 6,
+      "count": 74
+    },
+    {
+      "board": 295,
+      "logical_id": 7,
+      "count": 74
+    },
+    {
+      "board": 240,
+      "logical_id": 8,
+      "count": 76
+    },
+    {
+      "board": 241,
+      "logical_id": 9,
+      "count": 76
+    },
+    {
+      "board": 197,
+      "logical_id": 10,
+      "count": 180
+    },
+    {
+      "board": 216,
+      "logical_id": 11,
+      "count": 76
+    },
+    {
+      "board": 290,
+      "logical_id": 12,
+      "count": 76
+    },
+    {
+      "board": 204,
+      "logical_id": 13,
+      "count": 70
+    },
+    {
+      "board": 245,
+      "logical_id": 14,
+      "count": 74
+    },
+    {
+      "board": 292,
+      "logical_id": 15,
+      "count": 76
+    },
+    {
+      "board": 202,
+      "logical_id": 16,
+      "count": 76
+    },
+    {
+      "board": 293,
+      "logical_id": 17,
+      "count": 74
+    },
+    {
+      "board": 201,
+      "logical_id": 18,
+      "count": 74
+    },
+    {
+      "board": 200,
+      "logical_id": 19,
+      "count": 76
+    },
+    {
+      "board": 199,
+      "logical_id": 20,
+      "count": 76
+    },
+    {
+      "board": 220,
+      "logical_id": 21,
+      "count": 89
+    },
+    {
+      "board": 222,
+      "logical_id": 22,
+      "count": 76
+    },
+    {
+      "board": 223,
+      "logical_id": 23,
+      "count": 76
+    },
+    {
+      "board": 224,
+      "logical_id": 24,
+      "count": 76
+    },
+    {
+      "board": 225,
+      "logical_id": 25,
+      "count": 76
+    },
+    {
+      "board": 226,
+      "logical_id": 26,
+      "count": 76
+    },
+    {
+      "board": 227,
+      "logical_id": 27,
+      "count": 76
+    },
+    {
+      "board": 228,
+      "logical_id": 28,
+      "count": 76
+    },
+    {
+      "board": 229,
+      "logical_id": 29,
+      "count": 76
+    },
+    {
+      "board": 230,
+      "logical_id": 30,
+      "count": 76
+    },
+    {
+      "board": 215,
+      "logical_id": 31,
+      "count": 85
+    },
+    {
+      "board": 214,
+      "logical_id": 32,
+      "count": 76
+    },
+    {
+      "board": 213,
+      "logical_id": 33,
+      "count": 74
+    },
+    {
+      "board": 212,
+      "logical_id": 34,
+      "count": 72
+    },
+    {
+      "board": 211,
+      "logical_id": 35,
+      "count": 334
+    },
+    {
+      "board": 210,
+      "logical_id": 36,
+      "count": 72
+    },
+    {
+      "board": 209,
+      "logical_id": 37,
+      "count": 74
+    },
+    {
+      "board": 208,
+      "logical_id": 38,
+      "count": 564
+    },
+    {
+      "board": 205,
+      "logical_id": 39,
+      "count": 72
+    },
+    {
+      "board": 203,
+      "logical_id": 40,
+      "count": 76
+    },
+    {
+      "board": 219,
+      "logical_id": 41,
+      "count": 93
+    }
+  ],
+  "failures": [
+    "MISSING_NODE_BOOT",
+    "PRE_RESERVATION_UART_ACTIVITY"
+  ],
+  "scientific_validation_pass": false,
+  "scientific_limit": "STATIC frozen controller; NOT adaptive closed-loop ACR-MCR. Source firmware method=0 for both arms; sink method identifies arm.",
+  "capture_duration_s": 141.029
+}
