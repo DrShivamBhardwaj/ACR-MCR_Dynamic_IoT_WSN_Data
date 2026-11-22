@@ -52,7 +52,7 @@ try:
     cmd(SSH+["mkdir -p ~/acr_m3_transport_41"],timeout=30)
     remote_install("~/acr_m3_transport_41/physical_layout.json",
                    (HERE/"41node_physical_layout_v2.json").read_text())
-    remote_install("~/acr_m3_transport_41/capture_41_frontend.py",
+    remote_install("~/acr_m3_transport_41/capture_41_frontend_v2.py",
                    (HERE/"capture_41_frontend_v2.py").read_text())
     request=["submit","-d","15","-n","ACR-MCR-41M3-500B-static-overair-control-smoke"]
     for logical in range(1,42):
