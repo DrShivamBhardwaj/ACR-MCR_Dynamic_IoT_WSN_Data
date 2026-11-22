@@ -1,0 +1,26 @@
+{
+  "site": "Grenoble",
+  "physical_boards": {
+    "m3-14": "sensor_01",
+    "m3-15": "sensor_02",
+    "m3-18": "sink_41"
+  },
+  "method": "STATIC HEADS, not original adaptive optimizer",
+  "source_script": "acr_m3_transport.c",
+  "rounds": 3,
+  "offered_bytes": 500,
+  "firmware": {
+    "sensor_01": {
+      "sha256": "4a4b84f605d4d9e861e75e8de93cbaa8b957922386b8fdf62a5a27bf1f1bc144",
+      "size_bytes": 609532
+    },
+    "sensor_02": {
+      "sha256": "5bfbb73c3163b1ae4d029d0f2a6ae1355246d5d1c12fb4c9f60629ef5e582c8e",
+      "size_bytes": 609516
+    },
+    "sink_41": {
+      "sha256": "6f97cd16e3ce2a815f83e3f6f4f806c965b9018d33ab3c150222d8276b2a1855",
+      "size_bytes": 609468
+    }
+  }
+}
