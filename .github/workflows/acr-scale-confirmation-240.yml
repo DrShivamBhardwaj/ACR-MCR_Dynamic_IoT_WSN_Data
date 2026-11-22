@@ -1,0 +1,67 @@
+name: ACR-MCR Heldout Scale Interaction 240 Runs
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: acr-scale-interaction-heldout
+  cancel-in-progress: false
+jobs:
+  simulate:
+    strategy:
+      fail-fast: false
+      max-parallel: 6
+      matrix:
+        scenario: [S0, S1, S2, S3, S4, S5]
+        nodes: [40, 120]
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    env:
+      OPENBLAS_NUM_THREADS: '1'
+      OMP_NUM_THREADS: '1'
+      MKL_NUM_THREADS: '1'
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+      - run: python -m pip install -r requirements.txt
+      - run: python tools/recovery_gate.py
+      - name: Execute all 10 heldout seed blocks, never replace missing seeds
+        run: |
+          python recovery_generalisation/confirm_scale_cell.py \
+            --scenario '${{ matrix.scenario }}' --nodes '${{ matrix.nodes }}' \
+            --out 'size_${{ matrix.scenario }}_${{ matrix.nodes }}.jsonl'
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: scale-${{ matrix.scenario }}-N_${{ matrix.nodes }}
+          path: size_*.jsonl
+          if-no-files-found: warn
+          retention-days: 14
+  audit:
+    needs: simulate
+    if: always() && needs.simulate.result == 'success'
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+      - run: python -m pip install -r requirements.txt
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: scale-*
+          path: collected_scale
+          merge-multiple: true
+      - run: |
+          python recovery_generalisation/analyze_scale_interaction.py \
+            --directory collected_scale --out confirmed_scale_interaction.json
+      - uses: actions/upload-artifact@v4
+        with:
+          name: acr-confirmed-heldout-scale-interaction-240
+          path: confirmed_scale_interaction.json
+          retention-days: 21
