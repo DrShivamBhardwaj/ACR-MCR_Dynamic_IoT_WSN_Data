@@ -69,9 +69,15 @@ except Exception as e:
 finally:
  if exp is not None:
   try:
-   action('exporting_monitor_and_radio_logs',experiment=exp)
-   save_remote()
-  except Exception as e:print('Export problem',repr(e),flush=True)
-  try:print('stop',cli('stop','-i',str(exp)),flush=True)
+   action('experiment_finishing',experiment=exp)
+   print('stop',cli('stop','-i',str(exp)),flush=True)
   except Exception as e:print('STOP FAILED',repr(e),flush=True)
   action('reservation_stopped',experiment=exp)
+  try:
+   # Control-node RSSI monitoring files flush when the reservation stops.
+   time.sleep(8)
+   action('exporting_original_raw_monitor_and_radio_logs',experiment=exp)
+   save_remote()
+   action('raw_monitor_and_radio_export_complete',experiment=exp)
+  except Exception as e:
+   print('EXPORT PROBLEM',repr(e),flush=True)
