@@ -1,0 +1,1 @@
+{"nb_packet": 100, "delay": 1, "packet_size": 50, "timeout": 7, "nodes": ["m3-14", "m3-150", "m3-2", "m3-350"], "channel": [11], "power": [-17, -9, 0, 3]}

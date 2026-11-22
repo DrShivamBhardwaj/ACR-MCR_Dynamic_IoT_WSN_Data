@@ -1,0 +1,58 @@
+{
+  "effective_duration": 0,
+  "firmwareassociations": [
+    {
+      "firmwarename": "14b86fca76fc4d79a4f09cee538f6792_radio-characterization.elf",
+      "nodes": [
+        "m3-14.grenoble.iot-lab.info",
+        "m3-150.grenoble.iot-lab.info",
+        "m3-2.grenoble.iot-lab.info",
+        "m3-350.grenoble.iot-lab.info"
+      ]
+    }
+  ],
+  "id": 459550,
+  "name": "ACR-MCR-Independent-M3-Radio-Power-Receipt",
+  "nb_nodes": 4,
+  "nodes": [
+    "m3-2.grenoble.iot-lab.info",
+    "m3-14.grenoble.iot-lab.info",
+    "m3-150.grenoble.iot-lab.info",
+    "m3-350.grenoble.iot-lab.info"
+  ],
+  "profileassociations": [
+    {
+      "nodes": [
+        "m3-14.grenoble.iot-lab.info",
+        "m3-150.grenoble.iot-lab.info",
+        "m3-2.grenoble.iot-lab.info",
+        "m3-350.grenoble.iot-lab.info"
+      ],
+      "profilename": "acr_m3_rssi_20261122"
+    }
+  ],
+  "profiles": {
+    "acr_m3_rssi_20261122": {
+      "nodearch": "m3",
+      "power": "dc",
+      "profilename": "acr_m3_rssi_20261122",
+      "radio": {
+        "channels": [
+          11,
+          14
+        ],
+        "mode": "rssi",
+        "num_per_channel": 1,
+        "period": 10
+      }
+    }
+  },
+  "scheduled_date": "2026-11-22T09:51:16Z",
+  "start_date": "2026-11-22T09:51:16Z",
+  "state": "Running",
+  "stop_date": "1970-01-01T00:00:00Z",
+  "submission_date": "2026-11-22T09:51:14Z",
+  "submitted_duration": 18,
+  "type": "physical",
+  "user": "sbhardwa"
+}

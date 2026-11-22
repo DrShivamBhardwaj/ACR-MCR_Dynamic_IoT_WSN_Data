@@ -1,0 +1,138 @@
+{
+  "experiment": 459550,
+  "experiment_label": "ACR-MCR-specific fresh RIOT M3 radio physical characterization",
+  "physical_nodes": [
+    14,
+    150,
+    2,
+    350
+  ],
+  "channel": 11,
+  "power_dbm_configured": [
+    -17,
+    -9,
+    0,
+    3
+  ],
+  "offered_phy_packets": 1600,
+  "candidate_link_receptions": 4800,
+  "unique_successful_received": 365,
+  "receiver_link_failure_count": 4435,
+  "parser_errors": {
+    "generic": 0,
+    "magic_number": 0,
+    "crc": 0,
+    "control": 0
+  },
+  "per_power": [
+    {
+      "power_dbm_setting": -17,
+      "receiver_link_trials": 1200,
+      "successful_receives": 0,
+      "delivery_fraction": 0.0,
+      "idealized_wilson95_low": 0.0,
+      "idealized_wilson95_high": 0.0031910006027347487,
+      "median_packet_rssi_dbm_received_only": null,
+      "n_links": 12
+    },
+    {
+      "power_dbm_setting": -9,
+      "receiver_link_trials": 1200,
+      "successful_receives": 0,
+      "delivery_fraction": 0.0,
+      "idealized_wilson95_low": 0.0,
+      "idealized_wilson95_high": 0.0031910006027347487,
+      "median_packet_rssi_dbm_received_only": null,
+      "n_links": 12
+    },
+    {
+      "power_dbm_setting": 0,
+      "receiver_link_trials": 1200,
+      "successful_receives": 167,
+      "delivery_fraction": 0.13916666666666666,
+      "idealized_wilson95_low": 0.12073223853703642,
+      "idealized_wilson95_high": 0.15990393356460378,
+      "median_packet_rssi_dbm_received_only": -89,
+      "n_links": 12
+    },
+    {
+      "power_dbm_setting": 3,
+      "receiver_link_trials": 1200,
+      "successful_receives": 198,
+      "delivery_fraction": 0.165,
+      "idealized_wilson95_low": 0.14507415637661497,
+      "idealized_wilson95_high": 0.18706381402721728,
+      "median_packet_rssi_dbm_received_only": -87.0,
+      "n_links": 12
+    }
+  ],
+  "receivers_reference_channel": [
+    {
+      "board": "m3_14",
+      "channel14_samples": 9004,
+      "median_channel14_reference_rssi_dbm": -91.0,
+      "channel11_samples": 9005,
+      "median_channel11_rssi_dbm": -91,
+      "scope": "Control-node radio power reading; channel14 is different from traffic channel11 and not calibrated input SNR"
+    },
+    {
+      "board": "m3_150",
+      "channel14_samples": 9004,
+      "median_channel14_reference_rssi_dbm": -91.0,
+      "channel11_samples": 9004,
+      "median_channel11_rssi_dbm": -91.0,
+      "scope": "Control-node radio power reading; channel14 is different from traffic channel11 and not calibrated input SNR"
+    },
+    {
+      "board": "m3_2",
+      "channel14_samples": 9003,
+      "median_channel14_reference_rssi_dbm": -91,
+      "channel11_samples": 9003,
+      "median_channel11_rssi_dbm": -91,
+      "scope": "Control-node radio power reading; channel14 is different from traffic channel11 and not calibrated input SNR"
+    },
+    {
+      "board": "m3_350",
+      "channel14_samples": 9004,
+      "median_channel14_reference_rssi_dbm": -91.0,
+      "channel11_samples": 9004,
+      "median_channel11_rssi_dbm": -91.0,
+      "scope": "Control-node radio power reading; channel14 is different from traffic channel11 and not calibrated input SNR"
+    }
+  ],
+  "status": "Source/RX packet-number consistency verified (M3 active radio, not ambient backscatter or absolute SNR calibration)",
+  "limits": [
+    "Broadcast raw M3 frames, not CAFE-HAB packets or ambient-backscatter frames",
+    "No ACK in this broadcast characterization; packet reception is post-CRC, not raw one-bit BER",
+    "Control-node channel14 reference noise differs from traffic channel11, and receiver gain calibration uncertainty is unknown",
+    "Per-link medians computed only from received packets: selection bias in low-PDR links",
+    "Repeatability is restricted to one time block per configuration, despite 100 packets within block",
+    "Confidence intervals assume independent frames and are idealized; no across-day replication"
+  ],
+  "raw_sha256": {
+    "official_logs/20261122-105118/11/-17/m3-14.json": "357316a4cf242dd75f3f8c3398af6140c99190c4b02f026f9f33668a2af53765",
+    "official_logs/20261122-105118/11/-17/m3-150.json": "7357c7fe95ca712bedad66d47f5a6373bf65ef96a4e1ba132fe64210fb5e6be5",
+    "official_logs/20261122-105118/11/-17/m3-2.json": "89a524841a4906e725a41b13060e3cbf3c2581aaa5280df8be53d66de7e8d01c",
+    "official_logs/20261122-105118/11/-17/m3-350.json": "396d995fb5bc3ea754198b19389bea77d82ea2139ff644ada617d490f44e1a8a",
+    "official_logs/20261122-105118/11/-9/m3-14.json": "2031ba8c49c4e738f78c8c5b039c41f0c453053495193e18d2fc84d8dc02c7d1",
+    "official_logs/20261122-105118/11/-9/m3-150.json": "0f04b2e2bc4ad2a13a6a2e209efd0a13d7dc1bccb0cdab1f3ae10a305e308bee",
+    "official_logs/20261122-105118/11/-9/m3-2.json": "06a3f053b24993c7cf2084b15e1eee381eb1ba78f82d707fb11d85ee3f99f593",
+    "official_logs/20261122-105118/11/-9/m3-350.json": "356afc09636f660fb48b1d8b519198fdacf7354861dbfecf247a4fbc28ab7a65",
+    "official_logs/20261122-105118/11/0/m3-14.json": "411eafb10f352168e4f45e493cc849beac69757e13ce9e4f0aac2f73f54c6ed5",
+    "official_logs/20261122-105118/11/0/m3-150.json": "93a978b63d2da1a3e5c66be72f1dad0149f786dd7118e627dcd4d272a0e51ef8",
+    "official_logs/20261122-105118/11/0/m3-2.json": "00f8e13471111b9d2384d5b60c69a3d208c4c6ee471f627b75a5b6eda352e1de",
+    "official_logs/20261122-105118/11/0/m3-350.json": "3870f989407df19a154666b82431e8ecd74ab400203ce7526da354c27688e91a",
+    "official_logs/20261122-105118/11/3/m3-14.json": "0f6e201031f3d5b844e6786f58b45c63714c8d541d0c16b2b1792c33937900a5",
+    "official_logs/20261122-105118/11/3/m3-150.json": "32c934db91f84a512457f0c65d1da34daa47424bcd76792f36a97c124f1da0e6",
+    "official_logs/20261122-105118/11/3/m3-2.json": "8e7e9d129264d17a78b7035a1e6db799c6de9cf5cfca42d92a88aafe89f84aa9",
+    "official_logs/20261122-105118/11/3/m3-350.json": "b808a249b2f403a88a7041c0a1c16aaa833706b3add370e4c781324bd68abfaa",
+    "official_logs/20261122-105118/config.json": "b46740eeb49100cabe3460d30b4d3712db939da736fa79c1f4cf2d070d259c06",
+    "official_logs/20261122-105118/error-logs.csv": "736e94128fa4be20e68020067bd93187d69867238b7c41c5c370a12f046805cb",
+    "official_logs/20261122-105118/recv-logs.csv": "cdcfea3114a0e05666045f95b27988eaabd81f0f4b001097079f4a56e554c509",
+    "official_logs/20261122-105118/send-logs.csv": "3465859d99d1d0c84d69b5d2052ac235a6f7ed182e79d8ca33a19ea1ab6affa5"
+  },
+  "derived_sha256": {
+    "m3_link_characterization.csv": "3238cfa9e8b340e660a9b220773c0de48239bd6e4ea63a8d8ca590b64cd01c99",
+    "m3_aggregate_power.csv": "ccc3fe73663677e393a04031df3e29564b3a3d6c31d95845bc6ba22cc84cb884"
+  }
+}

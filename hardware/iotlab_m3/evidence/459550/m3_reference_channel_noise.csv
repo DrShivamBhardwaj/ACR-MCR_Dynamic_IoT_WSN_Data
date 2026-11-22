@@ -1,0 +1,5 @@
+board,channel14_samples,median_channel14_reference_rssi_dbm,channel11_samples,median_channel11_rssi_dbm,scope
+m3_14,9004,-91.0,9005,-91,Control-node radio power reading; channel14 is different from traffic channel11 and not calibrated input SNR
+m3_150,9004,-91.0,9004,-91.0,Control-node radio power reading; channel14 is different from traffic channel11 and not calibrated input SNR
+m3_2,9003,-91,9003,-91,Control-node radio power reading; channel14 is different from traffic channel11 and not calibrated input SNR
+m3_350,9004,-91.0,9004,-91.0,Control-node radio power reading; channel14 is different from traffic channel11 and not calibrated input SNR

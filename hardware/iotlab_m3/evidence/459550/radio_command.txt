@@ -1,0 +1,1 @@
+cd ~/array_radio_measure && PYTHONPATH=./pydeps python3 ./iotlab-radio -i 459550 --channel 11 --txpower -17 -9 0 3 --nb-packet 100 --packet-size 50 --delay 1 --timeout 7
