@@ -1,0 +1,36 @@
+{
+  "verdict": "PASS_BINARIES_LINK_AND_FIT_FROZEN_M3_KERNEL",
+  "memory_boundaries_from": "/Users/shivambhardwaj/Research/iot-lab-contiki-ng/arch/platform/iotlab/openlab/platform/scripts/stm32f103rey6.ld",
+  "linker_sha256": "ac061ec49969b8b089822fba594dc184be878141fb7c48058af4fd96a97b53d6",
+  "platform_limits": {
+    "flash_bytes": 524288,
+    "ram_bytes": 65536
+  },
+  "physical_41_board_test_contingent": true,
+  "measured_flash_and_static_ram_include_original_frozen_fixtures": true,
+  "original_onboard_adaptation_not_verified": true,
+  "rows": [
+    {
+      "method": "point_ea",
+      "flash_bytes": 157992,
+      "ram_bytes": 35760,
+      "text_bytes": 155364,
+      "initialized_data_bytes": 2628,
+      "zero_init_data_bytes": 33132,
+      "flash_fraction": 0.3013458251953125,
+      "ram_fraction": 0.545654296875,
+      "verified_binary_sha256": "71ac8e388aa4f3c884cd408ac216720a88159afaa9c3bedbfb948ecf66ffd248"
+    },
+    {
+      "method": "acr_mcr",
+      "flash_bytes": 337000,
+      "ram_bytes": 35760,
+      "text_bytes": 334372,
+      "initialized_data_bytes": 2628,
+      "zero_init_data_bytes": 33132,
+      "flash_fraction": 0.6427764892578125,
+      "ram_fraction": 0.545654296875,
+      "verified_binary_sha256": "39770f4a1ef57109937b386b99e2b8148765dac6d0d616590326625a957e0baa"
+    }
+  ]
+}
